@@ -1,0 +1,117 @@
+namespace = mns_info
+
+country_event = {
+	id = mns_info.1
+	title = mns_info.1.t
+	desc = mns_info.1.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = mns_info.1.formable
+		country_event = { id = mns_info.2 }
+	}
+	option = {
+		name = mns_info.1.ideas
+		country_event = { id = mns_info.100 }
+	}
+	option = {
+		name = mns_info.1.goods
+		country_event = { id = mns_info.200 }
+	}
+	option = {
+		name = mns_info.1.religion
+		country_event = { id = mns_info.300 }
+	}
+	option = {
+		name = mns_info.1.ae
+		country_event = { id = mns_info.400 }
+	}
+	option = {
+		name = mns_info.exit
+	}
+}
+country_event = {
+	id = mns_info.2
+	title = mns_info.2.t
+	desc = mns_info.2.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mns_info.back
+		country_event = { id = mns_info.1 }
+	}
+	option = {
+		name = mns_info.exit
+	}
+}
+
+
+
+country_event = {
+	id = mns_info.100
+	title = mns_info.100.t
+	desc = mns_info.100.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mns_info.back
+		country_event = { id = mns_info.1 }
+	}
+	option = {
+		name = mns_info.exit
+	}
+}
+country_event = {
+	id = mns_info.200
+	title = mns_info.200.t
+	desc = mns_info.200.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mns_info.back
+		country_event = { id = mns_info.1 }
+	}
+	option = {
+		name = mns_info.exit
+	}
+}
+country_event = {
+	id = mns_info.300
+	title = mns_info.300.t
+	desc = mns_info.300.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mns_info.back
+		country_event = { id = mns_info.1 }
+	}
+	option = {
+		name = mns_info.exit
+	}
+}
+country_event = {
+	id = mns_info.400
+	title = mns_info.400.t
+	desc = mns_info.400.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mns_info.back
+		country_event = { id = mns_info.1 }
+	}
+	option = {
+		name = mns_info.exit
+	}
+}

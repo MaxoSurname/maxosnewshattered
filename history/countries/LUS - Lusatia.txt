@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = sorbian
+religion = catholic
+capital = 60	# Lausitz
+
+1443.1.1 = {
+	monarch = {
+		name = "Paisch I"
+		dynasty = "Alizski"
+		birth_date = 1423.1.1
+		adm = 4
+		dip = 0
+		mil = 4
+	}
+}
+

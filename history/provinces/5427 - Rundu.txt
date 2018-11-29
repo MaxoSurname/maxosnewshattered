@@ -1,0 +1,15 @@
+owner = SDG
+controller = SDG
+add_core = SDG
+culture = shandong_culture
+religion = confucianism
+capital = "Weihai"
+trade_goods = fish
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+is_city = yes
+
+discovered_by = chinese
+discovered_by = nomad_group

@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = karelian
+capital = 32
+
+1444.11.11 = {
+	monarch = {
+		name = "(Interregnum)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

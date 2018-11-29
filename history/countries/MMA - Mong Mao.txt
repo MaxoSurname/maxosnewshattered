@@ -1,0 +1,26 @@
+government = monarchy
+government_rank = 1
+add_government_reform = mandala_reform
+technology_group = chinese
+religion = buddhism
+primary_culture = shan
+add_accepted_culture = bai
+capital = 2166 # Dehong
+
+1413.1.1 = {
+	monarch = {
+		name = "Renfa"
+		dynasty = "Si"
+		ADM = 2
+		DIP = 2
+		MIL = 5
+		leader = {	
+			name = "Si Renfa"
+			type = general
+			fire = 2
+			shock = 4
+			manuever = 4
+			siege = 0 
+		}
+	}
+}

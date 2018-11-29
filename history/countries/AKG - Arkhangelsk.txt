@@ -1,0 +1,17 @@
+government = republic
+add_government_reform = veche_republic
+government_rank = 1
+primary_culture = russian
+religion = orthodox
+technology_group = eastern
+capital = 313	#Arkhangelsk
+
+1444.11.11 = {
+	monarch = {
+		name = "(Interregnum)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

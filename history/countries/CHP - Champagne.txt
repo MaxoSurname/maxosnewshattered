@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = cosmopolitan_french
+capital = 186	# Reims
+fixed_capital = 186 # Cannot move capital away from this province & no power cost to move to it
+
+1420.1.1 = {
+	monarch = {
+		name = "Alphonse"
+		dynasty = "d'Harcourt"
+		birth_date = 1402.1.1
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}

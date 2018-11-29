@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = austrian
+add_accepted_culture = czech
+capital = 133
+
+1444.1.1 = {
+	monarch = {
+		name = "Florian I"
+		dynasty = "von Falkenberg"
+		birth_date = 1415.1.1
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}

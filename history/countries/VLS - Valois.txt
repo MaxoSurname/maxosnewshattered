@@ -1,0 +1,27 @@
+government = monarchy
+add_government_reform = feudalism_reform 
+government_rank = 1
+technology_group = western
+primary_culture = cosmopolitan_french
+religion = catholic
+capital = 182	# Valois
+
+1444.11.11 = {
+	monarch = {
+		name = "(Interregnum)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+
+
+1515.1.1 = { government = despotic_monarchy }
+
+1560.1.1 = { religion = reformed }
+
+1589.8.3 = { government = administrative_monarchy }
+
+1661.3.9 = { government = despotic_monarchy }

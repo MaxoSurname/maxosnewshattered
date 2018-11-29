@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = chihan
+capital = 695
+
+1444.11.11 = {
+	monarch = {
+		name = "Yuying"
+		dynasty = "Bai"		
+		birth_date = 1417.1.1
+		adm = 4
+		dip = 2
+		mil = 5
+		female = yes
+	}
+}

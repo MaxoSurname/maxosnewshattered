@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = ruthenian
+capital = 2424
+
+1444.1.1 = {
+	monarch = {
+		name = "Prokopiy I"
+		dynasty = "Ulich"
+		birth_date = 1405.1.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}

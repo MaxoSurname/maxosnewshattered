@@ -1,0 +1,385 @@
+# Full list of all provinces with latent goods, sorted by date of goods
+
+#LEATHER - rather arbitrary, cities chosen based on output of manufactures goods c. 1450, or specific leatherworks or horse-breeding centers
+28	#helsinki
+44	#hambeag
+52	#magdebuag
+67	#niambeag
+77	#heidelbeag
+91	#hainaut
+105	#pärma
+141	#beograd
+161	#targoviste
+211	#pinero (jaca)
+224	#sevilla
+248	#lothian
+259	#sandomierz
+268	#iasi
+272	#vilnius
+274	#pskov
+280	#kiev
+283	#zaporozhia
+303	#ükök / saratov
+324	#karaman
+335	#melilla
+352	#capsa
+400	#muscat
+441	#khiva
+506	#multan
+510	#sirhind
+532	#raichur doab
+555	#jaunpur
+707	#yumen
+735	#seoul
+1134	#jenne
+1157	#borno
+1191	#tete
+1202	#mombasa
+1763	#dolni luzyca / neidalausitz
+1825	#aki / toki
+1957	#galich
+2124	#yarkand
+2149	#ningbo
+2159	#leichow
+2176	#shangqiu
+2190	#karakorum
+2199	#tarki
+2308	#urfa
+2764	#ausa
+2983	#salerno
+3055	#basel
+4089	#kuba
+4097	#luba
+4189	#sagami / kamakura
+4381	#overijssel
+4389	#touraine
+5180	#jaffa
+7043	#padova
+
+#GUNS - based on production of heavy guns or sulfur 
+78	#mainz
+92	#brussel
+103	#pitmont
+124	#messina
+133	#linz
+146	#athens
+192	#dyjon
+202	#avinho
+214	#saragossa
+252	#inverness
+293	#smolensk
+294	#tver
+317	#bursa
+377	#aleppo
+411	#mosul
+458	#kokand
+522	#delhi
+545	#daulatabad
+585	#taungoo
+628	#surabaya
+638	#kutai
+695	#hejian
+775	#asuncion
+1082	#kazan
+1759	#potsdam
+1845	#pyongyang
+2054	#ahmadabad
+2151	#poyang
+2380	#phnom penh
+2673	#pasai / aceh
+2745	#gyeongju
+2828	#camana
+2982	#syracusa
+3142	#uopawa
+3227	#pilten
+4131	#mutsu
+4165	#göinge
+4385	#maunche
+
+#PAPER - based on historical centers of paper production, bureaucratic cities, and major universities
+14	#fünen
+20	#tröndalog
+75	#straßbourg
+97	#holland
+118	#roma
+134	#wean
+138	#zeta
+148	#thessalonika
+180	#haut poitou
+216	#salamanca
+237	#oxford
+295	#moscow
+326	#ankara
+343	#fez
+361	#cairo
+373	#dublin
+378	#tripoli (levant)
+385	#mecca
+410	#baghdad
+517	#surat
+526	#mandu / malwa
+539	#tondainadu
+600	#ayutthaya
+630	#kalapa
+656	#manilla
+662	#yunnan
+700	#xian
+778	#buenos aires
+809	#lima
+953	#baltimore
+968	#boston
+1013	#cheongju
+1020	#kyoto
+1147	#benin
+1170	#mpemba / kongo
+1195	#mozambique
+1203	#malindi
+1816	#peking
+1821	#nanking
+1868	#augschbuag
+1939	#leczyca
+2094	#bahreich
+2153	#tingzhou
+2218	#shiraz
+2628	#tepeacac
+2961	#lembeag
+3041	#bologna
+4370	#cambridge
+4476	#nadia
+4500	#bharatpur / fatepur sikri
+4503	#mansura
+
+#STEEL - chosen based on steel production (where applicable), iron production, and armories
+4	#västmanland
+10	#jämtland
+23	#bergen
+80	#trier
+191	#nevers
+209	#biscay
+219	#toledo
+221	#murcia
+240	#shrewsbury
+243	#lincoln
+275	#polotsk
+336	#tala imsan
+340	#constantine
+382	#damascus
+419	#yerevan
+433	#yazd
+451	#kabul
+533	#mysore
+543	#velanadu
+568	#chittagong
+629	#demak
+631	#bali
+682	#wuchang
+685	#yangzhou
+784	#huillimapu
+797	#oruro / caracara
+804	#puno
+956	#lenapa / philadelphia
+963	#mahican / albany
+1021	#settsu / osaka
+1022	#da nang
+1025	#uzen / yamagata
+1148	#gobir
+1169	#anziiku
+1184	#zimbabwe
+1224	#gonder
+1766	#kosovo
+1863	#graz
+1866	#namur
+1869	#zurich
+2027	#arcot
+2100	#vanni
+2107	#ningguta
+2209	#ilam
+2250	#bendugu
+2305	#erzincan
+2307	#van
+2387	#phetchaburi
+2631	#mixe
+2671	#wasauksing / muskoka
+2702	#butuan
+2797	#shendi
+2965	#vogtland
+3199	#essen
+3215	#gottingen
+4061	#buzina
+4133	#peräpohjola
+4238	#lignica
+5356	#damaqua / port elizabeth
+5371	#ethekwini / durban
+5647	#äänislinna
+7022	#san marino
+7023	#jomsborg
+7023	#jomsborg
+703	#chengde
+7044	#belluno
+
+#RUM - historical production and pirate havens (hence rum in persian gulf)
+25	#gotland
+337	#oran
+338	#algiers
+354	#tripoli
+356	#banghazi
+388	#aden
+395	#qatar
+398	#as-sariqah	
+482	#bahamas / nassau
+484	#havana
+488	#yaguana / port au prince
+490	#higüey / higuey
+498	#martinique
+502	#trinidad
+738	#sakam formosa
+921	#bayougoula
+938	#pamlico
+1201	#zanzibar
+2455	#bizerte
+2647	#cuetlaxtlan / veracruz
+4351	#buglas
+5562	#xarama / tortuga
+5571	#cubanacan
+
+OPTICS - mainly major ports
+38	#riga
+43	#danzig
+213	#barcelona
+231	#porto
+236	#london
+244	#york
+313	#arkhangelsk
+318	#izmir
+487	#jamaica
+561	#bengal delta / calcutta
+596	#malaca
+667	#canton
+690	#tsingtao
+763	#rio de janeiro
+835	#panama
+893	#new orleans
+932	#charleston
+965	#new york
+978	#tanaina / anchorage
+994	#quebec
+1139	#gold coast
+1177	#goringhaiqua / cape town
+1205	#mogadichu
+1240	#hawaii
+1775	#kiel
+1855	#galilée / tyre
+2021	#ramai / san francisco
+2089	#chaul / bombay
+2106	#furdan / vladivostok
+2318	#suez
+2410	#doros / sevastopol
+2700	#panay
+2991	#toulon
+3019	#strathclyde / glasgow
+3042	#massa / la spezia
+3049	#trieste
+3068	#kernev / lorient
+3184	#cattaro
+4182	#hizen / nagasaki
+4185	#tango / miyazu
+4383	#gravenhage / rotterdam
+4417	#kanchipuram / madras
+
+#UNIFORMS - arbitrarily chosen by me, drawing on capital cities, fabric centers, among other things
+12	#kopenhagn
+33	#neva?
+50	#berlin
+95	#breda
+104	#lumbardia
+121	#napoli
+151	#constantinople
+153	#budapesth
+178	#anjou
+203	#liyon
+217	#madrid
+257	#warsaw
+341	#tunis/carthage
+344	#marrakech
+379	#jerusalem
+412	#ahvaz
+524	#central doab / agra
+584	#ava
+613	#dong kinh 
+622	#palembang
+669	#fuzhou
+1028	#musashi / tokyo
+1132	#timbuktu
+1822	#suzhou
+1948	#bidar
+2026	#tanjore
+
+
+#COAL - lowered frequency in certain areas and added to sparse areas for balance - kept as historical as possible within those limitations
+1	#stockholm
+62	#leipzig
+65	#minga
+84	#berg / düsseldorf
+128	#kärnten
+159	#silistria
+199	#auvergne
+208	#león
+246	#northumberland
+263	#ratibor
+265	#brünn
+291	#kharkov
+319	#mugla
+416	#tabriz
+422	#imereti
+477	#nadym
+640	#pontiak
+670	#hanzhou
+677	#lhasa
+689	#hanzhong
+694	#pingyang
+731	#ilan hala
+736	#sangju
+813	#cajamarca
+832	#tunja
+902	#missouri
+935	#cherokee
+951	#kanawha
+982	#onamag
+1014	#bungo
+1033	#sakhalin
+1060	#irkutsk
+1066	#altai uriankhai
+1068	#ket
+1163	#calabar
+1743	#cambrai
+1847	#sum'un'kur(ainu)
+1853	#kastoria
+1871	#valais
+1878	#aachen
+2096	#damin
+2216	#semnan
+2280	#biram
+2352	#alty-kuduk
+2413	#tahanrig
+2424	#premissel
+2435	#nukhtui
+2490	#gutsipupiusti / salt lake city
+2555	#honniasont
+2986	#cagliari
+3002	#visoki
+3097	#malaga
+3185	#rasina
+4027	#betsileo
+4118	#cork
+4128	#brasov
+4312	#boli
+4367	#york
+4372	#warwick
+4470	#soumelpur
+4977	#teechik
+5366	#lesotho
+5377	#tshwane
+5414	#nata
+5659	#dmitrov
+5680	#belyov
+5734	#snuneynuxw (vancouver?)

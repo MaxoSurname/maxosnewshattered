@@ -1,0 +1,592 @@
+country_decisions = {
+	
+	###########
+	#Austrasia#
+	###########
+	
+	ASR_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = ASR }
+			OR = {
+				primary_culture = wallonian
+				primary_culture = burgundian
+				primary_culture = flemish
+				primary_culture = hessian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = lower_rhineland_area	#5
+				area = luxemburg_liege_area	#5
+				area = lorraine_area		#4
+				area = north_rhine_area		#6
+				province_id = 83
+				province_id = 82
+				province_id = 3292
+				province_id = 3061
+				province_id = 3060
+				province_id = 3063
+			}
+		}
+		allow = {
+			NOT = { exists = ASR }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = ASR_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = lower_rhineland_area	#5
+							area = luxemburg_liege_area	#5
+							area = lorraine_area		#4
+							area = north_rhine_area		#6
+							province_id = 83
+							province_id = 82
+							province_id = 3292
+							province_id = 3061
+							province_id = 3060
+							province_id = 3063
+						}
+					}
+					amount = 16 #/26
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = ASR
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = hessian
+			add_accepted_culture = burgundian
+			custom_tooltip = ASR_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = lower_rhineland_area	#5
+							area = luxemburg_liege_area	#5
+							area = lorraine_area		#4
+							area = north_rhine_area		#6
+							#province_id = 83 #hesse
+							province_id = 82
+							province_id = 3292
+							#province_id = 3061 #brabant
+							province_id = 3060
+							province_id = 3063
+							#bonus
+							area = wallonia_area
+							area = brabant_area
+							area = flanders_area
+							area = hesse_area
+							province_id = 87
+							province_id = 88
+						} #normal provs + lowlands and hesse
+					}
+					add_permanent_claim = ASR
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##########
+	#Neustria#
+	##########
+	
+	NEU_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = NEU }
+			OR = {
+				primary_culture = cosmopolitan_french
+				primary_culture = normand
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = ile_de_france_area
+				province_id = 186
+				province_id = 3071
+				province_id = 181
+				province_id = 3070
+				province_id = 89
+				province_id = 167
+				province_id = 3073
+				province_id = 1879
+				province_id = 168
+				province_id = 4385
+				province_id = 177
+				province_id = 3075
+				province_id = 178
+				province_id = 4390
+				province_id = 185
+			}
+		}
+		allow = {
+			NOT = { exists = NEU }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = NEU_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = ile_de_france_area
+							province_id = 186
+							province_id = 3071
+							province_id = 181
+							province_id = 3070
+							province_id = 89
+							province_id = 167
+							province_id = 3073
+							province_id = 1879
+							province_id = 168
+							province_id = 4385
+							province_id = 177
+							province_id = 3075
+							province_id = 178
+							province_id = 4390
+							province_id = 185
+						}
+					}
+					amount = 14	#/18
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = NEU
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = cosmopolitan_french
+			add_accepted_culture = normand
+			custom_tooltip = NEU_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = ile_de_france_area
+							province_id = 186
+							province_id = 3071
+							province_id = 181
+							province_id = 3070
+							province_id = 89
+							province_id = 167
+							province_id = 3073
+							province_id = 1879
+							province_id = 168
+							province_id = 4385
+							province_id = 177
+							province_id = 3075
+							province_id = 178
+							province_id = 4390
+							province_id = 185
+							#bonus
+							province_id = 184
+							province_id = 4389
+							province_id = 3077
+							province_id = 172
+							province_id = 4384
+							province_id = 88
+							province_id = 87
+							province_id = 1743
+						}
+					}
+					add_permanent_claim = NEU
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	###########
+	#Aquitaine#
+	###########
+	
+	AQT_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = AQT }
+			OR = {
+				primary_culture = gascon
+				primary_culture = poitevin
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = guyenne_area
+				area = poitou_area
+				#area = pyrenees_area
+				province_id = 172
+				province_id = 4389
+				province_id = 184
+				province_id = 179
+				province_id = 3109
+				province_id = 190
+				province_id = 195
+				province_id = 199
+				province_id = 3087
+				province_id = 196
+				province_id = 3084
+				province_id = 4391
+			}
+		}
+		allow = {
+			NOT = { exists = AQT }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = AQT_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = guyenne_area
+							area = poitou_area
+							#area = pyrenees_area
+							province_id = 172
+							province_id = 4389
+							province_id = 184
+							province_id = 179
+							province_id = 3109
+							province_id = 190
+							province_id = 195
+							province_id = 199
+							province_id = 3087
+							province_id = 196
+							province_id = 3084
+							province_id = 4391
+						}
+					}
+					amount = 14	#/22
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = AQT
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = gascon
+			add_accepted_culture = poitevin
+			custom_tooltip = AQT_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = guyenne_area
+							area = poitou_area
+							#area = pyrenees_area
+							province_id = 172
+							province_id = 4389
+							province_id = 184
+							province_id = 179
+							province_id = 3109
+							province_id = 190
+							province_id = 195
+							province_id = 199
+							province_id = 3087
+							province_id = 196
+							province_id = 3084
+							province_id = 4391
+							#bonus
+							province_id = 178
+							province_id = 191
+							province_id = 3088
+							province_id = 3085
+							province_id = 200
+							province_id = 2753
+							area = pyrenees_area
+						}
+					}
+					add_permanent_claim = AQT
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#########
+	#Francia#
+	#########
+	
+	FCA_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			has_country_flag = formed_tier_1
+			NOT = { has_country_flag = formed_tier_2 }
+			NOT = { tag = FCA }
+			OR = {
+				tag = AQT
+				tag = NEU
+				tag = ASR
+				tag = ARS
+				tag = BSC
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = lower_rhineland_area
+				area = luxemburg_liege_area
+				area = lorraine_area
+				area = north_rhine_area
+				area = brabant_area
+				area = wallonia_area
+				area = flanders_area
+				area = normandy_area
+				area = picardy_area
+				area = ile_de_france_area
+				area = bourgogne_area
+				area = champagne_area
+				area = loire_area
+				area = massif_central_area
+				area = poitou_area
+				area = guyenne_area
+				area = romandie_area
+				area = upper_rhineland_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = FCA }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier2_potential = yes
+			owns_core_province = 1878
+			calc_true_if = {
+				all_owned_province = {
+					is_core = ROOT
+					OR = {
+						area = lower_rhineland_area
+						area = luxemburg_liege_area
+						area = lorraine_area
+						area = north_rhine_area
+						area = brabant_area
+						area = wallonia_area
+						area = flanders_area
+						area = normandy_area
+						area = picardy_area
+						area = ile_de_france_area
+						area = bourgogne_area
+						area = champagne_area
+						area = loire_area
+						area = massif_central_area
+						area = poitou_area
+						area = guyenne_area
+						area = romandie_area
+						area = upper_rhineland_area
+					}
+				}
+				amount = 50
+			}
+			total_development = 500
+		}
+		effect = {
+			change_tag = FCA
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			hidden_effect = {
+				every_province = { 
+					limit = { culture = cosmopolitan_french }
+					change_culture = cosmopolitan_frankish
+				}
+				every_province = { 
+					limit = { culture = wallonian }
+					change_culture = wallonian_frankish
+				}
+				every_province = { 
+					limit = { culture = normand }
+					change_culture = normand_frankish
+				}
+				every_province = { 
+					limit = { culture = burgundian }
+					change_culture = burgundian_frankish
+				}
+				every_province = { 
+					limit = { culture = arpitan }
+					change_culture = arpitan_frankish
+				}
+				every_province = { 
+					limit = { culture = flemish }
+					change_culture = flemish_frankish
+				}
+				every_province = { 
+					limit = { culture = poitevin }
+					change_culture = poitevin_frankish
+				}
+				every_province = { 
+					limit = { culture = swabian }
+					change_culture = swabian_frankish
+				}
+				every_province = { 
+					limit = { culture = swiss }
+					change_culture = swiss_frankish
+				}
+				every_province = { 
+					limit = { culture = hessian }
+					change_culture = hessian_frankish
+				}
+				every_country = {
+					limit = { primary_culture = cosmopolitan_french }
+					change_primary_culture = cosmopolitan_frankish
+				}
+				every_country = { 
+					limit = { primary_culture = wallonian }
+					change_primary_culture = wallonian_frankish
+				}
+				every_country = { 
+					limit = { primary_culture = normand }
+					change_primary_culture = normand_frankish
+				}
+				every_country = { 
+					limit = { primary_culture = burgundian }
+					change_primary_culture = burgundian_frankish
+				}
+				every_country = { 
+					limit = { primary_culture = arpitan }
+					change_primary_culture = arpitan_frankish
+				}
+				every_country = { 
+					limit = { primary_culture = flemish }
+					change_primary_culture = flemish_frankish
+				}
+				every_country = { 
+					limit = { primary_culture = poitevin }
+					change_primary_culture = poitevin_frankish
+				}
+				every_country = { 
+					limit = { primary_culture = swabian }
+					change_primary_culture = swabian_frankish
+				}
+				every_country = { 
+					limit = { primary_culture = swiss }
+					change_primary_culture = swiss_frankish
+				}
+				every_country = { 
+					limit = { primary_culture = hessian }
+					change_primary_culture = hessian_frankish
+				}
+				every_province = { 
+					limit = { culture = vascon }
+					change_culture = gascon
+				}
+				every_country = {
+					limit = { primary_culture = vascon }
+					change_primary_culture = gascon
+				}
+			}
+			change_primary_culture = cosmopolitan_frankish
+			add_accepted_culture = gascon
+			add_accepted_culture = occitain
+			set_capital = 1878 # Aix-la-Chapelle
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						area = luxemburg_liege_area
+						area = lower_rhineland_area
+					}
+				}
+				add_permanent_claim = FCA
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+}

@@ -1,0 +1,366 @@
+namespace = mnsgovernment
+
+#By Maxo
+
+#################
+# Roman Diarchy #
+#################
+country_event = {
+	id = mnsgovernment.1
+	title = "EVTNAME700"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	desc = {
+		trigger = { NOT = { has_ruler_flag = leader_has_been_pushed_out } }
+		desc = EVTDESC700
+	}
+	
+	desc = {
+		trigger = { has_ruler_flag = leader_has_been_pushed_out }
+		desc = elections.700.d
+	}
+		
+	is_triggered_only = yes
+	
+	trigger = {
+		has_reform = roman_diarchy_reform
+	}
+	
+	option = {
+		name = "EVTOPTA700"	# Current ruler stays
+		trigger = {
+			has_regency = no
+			NOT = { has_ruler_flag = leader_has_been_pushed_out }
+		}
+		ai_chance = { 
+			factor = 60
+			modifier = {
+				factor = 0
+				NOT = { republican_tradition = 25 }
+			}	
+			modifier = {
+				factor = 0.5
+				NOT = { republican_tradition = 50 }
+			}				
+			modifier = {
+				factor = 0.5
+				NOT = { republican_tradition = 75 }
+			}	
+			modifier = {
+				factor = 2.0
+				republican_tradition = 90
+			}		
+		}
+		custom_tooltip = remains_ruler
+		if = {
+			limit = { 
+				is_tribal = yes
+				government = republic
+				NOT = { has_dlc = "Dharma" }
+				NOT = { republican_tradition = 20 }	
+			}	
+			set_legacy_government = tribal_despotism
+		}
+		else_if = {
+			limit = {
+				is_tribal = no 
+				government = republic
+				NOT = { republican_tradition = 20 }				
+				has_dlc = "Res Publica"
+			}
+			add_government_reform = presidential_despot_reform	
+		}
+		if = {
+			limit = {
+				is_tribal = no  
+				government = republic
+				NOT = { republican_tradition = 20 }
+				NOT = { has_dlc = "Res Publica" }
+			}
+			change_government = monarchy
+			set_legacy_government = despotic_monarchy
+		}
+		add_scaled_republican_tradition = -10
+	
+		#primary ruler
+		#adm
+		if = {
+			limit = {
+				has_ruler_flag = roman_diarchy_adm_1
+				NOT = { adm = 6 }
+			}
+			random_list = {
+				75 = { change_adm = 1 }
+				25 = { add_adm_power = 10 }
+			}
+		}
+		if = {
+			limit = {
+				has_ruler_flag = roman_diarchy_adm_1
+				adm = 6
+			}
+			random_list = {
+				50 = { add_adm_power = 20 }
+				25 = { change_mil = 1 }
+				25 = { change_dip = 1 }
+			}
+		}
+		#dip
+		if = {
+			limit = {
+				has_ruler_flag = roman_diarchy_dip_1
+				NOT = { dip = 6 }
+			}
+			random_list = {
+				75 = { change_dip = 1 }
+				25 = { add_dip_power = 10 }
+			}
+		}
+		if = {
+			limit = {
+				has_ruler_flag = roman_diarchy_dip_1
+				dip = 6
+			}
+			random_list = {
+				50 = { add_dip_power = 20 }
+				25 = { change_mil = 1 }
+				25 = { change_adm = 1 }
+			}
+		}
+		#mil
+		if = {
+			limit = {
+				has_ruler_flag = roman_diarchy_mil_1
+				NOT = { mil = 6 }
+			}
+			random_list = {
+				75 = { change_mil = 1 }
+				25 = { add_mil_power = 10 }
+			}
+		}
+		if = {
+			limit = {
+				has_ruler_flag = roman_diarchy_mil_1
+				mil = 6
+			}
+			random_list = {
+				50 = { add_mil_power = 20 }
+				25 = { change_adm = 1 }
+				25 = { change_dip = 1 }
+			}
+		}
+		
+		#secondary ruler
+		#adm
+		if = {
+			limit = { 
+				has_ruler_flag = roman_diarchy_adm_2
+				NOT = { adm = 6 }
+			}
+			random_list = {
+				25 = { change_adm = 1 }
+				75 = { add_adm_power = 10 }
+			}
+		}
+		if = {
+			limit = { 
+				has_ruler_flag = roman_diarchy_adm_2
+				adm = 6
+			}
+			random_list = {
+				50 = { add_adm_power = 20 }
+				25 = { change_mil = 1 }
+				25 = { change_dip = 1 }
+			}
+		}		
+		#dip
+		if = {
+			limit = { 
+				has_ruler_flag = roman_diarchy_dip_2
+				NOT = { dip = 6 }
+			}
+			random_list = {
+				25 = { change_dip = 1 }
+				75 = { add_dip_power = 10 }
+			}
+		}
+		if = {
+			limit = { 
+				has_ruler_flag = roman_diarchy_dip_2
+				dip = 6
+			}
+			random_list = {
+				50 = { add_dip_power = 20 }
+				25 = { change_mil = 1 }
+				25 = { change_adm = 1 }
+			}
+		}		
+		#mil
+		if = {
+			limit = { 
+				has_ruler_flag = roman_diarchy_mil_2
+				NOT = { mil = 6 }
+			}
+			random_list = {
+				25 = { change_mil = 1 }
+				75 = { add_mil_power = 10 }
+			}
+		}
+		if = {
+			limit = { 
+				has_ruler_flag = roman_diarchy_mil_2
+				mil = 6
+			}
+			random_list = {
+				50 = { add_mil_power = 20 }
+				25 = { change_adm = 1 }
+				25 = { change_dip = 1 }
+			}
+		}
+
+		add_karma = -5
+	}
+	option = {
+		name = "EVTOPTB700"	# An administrator type
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			mil = 1
+			adm = 3
+			dip = 1					
+			fixed = yes
+		}
+		set_ruler_flag = roman_diarchy_adm_1
+		country_event = { id = mnsgovernment.2 }
+	}
+	option = {
+		name = "EVTOPTC700"	# A diplomat
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			mil = 1
+			adm = 1
+			dip = 3					
+			fixed = yes
+		}
+		set_ruler_flag = roman_diarchy_dip_1
+		country_event = { id = mnsgovernment.2 }	
+	}
+	option = {
+		name = "EVTOPTD700"	# A military man
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			mil = 3
+			adm = 1
+			dip = 1					
+			fixed = yes
+		}
+		set_ruler_flag = roman_diarchy_mil_1
+		country_event = { id = mnsgovernment.2 }
+	}
+}
+
+country_event = {
+	id = mnsgovernment.2
+	title = "EVTNAME700"
+	desc = "EVTDESC701"
+	picture = ELECTION_REPUBLICAN_eventPicture
+		
+	is_triggered_only = yes
+	
+	trigger = {
+		has_reform = roman_diarchy_reform
+	}
+	
+	option = {
+		name = "EVTOPTB700"	# An administrator type
+		ai_chance = { factor = 20 }
+		change_adm = 1
+		set_ruler_flag = roman_diarchy_adm_2
+	}
+	option = {
+		name = "EVTOPTC700"	# A diplomat
+		ai_chance = { factor = 20 }
+		change_dip = 1
+		set_ruler_flag = roman_diarchy_dip_2
+	}
+	option = {
+		name = "EVTOPTD700"	# A military man
+		ai_chance = { factor = 20 }
+		change_mil = 1
+		set_ruler_flag = roman_diarchy_mil_2
+	}
+}
+
+# New Election
+country_event = {
+	id = mnsgovernment.3
+	title = "EVTNAME700"
+	desc = "EVTDESC701"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_reform = roman_diarchy_reform
+	}
+	
+	option = {
+		name = "EVTOPTB700"	# An administrator type
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			mil = 1
+			adm = 3
+			dip = 1					
+			fixed = yes
+		}
+		set_ruler_flag = roman_diarchy_adm_1
+		country_event = { id = mnsgovernment.2 }
+	}
+	option = {
+		name = "EVTOPTC700"	# A diplomat
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			mil = 1
+			adm = 3
+			dip = 1					
+			fixed = yes
+		}
+		set_ruler_flag = roman_diarchy_dip_1
+		country_event = { id = mnsgovernment.2 }
+	}
+	option = {
+		name = "EVTOPTD700"	# A military man
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			mil = 1
+			adm = 3
+			dip = 1					
+			fixed = yes
+		}
+		set_ruler_flag = roman_diarchy_mil_1
+		country_event = { id = mnsgovernment.2 }
+	}
+}
+
+# country_event = {
+	# id = mnsgovernment.11
+	# title = mnsgovernment.11.t
+	# desc = mnsgovernment.11.d
+	# picture = COURT_eventPicture
+	
+	# fire_only_once = yes
+	
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = mnsgovernment.11.a
+		# hidden_effect = {
+			# if = {
+				# limit = {
+					# has_ruler = "(Interregnum)"
+				# }
+				# kill_ruler = yes
+			# }
+		# }
+	# }
+# }
+

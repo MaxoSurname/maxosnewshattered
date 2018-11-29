@@ -1,0 +1,95 @@
+country_decisions = {
+	
+	##############
+	#Low Frankish#
+	##############
+	low_frankish_picard = {
+		major = yes
+		potential = {
+			culture_group = low_frankish
+			any_owned_province = { culture = picard }
+			#has_country_flag = formed_tier_1
+		}
+		provinces_to_highlight = {
+			culture = { picard }
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			# custom_trigger_tooltip = {
+				# tooltip = low_frankish_picard_tt
+				every_country = {
+					limit = {
+						num_of_owned_provinces_with = { 
+							value = 1
+							culture = { picard }
+							is_overseas = no
+						}
+					}
+					tag = ROOT
+				}
+			# }												
+		}
+		effect = {
+			custom_tooltip = low_frankish_picard_tt2
+			hidden_effect = {
+				every_province = { 
+					limit = { culture = picard }
+					change_culture = low_frankish_picard
+				}
+				every_country = {
+					limit = { primary_culture = picard }
+					change_primary_culture = low_frankish_picard
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	#	Template
+	
+	# GROUP_CULTURE = {
+		# major = yes
+		# potential = {
+			# culture_group = GROUP
+			# any_owned_province = { culture = CULTURE }
+			# has_country_flag = formed_tier_1
+		# }
+		# provinces_to_highlight = {
+			# every_province = {
+				# limit = {
+					# culture = CULTURE
+					# NOT = { owned_by = ROOT }
+				# }
+			# }
+		# }
+		# allow = {
+			# custom_trigger_tooltip = {
+				# tooltip = GROUP_CULTURE_tt
+				# every_province = {
+					# limit = { culture = CULTURE }
+					# owned_by = ROOT
+					# is_core = ROOT
+				# }
+			# }
+		# }
+		# effect = {
+			# custom_tooltip = GROUP_CULTURE_tt2
+			# hidden_effect = {
+				# every_province = { 
+					# limit = { culture = CULTURE }
+					# change_culture = GROUP_CULTURE
+				# }
+				# every_country = {
+					# limit = { primary_culture = CULTURE }
+					# change_primary_culture = GROUP_CULTURE
+				# }
+			# }
+		# }
+	# }	
+	
+}

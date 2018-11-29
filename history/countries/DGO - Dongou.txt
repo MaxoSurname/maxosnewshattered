@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = ou
+capital = 5414
+
+1444.11.11 = {
+	monarch = {
+		name = "Zou IV"
+		dynasty = "Dongyue"		
+		birth_date = 1424.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}

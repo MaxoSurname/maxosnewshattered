@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = jianghuai
+add_accepted_culture = xuanzhou
+capital = 686
+
+1444.11.11 = {
+	monarch = {
+		name = "Wenkui"
+		dynasty = "Chang"		
+		birth_date = 1421.1.1
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}

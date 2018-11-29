@@ -1,0 +1,133 @@
+country_decisions = {
+
+	mns_info = {
+		potential = { ai = no }
+		allow = {
+			custom_trigger_tooltip = {
+					tooltip = info_allow
+					ai = no
+			}
+		}
+		effect = {
+			country_event = { id = mns_info.1 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	
+	mns_goods_show = {
+		potential = {
+			ai = no
+			NOT = { has_country_flag = shown_goods_decisions }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+					tooltip = info_allow
+					ai = no
+			}
+		}
+		effect = {
+			set_country_flag = shown_goods_decisions
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	mns_goods_hide = {
+		potential = { has_country_flag = shown_goods_decisions }
+		allow = {
+			custom_trigger_tooltip = {
+					tooltip = info_allow
+					ai = no
+			}
+		}
+		effect = {
+			clr_country_flag = shown_goods_decisions
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	mns_goods_leather = {
+		potential = { has_country_flag = shown_goods_decisions }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 105 #pärma
+				province_id = 108 #verona
+ 				province_id = 141 #belgrad
+ 				province_id = 153 #pest
+ 				province_id = 1763 #dolna luzyca
+ 				province_id = 203 #liyon
+ 				province_id = 224 #sevilla
+ 				province_id = 248 #lothian
+ 				province_id = 259 #sandomierz
+ 				province_id = 274 #pskov
+ 				province_id = 28 #uusimaa
+ 				province_id = 280 #kyyiv
+ 				province_id = 283 #zaporozhia
+ 				province_id = 2983 #salerno
+ 				province_id = 303 #saratov / ükäk
+ 				province_id = 3055 #basel
+ 				province_id = 3065 #lille (tournai/doornik)
+ 				province_id = 3215 #göttingen
+ 				province_id = 324 #karaman
+ 				province_id = 336 #tala islam
+ 				province_id = 4381 #overijssel
+ 				province_id = 4389 #touraine
+ 				province_id = 44 #hamburg
+ 				province_id = 555 #juanpur
+  				province_id = 2308 #cizre?
+			}
+		}
+		allow = {
+			
+		}
+		effect = {
+			
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	mns_goods_guns = {
+		potential = { has_country_flag = shown_goods_decisions }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 103 #torino#
+				province_id = 1082 #qazan
+ 				province_id = 124 #messina#
+ 				province_id = 146 #athens
+ 				province_id = 1759 #potsdam#
+ 				province_id = 192 #dyjon
+ 				province_id = 2054 #gujarat#
+ 				province_id = 214 #zaragoza
+ 				province_id = 2151 #poyang
+ 				province_id = 2380 #phnom penh
+ 				province_id = 2673 #pasai
+ 				province_id = 2745 #gyeongju
+ 				province_id = 293 #smolensk#
+ 				province_id = 294 #tver#
+ 				province_id = 3142 #uopawa silesia#
+ 				province_id = 317 #bursa#
+ 				province_id = 3227 #pilten kurland#
+ 				province_id = 377 #aleppo#
+ 				province_id = 4165 #göinge scania#
+ 				province_id = 429 #isfahan#
+ 				province_id = 4385 #maunche normandie#
+				province_id = 458 #kokand#
+				province_id = 522 #delhi#
+				province_id = 548 #west berar#
+				province_id = 585 #taongoo
+				province_id = 735 #seoul
+				province_id = 92 #brussel
+				province_id = 95 #breda#
+			}
+		}
+		allow = {
+			
+		}
+		effect = {
+			
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	
+}

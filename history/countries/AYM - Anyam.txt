@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = zhuang
+add_accepted_culture = chimin
+capital = 666
+
+1444.11.11 = {
+	monarch = {
+		name = "Thadominbya"
+		dynasty = "Hainan"		
+		birth_date = 1421.1.1
+		adm = 2
+		dip = 1
+		mil = 6
+	}
+}

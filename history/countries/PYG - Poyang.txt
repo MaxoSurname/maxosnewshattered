@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = gan
+add_accepted_culture = xuanzhou
+capital = 2151
+
+1444.11.11 = {
+	monarch = {
+		name = "Keqin"
+		dynasty = "Yang"		
+		birth_date = 1401.1.1
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}

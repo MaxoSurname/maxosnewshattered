@@ -1,0 +1,20 @@
+#Viborgs län, incl. Viborg, Villmansstrand, and Kivinäbb.
+#Region - Russia
+#Area - Ingria
+
+owner = FIN
+controller = FIN
+add_core = FIN
+culture = finnish
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Viborg"
+is_city = yes
+fort_15th = yes
+
+discovered_by = eastern
+discovered_by = western

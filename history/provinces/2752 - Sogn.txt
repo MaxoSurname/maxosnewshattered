@@ -1,0 +1,16 @@
+#Romsdal
+
+owner = HDL
+controller = HDL
+add_core = HDL
+culture = norwegian
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+is_city = yes
+capital = "Høyanger"			#Really need a better capital
+discovered_by = western
+discovered_by = eastern

@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = normand
+add_accepted_culture = cosmopolitan_french
+religion = catholic
+capital = 168	# Caen
+
+1440.1.1 = {
+	monarch = {
+		name = "Guillaume"
+		dynasty = "de Normandie"
+		birth_date = 1421.1.1
+		adm = 4
+		dip = 3
+		mil = 5
+		leader = {	name = "Guillaume de Normandie"            	type = general	fire = 4	shock = 3	manuever = 3	siege = 1}
+	}
+}

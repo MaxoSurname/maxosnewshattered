@@ -1,0 +1,2258 @@
+ADD:
+ANJ - Anjou
+NEM - Nemours
+VLS - Valois
+FCT - Franche-Comté
+
+FOIx
+3084
+
+TOUlouse
+2753
+
+NAVarre
+173 nav
+209 nav
+
+ArMaGnac
+3081
+3083
+4112
+
+POItou
+4386
+180 capital
+3077
+4111
+4387
+
+ORLeanais
+4389
+3075
+
+ANJou
+178
+177
+
+NoRMandy
+4385
+1879 ALENCON
+3073
+
+AUVergne
+3088
+3087
+4391
+
+CHamPagne
+4390
+3071
+3070
+185 NEMOURS
+
+FRA
+182 VALOIS
+
+NEV
+185
+
+GUYenne
+3109
+4387
+
+DAU
+3089
+
+AVG
+202
+
+Franche-Comté
+193 capital
+3092
+
+PICarde
+89
+88
+87
+#
+HAInaut
+91
+1866
+3065
+
+LIEge
+1742
+
+LUXembourg
+3066
+94 capital
+
+JYLland
+4149 capital
+15
+1984
+4142
+
+WaLeS
+4366
+3034
+241
+4369
+remove tag WMC (marches)
+
+CoRNwall
+233
+4373
+4130 core WSX
+
+WeSseX
+234 capital
+4374
+
+MeRCia
+4372
+240
+4375
+237
+239 core WSX
+
+SuSseX
+4371 capital
+235
+
+ESseX
+236 london
+238 essex
+
+East ANglia
+3028
+1860
+
+YoRK
+4367
+245
+244
+
+CumBerLand
+247
+
+NOrthumberLand
+246
+4368
+
+LinDSey
+243 capital
+1861
+4376 core middle anglia
+
+middle ANGlia
+237 core WSX
+4370
+
+#Scotland
+
+LOThian
+248 capital
+4361
+
+StrathClYda
+3019 capital
+249
+3008
+4362
+
+AlBanY
+250
+3138
+3139
+
+CEX
+251
+
+Dal RIata
+4363
+
+Lord Of the Isles
+253
+4364 core Dal Riata and Cait
+
+CAIt
+252
+3137
+4110
+
+ORKney
+369
+
+#Ireland formables by area
+
+5 ulster/muns; 4 lein; 3 connacht
+
+rename burgundy to dijon, county rank
+##############################
+Round 2
+##############################
+fix 3087 AUV
+ISLES is gall-ghaeil
+CAI and DAL RIATA are Highlander
+YRK is Northumberland
+CORNWALL is cornish
+3085 to TOU
+move anjou capital (178)
+add geneve, piemont, lausane,
+split espagne
+split naples into 3
+split austria, bohemia, hungary
+split danmark, sweden, norway
+#############################
+form northumbria:
+7 northumbrian provinces (all of em)
+is NOL or NOL not exist
+perm claims on 1861, 243, 4362, 3019, 4361, 248, 250
+###############
+form anglia:
+12 english provinces
+owns london
+perm claims on yorkshire, lancashire, midlands, east anglia, essex, wessex
+###############
+form england:
+is anglia, northumbria, or normandy
+if norman: 12 english provinces, owns london
+if anglia: 20 total provinces, owns 4367 york, 4375 chester, 246 northumberland
+if umbria: 20 total provinces, owns 236 london, 239 gloucester, 234 wessex, 243 lincoln
+
+
+
+form england:
+special for NRM: own london,  8 provinces in britain, embraces english culture
+else:
+english culture
+owns london, 12 provinces in england owned/cored
+eng doesnt exist
+perma claims on all ENGLISH land + normandy
+unlocks english missions for wales, cornwall, scotland, ireland, france
+########
+britain: england+scotland
+angevia: england+france
+celtica: ireland+scotland
+angland: england+ireland
+francia: france+breton+german
+################
+angevin provinces:
+poitevin culture:
+4387
+4111
+4386
+3077
+180
+4389
+194
+3109
+195
+#####################
+#Formable Ideas.....#
+#####################
+Tier 3 bois
+ANGEVIN
+ANGLO-IRELAND
+GREAT BRITAIN
+BOURBON
+IBERIAN EMPIRE
+ITALIAN EMPIRE
+GERMAN EMPIRE
+FRANCIA
+NORTH SEA EMPIRE
+SCANDINAVIA
+WENDLAND
+COMMONWEALTH
+JUGOSLAVIA
+tier 2s
+CELTICA
+FRANCE
+SPAIN
+KINGDOM ITALY
+KINGDOM SICILY
+AUSTRO-BAVARIA
+AUSTRIA-HUNGARY
+IRELAND
+tier 1s
+ANGLIA
+NORTHUMBRIA
+SCOTLAND
+Irish minors
+AUSTRIA
+BAVARIA
+SAXONIA
+FRANCONIA
+SWABIA
+HANNOVER
+POMERANIA
+LOMBARDY
+VENETO
+EMILIA-ROMAGNA
+SARDINIA-PIEMONT
+LIGURIA
+UMBRIA
+NAPLES
+SICILY
+CROATIA
+SERBIA
+BOSNIA
+GREECE
+BULGARIA
+#######
+#INDIA#
+#######
+MUL 506 2079
+pujab 2078 2076 507
+patalia 510
+marwar 514 2067 (keep guj core) 2087 (keep mer core)
+KAT 521 2051; 2052 503
+KLN 2033 531 2032
+GOC 542 2037
+BRR 548 546
+NGP 2098
+GDW 2092 (keep core)
+BIJ 1946 569 532
+NEW TAG 529 517
+MAR 2089 530 2030
+MAB 531
+MYS 2031 538
+MAD 536
+KRK 2027 1947 539 remove madurai core
+Coromandel 540 remove madurai core
+Tanjore 2026 2085
+ODH 523 2094
+RMP 2061
+###########
+building ideas:
+siege workshop: rq. guns steel, on paper, +5% siege ability/+5% art combat
+royal library: rq. leather, on paper, -5% tech cost/-5% core cost
+naval academy: rq. guns rum, on optics, +5% heavy/galley combat/trade steer
+royal stables: rq. steel, on leather, -5% shock taken/-10% cav cost
+military academy: rq. guns steel paper, on uniforms, -5% fire/+5% morale
+##################
+MISSIONS!!!!
+NIBELUNGEN: Treasure Hoard? -> get cannons -> build cannons -> blast walls -> hoard found?! -> inherit nibelungen legacy
+ARAGON: Control the mainland -> subdue Mallorca -> reconquer Sardinia
+1 Naples -> Greece -> Jerusalem ->
+2 Toulouse -> Marseille -> Corsica -> Genoa
+3 Toledo -> Seville -> African Ports -> New World!
+
+Mainland->Sardinia
+Sicily->Naples->Greece->Levant
+Toulouse->Marselha->Genoa<-Corsica
+Navarra->Castile->Andalusia->African Ports
+CASTILE-LEON: Castile-leon -> subdue galicia -> Reconquista!
+1 Aragon -> Navarre -> Toulouse -> Provence
+2 Portugal -> Macaronesia -> Cape -> Indian Ports
+3 Morocco -> Algiers -> Tunisia/Tripoli -> Alexandria
+PORTUGAL: Macaronesia -> Galicia -> Tangiers
+1 Morocco -> West Africa -> Cape -> Zanzibar
+2 Castile -> Andalusia -> Aragon -> Bordeaux
+3 Algiers ports -> Tunisian/Tripolitanian -> Alexandria -> Aden/Hormuz/etc
+######################
+TRADE GOODS IDEAS:
+new latent goods:
+coal (goods produced, from historical coal provs) enlightenment, 1700
+#vanilla provs
+uniforms (morale, from cloth or silk in italy/europe) manufactories, 1650
+#milan 104; 
+steel (discpline, from iron) new_world_i, 1500
+#potsdam 1757; saar 3198
+rum (naval morale, from caribbean) global_trade, 1600
+leather (shock damage taken, from livestock) renaissance, 1450
+#verona 108; munich 65
+paper (core cost, from high dev) printing_press, 1550
+optics (heavy/galley combat) global_trade, 1600
+#venice 112; essex 238; lorient 3068; glasglow 3019; seville 224
+big guns (fire damage given, from historical provs) new_world_i, 1500
+#messina 124; bursa 317; auvergne 199
+
+changed to latent:
+silk (from cloth) renaissance, 1450
+########################
+MISSION IDEAS:
+ARAGON: centralize -> sardinia/sicily -> naples -> greece -> jerusalem -> egypt -> india
+PORTUGAL: centralize -> remove andalusi -> continue the conquest -> new world
+ANDALUSIA: centralize -> advance north -> body portugal -> body aragon -> remove all catholics from iberia -> cross the pyrennes
+ASTURIAS: centralize -> reconquista -> reintegrate portugal -> deal with moors -> deal with aragon
+OCCITANIA: centralize -> catalonia -> guyenne -> arpitania -> vasconia -> piemont -> francia
+PETITE FRANCE: centralize -> burgundy -> normandy -> guyenne -> brittany -> occitania -> lorrains -> flanders
+CELTICA: centralize -> ireland -> england -> scotland -> gaul
+ARLES: centralize -> unite burgundians -> advance into occitains -> italian expansion -> german subjugation
+ARPITANIA: centralize -> french expansion -> italian expansion -> german expansion
+NIBELUNGEN: conquer demense -> conquer burgundy -> arpitans -> arles -> germanic expansion -> greatest city in europe
+
+
+ok new stuff 15aug
+x
+
+x
+
+ideas for: x trieste, x x, x, xx, pannonia, x, polish nations
+
+governments for: fez, anfa, bou regreg, tangiers, riffia, ouarsenes, algiers, afr kingdoms, abbruzi, benevento, capua, salerno, magna garecia, modna, parma, fix pavia, cremona, piemont, aouta, dauphine, toulouse, gascony, poetou, anjou, normandy, 
+
+`NEEDED TAGS:
+Portugal*
+Castile-Leon*
+Andalusia*
+Basque Country x
+ASTURIAS x
+VISIGOTHIA
+IBERIA
+EMPIRE d'BOURBON*
+CORDOBA
+============
+Aquitaine*
+Occitania*
+Bretonnia*
+Neustria*
+Petite France* (remove?)
+Austrasia*
+Arles*
+EMPIRE d'BOURBON
+FRANCE
+FRANCIA*
+GAUL
+===========
+Liguria*
+Stato da Mar/Tera*
+Padano-Veneto
+Savoy-Piedmont
+Tuscany*
+Two Sicilies
+La Marche
+Emilia Romagna*
+KINGDOM OF ITALY
+KINGDOM OF CAPSA
+LOMBARDY (DE)
+GUELFIC LEAGUE (IT)
+KINGDOM OF GOD
+===========
+Seven Provinces**
+Southern Netherlands
+Saarland (sadly)
+Frisia
+Westphalia
+Hanover
+Rheinland (Riruparia?)
+Schwobm
+Franconia
+Bavaria (split tag)
+Saxonia
+Pomerania
+Austria
+Hanseatic League
+UNITED NETHERLANDS
+AUSTRO-BAVARIA
+SOUTH GERMAN FEDERATION
+NORTH GERMAN FEDERATION
+LOTHARINGIA
+WENDIA
+GREAT MORAVIA*
+Bohemia-Moravia
+Sorbia?
+============
+Illyria*
+Carpathia
+Greater Serbia
+Latin Empire
+Bulgaria
+Romania
+Aegean League
+HELLENIC EMPIRE
+JUGOSLAVIJA
+MAGYARIA
+==========
+Anatolia
+Cappadocia(?)
+SELJUKS
+=============
+Denmark
+Scotland
+England
+Northumbria
+Celtic Union
+Ireland
+KALMAR UNION
+NORTH SEA EMPIRE
+SWEDISH EMPIRE
+NORWEIGAN EMPIRE
+DENMARK-NORWAY
+=========
+United Baltic Duchies
+The Margrave
+Old Prussia (Romuva?)
+Kingdom of Ice
+===========
+Barbary Sultanate +tag EMS
+Republic of the Gates
+Carthage? Rebuild old city -> Religious discovery allowing province to pop and religion enabled -> decision to convert
+free culture conversion via event on maghrebi and sicilienne
+============
+The Pentarchy
+Kingdom of Heaven
+Egyptian Empire
+============
+NIBELUNGEN
+THE SCOURGE
+=-=-=-=-=-=-=-=-=-=-=-=
+SOME EVENT REFERENCING SARDINIA BEING SO FAR AWAY
+=-=-=-=-=-=-=-=-=-=
+cultures:
+BRITISH
+english ENGLAND
+northumbrian NORTHUMBRIA
+scottish SCOTLAND
+old english IRELAND?
+
+FRENCH
+occitan OCCITANIA/ARLES (owns 201?)
+arpitan ARPITANIA/ARLES
+gascon ARQUITAINE
+poitevin AQUITAINE/NEUSTRIA
+francien NEUSTRIA
+walloon AUSTRASIA/BELGIUM
+norman NEUSTRIA/ENGLAND
+burgundy ARLES/UPPER LORRAINE (owns 289)/AUSTRASIA/NIBELUNGEN
+sicilienne KINGDOM OF CAPUA / SICILY
+croisé KINGDOM OF HEAVEN
+
+ATH->greek
+TLY/THS/KNI->normanlevant + accepted greek
+
+BRYTHONIC (CELTIC)
+breton BRETONNIA/BRYTONNIA
+welsh BRYTONNIA
+cornish BRYTONNIA
+
+GAELIC
+irish EIRE
+highlander ALBA
+gall-ghaeil ALBA?
+
+IBERIAN
+portuguese PORTUGAL
+galicia PORTUGAL
+leonese CASTILE-LEON
+castilian CASTILE-LEON
+aragonese ARAGON
+catalan ARAGON/OCCITANIA
+andalusian (by event?)
+
+ARABIC (ANDALUSI/MAGHREBI/EGYPTIAN/ET AL)
+andalusi CORDOBA CALIPHATE
+moroccan ZAYIIDI?
+maghrebi
+fezzan
+masri/egyptian
+levantine
+syriac
+hejazi
+bedouin
+
+BERBER (NATIVE NA)
+
+LATIN
+romansch SWISS CONFEDERATION
+lombard PADANA
+venetian PADANA/TERAFERMA/ADRIATICA
+piedmontese PADANA/SAVOIA-PIEDMONT
+ligurian LIGURIA
+sardinian MEDITERRÁ (capital scope: sardinia/corsica/sicily/baleares) - can fab claim over
+romagnan EMILIA-ROMAGNA
+tuscan TUSCANY
+umbrian LA MARCHE
+neapolitan SICILY
+siciliian SICILY
+maltese SICILY
+
+GUELPH: LAN ANC AQU BLG CMA MLO PGI
+GHIBELLNIE: ARE MAN MOD PVA PIS URB
+UNKNOWN?: FER VRA PAR MSS LUC SIE VEN GEN
+other: pio san pap trn tst nva pie nic
+culture = pie/lig/lom/ven/tus/umb
+107 -> bressa
+
+GERMANIC
+dutch USP
+flemish SOUTHERN NETHERLANDS
+frisian FRISIA
+westphalian HANNOVER / HANSEATIC LEAGUE
+rhenish RHEINLAND/RIRUPARIA
+swabian SWABIA / ALAMANNIA
+swiss SWISS CONFEDERATOIN / ALAMANNIA
+franconian FRANCONIA / BAVARIA
+bavarian BAVARIA (split into strawing/minga)
+austrian AUSTRIA
+saxon NORDMARK
+pomeranian HANSEATIC LEAGUE / POMORZE w/ slavic accepted
+prussian BALTIC KINGDOM
+
+#change hab; 134 3052 -> OSTMARK
+
+#2967 267 1771 Aussig
+#2956 64 bayern-straubing
+#65 2955 bayern-munchen
+
+WEST SLAVIC
+czech GREAT MORAVIA
+slovak GREAT MORAVIA
+sorbian GREAT MORAVIA / POLABIA
+silesian GREAT MORAVIA
+polish POLAND
+
+SOUTH SLAVIC
+slovene SLOVENIA (from carinthia)
+croatian CROATIA
+bosnian BOSNIA (st something?)
+serbian GREATER SERBIA
+bulgarian BULGARIA
+
+NORDIC
+gotlander SWEDEN (change GOT primary culture)
+danish DENMARK
+swedish SWEDEN
+norweigan NORWAY?
+icelandic KINGDOM OF ICELAND
+
+FINNISH
+sami/finnish/karelia 
+
+BALTIC
+
+CARPATHIAN
+hungarian CARPATHIA/KINGDOM OF HUNGARY
+
+DACIAN
+romanian ROMANIA
+add aromanian 1853
+
+HELLENIC
+griko GRECIA
+greek AEGEAN LEAGUE / ÀNAOTLIA
+cappadocian ANATOLIA
+pontic ANATOLIA
+gothic GOTHIA
+cypriot ANATOLIA/KINGDOM OF HEAVEN
+
+OGHUZ (TURKISH)
+
+CAUCASIAN (ARMENIAN)
+
+ALBANIAN
+illyria
+
+EAST SLAVIC
+
+TATAR
+
+BASQUE
+basque country
+#########
+#######
+#
+
+NEED HISTORY FILES:
+sus
+tafilalt
+masmuda
+anfa
+bou regreg
+fez
+rif (interregnum)
+tangiers (interregnum)
+ouarsenis
+aures
+laghout
+ouargla
+zab
+tripoli
+ghadames
+banu sulyam
+cyrenaica (int)
+farafra (int)
+saidi (int)
+khemi
+aten (change color too)
+damascus
+antioch (int)
+tripoli (int)
+lebanon
+assassins
+cilicia
+cappadocia
+eretna
+creta
+tekke
+bafra
+armenia
+bohtan
+iraq
+maragheh
+astrakhan
+zaporozhie
+kiev
+galicia-volhynia
+nitra
+moravia
+mazury
+pomorze
+wielkopolska
+lieczyka sieradzka
+turov pinsk (int)
+memel (int)
+#scania ideas?
+sapmi
+jamtland
+finland
+karelia
+arkhangelsk
+york
+wales
+cornwall
+sussex
+essex/london
+middle anglia
+east anglia
+cumberland
+northumberland
+strathclyde
+ce
+cait
+dal riata
+orkney/shetlands/faroes
+iceland?
+bayernnumchen/straubing
+lusatia
+#fix franche comte name
+valois
+valencia
+mallorca
+barcelona
+murcia
+sevilla
+cordoba
+jaen
+huelva
+badajoz
+lisbon
+lusitania
+galicia
+asturias
+leon
+toledo
+#fix preSPA ideas
+danzig
+HAN
+LU
+all chinese states xddd
+
+#Straubing-Holland formable
+FLAGS: #DO MP GAME @ 2 MST, 1 PST, 4 EST, 10 CEST
+BVM
+BVS
+ASG
+
+IDEAS:
+assassins unique??
+isfahan/yazd/kerman/ferghana RULERS/IDEAS
+
+goods:
+leather #
+ 105 #pärma
+ 108 #verona
+ 141 #belgrad
+ 153 #pest
+ 1763 #dolna luzyca
+ 203 #liyon
+ 224 #sevilla
+ 248 #lothian
+ 259 #sandomierz
+ 274 #pskov
+ 28 #uusimaa
+ 280 #kyyiv
+ 283 #zaporozhia
+ 2983 #salerno
+ 303 #saratov / ükäk
+ 3055 #basel
+ 3065 #lille (tournai/doornik)
+ 3215 #göttingen
+ 324 #karaman
+ 336 #tala islam
+ 4381 #overijssel
+ 4389 #touraine
+ 44 #hamburg
+ 555 #juanpur
+ 
+ 2308 #cizre?
+#############
+guns #
+ 103 #torino#
+ 1082 #qazan
+ 124 #messina#
+ 146 #athens
+ 1759 #potsdam#
+ 192 #dyjon
+ 2054 #gujarat#
+ 214 #zaragoza
+ 2151 #poyang
+ 2380 #phnom penh
+ 2673 #pasai
+ 2745 #gyeongju
+ 293 #smolensk#
+ 294 #tver#
+ 3142 #uopawa silesia#
+ 317 #bursa#
+ 3227 #pilten kurland#
+ 377 #aleppo#
+ 4165 #göinge scania#
+ 429 #isfahan#
+ 4385 #maunche normandie#
+ 458 #kokand#
+ 522 #delhi#
+ 548 #west berar#
+ 585 #taongoo
+ 735 #seoul
+ 92 #brussel
+ 95 #breda#
+###############
+paper
+ 107 #bressa
+ 118 #rom
+ 134 #wein
+ 138 #montenegro
+ 14 #fyen
+ 148 #thessalonica
+ 180 #poiters
+ 1868 #augschburg#
+ 1939 #leczyca
+ 216 #salamanca
+ 2218 #shiraz
+ 237 #oxford
+ 295 #moscow
+ 2961 #lvov
+ 326 #ahiler
+ 343 #fez
+ 361 #cairo
+ 373 #dublin
+ 378 #tripoli
+ 38 #riga
+ 385 #mecca
+ 410 #baghdad
+ 4370 #cambridge
+ 446 #herat
+ 517 #surat
+ 524 #central doab#
+ 539 #tondainadu
+ 563 #gauda#
+ 75 #elsaß
+ 78 #mainz
+ 97 #amsterdam
+###############
+steel
+ 219 #toledo
+ 209 #biscay#
+ 213 #barcelona
+ 191 #nevers
+ 240 #shrewsbury mercia
+ 4368 #durham
+ 1866 #namur
+ 84 #berg
+ 104 #lumbardia
+ 64 #landshut passau
+ 3050 #stajerska slovenia
+ 61 #sachsen
+ 2424 #premissl
+ 3001 #skopje
+ 275 #polotsk
+ 3123 #uppland
+ 4 #västmanland
+ 5647 #äänislinna (?)
+ 291 #kharkov
+ 419 #yerevan
+ 382 #damascus
+ 352 #capsa
+ 1148 #gobir WA
+ 1170 #mpemba CA
+ 5356 #port elizabeth SA
+ 5371 #durban SA
+ 4061 #buzinza EA
+ 1224 #gonder abyssinia
+ 2797 #shendi nubia
+ 408 #basra
+ 533 #mysore
+ 2100 #vanni ceylon
+ 2084 #konaseema
+ 568 #chittagona
+ 1022 #da nang vietnam
+ 629 #demak
+ 631 #bali
+ 685 #yangzhou
+ 687 #nanyang (gems; change?)
+ 2107 #ningguta manchuria
+ 4189 #sagami
+ 1021 #settsu / osaka
+ 
+###############
+rum
+optics
+uniforms
+coal
+
+
+###FOR FRIDAY TEST:::::
+GOOD: england, 
+NEED: fix Scandinavia, Baltic Kingdom, ALL german, fix TUS, fix EMR?, Carpathia,Romania (REALLY), Prussia, Poland, Baltic Kingdom, BTA localization + conversion to frenchbreton, fix Ruthenia, fix polish minor ideas, fix russian formation, `KOJ formable, `change RUM to harder, ASG->SAX/Nordmark
+
+Västergötland 4163(7) 7(4) 5(3) 4164(3) 26(6) (23)
+Östergötland 2(5) 3(4) 4166(3) 3120(7) 3121(3) (22)
+CORES ON ALL EACHOTHER(!)
+SVL 31; SCN 29
+
+Prussian Confederation 1841 42 2958 1859
+
+POL
+polish
+schlesian
+poland_region
+16 #/25
+100
+#nerf urbino
+#nerf koln
+#nerf brunswick
+#nerf ulm?
+#buff savoy slightly
+#nerf karelia
+#remove trade leagues (or change ai rfactors) DONE
+#nerf milan xd
+#TEST BMV ? weird DONE
+#fix new provs positions (diplo bug) DONE
+#noble rep -> olig rep DONE
+#fix icon for age bonus
+
+
+
+
+ADM
+inno:	gen cost (LAST!)
+rel:	5morale; manpower holy
+econ:	NO mil! maintenence tho so..
+admin:	avail merc; movespeed
+expan:	manpower, fl?
+human:	at
+
+DIP
+influ	ae
+diplo	ws cost/stab
+explo	land man
+aggro	fl/siege?
+prop	5morale?
+spy		privateer/siege 5
+patron	gen cost
+trade	
+
+split majapahit in 2; sulu more land in borneo?
+sumatra, borneo, malay, java
+srivijaya (thalassocracy in indonesia) 622 (somethin good)	naval/trade
+suvarnabhumi (golden land) 596 (gold)	econ		no borneo
+funan 2380 (has guns?)	mil
+
+indianization:
+chenla (khmer)
+langkasuka (ligor/north malay) - mon, malayan, central thai
+
+chenla - khmer, laotian... northern thai?
+OR
+khmer empire / kambuja (?) - chenla starting tag, khmer formable?
+
+pagan kingdom / thaton (ava/pegu) - burmese, arakanese, karen, chin, shan, mon (difgroup)
+nanchao - bai, li, kachin, shan
+sukothai kingdom? central thai, northern thai
+
+
+sunda 2687 624 625				27dev	SUN	BAN#
+bali 631(done) 627				22dev	BLI	BLI#
+
+sanjaya 628 2692 629			29dev	SJA	SJA	DMK? BLM?
+sailendra 630 #624 2688 2689	27dev	SDA	SUN
+mataram 626 #2687/625 2690 2691	25dev	MTR MTR
+
+630 BAN
+627 BLM
+2689 MTR
+625 SUN
+2692 DMK
+2687 SUN
+2691 BLM
+
+formables: majapahit (united java)
+Srivijaya (thalassocracy); Suvarnabhumi (economy); Malayasian Empire (mil?)
+
+
+ATJ = Aceh 617, 2685, 619#
+LFA = Lanfang Republic 640, 2705
+BNJ = Banjar 639, 2171, 	#####
+
+CHK = Champassak 608, 1823, 2383
+BDA = Baroda 516, 517, 
+545 BRR
+AHM 544 2034 529
+MPH 611
+VIE = Vientiane 614, 2385, 2386
+JAJ 2089
+PLB 622 621 623
+MRI 518 (from MER)
+2093 MER
+SUL 2703 2709 655
+
+LNA 2401
+VIE 1817
+Luzhenla 2383 612 2384 2386		#LZH
+Shuizhenla 605 2375 2378 1823 	#SZH
+TOK 2372
+
+idea revamp take 2 - 
+starting mil:
+professionalism; mercenary army; conscription; 
+
+tenative idea changes, thoughts on these bonuses? imagine them on their own without taking policies into account (only listing direct mil benefits)
+
+General Staff (renamed Aristo, available to all)
+- 1 leader fire; 1 leader maneuver; 1 leader shock; -20% general cost; 0.5 yearly AT
+
+Professionalism (renamed Plutocracy, available to all)
+- 1 yearly professionalism; 0.5 yearly AT; -50% reserves damage; 5 discipline; -20% general cost
+
+Offensive
+- 10% shock damage; 1 leader fire; 20% siege ability; 20% force limit; 5 discipline
+
+Defensive
+- 0.5 yearly AT; 10% morale; 1 leader maneuver; -5% fire damage received; misc attrition/defensiveness bonuses
+
+Military Production (renamed Quality)
+- 10% inf ca; 0.5 yearly AT; 10% cav ca; 10% art backrow damage; misc naval buffs (also has 10% goods prod in-place of former discipline)
+
+Quantity
+- 40% manpower; 20% manpower recovery; 20% available mercs; 40% land force limit
+
+considering adding a Tactics ideaset focused on utility bonuses
+
+im real bad at balancing so feel free to assist
+also purple this doesnt mean im not integrating your mod, this is just something i wanted to try in the meantime
+
+	
+UNIT REBALANCING:
+tec	fir	sho	mor	tot
+1	0			1
+5	0			3
+9	0			5
+12	3			10
+15	4	3	5	12
+19				15
+23				16
+26				20
+28				21
+30				22
+
+1				3
+10				8
+14				10
+18				15
+23				18
+26				19
+28				21
+
+LIG->Tyrenhenian Repb.
+
+IDEA REVAMP:::::
+ADM				DIP				MIL
+econ			influ			quant
+				diplo			qual
+admin			explo			offen
+expan			colony			defen
+human			propaga			staff
+				spy				tactic
+				patronage		production
+natl/assm						conscrip vs merc vs professional
+innovative		trade			aristo vs pluto
+religious						naval... sure
+imperial
+==========
+MIL
+vanil:
+quantity		50manpower, 20manrecover, 25availmerc, 50fl, costs down
+quality			10inf, 10cav, 10art, 5disc, 1at, navalstuff
+defensive		1at, 15morale, 1leaderman, general defensiveness
+offensive		1leadershock, 1leaderfire, 20siege, 20fl, 5disc
+aristocratic	cav combat 10, 33 manpower, 20 avai mercs
+plutocratic		10availmerc, 2.5mercdisc, 10morale, 20manrecover, money
+
+change:
+quantity		50manpower, 20manrecover, 25availmerc, 50fl, costs down
+professionalism	5 disc, drill speed, reserves_organisation = 0.1, general_cost, yearly_army_professionalism
+defensive		1at, 15morale, 1leaderman, general defensiveness
+offensive		20 fl, 20 siege, move speed, disc, shock damage
+general staff	leader shock, fire, manoever, recruit cost (HUGE)
+mercenary		5 merc disc, 33 availmerc, merc costs, land fl
+tactics			move speed, land maoever, fire damage received, siege ability
+production/qual	goods produced, costs of troops, 10 morale?, war taxes?
+
+
+
+
+
+TEU capital -> 41
+
+NORWAY:
+Vestfold 17 4143 16 3117
+Lade 21 20 3118 3119 22?
+Hordaland 23 24 4145 4144 2752
+SWE -> Svealand
+JMT 3124
+
+#GLC 3278(c) 1083
+#NZH 1754
+4254 remove core
+#RYA 1778
+#rso 1956 4253 307
+VLD->formable
+
+
+OK - BIG BOIS
+
+
+
+`HRE 108 1774 111 3041
+`
+Jugo... Illyria/Serbian Empire/Bulgaria?
+Into Jugo, harsher requirements?
+Latin Kingdom -> Latin Empire
+
+BLANK FORMABLE
+#add_accepted_culture = 
+
+	##############
+	##
+	##############
+	
+	TAG_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = TAG }
+			OR = {
+				primary_culture = 
+				primary_culture = 
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = TAG }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 
+			calc_true_if = {
+				all_owned_province = {
+					is_core = ROOT
+					OR = {
+						province_id = 
+					}
+				}
+				amount = 
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = TAG
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_capital = 
+			add_accepted_culture = 
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						area = 
+					}
+					NOT = { province_id =  }
+				}
+				add_permanent_claim = TAG
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+
+MILITARY
+	Military Administration
+		General Staff
+		War Production
+		Army Professionalism
+	National Academy
+		Offensive
+		Defensive
+		Tactics
+	National Army
+		National Navy
+		Conscription
+		Army Professionalism
+
+ECONOMY
+	Expansion of the Court
+		Religious
+		Patronage
+	Centralization
+		Expansion
+		Administrative
+	National Treasury
+		Economic
+		Trade
+	
+DIPLOMATIC
+	Overseas Exploration
+		Colonial Empire
+		Imperial Fleet
+	Interal Affairs
+		Espionage
+		Assimilation
+	External Affairs
+		Influence
+		Diplomatic
+		
+		
+GNG 1947 540 4417
+MAD 536 4412
+TNJ 2026 4415 4416 2085
+KRK 2027 4420 1949 539
+KLT 2029
+KLN 2032 531 4427 2033
+VIJ 4426
+MYS 538 4414
+TLG 4418 2083 2090 4419
+GOC 542 2037 4436 4439
+BRR 548 546 4442 4443
+BIJ 569 4435 1946 4431 2033 2030 4429 530
+CHD 4444
+AHM 545 4437 544 4432 4433 2034 2089 529
+MAW 4506 514 2067 2087
+IDR 2053
+BDA 516
+BGA 4430 517
+GDW 4458 2092
+HAD 4465
+PTA 4411 510 2075
+JAN 2065 4463
+PUN 2078 4511 2076 4509
+SRH 507 4513 4510
+TRT 4489 4487 4472
+DNG 2055
+JML 2094
+DTI 4492
+KMN 2061
+RMP 4498 4499 524 2063
+ODH 4497 4495 523
+NGP 4469 558 
+KMT 2045 4486
+TPR 4473 4474
+KAC 567
+MBL 2081 2096 4476 4477 561
+PRD 4441
+JPR 2080 549
+AVA 2399	#sst?
+TAU 4395
+BPR 4394
+KAL 4393
+LPH 2403
+YZD 433
+KRM 4365	#fukc
+ORM 431
+SIS 2224
+KHO 2221
+AFG 2225
+JSL 2088
+jivay bija bihar ahmad roh jnp
+
+33 KRL
+43 DNZ
+114 PIS
+202 AVI
+427 YZD
+436 SIS
+441 KHI
+532 TLG
+561 BNG
+1949 VIJ
+
+2028 CHD
+2031 MYS
+2083 KRK
+2046 KAC
+2216 YZD
+2309 BHT
+2350 TRS
+2466 TFL
+2954 AFR
+
+4418 KRK
+4423 TLG
+4424 TLG
+4325 KHO
+4330 KRM
+4435 AHM
+4336 SIS
+4437 BRR
+4465 GWA
+4476 MBL
+5295 HSN
+
+remove regencies
+fix republic events?
+declare war in regency
+fix norse
+garrison size / dip relations / heir chance
+rebel size
+CSL flag
+anatolian ideas
+formable RUM, turkish empire, seljuks; fix anatolia
+fix typus small / large states
+change form requirements . . . maybe take far longer?
+based on govt reform OR time, whichever first
+turkish nations otto govt.
+
+
+
+goa->deccan(remove goa from node)
+2056 goa->indus
+2093 goa->indus
+550 goa->doab
+2036 indus->goa
+2065 kashmir->doab
+509 doab->kashmir
+2098 doab->bengal
+4484 bengal->lhasa
+4478 bengal->burma
+2046 bengal->burma
+2166 chengdu->>burma
+547 4445 2082 4452 bengal -> goa
+2095 4490 doab->bengal
+bordeaux->valencia
+remove
+val 198
+chp 3109 195
+gen 4391 203 3056 1867 3085 201 202
+
+add
+val 3085 201 202
+chp 198 4391 203 3056 1867 
+gen
+bor 3109 195
+
+381 syria->kerak
+5317 constantine->tunisia
+2754 toledo->murcia
+1748 lower_andalusia->murcia
+2988 cataloia->valencia
+208 leon->asturias
+yazidi; hellenistic; celtic; canaanite; 
+
+funan; shangri la 
+
+Marathas formable///
+
+
+1.26 DHARMA UPDATE::::
+New Countries files:
+Annam
+Arakan
+Ava
+Ayutthaya
+Bahamanis
+Bisnupur
+Champa
+Champassak
+DaiViet
+Dali
+Dang
+Doti
+Florence
+gingee
+Gorkha
+Holland
+Hsenwi
+Hsipaw
+Idar
+Jeypore
+Jhalavad
+Jumla
+Junagahr
+Kalahandi
+Kale
+Kalpi
+Kandy
+Kathiawar
+Kathmandu
+Kedah
+Keonhjar
+Khmer
+Kolathunad
+Kumaon
+LanNa
+LanXang
+Ligor
+Limbdi
+Limbuwan
+LuandPrabang
+Majapahit
+Makwanpur
+Malacca
+Malwa
+Mewat
+MongKwand
+MongMao
+MongNai
+MongPai
+MongYang
+Morang
+Navanagar
+Nepal
+Netherlands
+Pagarruyung
+Palembang
+Palitana
+Panna
+Parlakhimidi
+Pasai
+Patna
+Pattani
+Pegu
+Phagmodrupa
+Porbandar
+Prome
+Rajkot
+Rajputana
+Ratanpur
+Sambalpur
+Siak
+Sikkim
+Sirhind
+Sirmur
+Sukhothai
+Sunda
+Surguja
+Tanjore
+Taungu
+Telingana
+Vientiane
+Vijaynagara
+
+united margraviates?
+
+protestant -> cather remove church aspects
+
+
+
+3104 232 beiras->galicia
+227 alentejo->beiras
+2754 toledo->murcia
+2989 castile->navarra
+173 pyrennes->navarar
+3084 toulouse->pyrennes
+3298 castile->leon
+2988 catalonia->valencia
+5317 tunisia->constantine
+
+constantine_area
+tunisia_area
+alentejo_area
+beieras_area
+spanish_galicia_area
+murcia_area
+castille_area
+valencia_area
+catalonia_area
+asturias_area
+toledo_area
+languedoc_area
+pyrenees_area
+leon_area
+basque_area
+
+3298 LON
+2754 CDB
+1748 CDB
+3099 JAE (Extremadura/Merida) #
+1747 JAE
+3100 JAE
+
+new nodes:
+piedmont (from bayern?)
+bavaria (from donau)
+renames:
+ragusa->illyria
+constantinople->greece
+napoli->napule
+lisboa->suebi? cantabria? asturias?
+bordeaux->aquitaine
+saxony->nordmark
+lower danube same
+danube->donau
+
+FLOWS:::::
+venice 112
+112 111 1769 3049 130 1774 108 110 107 109 113 114 7022 2977 119
+
+genoa 115
+102 7021 1992 101 3042 2980 116 115 3040 117 2978 2976 3295 118 3039 5092 1247 127 5091 5090
+
+napule/palermu 121/125
+125 124 3037 2982 2986 121 2983 2984 123 126
+341 1882 5317 2455 5314 5315 2473 5313 2454 2453 5312 352 #in tunis
+
+piemont/lumbardia 103/104
+103 104 3041 106 105 3043 1862 3047 3294 3054 2979 2981 1875 3044 3045 205 204 3046 3056 1867 1871 165 3055 1869 166 1870 3053 1873
+
+bayern/swabia 2957/67 rgn/num
+65 64 2956 76 73 3048 1768 2955 2957 1757 67 3212 66 79 71 3206 1872 70 3204 1868 68 69 3205 72 74 77 3207 3208 
+
+rheinland 85 koln
+1876 83 3209 81 1762 3210 78 1761 3198 80 1760 1878 3197 94 3066 93 1742 2974 3061 3063 3060 2975 85 84 3201 3200 3199 3292 86 56 82 2972 3203 3202
+
+english channel 90 brugge
+167 89 88 87 3064 90 3065 1865 92 1744 95 96 4383 97 98 99    235 4371 234 237 236 4370 238 3028 1860 
+
+burgundy 192 djyon
+203 3088 199 190 1880 75 189 188 3069 187 192 3092 193 4392 1877 191 179 4389 184 3075 4388 183 182 1743 91 1866 3070 181 186 3071 4390 185
+
+anjou 178 or 172nantes 174bordeaux
+178 177 3110 4385 168 1879 3073 4384 172 171 169 170 3068 233 4373 4130 4374 4386 3077 180 4111 4387 174 194 3081 4112 3087 195 3109
+
+barcelona 213 
+5095 5098 333 1750 220 3094 2988 213 212 2987 2990 3095 214 211 7020 197 3084 196 2753 198 200 3085 4391 3089 202 3090 201 2991
+
+cantabria 231porto 1745cantabria
+1851 231 228 232 3104 3103 206 3102 207 1745 208 3101 216 3298 3299 215 1746 2755 2989 209 210 173 3083 175 176
+
+sevilla 224sevilla 227lisbon
+227 3106 3105 4150 3108 229 230 3098 224 1749 225 1748 226 3097 223 222 221 3096 2754 2751 3300 217 219 3100 1747 218 3099
+
+illyria 137ragusa
+137 3184 3182 3192 136 120 3038 2985 1933 1934 122 145 1773 3179 3178 3176 3175 144 142 3181 143 4174 4175 5094 138 1831 139 3002 140 3194 3193 1828 3190 1826 3196 131 152 129 3050 3191
+
+lower danube 141beograd
+1767 4239 4173 3187 141 4176 3000 3185 1827 1766 3183 3001 3167 2750 3169 1764 1765 2746 3166 150 3165 159 3164 3163 3158 268 3156 3157 2998 3160 3161 161 3162 160 158 4127 3152 3154 157 4128 1951 156 1954
+
+donau 134wein 1772pressburg
+134 1770 3052 133 132 1863 128 2968 3296 266 2970 3143 267 2967 1771 265 4237 3297 3052 135 3151 4240 1864 153 4126 155 3148 4125 1953 1772 4236 154 1318 162 3146 1952
+
+nordmark 50berlin 59wittenberg
+50 49 2969 1763 60 254 3218 2963 3219 2966 4238 264 3141 3142 263 51 3216 1759 59 62 61 2965 3213 3211 63 3214 58 52 2964 53 1758 57 3215
+
+constantinople 151constantinople
+151 3170 149 3171 3168 3172 148 1853 147 3174 3177 3003 146 164 3180 163 3195 3173 318 2348 320 316 5168 5157 322 317 4311 5163 5130 5156 2296 5131 2297 318 4308 4309 319 5134
+
+anatolia 326ankara
+2298 323 4307 5150 5137 5167 4313 328 325 2299 4312 5164 5165 5162 1848 5155 326 4314
+
+warsaw 257warsaw
+255 1939 258 3220 262 2960 3221 260 259 2959 257 256 1938 269 3222 2424 1940 3237 2961 261
+3223 1937 270 3232 3233 277 278 279 2962 3238 #remove from kiev
+
+danzig
+2995 48
+271 3226 40 41 3224 767 42 2958 1841 43 7023 1859 5097 2997 3227 39 1935 38 4241 3229 3230 35 3231 36 38 37 1834 3293 273 1842 25 #remove baltic
+272 2936 3225 #remove frrom kiev
+
+lubeck 45lubeck
+45 1857 1775 4141 13 3135 3134 4149 4142 14 12 1983 6 2996 46 47 3217 2994 2993 1858 44 54 1874 2971 55 1931 2973 4382 100 3058 4381
+
+irish sea
+add 3138 252 3137 4364 253
+remove 233 4373 4130
+
+
+north sea
+251 4110 3139 250 248 4361 246 4368 4367 245 1861 243 4376 15 1984 26 4163 7 4164 5 16 4143 17 22 317 4144 4145 24 23 2752 3118 20 20 21 3119 315 369 1978 1979 315 371 370 3114
+
+baltic sea;::	##
+add 3120 4166 4165 1982 1981
+remove 271 3226 40 41 3224 767 42 2958 1841 43 7023 1859 5097 2997 3227 39 1935 38 4241 3229 3230 35 3231 36 38 37 1834 3293 273 1842 25 5
+
+alexandria remove 163 3180	##
+tunis remove 341 1882 5317 2455 5314 5315 2473 5313 2454 2453 5312 352 #in tunis ##
+
+
+
+# remove alex->tunis
+# remove aleppo->constantinople
+# add aleppo->anatolia
+# remove constantinople->ragusa
+# add constantinople->naples
+# remove naples->venice
+# add naples->ragusa
+# add champagne->lumbardy
+# remove champagne->genoa
+# add bavaria->lumbardy
+# add aquitaine->channel
+# add lisbon->aquitaine
+# remove wien->venice
+upper donau->donau->lower donau?
+move baltic sea location to 1
+move ancona to ragusa??? and slovenia in venice?
+
+# remove krakow->danube
+# change krakow->baltic -> krakow->danzig
+# remove saxony->danzig
+# change tripoli->tunis -> tripoli->alexandria
+# pontus->anatolia;
+# anatolia->constantinople and aleppo;
+# aleppo->constantinople
+# remove pontus->constantinople
+# remove safi->aquitaine?????
+# remove ivory coast->safi...
+# add ivory coast->sevilla; aquitaine
+# change caribbean sevilla->lisbon
+# add caribbean->irish sea?
+# chesapeake bay->aquitaine
+# st lawrence->north sea; remove aquitaine
+# north sea->baltic?.....
+# change comorin->aden -> comorin->cape
+# reverse bengal<->doab
+# astrakhan color
+
+add bavaria->venice
+add ragusa->wein
+
+# 3050 ragusa->wein
+# 129 ragusa->venice
+# 3191 ragusa->venice
+# 119 venice->ragusa
+1769 danube->wein	?????
+# 152 ragusa->wein
+# 3041 lumbardia->venice
+# 7043 7044 venice
+change sev color to SEV; change asturias color to CSL
+cahnge tyr color to ADC
+MOVE TUNIS TO TUNIS!
+alexandria->tunis (not naples)
+tunis->barcelona; barcelona->napoli
+# burgundy->barcelona->arpes
+# cut burgundy->arpes 203 3088 (lyon/forez) burgundy-> barcelona
+# 1247 5091 127 5090 genua->barcelona
+# 3039 genua->naples
+# 3109 aquitaine->burgundy
+# 93 3066 64 rhineland->burgundy	??94?
+# bavaria->venice
+# reverse burgundy<->rhineland
+# 119 venice->illyria
+# remove saxony->rhineland
+# remove bayern->saxony
+# remove wendia->saxony?
+# remove kiev->danzig
+remove baltic->lueback>!>?
+# change caribbean->english ->aquitaine
+# remove caribbean->asturias->irish sea
+# remove chesapeake->ec
+# add ivory->irish sea
+# reverse aleppo<->anatolia
+# remove aleppo->constantinople
+DEFINE
+bur->lum
+chp->bar
+bav->ven
+rhi-chp
+crb-brd
+crb-irs
+fix burma
+# 1882 5317 2455 5315 5314 5313 352 5312 2454 2453 2473 341
+rename tunis->barbary coast
+# 1935 illyria->naples
+# 1767 danube->wien
+195 3087 bordeaux->champagne
+
+Nizaria
+ASSASSANID CALIPHATE - ITS TOO GOOD
+
+ok so ~
+Masyaf (west assassins) homs		1849, 4297, 4271
+Alamut (east assassins) qazvin		2215, 4338
+into -> Assassins (shia formable) tier1
+into -> Assassinid Caliphate tier2
+ANKARA TERRAIN
+CRETE TERRAIN
+age bonus religion
+
+
+
+wien->upper danube
+sicily->sicilies? napule?
+barcelona->
+safi->al-gharb
+
+tripoli>barbarby;barbarby>naples
+kingdom of the algarve?
+algarvian empire???? would be neato
+
+royal union?			men quan
+bureaucratic empire?	merc quan
+absolute empire?		mil qual
+
+angevin		ru
+bourbon		ru
+iberia		be
+n. sea		ae
+turkish		be
+lotharin	ru
+francia		ae
+iron kng	be
+britania	ae
+celtic bri	ae
+jugoslav	be
+algarve		ae
+
+
+
+
+ANATOLIA
+remove 4312 2299 325 328 2298 5162
+add 5152 329 4311 5163 5146 2301 5158 5154 332 2300 2305 2303 4310
+
+PONTUS
+remove 5152 329 2300 2305
+add 325 328
+
+ALEPPO
+remove 5146 2301 5158 5154 332 2303 4310
+add 2298 5162
+
+CONSTAN
+remove 4311 5163
+add 4312 2299
+
+cuneo farmlands->hills
+piemont mountains->farmlands
+elections broken????
+belgium->flanders-walloonia
+fix belgium formation - maybe just remove
+dauphine alps->ligurian apennines
+fix transylvanian culture
+
+#government ideas
+#signoria
+#occitain monarchy/republic?
+#germanic march? margrivate?
+#beylik government?
+#crusader haute-court
+
+culture changes:
+# south italian->mezzogirono (sardinian, neapolican, sicilian, maltese)
+languadoc->arpitan, occitain, catalan,gascon? (NEW provencal 201 2991 3090 202 AVI PRO
+arpitan 3089 203 3088
+gascon 3084
+occitain 190 (BOU)
+
+(rename french langueoui)
+1879 normand ALE
+NEW angevin 178 177 3075 4389 3077 179 184 172 ANJ ORL BER BRI add
+burgundian 193 FCT
+NEW lorrains 189 187 3069 188 181 LOR NEV VDN BAR MTZ 
+
+245 northumbrian
+250 highland scots ABY
+
+dutch->dutch flemish frisian walloon
+NEW brabantian
+
+germanic->
+HIGH bavarian austrian swabian swiss franconian hessian NEW badener? east/west saxon?
+LOW prussian westphalian pommeranian saxon NEW riruparian franconian? low saxon? east elbian? eastphalian?
+
+west slavic: add polabian, kashubian? moravian; move silesia back into schlesian
+
+re-add transylvaninan 4128 3154 4127 1951 156 TRA
+moldovian 3158 3157 268 3156 3159 2405 1756 MOL
+HUN accepted
+
+albainan 144 3175 (EPI)
+
+NEW maghreb moroccan maghrebi andalusi fezzan
+move all andalusi back to spanish
+
+NEW mashriqi masri tunjur levantine syriac mashriq
+
+emilian 3042 MSS
+NEW romagnan 7022 114 113 FER RMG SAN
+NEW friulian 111 1769 (remove core) 3049 AQU TST GRZ
+
+207 castillian->leonese (rename leonese asturian)
+change all andalusi back?
+
+tone down culture in levant/italy...
+
+decision to "reign-in" turkish culture for BYZ
+
+westphalian 2973 56 86 82 2975 KLE 3199 ESN 3292 DRT 3201 83 NSA MUN OSN 
+KOL
+3200 KLE
+
+eastphalian 3203 LIP 1758 BRU 57 3215 2972 PDB
+
+east_elbian 50 51 3216 2964 52 1759 59 58 SAX ANH MAG BRA RPN 
+
+flemish 3065 HAI accepted
+brabantian 1744 92 BRB 2974 LIE 1742 3061 95
+lorrain 181 NEV 3069 VDN 188 MTZ 187 BAR 189 LOR
+picard 89 87 88 PIC
+
+ripuarianfranconian 2975 KLE 84 3197 JUL 85 KOL 1878 AAC 1760 80 TRI 94 LUX 3198 SAA
+
+saxon 59 SAX
+
+swiss 3205 KNS
+rhine_alemanisch 72 74 75 1880 ALS BAD
+thuringian 3213 63 3211 THU
+czech 2967 2968
+polabian 49 2969 BRA accept
+kashubian 48 KMM 2995 5097 2997 PMZ
+schlesian 264 4238 2966 SIL
+castillian 3096 2754
+andalucian ALL andalusi
+
+tunisian sunni (1882 ref) 340; KCN capital->2455
+
+#prov fixes
+
+ALL SHY KZH
+ALL PRC/TEU
+ALL VFL LAD HDL
+ALL TIM
+
+26 ->SCN
+42 PRC
+146 BYZ
+173 AMG
+197 CAT
+237 MRC WSX
+288 GOL
+316 BYZ
+440 SHY
+444 KHI
+455 TRS 
+459 KZH
+461 KZH
+503 remove core GUJ
+506 DLH
+522 SRH
+541 KLN
+543 GOC
+551 RTT
+559 BND
+610 DAI
+770 LIT
+1022 CHA
+1879 NRM
+1937 LIT
+1969 TRS
+1970 TRS
+1971 GOL
+1985->VGL
+2038 BNG
+2050 BRR
+2059 DLH JNP
+2060 SRH
+2062 SRH
+2077 DLH
+2086 remove core BAL
+2098 RTT
+2229 remove core AFG
+2358 SHY
+2363 TRS
+2368 KZH
+2409 GOL
+2421 BSH
+3081 GUY
+3121 ->GOT
+3232 TVP
+3247 GOL
+4130 CRN
+4364 CAI DRI
+4376 ANG 
+4387 GUY
+4391 TOU
+4422 MYS
+4425 GOC
+4428 BIJ
+4438 TLG
+4466 PAN
+5130 TUR
+5660 PSK
+
+#DEITIES
+
+gods (how can you kill them?)
+slavic:
+Rodu (God-god - maybe religious devotion?)
+Perun (thor/war)
+Veles (opposite Perun; Earth)
+Zhiva (the lifebringer) fertility
+Svarog (Chronos; smith)
+Ognebog (GOD OF FIRE!)
+
+in order, norse:
+expansion
+abundance
+shock/defensive
+fire/sailor
+trade/good prod
+admin cost
+
+#SLAVIC
+Rodu	#	MissionaryStrength Culture cost
+Veles	#	Defensiveness, Shock Damage Received?
+Perun	#	Shock Damage
+Ognebog	#	Fire Damage 10! Raze cooldown!
+Zhiva	#	Goods prod., manpower recovery
+Svarog	#	Regiment Cost; Inf power? 5
+
+#ROMUVA
+Dievas		#god
+Zemyna		#soil
+Perkunas	#thunder
+Gabija		#Holy Fire
+Laima		#Fate(fert)
+Bangputys	#sea storms
+
+#SUOMENUSKO
+Ukko	#thunder	shock
+Jumi	#important	miss/culture
+Lempo	#archery	discipline
+Ahti	#water		galleymemes
+Äkräs	#fertility	goods prod/manpower
+Tapio	#forest		dev cost
+
+#CELTIC
+Lugh#master of all!
+Cernunnos#antlers? life, animals
+Taranis#Thunder(andtyranny?)
+Epona#horse!
+Manannán#sea
+Ogmios#strong and silver tounged
+
+#CANAANITE
+Elyon	#supreme
+Dagon	#fertility he
+Ba'al	#storm/rain
+Astarte	#sexuality/war
+Tehom	#great deep/abyss he
+Taautus	#writing
+
+
+straits:
+teruel-valencia (remove other); la mancha-jaen? jaen-granada?; castile-segovia; leonNOTgalicia; 
+piemont-savoia;savona :: aousta-savoia;vallis :: vales-bern;waldstatte;nuvaoa :: tesin-waldstate; griscum
+friul-karnten; lienz-salzburg; tiril grischun;
+liguria-parma;pavia :: savona-montfera;cuneo :: lucca-modna :: florence-emegglia :: 
+
+states:
+toulouse/languedoc; louire/anjou; cantabria->castile; castile->extramadura castile; upper guadalquivir jaen
+parmaetc->padan valley w/ bressa; frera->emeliaromagna; lazio/marche
+abruzzi, apulia, calabria, naples; e/w sicily; corse/sardegna->one; n/s serbia; oltenia/muntenia; moldava/basarabia; makedonija thessaly?; e/w slovakia; royal vs north bohemia?; caux->picardie
+
+trade: korea/south japan -> korea strait? malacca - > moluccas; sumatra in moluccas
+
+new countries: fermo(sud ancona); camerino(in marche); rimini(coast)
+
+mideast:
+tier 1 - rumelia; rûm; pontus; asia/anatolia; scythia?; empire of the romans; aegean league; 
+tier 2 - seljuk empire (rûm); turkish empire (rumelia or rûm); ilkhanate
+
+
+prov/area changes:
+# 2968 bohemia->erz
+# 1748 lower andalusia->murcia
+# 167 normandy->picardie
+# 181 chp->walloon
+# 185 chp->ile de france
+# NEW anujou 172 178 177 4386
+# NEW tolosa 197 2753 196 3084
+# 174 guyenne->gascony
+# 198 guyenne->languedoc
+# 2754 murcia->toledo
+# 217; 3300 TOL->CAS
+# 3298 leon->castile
+# 207 cantabria->leon
+# 3102 cantabria->galicia
+# 1746;215;2755 castile->cantabria
+# NEW duoro 227 3105 1851 (from beiras) 3106 (from alentejo)
+# 3104; 232 galicia->beiras
+# 2979 piedmont->lombardia
+# 107;1862 lombardy->emilia
+# NEW verona 109(emilia) 108 7043 (veneto)
+# corsica 115 3040 117 (toscano)
+# 1247 corsica->sardinia
+# 3042 liguria->tuscany
+# NEW marche 3038 120 (naples) 119 2977 (lazio)
+# 238 essex->east anglia
+rename essex->HOME COUNTIES
+# 4130 wessex->cornwall
+# 4363 highlands->southern islands
+# 4166;3120 east gotaland->west gotaland
+# NEW mountainsnorway 3117 22 (ostlandet); 10 20 (trondelag)
+# 38 livonia->curonia
+# haute-savoie 3046 205 (savoy) 3045 (piedmont) 1871 (wallis)
+# basel NW 1869 (swiss) 3055 165 (romandie)
+# arpitania 3056 1867 (romandie) 193 3092 (burgundie)
+# 3058 guelders->frisia
+# NEW koln 1742 (lux) 3197 1878 (low rhein) 85 (nordrhein)		RUHR
+# NEW rhein 83 1876 (hesse) 3201 (nordrhein) 1760 (lowerrrhein)	MAIN
+# lower rheinland 1761 78 (from PAL)
+# 50 nmeumark->mittelmark
+# 4141 holstein0>schleswig
+# 44 lower sax->holstein
+# 164 aegean->crete
+# 3003 attike->crete
+# 159 3165 bulgaria->lower danube
+# NEW WLALACHI2	2998 3160 wallachia 3157 3158 moldova
+# 1756 lkower danube->moldova
+# 4173 afold->slavonia
+# 5094 albania->rascia
+# 3182 east adriatic->albania
+# 3194 bosnia->slavonia
+# NEW budapest 153 4240 1864 (transdanube) 4126 (alfold)
+NEW grodno? 1937
+# 3034 wales->lancashire
+# 4361 east low->nborthubria
+# 4379 munster->connacht
+# 361 low egyopt->suez
+# 4316 delta->suez
+# 2455 tunisia->constantine
+# 2453 gabes->tunisia
+# 2452 tripolitania->gabes
+# 3222 red ruthene->volhynia
+# 3239 volhyn->west dnieper
+# 1944 west dnieper->p[odolia
+# 3242 west dniepr->yedisan
+# 195 massif->guyenne
+# 4387 guyenne->poitou
+# 110 venezia->verona
+# 3294 lombardie->swiss
+# 166 swiss->basel
+# 3194 slavonia->bosnia
+# NEW herzogivinia 139 (bosnia) 1831 138 (rascia) 3184 (east adr)
+# 3185 serbia->rascia
+# NEW bucellarian 326 (galatia) 4312 (bithynia) 5164 2299 (candar)
+# 322 bithynia->phyrgia
+# NEW samos 5131 (mysia) 2297 318 4309 (asia)
+# NEW sebastela 332 5158 (capapdocia) 2303 4298 (aleppo)
+# NEW taron 5330 (mardin) 2306 (upper euphrates) 4296 5331 (vaspurakan)
+# 5163 phrygia->asia
+# 5154 cililia->cappadocia
+# 5295 mardin->al jazira
+# 5293 (al jazira) 405 381 (syria) -> rakka
+# SWITCH 4386 3077
+# romandie->upper burgundy
+# haute-savoie->transjurania
+# dauphine->lower burgundy
+# 185 ile->chp
+# NEW ardenne 3070 (CHP) 181 (wallo) 3069 (lorrain)
+# 3092 romandie->lorrain
+# 3055 bern->romandie
+# NEW alsace/lorrain 1880 75 (upper rhein) 188 (lorrain)
+# 3205 upp swa->upp rhi
+# RENAME upp rhi->BADEN
+# 64 low bav->upp bav
+# 3213 francon->low bav
+# 71 low swa->francon
+# SWITCH 109 107
+# rename verona ADIGE VALLEY
+# 3109 massif->guyenne
+# rename asturias->castile
+# rename castile->madrid
+# 3191 carniola->croatia
+# 1826 croatia->east adr
+
+MAP CHANGES:
+# 139->MON
+# 3184->RAG
+# NEW CULTURE: dalmassitani, italian group
+# pri RAG;DMZ; 130 136 3192 137 3184
+# accepted CROATIAN
+yugoslav decision integrate!
+# 64->BVM
+# 1757->BVS
+new prov wasserburg?
+# 2960 KRA
+
+change religion age bonus
+faorese
+fix core distance
+fix last charge of knights icon
+
+
+take a look at trade centers
+and trade flows..
+rus decision
+
+
+
+NEW CHINESE TAGS::::
+Anqing 686 1838 2479
+Anyam 666 2160 2159
+Ba 4213 4212 2748 675
+Beidi 2181 4955 698 4223 701
+Canton 667 2157 5358 5360
+Daming (republic) 2137 5419
+Dong'ou 5414 (OPM BUT FANCY TAG?)
+Donghai 2142 5402 5392
+Dongtin 1840 1176 5349
+Fenghua 5424
+Fuyan 2179 694 2177 5409
+Fuzhou 669 5407 5380
+Guangdong 665 5384 2484 5801 668
+Guangxi 2161 2162 2164
+Hangzhong 689 5774 2171
+Hangzhou 684 2148
+Hebei 695 696 4195
+Hedong 692 5408 2178 5421
+Hengshan 682 4197
+Huaiyang 5389
+Jiancheng 5364 5368 1833
+Jiangsu 1821 5395
+Jianning 2152 5416 5805
+Jiaolang
+Jizhou 690 2138 691
+Langya 5403 5397 5399
+Longxi 2180 699 2183
+Nan 2172 5428 5793
+Nanhai 2156 4950 5771
+Ningbo 2149
+Poyang 2151 683 (republic?)
+Quzhou 5404 5415 2147
+Quanzhou 1829
+Rename HAN -> Dongjing?
+Rename LU->Bianjing
+Shandong 5391 2139 5427 5398
+Suzhou 1822 5412
+Tingzhou 2153 5362
+Wenzhou 1824 5390 5363
+Wuxi 5388 5394
+Xiang 671 2174 5773
+Xuzhou 5410 5400 4196 5396
+Yangzhou 685 5420 2145
+Yanjing 1816 5423
+Yelang 662 5344 5342
+Zhang 5425 1181 2146
+Zhongjing 5411 704 4194
+Zhuji 5413 2150 5777
+
+flavor priorities::::
+canton
+anyam (pirate?)
+fuzhou
+dong'ou
+Yan
+Ming
+Jin
+Qin
+Chu
+Tang
+Shu
+
+Starting dynasties:
+Ming, Yan, Jin, Qin, Chu, Tang, Shu
+Formable: Wu, Yue, Min, Liao, Liang
+Wu - wu ou
+Yue - cantonese
+Min - chimin hakka
+Liang - zhongyuan jianghuai
+Liao - manchu chahar; change to shandong_culture?
+CLAIM
+Yan - chihan (zhili) shandong_culture
+Jin - jin
+Tang - zhongyuan
+Chu - hubei xiang gan
+Shu - sichuanese
+Qin - xibei
+===========
+LIA Liao
+
+korea take2
+lelang			LEL	1845 2744 733
+dongokjeo	DKJ	2743 2742 4232 732
+baekje			BKJ	735 4231 4230 1013
+mahan			MHN	737 5386 4228 2741
+gaya				GAY	4227	- add or not?
+silla				SLL	2745 736 5795 (4227)
+ye					KYE	2694 734 5351 4229
+
+big bois:
+XIA Xia
+SNG Song
+GDY Golden Dynasty
+JPE Japanese Empire
+GRY Goryeo
+DGE Dragon Empire
+WKO Wokou (pirates!)
+============
+religions?
+dragon worship obv.
+neo confucian
+daoism
+zen
+==========
+idea sets: all formables OBV
+fuzhou, dong'ou, canton, anyam, ningbo?, hangzhou, shandong?
+
+=================
+formables?
+
+Wu
+Yue
+Liang
+Liao
+Min
+
+
+
+FIX nudge sicily
+wasteland names
+ozzy wants stuff
+meme wants me to fix indonesia becauyse hes bnad
+make canaanite not garbage
+carthage also better
+GREAT BRITAIN
+zoroastrianism
+persia has stuff
+italy
+
+Medes (NW Persia) - mithraism religion? worship of mithras; not much info
+PADAN/LOMBARD IDEAS!!!!!!

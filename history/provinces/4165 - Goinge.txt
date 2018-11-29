@@ -1,0 +1,21 @@
+#Eastern Skåne - More or less Kristianstad Län. Includes Göinge, Gladsax Len, Listerlandet, and others.
+
+latent_trade_goods = { guns }
+
+add_core = SCN
+owner = SCN
+controller = SCN
+culture = danish
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Vä"			#Gladsax in vanilla, which appears to have been nothing. but Væ was the largest settlement within 24 Danish parishes in 1612
+is_city = yes
+estate = estate_nobles
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

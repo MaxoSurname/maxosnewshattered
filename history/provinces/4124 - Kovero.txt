@@ -1,0 +1,19 @@
+#3131 - Ladoga Karelia
+#Region - Russia
+#Area - Karelia
+
+owner = KRL
+controller = KRL
+add_core = KRL
+culture = finnish
+religion = orthodox
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Lieksa"
+is_city = yes
+
+discovered_by = western
+discovered_by = eastern

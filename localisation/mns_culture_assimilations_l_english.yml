@@ -1,0 +1,24 @@
+﻿l_english:
+
+ #MARVEL! at how neatly I've organized this
+ 
+ 
+ #
+ low_frankish_picard_title: "Assimilate §YPicard§!"
+ low_frankish_picard_desc: "The §YPicard§! people are similar enough to our own that we may be able to integrate them into §YLow Frankish§!, provided we are able to lord over all of them."
+ low_frankish_picard_tt: "We must own cores on all provinces of §YPicard§! culture."
+ low_frankish_picard_tt2: "§YPicard§! assimilates to §YLow Frankish§!"
+ 
+ #	Template
+ # GROUP_CULTURE_title: "Assimilate §YCULTURE§!"
+ # GROUP_CULTURE_desc: "The §YCULTURE§! people are similar enough to our own that we may be able to integrate them into §YGROUP§!, provided we are able to lord over all of them."
+ # GROUP_CULTURE_tt: "We must own cores on all provinces of §YCULTURE§! culture."
+ # GROUP_CULTURE_tt2: "§YCULTURE§! assimilates to §YGROUP§!"
+ 
+ mnsqf.11.t: "Peoples Assimilated!"
+ mnsqf.11.d: "The process of assimilation in [Root.GetName] is complete!"
+ mnsqf.11.a: "Carthago felix est!"
+ 
+ mnsqf.12.t: "Phoenician Revival"
+ mnsqf.12.d: "We have restored the old Empire in name, but in the millennia of our absence the cultural influence of Phoenicia has receded into near-nothingness. The revival of Phoenician culture will not be an easy one, but it is our destiny to undertake it.\nTechnical Info: If any provinces of the Maghrebi, Berber, Iberian (including Catalan), or Mezzogiorno groups is converted to Canaanite, an event will eventually fire changing their culture to Punic. Likewise for Croisé, Syriac, Masri, and Cypriot cultures into Phoenician; and Levantine, Mashriqi, Bedouin, and Khaleeji into Aramaic. This process can be marginally sped-up by having high stability."
+ mnsqf.12.a: "From the ashes, we will be reborn!"

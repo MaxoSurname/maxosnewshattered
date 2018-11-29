@@ -1,0 +1,345 @@
+namespace = mnsmisc
+
+#By Maxo
+
+#############################
+# on Guelphs and Ghibellines#
+#############################
+country_event = {
+	id = mnsmisc.1
+	title = mnsmisc.1.t
+	desc = mnsmisc.1.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = mnsmisc.1.a
+		hidden_effect = {
+			#Guelf/Ghibelline interactions removed for now
+			# guelphs
+			# 116 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 119 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 107 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 1862 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 1774 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 111 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 3041 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 114 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 7022 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 3295 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 104 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 3044 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 102 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 7021 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 117 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 3042 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 105 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 118 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			# 2992 = { add_permanent_province_modifier = { name = guelph_stronghold duration = -1 desc = guelph_stronghold_tooltip} }
+			#ghibellines
+			# 108 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 103 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 109 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 106 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 3043 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 110 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 115 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 2980 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 2976 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 3047 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 2977 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 101 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 2981 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 2979 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 2978 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 3040 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 113 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			# 1875 = { add_permanent_province_modifier = { name = ghibelline_stronghold duration = -1 desc = ghibelline_stronghold_tooltip} }
+			#Guelf/Ghibelline interactions removed for now
+		}
+	}
+}
+	
+country_event = {
+	id = mnsmisc.2
+	title = mnsmisc.2.t
+	desc = mnsmisc.2.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+		option = { 
+			name = mnsmisc.2.a
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						reverse_has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_guelph_bad_support
+						}
+					}
+					reverse_remove_opinion = {
+						who = ROOT
+						modifier = opinion_guelph_bad_support
+					}
+					#
+					limit = {
+						reverse_has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_guelph_good_support
+						}
+					}
+					reverse_remove_opinion = {
+						who = ROOT
+						modifier = opinion_guelph_good_support
+					}
+					#
+					limit = {
+						reverse_has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_ghibelline_good_support
+						}
+					}
+					reverse_remove_opinion = {
+						who = ROOT
+						modifier = opinion_ghibelline_good_support
+					}
+					#
+					limit = {
+						reverse_has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_ghibelline_bad_support
+						}
+					}
+					reverse_remove_opinion = {
+						who = ROOT
+						modifier = opinion_ghibelline_bad_support
+					}
+				}
+			}
+		}
+	}
+	
+	#Heir Chance
+	
+country_event = {
+	id = mnsmisc.10
+	title = mnsmisc.10.t
+	desc = mnsmisc.10.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mnsmisc.10.a
+		hidden_effect = {
+			every_country  = {
+				limit = {
+					has_ruler = "(Interregnum)"
+				}
+				# country_event = { id = mnsmisc.11 days = 1 }
+				kill_ruler = yes
+			}
+			every_country  = {
+				add_country_modifier = {
+					name = mns_heir_chance
+					duration = 365
+					desc = MNS_HEIR_CHANCE_TOOLTIP
+					hidden = yes
+				}	
+				add_country_modifier = {
+					name = mns_relation_slots
+					duration = 10125
+					desc = MNS_RELATION_SLOTS_TOOLTIP
+					hidden = yes
+				}		
+				add_country_modifier = {
+					name = mns_relation_slots_2
+					duration = 1875
+					desc = MNS_RELATION_SLOTS_TOOLTIP_2
+					hidden = yes
+				}	
+			}
+			every_country = {
+				limit = { government_rank = 2 }
+				set_government_rank = 1
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = MNG
+						tag = QIC
+						tag = TNG
+						tag = CXI
+						tag = QIN
+						tag = JIN
+						tag = YAN
+						tag = LNG
+					}	#starting chinese dynasties
+				}
+				set_government_rank = 2
+				set_country_flag = formed_tier_1
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = mnsmisc.11
+	title = mnsmisc.11.t
+	desc = mnsmisc.11.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JMB
+		normal_or_historical_nations = yes
+		is_year = 1440
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = mnsmisc.11.a
+		custom_tooltip = mnsmisc.11.a.tt
+		add_country_modifier = {
+			name = jomsborg_paganism
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = mnsmisc.12
+	title = mnsmisc.12.t
+	desc = mnsmisc.12.d
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		is_emperor = yes
+		normal_or_historical_nations = yes
+		is_year = 1440
+	}
+	
+	mean_time_to_happen = {
+		months = 0.5
+	}
+	
+	option = {	#dismantle
+		name = mnsmisc.12.a
+		custom_tooltip = mnsmisc.12.a.tt
+		ai_chance = { factor = 100 }
+		dismantle_hre = yes
+	}
+	
+	option = {	#retain
+		name = mnsmisc.12.b
+		custom_tooltip = mnsmisc.12.b.tt
+		ai_chance = { factor = 0 }
+		add_imperial_influence = 10
+	}
+}
+
+country_event = {
+	id = mnsmisc.13
+	title = mnsmisc.13.t
+	desc = mnsmisc.13.d
+	picture = NATIVES_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = mnsmisc.13.a
+		trigger = {
+			NOT = { technology_group = north_american }
+			NOT = { technology_group = south_american }
+		}
+		hidden_effect = {
+			set_global_flag = native_americans_removed
+			every_province = {
+				limit = {
+					is_city = yes
+					owner = { ai = yes }
+					OR = {
+						owner = { technology_group = north_american }
+						owner = { technology_group = south_american }
+					}
+				}
+				empty_province_effect = yes
+			}
+		}
+	}
+	option = {
+		name = mnsmisc.13.b
+		trigger = {
+			NOT = { technology_group = north_american }
+			NOT = { technology_group = south_american }
+			NOT = { technology_group = mesoamerican }
+			NOT = { technology_group = andean }
+		}
+		hidden_effect = {
+			set_global_flag = mesoamericans_removed
+			set_global_flag = native_americans_removed
+			every_province = {
+				limit = {
+					is_city = yes
+					owner = { ai = yes }
+					OR = {
+						owner = { technology_group = north_american }
+						owner = { technology_group = south_american }
+						owner = { technology_group = mesoamerican }
+						owner = { technology_group = andean }
+					}
+				}
+				empty_province_effect = yes
+			}
+		}
+	}
+	option = {
+		name = mnsmisc.13.c
+	}
+}
+
+country_event = {
+
+
+# country_event = {
+	# id = mnsmisc.11
+	# title = mnsmisc.11.t
+	# desc = mnsmisc.11.d
+	# picture = COURT_eventPicture
+	
+	# fire_only_once = yes
+	
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = mnsmisc.11.a
+		# hidden_effect = {
+			# if = {
+				# limit = {
+					# has_ruler = "(Interregnum)"
+				# }
+				# kill_ruler = yes
+			# }
+		# }
+	# }
+# }
+

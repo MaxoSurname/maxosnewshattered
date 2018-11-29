@@ -1,0 +1,19 @@
+#695 - Hebei
+
+owner = HBI
+controller = HBI
+culture = chihan
+religion = confucianism
+capital = "Hejian"
+trade_goods = salt
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = HBI
+
+
+
+discovered_by = chinese
+discovered_by = nomad_group

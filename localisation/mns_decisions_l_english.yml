@@ -1,0 +1,750 @@
+﻿l_english:
+
+ #MARVEL! at how neatly I've organized this
+ 
+ #Belgium
+ BEL_nation_title: "Unite Flanders and Wallonia"
+ BEL_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ BEL_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of the §YSouthern Netherlands§!"
+ BEL_nation_tt2: "§YBelgium§! gains permanent claims on §YSouthern Netherlands§!"
+  
+ #Andalusia
+ ADU_nation_title: "al-'Andalus Restored"
+ ADU_nation_desc: "If we seek to further legitmize our rule, we can draw parallels with the Andalusia of old, proclaiming ourselves successors to the caliphate."
+ ADU_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of §YSouthern Iberia§!"
+ ADU_nation_tt2: "§YAndalusia§! gains permanent claims on §YMoorish Iberia§!"
+ 
+ #Castile-Leon
+ SPA_nation_title: "A Spanish Crown"
+ SPA_nation_desc: "The dissolution of Castile has caused chaos in Iberia. We must restore centralized rule over the former Christian Kingdoms if we wish to protect ourselves from the Moorish invaders."
+ SPA_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of Castile and Leon"
+ SPA_nation_tt2: "§YSpain§! gains permanent claims on all provinces of the §YDuchies of Castile and Leon§! and on §YGalicia§!"
+ 
+ #Portugal
+ POR_nation_title: "Reconquest of Portugal"
+ POR_nation_desc: "The former Kingdom of Portugal is no more. Unable to recover from her defeat in the Castillian Succession war, she was ravaged by Moorish invaders, leaving her rule in ruins. If we want peace in Iberia, we must restore the old kingdom."
+ POR_nation_tt: "Own §Y10§! of the §Y19§! provinces of the Kingdom of Portugal"
+ POR_nation_tt2: "§YPortugal§! gains permanent claims on all provinces of the §YPortuguese Kingdom§!"
+ 
+ #Crown of Aragon
+ CAG_nation_title: "Reunite the Crown of Aragon"
+ CAG_nation_desc: "Aragon has lost her control of her former subjects. The former crown possessions in Sicily, Sardinia, and even in Valencia and Barcelona have slipped out of the grasp of Zaragoza. Now is our chance to restore the dynastic union, under our leadership."
+ CAG_nation_tt: "Own cores on §Y9§! of the §Y15§! provinces of the §YKingdom of Aragon§!"
+ CAG_nation_tt2: "§YCrown of Aragon§! gains permanent claims on the §YCrownlands§!"
+ 
+ #Occitania
+ OCC_nation_title: "An Occitan nation"
+ OCC_nation_desc: "With the dissolution of France and Aragon, the stage is now set for any would-be conqueror to forge his own kingdom. Now more than ever the calls for Occitan unity are shouted, out of fear of a new kingdom once-again oppressing them. There is a strength in unity, and it is a strength that we should explore."
+ OCC_nation_tt: "Own cores on §Y16§! of the §Y27§! provinces of the §YOccitain§! region"
+ OCC_nation_tt2: "§YOccitània§! gains permanent claims on the §YLanguedoc§!"
+ 
+ #Arpitania
+ APT_nation_title: "Arpitan Confederation"
+ APT_nation_desc: "With France dissolved, the Swiss confederation becoming ever-decentralized, and the Holy Roman Empire losing its grasp in Italy, there is chaos in the lands of Arpitania. Who will protect the people now? There are calls both within our nation and abroad for Arpitan unity, and it is our duty to answer the people."
+ APT_nation_tt: "Own cores on §Y7§! of the §Y9§! provinces of old §YUpper Burgundy§!"
+ APT_nation_tt2: "§YArpitania§! gains permanent claims on the §YArpitan§! region"
+ 
+ #Cosmopolitan Francien (Unfinished)
+ FRC_nation_title: "The road to French restoration"
+ FRC_nation_desc: "The last remnant of West Francia is dead and gone. The French Kings retain their authority only nominally, with their demense being limited to Paris and her immediate surroundings. Should the Kingdom of France ever be restored, surely it would begin here in the north. It is up to us to reestablish centralized rule over the Loire and Siene, paving the way to future French unity."
+ FRC_nation_tt: "Own x of the y provinces"
+ 
+ #Arles
+ ARS_nation_title: "The Kingdom of Arles"
+ ARS_nation_desc: "Once a bulwark of the Empire, the former Burgundian Kingdom of Arles has nearly fallen into the annals of history. The Emperor claims the title, but we know that to be nothing but in name. Perhaps we should reclaim the ancient title to further legitimize our conquests along the Rhône? Surely, the Emperor will not be pleased..."
+ ARS_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of the old §YKingdom of Arles§!"
+ ARS_nation_tt2: "§YArles§! gains permanent claims on the de-jure lands of the §YKingdom of Arles§!"
+ 
+ #Celtica
+ CLT_nation_title: "A Celtic union?"
+ CLT_nation_desc: "The turmoil caused by the Hundred Year's War and its aftermath, while destructive, has secured the safety of the Celtic nations, for now. If we want to preserve this cultural independence, we must act quickly to safeguard the other Celtic holdouts before the English and French can restore their own rule there."
+ CLT_nation_tt: "Own cores on §Y9§! of the §Y14§! §YCeltic§! provinces"
+ CLT_nation_tt2: "§YCeltica§! gains permanent claims on the current lands of the §YCelts§!"
+ 
+ #United Seven Provinces
+ NET_nation_title: "Unite the Seven Dutch Provinces"
+ NET_nation_desc: ""
+ NET_nation_tt: "Own cores on §Y9§! of the §Y13§! provinces of the §YNorthern Lowlands§!"
+ NET_nation_tt2: "§YNetherlands§! gains permanent claims on the §YNorthern Lowlands§!"
+ 
+ #Bretonnia
+ BTA_nation_title: "A French State"
+ BTA_nation_desc: "flavortext\nGreater Brittany, maybe? Assimilates into French culture group"
+ BTA_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of the §YLoire Valley§!"
+ BTA_nation_tt2: "§YBretonnia§! gains permanent claims on the §YLoire Valley§!"
+ 
+ #
+ FRE_nation_title: "Frisian Independence!"
+ FRE_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ _nation_tt: "Own x of the y provinces"
+ 
+ #
+ ULT_nation_title: "Reclaim the title Dukes of Upper Lorraine"
+ ULT_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ _nation_tt: "Own x of the y provinces"
+ 
+ #
+ PDA_nation_title: "Kingdom of Lombardy"
+ PDA_nation_desc: "While the original Lombards left nothing more than a legacy of autonomous rule, the idea of a new Kingdom of Lombardy and the unity it could bring has recently become a topic of political debate. We have proven that centralized rule can be enforced in Italy, and we will not make the same mistakes that the last Italian Kings did."
+ PDA_nation_tt: "Own cores on §Y16§! of the §Y22§! northern provinces of the §YLombards§!"
+ PDA_nation_tt2: "§YLombardia§! gains permanent claims on the former §YLombard Northern Italy§!"
+ 
+ #
+ LMC_nation_title: "Unite the Marches"
+ LMC_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ LMC_nation_tt: "Own cores on §Y7§! of the §Y10§! cities of the §YApennines§!"
+ LMC_nation_tt2: "§YLa Mèrch§! gains permanent claims on all cities of the §YApennines§!"
+ 
+ #
+ LGR_nation_title: "Ligurian Republic"
+ LGR_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ LGR_nation_tt: "Own cores on §Y14§! of the §Y20§! cities trading in the §YLigurian Sea§!"
+ LGR_nation_tt2: "§YRepubblica Ligûria§! gains permanent claims on all major cities trading in the §YTyrrhenian Sea§!"
+ 
+ #Two Sicilies
+ TSI_nation_title: "Reunite Sicily"
+ TSI_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ TSI_nation_tt: "Own cores on §Y10§! of the §Y16§! provinces of the §YTwo Sicily§!"
+ TSI_nation_tt2: "§YTwo Sicilies§! gains permanent claims on the §YTwo Sicilies§!"
+ 
+ #
+ LTE_nation_title: "A Holy Latin Empire"
+ LTE_nation_desc: "flavortext\nLatin Empire; has Crusader ideas"
+ LTE_nation_tt: "Own cores on §Y16§! of the §Y29§! provinces formerly controlled by the §YLatin Empire§!"
+ LTE_nation_tt2: "§YLatin Empire§! gains permanent claims on all provinces under her control as of 1204"
+ 
+ #
+ KOH_nation_title: "A Kingdom of Milk and Honey"
+ KOH_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ KOH_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of the §YLevant§!"
+ KOH_nation_tt2: "§YKingdom of Heaven§! gains permanent claims on the §YLand of Milk and Honey§!"
+ 
+ #
+ KCP_nation_title: "Establish the Kingdom of Capsa"
+ KCP_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ KCP_nation_tt: "Own cores on §Y16§! of the §Y26§! provinces of §YAfrica§!"
+ KCP_nation_tt2: "§YKingdom of Capsa§! gains permanent claims on §YAfrica§!"
+ 
+ #
+ AEL_nation_title: "A New Greek Defensive League?"
+ AEL_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ ATL_nation_tt: "Own cores on §Y16§! of the §Y26§! provinces of the §YAegean§!"
+ ATL_nation_tt2: "§YAegean League§! gains permanent claims on the §YAegean§!"
+ 
+ #
+ RML_nation_title: "The Balkans Subdued"
+ RML_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ RML_nation_tt: "Own cores on §Y16§! of the §Y26§! provinces of the §YLower Balkans§!"
+ RML_nation_tt2: "§YRumelia§! gains permanent claims on the §YLower Balkans§!"
+ 
+ #Anatolia
+ ATL_nation_title: "Anatolia Recovered!"
+ ATL_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ ATL_nation_tt: "Own cores on §Y20§! of the §Y34§! provinces of §YAsia Minor§!"
+ ATL_nation_tt2: "§YAnatolia§! gains permanent claims on the §§YAsia Minor§!"
+ 
+ #Bohemia-Moravia
+ BMV_nation_title: "Reunite the Duchies of Bohemia and Moravia"
+ BMV_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ BMV_nation_tt: "Own cores on §Y8§! of the §Y11§! provinces of §YBohemia§! and §YMoravia§!"
+ BMV_nation_tt2: "§YBohemia-Moravia§! gains permanent claims on §YBohemia§! and §YMoravia§!"
+ 
+ #Jugoslavija
+ JUG_nation_title: "Unite the South Slavs"
+ JUG_nation_desc: "At last, we have united the South Slavs under our rule."
+ JUG_nation_tt: "Own cores on §Y48§! of the §Y69§! provinces of the §YSouth Slavic Lands§!"
+ JUG_nation_tt2: "§YJugoslavija§! gains permanent claims on all of the §YSouth Slavic Lands§!"
+ 
+ #Stato da Tera / Venetia
+ TFR_nation_title: "Stato da Tera"
+ TFR_nation_desc: "The sea is a fickle mistress. Let us avoid entangling our fortunes with her and instead look inward across the Padan Valley..."
+ TFR_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of the §YPadan Valley§!"
+ TFR_nation_tt2: "§YTeraferma§! gains permanent claims on the §YPadan Valley§!"
+ 
+ #Stato da Mar / Adriatica
+ ADC_nation_title: "Stato da Màr"
+ ADC_nation_desc: "The Padan Valley has been unkind to her children. Centuries of incessant infighting between Guelfs and Ghibellines along her flat expanse has left Italy in an ever precarious position. We would be fools to try to tame this wild land - our destiny lies in sea..."
+ ADC_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of the §YAdriatic Coast§!"
+ ADC_nation_tt2: "§YAdriatica§! gains permanent claims on the §YAdriatic Coast§!"
+ 
+ #Basque Country
+ BSC_nation_title: "Solidify our Basque Identity"
+ BSC_nation_desc: ""
+ BSC_nation_tt: "Own cores on §Y7§! of the §Y9§! provinces of the §YBasque Country§!"
+ BSC_nation_tt2: "§YVasconia§! gains permanent claims on the §YBasque Country§!"
+ 
+ #Caliphate of Cordoba
+ CCB_nation_title: "Reform the Caliphate"
+ CCB_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ CCB_nation_tt: "Own x of the y provinces"
+ 
+ #Gaul
+ GAU_nation_title: "Gaulia"
+ GAU_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ GAU_nation_tt: "Own x of the y provinces"
+ 
+ #Savoy-Piedmont
+ SVP_nation_title: "Unite the Alpine Duchies"
+ SVP_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ SVP_nation_tt: "Own cores on §Y8§! of the §Y12§! provinces of the duchies of §YSavoy§! and §YPiedmont§!"
+ SVP_nation_tt2: "§YSavoia-Piemont§! gains permanent claims on the duchies of §YSavoy§! and §YPiedmont§!"
+ 
+ 
+ #Langobardenreich
+ LBR_nation_title: "Realm of the Langobards"
+ LBR_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ LBR_nation_tt: "Own x of the y provinces"
+ 
+ 
+ #Ghibelline
+ KIT_nation_title: "Savior from under the Alps?"
+ KIT_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ KIT_nation_tt: "Own x of the y provinces"
+ #Guelf
+ GFL_nation_title: "A Guelfic Victory!"
+ GFL_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ GFL_nation_tt: "Own x of the y provinces"
+ 
+ #Kingdom of God
+ KOG_nation_title: "Kingdom of God on Earth"
+ KOG_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ KOG_nation_tt: "Own x of the y provinces"
+ 
+ #Saarland
+ SLD_nation_title: "Autonomy of Saarland"
+ SLD_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ SLD_nation_tt: "Own cores on §Y6§! of the §Y8§! provinces of the §YArdennes§!"
+ SLD_nation_tt2: "§YSaarland§! gains permanent claims on the §YArdennes§!"
+ 
+ #Polabia
+ PBA_nation_title: "Reverse the Germanization of West Slavs"
+ PBA_nation_desc: "For centuries, the West Slavic population in north Germany has been forced out or converted by the sword to the whims of the Germanics - no longer! We must proclaim a successor state to the earlier Polabians and drive out the Imperials once and for all!"
+ PBA_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of the §YElbe§!"
+ PBA_nation_tt2: "§YPolabia§! gains permanent claims on the provinces of the §YElbe§!"
+ 
+ #England
+ ENG_nation_title: "Restore the English Monarchy"
+ ENG_nation_desc: "England is in ruins - the last time the Kingdom was this disunited, vikings ravaged the shores unfettered. To ensure stability and prosperity, we must restore the Kingdom's rule of law."
+ ENG_nation_tt: "Own cores on §Y14§! of the §Y21§! provinces of §YEngland§!"
+ ENG_nation_tt2: "§YEngland§! gains permanent claims on... §YEngland§!"
+ 
+ #Northumbria
+ NOL_nation_title: "Restore Northumbria"
+ NOL_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ NOL_nation_tt: "Own cores on §Y10§! of the §Y15§! provinces of §YNorthumberland§!"
+ NOL_nation_tt2: "§YNorthumbria§! gains permanent claims on §YNorthumberland§!"
+ 
+ #Bavaria
+ BAV_nation_title: "The Everlasting Succession of Bavaria"
+ BAV_nation_desc: "The once-great realm of Bavaria has been split by disastrous succession laws - this cannot stand! We must reunite the duchy and take back her former lands."
+ NOL_nation_tt: "Own cores on §Y7§! of the §Y12§! provinces of the §YGreater Bavarian Circle§!"
+ NOL_nation_tt2: "§YBavaria§! gains permanent claims on the §YBavarian Circle§!"
+ 
+ #Götaland
+ GTA_nation_title: "Götaland united!"
+ GTA_nation_desc: "Once the pretenders across the border are dealt with, we can focus on forging a new kingdom from the ashes of the Kalmar union."
+ GTA_nation_tt: "We have won the Brorskrig and annexed the pretender!"
+ 
+ #Scotland
+ SCO_nation_title: "Unite the Scottish Clans"
+ SCO_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ SCO_nation_tt: "Own cores on §Y12§! of the §Y17§! provinces of the §YKingdom of Scotland§!"
+ SCO_nation_tt2: "§YScotland§! gains permanent claims on the §YHighlands§!, §YLowlands§!, §YIslands§!, and everything inbetween."
+ 
+ #Ireland
+ IRE_nation_title: "No Longer a 'Petty' King of Éire"
+ IRE_nation_desc: "A united Ireland is a dream that many believe may never come to be... we however find ourselves in a position where we can arrange such a unification."
+ IRE_nation_tt: "Own cores on §Y12§! of the §Y17§! provinces of §YIreland§!"
+ IRE_nation_tt2: "§YIreland§! gains permanent claims on §YIreland§!"
+ 
+ 
+ #Swabia / Schwobm
+ SWB_nation_title: "Legacy of Swabia"
+ SWB_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ SWB_nation_tt: "Own cores on §Y10§! of the §Y16§! provinces of the §YGreater Swabian Circle§!"
+ SWB_nation_tt2: "§YSwabia§! gains permanent claims on the §YSwabian Circle§!"
+ 
+ 
+ #Rheinland
+ RHI_nation_title: "Unite the Peopls of the Rhine!"
+ RHI_nation_desc: "Germanic Rheinland"
+ RHI_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of the §YRhein§!"
+ RHI_nation_tt2: "§YRipuaria§! gains permanent claims along the §YRhein§!"
+ 
+ 
+ #Frisia
+ FRE_nation_title: "Frisian Identity"
+ FRE_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ FRE_nation_tt: "Own cores on §Y9§! of the §Y13§! provinces of §YMedieval Frisia§!"
+ FRE_nation_tt2: "§YFrisia§! gains permanent claims on the §YFrisian Lands§!"
+ 
+ 
+ #Great Moravia
+ GMV_nation_title: "Great Moravia Reborn"
+ GMV_nation_desc: ""
+ GMV_nation_tt: "Own cores on §Y50§! of the §Y70§! of the §YMoravian§! provinces"
+ GMV_nation_tt2: "§YGreat Moravia§! gains permanent claims on §YGreater Moravia§!"
+ 
+ 
+ #Franconia
+ FNC_nation_title: "Unite the Franconian Cities"
+ FNC_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ FNC_nation_tt: "Own cores on §Y8§! of the §Y12§! provinces of the §YGreater Franconian Circle§!"
+ FNC_nation_tt2: "§YFranconia§! gains permanent claims on the §YFranconian Circle§!"
+ 
+ #Nordmark
+ NMK_nation_title: "Unite the Northern Margraves"
+ NMK_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ NMK_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of the §YNorthern Marches§!"
+ NMK_nation_tt2: "§YNordmark§! gains permanent claims on the §YNorthern Marches§!"
+ 
+ #Hannover
+ HAN_nation_title: "Consolidation of Lower Saxony"
+ HAN_nation_desc: "flavortext\nHannover"
+ HAN_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of §YLower Saxony§!"
+ HAN_nation_tt2: "§YHannover§! gains permanent claims on §YLower Saxony§!"
+ 
+ #Hanseatic League
+ HSL_nation_title: "Centralize the Hanseatic Cities"
+ HSL_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ HSL_nation_tt: "Own cores on §Y8§! of the §Y15§! §YMajor Hanseatic Cities§!"
+ HSL_nation_tt2: "§YHanseatic League§! gains permanent claims on the §YMajor Hanseatic Cities§!"
+ 
+ #Serbian Empire
+ SRE_nation_title: "Greater Serbia"
+ SRE_nation_desc: "The medieval Kingdom of Serbia has oft been referred to as an empire -  while this claim is lofty, the great legacy of Serbia still looms over us all. We must restore Serbia to her former glory!"
+ SRE_nation_tt: "Own cores on §Y17§! of the §Y27§! provinces formerly controlled by §YMedieval Serbia§!"
+ SRE_nation_tt2: "§YSerbian Empire§! gains permanent claims on §YGreater Serbia§!"
+ 
+ #Illyria
+ ILY_nation_title: "Illyrian Identity"
+ ILY_nation_desc: "Despite what little we know of the ancient Illyrians, we do know that they were our ancestors. In this fractured world, perhaps we should reunite the Balkan tribes of old?"
+ ILY_nation_tt: "Own cores on §Y17§! of the §Y27§! provinces of §YIllyria§!"
+ ILY_nation_tt2: "§YIllyria§! gains permanent claims on the §YAdriatic Balkans§!"
+ 
+ 
+ #Bulgaria(n Empire)
+ BUL_nation_title: "Restore the Bulgarian Empire"
+ BUL_nation_desc: "Our ancestors have many times united the Bulgarians into one centralized state, and we must do the same if we hope to maintain our nation and culture."
+ _nation_tt: "Own cores on §Y17§! of the §Y27§! provinces of the §YBulgarian Empire§!"
+ _nation_tt2: "§YBulgarian Empire§! gains permanent claims on §YGreater Bulgaria§!"
+ 
+ 
+ #Denmark
+ DAN_nation_title: "Kingdom of Denmark"
+ DAN_nation_desc: "flavortext\nDenmark"
+ DAN_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of the §YKingdom of Denmark§!"
+ DAN_nation_tt2: "§YDenmark§! gains permanent claims on... §YDenmark§!"
+ 
+ 
+ #Norway
+ NOR_nation_title: "Reuniting the Norweigan Kingdom"
+ NOR_nation_desc: "flavortext\nNorway"
+ NOR_nation_tt: "Own cores on §Y12§! of the §Y20§! provinces of the §YKingdom of Norway§!"
+ NOR_nation_tt2: "§YNorway§! gains permanent claims on... §YNorway§!"
+ 
+ #Sweden
+ SWE_nation_title: "Reform the Swedish Kingdom"
+ SWE_nation_desc: "flavortext\nSweden"
+ SWE_nation_tt: "Own cores on §Y15§! of the §Y22§! provinces of the §YKingdom of Sweden§!"
+ SWE_nation_tt2: "§YSweden§! gains permanent claims on the §YKingdom of Sweden§!"
+ 
+ #Tuscany
+ TUS_nation_title: "Duchy of Tuscany"
+ TUS_nation_desc: "Our position in Italy is precarious: the old lands of Tuscany are split among the cities, a development that is not beneficial to any truly ambitious prince. We should look to bring the other cities under our own rule."
+ TUS_nation_tt: "Own cores on §Y6§! of the §Y8§! cities of §YTuscany§!"
+ TUS_nation_tt2: "§YTuscany§! gains permanent claims on the §YTuscano Region§!"
+ 
+ #Iberia
+ IBE_nation_title: "Unite the Iberian Peninsula!"
+ IBE_nation_desc: "It is the destiny of us sons of Iberia to conquer the unknown world. However, we must first unify our peninsula before undertaking this adventure."
+ IBE_nation_tt: "Own cores on §Y40§! of the §Y68§! provinces of Iberia"
+ IBE_nation_tt2: "§YIberia§! gains permanent claims on the §YIberian Peninsula§!"
+ 
+ #Iron Kingdom
+ IKG_nation_title: "Forge a Kingdom of Steel (Unfinished - do not pls)"
+ IGK_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ IKG_nation_tt: "Own cores on §Y70§! of the §Y112§! provinces highlighted"
+ IKG_nation_tt2: "§YIron Kingdom§! gains permanent claims spanning across §YSouthern Scandinavia§!, §YNorthern Germany§!, and the §YWestner Baltic§!"
+ IKG_nation_tt3: "Own cores on §Y5§! provinces producing §YSteel§!"
+ 
+ #North Sea Empire
+ NSE_nation_title: "North Sea Empire"
+ NSE_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ NSE_nation_tt: "Own cores on §Y35§! of the §Y53§! provinces"
+ NSE_nation_tt2: "§YNorth Sea Empire§! gains permanent claims on her former empire"
+ 
+ #Empire de Bourbon
+ EDB_nation_title: "Empire de Bourbon"
+ EDB_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ EDB_nation_tt: "Own cores on §Y80§! of the §Y125§! provinces in §YFrance§! and §YSpain§!"
+ EDB_nation_tt2: "§YEmpire de Bourbon§! gains permanent claims on §YFrance§! and §YSpain§!"
+ 
+ #Angevin Empire
+ ANV_nation_title: "Reunite the Crowns of England and France"
+ ANV_nation_desc: "The Kingdoms of England and France have been in constant turmoil since the failure of the Angevin Kings to fully unite the two realms, and we now find ourselves able to finish the work they started. Finally, we can bring a formal end to the Hundreds Years War!"
+ ANV_nation_tt: "Own cores on §Y40§! of the §Y61§! provinces formerly held by the §YAngevin Kings§!"
+ ANV_nation_tt2: "§YAngevin Empire§! gains permanent claims on §YEngland§! and §YFrance§!"
+ 
+ #Scandinavia (rather, Kalmar Empire)
+ SCA_nation_title: "Restore the Kalmar Union"
+ SCA_nation_desc: "This is Scandinavia (but reskinned!)."
+ SCA_nation_tt: "Own cores on §Y50§! of the §Y76§! provinces of §YScandinavia§!"
+ SCA_nation_tt2: "§YThe Kalmar Empire§! gains permanent claims on §YScandinavia§!"
+ 
+ #Greater (Kingdom of) Hungary
+ GHN_nation_title: "Reconquer the old Kingdom"
+ GHN_nation_desc: "flavortext\nGreater Hungary"
+ GHN_nation_tt: "Own cores on §Y20§! of the §Y32§! provinces of the §YKingdom of Hungary§!"
+ GHN_nation_tt2: "§YGreater Hungary§! gains permanent claims on all former §YHungarian§! provinces"
+ 
+ #Romania
+ RMN_nation_title: "A Romanian Nation"
+ RMN_nation_desc: "flavortext\nRomania"
+ RMN_nation_tt: "Own cores on §Y18§! of the §Y25§! §YRomanian§! provinces"
+ RMN_nation_tt2: "§YRomania§! gains permanent claims on all §YRomanian§! provinces"
+ 
+ #Baltic Kingdom (Prussia)
+ PRU_nation_title: "Unite Prussia"
+ PRU_nation_desc: "flavortext\nPrussia, with nerfed ideas and without government form - still good!\nOh and the color's fixed, too"
+ PRU_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of the §YBaltic§!"
+ PRU_nation_tt2: "§YPrussia§! gains permanent claims on the §YBaltic§!"
+ 
+ #
+ UKR_nation_title: "Legacy of the Southern Rus"
+ UKR_nation_desc: "flavortext\nRuthenia"
+ UKR_nation_tt: "Own cores on §Y22§! of the §Y35§! Ruthenian provinces"
+ UKR_nation_tt2: "§YRuthenia§! gains permanent claims on the §YSouthern Rus§!"
+ 
+ #
+ VLD_nation_title: "Legacy of the Eastern Rus"
+ VLD_nation_desc: "flavortext\nVladimir-Suzdal, with Russian ideas (the good ones)"
+ VLD_nation_tt: "Own cores on §Y26§! of the §Y39§! Russian provinces"
+ VLD_nation_tt2: "§YVladimir-Suzdal§! gains permanent claims on the §YEastern Rus§!"
+ 
+ #Rus
+ RUS_nation_title: "Legacy of the Northern Rus"
+ RUS_nation_desc: "flavortext\nRus, with Russian ideas (the good ones)"
+ RUS_nation_tt: "Own cores on §Y36§! of the §Y59§! Russian provinces"
+ RUS_nation_tt2: "§YRus§! gains permanent claims on the §YNorthern Rus§!"
+ 
+ #Rus
+ BYL_nation_title: "Legacy of the Western Rus"
+ BYL_nation_desc: "flavortext\nWhite Rus, with Russian ideas (the good ones)"
+ BYL_nation_tt: "Own cores on §Y18§! of the §Y26§! Byelorussian provinces"
+ BYL_nation_tt2: "§YWhite Rus§! gains permanent claims on the §YWestern Rus§!"
+ 
+ #Poland
+ POL_nation_title: "Kingdom of Poland"
+ POL_nation_desc: "flavortext\nChange country to Poland yada yada"
+ POL_nation_tt: "Own cores on §Y16§! of the §Y25§! Polish provinces"
+ POL_nation_tt2: "§YPoland§! gains permanent claims on §YRoyal Poland§!"
+ 
+ #
+ SPT_nation_title: "Marca Gothia"
+ SPT_nation_desc: "flavortext\nGothic March"
+ SPT_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of the §YGothic and Spanish Marchs§!"
+ SPT_nation_tt2: "§YMarca Gothica§! gains permanent claims on the Marches of §YGothia§! and §YHispania§!"
+ 
+ #Visigothia / Visigothic Empire
+ VSG_nation_title: "Visigothia"
+ VSG_nation_desc: ""
+ VSG_nation_tt: "Own cores on §Y50§! of the §Y76§! provinces of the former §YVisigothic Kingdom§!"
+ VSG_nation_tt2: "§YVisigothic Empire§! gains permanent claims on §YCis-Cantabrian Iberia§! and §YAquitania§!"
+ 
+ #Eidegenossenschaft
+ EGN_nation_title: "The Swiss Confederacy"
+ EGN_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ EGN_nation_tt: "Own cores on §Y10§! of the §Y15§! cities of §YSwitzerland§!"
+ EGN_nation_tt2: "§YEidgenossenschaft§! gains permanent claims on §YSwitzerland§!"
+ 
+ #Kingdom of Pagan
+ PGN_nation_title: "Kingdom of Pagan"
+ PGN_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ PGN_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of §YBurma§!"
+ PGN_nation_tt2: "§YKingdom of Pagan§! gains permanent claims on §YBurma§!"
+ 
+ #Nanzhao
+ NZO_nation_title: "Return to Nanzhao"
+ NZO_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ NZO_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of §YSoutheastern China§!"
+ NZO_nation_tt2: "§YNanzhao§! gains permanent claims on §YSoutheastern China§!"
+ 
+ #Lan Sang
+ LXA_nation_title: "Kingdom of Lan Sang"
+ LXA_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ LXA_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of §YLaos§!"
+ LXA_nation_tt2: "§YLan Sang§! gains permanent claims on §YLaos§!"
+ 
+ #Angkor Empire
+ KHM_nation_title: "Coronation at Angkor"
+ KHM_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ KHM_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of §YKhmer§!"
+ KHM_nation_tt2: "§YAngkor Empire§! gains permanent claims on §YKhmer§!"
+ 
+ #Sukhothai
+ SUK_nation_title: "Revive the Kingdom of Sukhothai"
+ SUK_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ SUK_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of §YThailand§!"
+ SUK_nation_tt2: "§YSukhothai§! gains permanent claims on §YThailand§!"
+ 
+ #Malay
+ MSA_nation_title: "Unite the Malay"
+ MSA_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ MSA_nation_tt: "Own cores on §Y24§! of the §Y42§! provinces of the §YMalay Peninsula§! and §YSumatra§!"
+ MSA_nation_tt2: "§YMalay§! gains permanent claims on the §YMalay Peninsula§! and §YSumatra§!"
+ 
+ #Borneo
+ BRN_nation_title: "Unite the Island of Borneo"
+ BRN_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ BRN_nation_tt: "Own cores on §Y12§! of the §Y18§! provinces of §YBorneo§! and §YSulu§!"
+ BRN_nation_tt2: "§YBorneo§! gains permanent claims on §YBorneo§! and §YSulu§!"
+ 
+ #Majapahit
+ MAJ_nation_title: "Restore the Rule of Majapahit"
+ MAJ_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ MAJ_nation_tt: "Own cores on §Y13§! of the §Y19§! provinces of §YJava§!"
+ MAJ_nation_tt2: "§YMajapahit§! gains permanent claims on §YJava§!"
+ 
+ #Jomsvikings
+ JMV_nation_title: "Revival of the Jomsvikings"
+ JMV_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ JMV_nation_tt: "Own cores on §Y14§! of the §Y20§! provinces of §YPruthenia§!"
+ JMV_nation_tt2: "§YJomsvikings§! gains permanent claims on §YPruthenia§!"
+ 
+ #Varangian Empire
+ VRG_nation_title: "A Realm of the Varangians"
+ VRG_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ VRG_nation_tt: "Own cores on §Y80§! of the §Y107§! provinces of §YVarangia§!"
+ VRG_nation_tt2: "§YVarangian Empire§! gains permanent claims on §YVarangia§!"
+ 
+ #
+ TKE_nation_title: "An Imperial Turkish State"
+ TKE_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ TKE_nation_tt: "Own cores on §Y80§! of the §Y118§! provinces of §YGreater Turkey§!"
+ TKE_nation_tt2: "§YTurkish Empire§! gains permanent claims on §YTurkey§!"
+ 
+ #Austria
+ OES_nation_title: "Archduchy of Austria"
+ OES_nation_desc: "Tag switch -> Austria; ideas change to Austrian"
+ OES_nation_tt: "Own cores on §Y10§! of the §Y14§! provinces of §YTirol§! and the §YEastern March§!"
+ OES_nation_tt2: "§YAustria§! gains permanent claims on §YTirol§! and the §YEastern March§!"
+ 
+ #Burgundy
+ BUR_nation_title: "Land of Burgundy"
+ BUR_nation_desc: ""
+ BUR_nation_tt: "Own cores on §Y12§! of the §Y18§! provinces of the §YUpper Rhône and Rhine§!"
+ BUR_nation_tt2: "§YBurgundy§! gains permanent claims on §YBurgundy§! and §YLorrain§!"
+ 
+ #Assassins
+ HAS_nation_title: "Resurgence of the Assassins"
+ HAS_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ HAS_nation_tt: "Own both §YAssassins' Headquarters§!, located in §YMasyaf§! and §YAlamut§!"
+ # HAS_nation_tt2: "The §YAssassins§! will be reborn!"
+ 
+ #Assassins Caliphate ('Assassid')
+ ASC_nation_title: "A Shia Caliphate!"
+ ASC_nation_desc: ""
+ ASC_nation_tt: "Own cores on §Y90§! of the §Y133§! provinces of the §YCaliphate Lands§!"
+ ASC_nation_tt2: "§YAssassid Caliphate§! gains permanent claims on §YCaliphate Lands§!"
+ 
+ 
+ CTH_nation_title: "Restore Carthage"
+ CTH_nation_desc: ""
+ CTH_nation_tt: "Own cores on §Y50§! of the §Y70§! provinces of the §YPhoenician Mediterranean§!"
+ CTH_nation_tt2: "§YCarthage§! gains permanent claims on the former §YPhoenician Mediterranean§!"
+ 
+ #Austria-Hungary
+ AHE_nation_title: "Royal Union of Austria and Hungary"
+ AHE_nation_desc: "Our empire has grown large enough to necessitate the decentralization of royal authority: if we split our realm into two co-dependent administrations, the other peoples of our realm will be far easier to keep in check."
+ AHE_nation_tt: "Own cores on §Y75§! of the §Y100§! provinces of §YCis- and Transleithania§!"
+ AHE_nation_tt2: "§YAustria-Hungary§! gains permanent claims on §YLeithania§!"
+ 
+ #Great Britain
+ GBR_nation_title: "Unite the British Isles"
+ GBR_nation_desc: "We have finally cemeted our rule of Britain and Ireland, and should proclaim a new empire in celebration."
+ GBR_nation_tt: "Own cores on §Y55§! of the §Y66§! provinces in the §YBritish Isles§!"
+ GBR_nation_tt2: "§YGreat Britain§! gains permanent claims on the §YBritish Isles§!"
+ 
+ #Yue
+ YUE_nation_title: "Establish the Yue Dynasty"
+ YUE_nation_desc: "Chinese Dynasty for the Cantonese culture."
+ YUE_nation_tt: "Own cores on §Y16§! of the §Y20§! provinces of §YGuangzhou§!"
+ YUE_nation_tt2: "§YYue§! gains permanent claims on §YGuangzhou§!"
+ 
+ #Min
+ MIN_nation_title: "Establish the Min Dynasty"
+ MIN_nation_desc: "Chinese Dynasty for Min culture."
+ MIN_nation_tt: "Own cores on §Y16§! of the §Y20§! provinces of §YMinnan§!"
+ MIN_nation_tt2: "§YMin§! gains permanent claims on §YMinnan§!"
+ 
+ #Wu
+ WUU_nation_title: "Establish the Wu Dynasty"
+ WUU_nation_desc: "Chinese Dynasty for Taihu, Ou, and Xuanzhou cultures."
+ WUU_nation_tt: "Own cores on §Y16§! of the §Y20§! provinces of §YTaihu§!"
+ WUU_nation_tt2: "§YWu§! gains permanent claims on §YTaihu§!"
+ 
+ #Chu
+ CHC_nation_title: "Usurp the Chu Dynasty!"
+ CHC_nation_desc: "Chinese Dynasty for Shangjiang, Xiang, and Gan cultures."
+ CHC_nation_tt: "Own cores on §Y16§! of the §Y20§! provinces of the §YChu Mandate§!"
+ CHC_nation_tt2: "§YChu§! gains permanent claims on the §YChu Mandate§!"
+ 
+ #Liang
+ LNG_nation_title: "Usurp the Liang Dynasty!"
+ LNG_nation_desc: "Chinese Dynasty for Zhongyuan and Jianghuai cultures."
+ LNG_nation_tt: "Own cores on §Y16§! of the §Y20§! provinces of the §YLiang Mandate§!"
+ LNG_nation_tt2: "§YLiang§! gains permanent claims on the §YLiang Mandate§!"
+ 
+ #Yan
+ YAN_nation_title: "Usurp the Yan Dynasty!"
+ YAN_nation_desc: "Chinese Dynasty for Zhili and Shandong cultures."
+ YAN_nation_tt: "Own cores on §Y16§! of the §Y20§! provinces of the §YYan Mandate§!"
+ YAN_nation_tt2: "§YYan§! gains permanent claims on the §YYan Mandate§!"
+ 
+ #Jin
+ JIN_nation_title: "Usurp the Jin Dynasty!"
+ JIN_nation_desc: "Chinese Dynasty for Jin culture."
+ JIN_nation_tt: "Own cores on §Y12§! of the §Y16§! provinces of the §YShanxi§!"
+ JIN_nation_tt2: "§YYan§! gains permanent claims on the §YShanxi§!"
+ 
+ #Qin
+ QIN_nation_title: "Usurp the Qin Dynasty!"
+ QIN_nation_desc: "Chinese Dynasty for Xibei culture."
+ QIN_nation_tt: "Own cores on §Y12§! of the §Y16§! provinces of §YXibei§!"
+ QIN_nation_tt2: "§YQin§! gains permanent claims on §YXibei§!"
+ 
+ #Xi
+ CXI_nation_title: "Usurp the Xi Dynasty!"
+ CXI_nation_desc: "Chinese Dynasty for Sichuanese culture."
+ CXI_nation_tt: "Own cores on §Y12§! of the §Y16§! provinces of the §YXinan§!"
+ CXI_nation_tt2: "§YXi§! gains permanent claims on the §YXinan§!"
+ 
+ #Ming
+ MNG_nation_title: "Usurp the Ming Dynasty!"
+ MNG_nation_desc: "Chinese Dynasty for Jianghuai culture."
+ MNG_nation_tt: "Own cores on §Y12§! of the §Y16§! provinces in the sphere of §YNanjing§!"
+ MNG_nation_tt2: "§YMing§! gains permanent claims on the §YNanjing Heartland§!"
+ 
+ #Tang
+ TNG_nation_title: "Usurp the Tang Dynasty!"
+ TNG_nation_desc: "Chinese Dynasty for Zhongyuan culture."
+ TNG_nation_tt: "Own cores on §Y16§! of the §Y20§! provinces in the sphere of §YNanyang§!"
+ TNG_nation_tt2: "§YTang§! gains permanent claims on the §YTang Heartland§!"
+ 
+ #Qi
+ QIC_nation_title: "Usurp the Qi Dynasty!"
+ QIC_nation_desc: "Chinese Dynasty for Zhongyuan culture."
+ QIC_nation_tt: "Own cores on §Y16§! of the §Y20§! provinces in the sphere of §YShangqiu§!"
+ QIC_nation_tt2: "§YQi§! gains permanent claims on the §YQi Heartland§!"
+ 
+ #Korea
+ KOR_nation_title: "Unite Korea!"
+ KOR_nation_desc: ""
+ KOR_nation_tt: "Own cores on §Y18§! of the §Y23§! provinces of the §YKorean Peninsula§!"
+ KOR_nation_tt2: "§YKorea§! gains permanent claims on §YKorean Peninsula§!"
+ 
+ #
+ # _nation_title: ""
+ # _nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ # _nation_tt: "Own cores on §Y0§! of the §Y0§! provinces of §Yregion§!"
+ # _nation_tt2: "§Ytag§! gains permanent claims on §Yregion§!"
+ 
+ #Frankish Nations
+ #Austrasia
+ ASR_nation_title: "Restore the Kingdom of Austrasia"
+ ASR_nation_desc: "We have reclaimed the old demense lands of Charlemagne, Emperor of the Franks. In his honor, we should proclaim the Kingdom of Austrasia reborn! It shall be the first step in undermining the reign of the Germanic pretender who claims the title..."
+ ASR_nation_tt: "Own cores on §Y16§! of the §Y26§! core provinces of the former §YFrankish Crownlands§!"
+ ASR_nation_tt2: "§YAustrasia§! gains permanent claims on all of the §YFrankish Crownlands§!, including §YFlanders§! and §YHesse§!"
+ 
+ #Neustria
+ NEU_nation_title: "Restore the Kingdom of Neustria"
+ NEU_nation_desc: "First Francia and now France, too, has fallen. Instability breeds disaster: we must reunite the French under one banner - ours!"
+ NEU_nation_tt: "Own cores on §Y14§! of the §Y18§! core provinces of former §YWestern Francia§!"
+ NEU_nation_tt2: "§YNeustria§! gains permanent claims on the lands of the §YLoire§! and the §YSenne§!"
+ 
+ AQT_nation_title: "Restore the Kingdom of Aquitaine"
+ AQT_nation_desc: "No longer are the lands of Aquitaine under rule from the north - we are independent, and we must be strong if we wish to remain that way. We must proclaim ourselves the heirs to Aquitaine, and from there forge our own destiny."
+ AQT_nation_tt: "Own cores on §Y14§! of the §Y22§! core provinces of §YAquitaine§!"
+ AQT_nation_tt2: "§YAquitania§! gains permanent claims on all of §YAquitaine§!, §YGascony§!, and the §YMarca Gothica§!"
+ 
+ FCA_nation_title: "Restore the Frankish Empire"
+ FCA_nation_desc: "We have done what the old kings of France and Germany could not - we have reunited the lands of the Franks. From the ashes of the old order, Francia is reborn!"
+ 
+ #Special Formations
+ #Nibelungen
+ NIB_hoard_1_title: "Rumors from Worms"
+ NIB_hoard_1_desc: "Volcanic activity near the city of Worms has unearthed the entrance to a massive, unexplored cavern, directly below the city. These previously unknown caves have been a surprise to everyone, and there is a rush of brave adventurers flocking to the city. However, the majority of the cavern entrance has already caved in, leaving no way to further explore the complex. If we want to figure out what lies below the city, we'll need to remove the rubble."
+ mnsqf.1.t: "What Lies Below..."
+ mnsqf.1.d: "Despite our low expectations, our expedition into the caverns under Worms has returned with great news: they believe they have found the legendary Hoard of the Nibelungens! They report that it lies within a great walled palace that spans for miles under the Earth. However, they were not able to find an entrance to the ancient palace, nor were they able to make their own. To break into the city, we need something BIG."
+ mnsqf.1.a: "Get the cannons! ...what do you mean they're not big enough?"
+ mnsqf.1.a.tt: "To enter the city, we will need to control a province producing guns."
+ NIB_hoard_2_title: "Enter the Ancient City!"
+ NIB_hoard_2_desc: "Our men had no luck in breaching the walls of the ancient city lying under Worms, but our generals have formualted a plan. To enter the city, we need to construct a massive gun with which to punch a hole in the ancient walls. For this immense undertaking, we will need to aquire a source of guns."
+ mnsqf.2.t: "The Nibelungen Hoard!"
+ mnsqf.2.d: "After blasting a hole through the ancient walls found below Worms, the ancient city of the Nibelungens was uncovered. Dominated by a large palace complex, the underground city stretches for miles, far beyond what any deem possible. The most important find lying in the ancient city was the legendary Nibelungen Hoard - a  quantity of gold immeasurable. Only time will tell what effects this will have upon Europe..."
+ mnsqf.2.a: "Is this real life?"
+ mnsqf.2.a.tt: "New decisions are available for the owner of Worms..."
+ mnsqf.10.t: "Spread of the Plague"
+ mnsqf.10.d: "The futile resistence of the natives in [Root.GetName] has been eradicated."
+ mnsqf.10.a: "Our power grows!"
+ NIB_nation_title: "Heirs of Old Burgundy"
+ NIB_nation_desc: "We have found the legendary hoard of the Nibelungens! Hidden deep under the city of Worms, we have found a buried temple from which the Burgundians once ruled. Our destiny is clear: we are the heirs of old Burgundy, and we will impose our will from the Rhein to the Rhône."
+ TBE_nation_title: "Embrace the Hussite Reformation!"
+ TBE_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ DCL_nation_title: "Unleash the Plague!"
+ DCL_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+ ABL_nation_title: "A Savehaven for Cathars"
+ ABL_nation_desc: "At the moment, this formable nation does not have mission trees nor its own ideas, it is purely cosmetic.\nAs such, please do not choose the 'change ideas' option when prompted to after formation."
+#ould decisions
+ embrace_kingship_title: "Embrace Kingship"
+ embrace_kingship_desc: "With our newfound power and prestige in the Empire, we may be able to petition the Emperor to grant us the title of King-Elector."
+ rheinland_nation_title: "A Unified Rhineland State"
+ rheinland_nation_desc: "We have united the squabbling counts and dukes along the Rhine under our rule, and it is now time to reform into a centralized Rhineland state."
+ schwobm_nation_title: "Restoration of Swabia"
+ schwobm_nation_desc: "After subjugating most of former Swabia, it is time to reclaim the title of Duke of Swabia."
+ greater_bavarian_nation_title: "South German Union"
+ greater_bavarian_nation_desc: "Through marriage and conquest we have nearly unified the lands of Bavaria and Austria, and can proclaim dominance of South Germany."
+ franken_nation_title: "Restoration of Franconia"
+ franken_nation_desc: "The old duchy of Franconia has been divided for many years, but we have managed to restore centralized rule to a majority of the duchy's former lands, and can proclaim ourselves the heirs of Franconia."
+ pommern_nation_title: "Dominance of Pomerania"
+ pommern_nation_desc: "We have solidified our hold on the Baltic coast, and the trade that flows through it. As the dominant power in the region, we can proclaim ourselves the masters of all Pomerania."
+ jugoslav_nation_title: "Form the Kingdom of South Slavs"
+ jugoslav_nation_desc: "Finally, after years of bloody infighting, the south slavic nations are united. Reforming into a multi-national kingdom is the only way to keep this union together."
+ arpitan_nation_title: "Arpitan Identity"
+ arpitan_nation_desc: "Since time immemorial, the Arpitan people have been lumped in with their French and Italian neighbours - no more! As the dominant power in the region, we must take it upon ourselves to solidify the political and cultural independence of Arpitania, now and forever."
+ bourbon_union_fra_title: "Unite the Kingdoms of France and Spain"
+ bourbon_union_fra_desc: "We have united the kingdoms of France and Spain, and can reform our administration into one empire to better govern."
+ bourbon_union_spa_title: "Unite the Kingdoms of Spain and France"
+ bourbon_union_spa_desc: "We have united the kingdoms of Spain and France, and can reform our administration into one empire to better govern."
+ restore_francia_title: "Restore the Empire of Charlemagne"
+ restore_francia_desc: "With the fall of the so-called Holy Roman Empire, the germanic pretenders can no longer call themselves the true heirs of Rome. We must forge a new empire in Europe, one led by the sons of the Franks! Surely the former states of the Empire will see us not as foreign conquerors, but righteous liberators, restoring the Empire of Charlemagne."
+ petition_for_electorship_title: "Petition the Emperor for Electorship"
+ petition_for_electorship_desc: "With our newfound prestige and close relationship with the Emperor, we may be able to petition him to grant us Electorship - assuming there is an empty seat."
+ assume_electorship_title: "Assume Electorship"
+ assume_electorship_desc: "There is a need to appoint another elector, as there are no longer seven. However, why would we grant electorship to another duke when we could just take the title for ourselves? Though surely the member-states won't see kindly to this..."
+ form_dual_monarchy_title: "Reform into a Dual Monarchy"
+ form_dual_monarchy_desc: "While we have reclaimed all of former Angevin France, there are still some who claim the throne of France for themselves. We must crush this opposition, and take the French crown for ourselves!"
+ austrian_empire_title: "Proclaim the Empire of Austria"
+ austrian_empire_desc: "The Holy Roman Empire is a misnomer: it is neither Holy nor Roman nor an Empire. While the first two are beyond our grasp, we are in a position to reform our monarchy into a proper empire. To do so, however, we must leave what should be known as the Lay German Confederation."
+ austro_hungarian_empire_title: "The Hungarian Compromise"
+ austro_hungarian_empire_desc: "Keeping an absolute empire together has proven to be difficult - with such a small Austrian population relative to the other peoples of our vast empire, keeping supremacy becomes more difficult by the day. Should we wish to remain united, we may have to give the Hungarians, the largest foreign ethnic-group in the empire, equal status to the Austrians."
+ north_sea_empire_title: "Reclaim Dominance of the North Sea"
+ north_sea_empire_desc: "The North Sea Empire was one of the greatest Empires to ever grace northern Europe: stretching across western Scandinavia and the British Isles, it ruled the North and Baltic Seas. We have reconquered the former expanses of this Empire, and can proclaim it reborn under our rule."
+ indian_ocean_empire_title: "Corporate Takeover"
+ indian_ocean_empire_desc: "Our state can only be described as a 'state of decline', barely kept alive by the income of the chartered East Indian Company. Executives from the company have approached our officials, offering to take up our national debt in exchange for granting the corporation some powers usually reserved for the government. Should we accept this petition, we may find that our state has become just another of the company's assets..."
+ east_indian_empire_title: "Incorporate the East Indian Company"
+ east_indian_empire_desc: "There is nothing left for us in Europe. We have found a prosperous land, where we can forge a new empire from the ashes of the old. The only way this will be possible, however, will be the incorporation of the chartered East Indian Company into our own governmental body. Or, with the amout of influence the company already has with our state, is it the other way around?"
+ #Non-Formations
+ DMZ_slavery_title: "Reintroduce Slavery"
+ DMZ_slavery_desc: "For centuries, the Dalmatian slave trade has been non-existant. However, we can now reintroduce the practise, which will surely bring profit to our great nation."
+ 
+ #HRE Decisions
+ embrace_kingship_title: "Embrace Kingship"
+ embrace_kingship_desc: "As we have grown powerful and are no longer lesser subjects of the Emperor, we can finally proclaim ourselves a King!"
+ 
+ petition_for_electorship_title: "Petition for Electorship"
+ petition_for_electorship_desc: "As we are one of the stronger nations in the Empire, it's only natural that we have a vote in the elections of future Emperors."
+ 
+ assume_electorship_title: "Assume Electorship"
+ assume_electorship_desc: "There is a vacant elector slot and while it is custom for us to grant it to a lesser prince, perhaps we should simply take the title for ourselves? Surely the other princes will not appreciate this act..."

@@ -1,0 +1,18 @@
+owner = HTK
+controller = HTK
+add_core = HTK
+culture = togoku
+religion = shinto
+capital = "Yettyu"
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 3
+is_city = yes
+
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG

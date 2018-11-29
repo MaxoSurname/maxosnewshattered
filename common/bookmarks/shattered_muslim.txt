@@ -1,0 +1,25 @@
+bookmark =
+{
+	name = "SHATTERED_MUSLIM"
+	desc = "SHATTERED_MUSLIM_DESC"
+	date = 1444.11.11
+	
+	center = 125
+	
+	country = CAT
+	country = CBR
+	country = MOR
+	country = CDB
+	country = LON
+	country = LSB
+	country = TOL
+	country = VAL
+	country = SEV
+	country = GRA
+	country = TLC
+	country = TUN
+	
+	easy_country = CAT
+	easy_country = CBR
+	easy_country = MOR
+}

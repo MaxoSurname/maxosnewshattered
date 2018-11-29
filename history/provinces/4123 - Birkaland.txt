@@ -1,0 +1,19 @@
+#3129 - Pirkanmaa
+#Region - Scandinavia
+#Area - Finland
+
+owner = FIN
+controller = FIN
+add_core = FIN
+culture = finnish
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Tammerkoski"
+is_city = yes
+
+discovered_by = eastern
+discovered_by = western

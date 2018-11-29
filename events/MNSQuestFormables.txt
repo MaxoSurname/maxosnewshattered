@@ -1,0 +1,165 @@
+namespace = mnsqf
+
+#By Maxo
+
+####################
+# Nibelungen Events#
+####################
+#search begins
+country_event = {
+	id = mnsqf.1
+	title = mnsqf.1.t
+	desc = mnsqf.1.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = nibelungen_hoard_1 }
+	
+	option = { 
+		name = mnsqf.1.a
+		custom_tooltip = mnsqf.1.a.tt
+	}
+}
+
+#gold found
+country_event = {
+	id = mnsqf.2
+	title = mnsqf.2.t
+	desc = mnsqf.2.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = nibelungen_hoard_2 }
+	
+	option = { 
+		name = mnsqf.2.a
+		custom_tooltip = mnsqf.2.a.tt
+		1761 = {
+			change_trade_goods = gold
+			add_base_production = 2
+		}
+		add_years_of_income = 1
+	}
+}
+
+
+province_event = {
+	id = mnsqf.10
+	title = mnsqf.10.t
+	desc = mnsqf.10.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	trigger = {
+		religion = vampiric
+		owner = { primary_culture = vampiric }
+		NOT = { culture = vampiric }
+	}
+	
+	mean_time_to_happen = { months = 1 }
+	
+	option = {
+		name = mnsqf.10.a
+		change_culture = vampiric
+	}
+}
+
+province_event= {
+	id = mnsqf.11
+	title = mnsqf.11.t
+	desc = mnsqf.11.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	trigger = {
+		religion = canaanite
+		owner = { culture_group = semitic }
+		NOT = { culture_group = semitic }
+		OR = {
+			culture_group = berber_group
+			culture_group = maghrebi
+			culture_group = iberian
+			culture_group = mezzogiorno
+			culture = catalan
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.9
+			stability = 1
+		}		
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}		
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+	}	
+	option = {
+		name = mnsqf.11.a
+		if = {
+			limit = {
+				OR = {
+					culture_group = berber_group
+					culture_group = maghrebi
+					culture_group = iberian
+					culture_group = mezzogiorno
+					culture = catalan
+				}
+			}
+			change_culture = punic
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = normanlevant
+					culture = syriac_culture
+					culture = cypriot
+					culture = al_misr_arabic	#this one might be a lil over the top
+				}
+			}
+			change_culture = phoenician
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = al_suryah_arabic
+					culture = al_iraqiya_arabic
+					culture = gulf_arabic
+					culture = bedouin_arabic
+				}
+			}
+			change_culture = aramaic
+		}
+	}
+}
+
+country_event= {
+	id = mnsqf.12
+	title = mnsqf.12.t
+	desc = mnsqf.12.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		religion = canaanite
+		culture_group = phoenician
+	}
+	
+	mean_time_to_happen = { months = 1 }
+	
+	option = {
+		name = mnsqf.12.a
+	}
+}

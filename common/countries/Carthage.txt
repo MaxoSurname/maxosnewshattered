@@ -1,0 +1,117 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 143  42  183 }
+
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	economic_ideas
+}
+
+historical_units = {
+	persian_footsoldier
+	persian_cavalry_charge
+	persian_shamshir
+	qizilbash_cavalry
+	tofongchis_musketeer
+	topchis_artillery
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_mass_infantry
+	muslim_dragoon
+	persian_rifle
+}
+
+monarch_names = {
+	"Abbar #0" = 10
+	"Abdmelqart #0" = 10
+	"Adonibaal #0" = 10
+	"Agbal #0" = 10
+	"Ahirom #0" = 10
+	"Azimilik #0" = 10
+	"Baal #0" = 10
+	"Baalhanno #0" = 10
+	"Bodashtart #0" = 10
+	"Bodmelqart #0" = 10
+	"Bomilcar #0" = 10
+	"Bostar #0" = 10
+	"Boulomenus #0" = 10
+	"Carthalo #0" = 10
+	"Chelbes #0" = 10
+	"Eshbaal #0" = 10
+	"Eugoras #0" = 10
+	"Germelqart #0" = 10
+	"Hamilcar #1" = 10
+	"Hannibal #1" = 10
+	"Hanno #0" = 10
+	"Hasdrubal #0" = 10
+	"Himilco #0" = 10
+	"Hiram #0" = 10
+	"Mago #0" = 10
+	"Maharbal #0" = 10
+	"Mattan #0" = 10
+	"Metallo #0" = 10
+	"Milkherem #0" = 10
+	"Milkiram #0" = 10
+	"Paltibaal #0" = 10 
+	"Philosir #0" = 10
+	
+	"Ihsan #0" = -1
+	"Marwa #0" = -1
+	"Fatima #0" = -1
+	
+	"Abdosir #0" = -1
+	"Arishat #0" = -1
+	"Astarte #0" = -1
+	"Batnoam #0" = -1
+	"Dido #0" = -1
+	"Shayna #0" = -1
+	"Sophonisba #0" = -1
+	"Tamar #0" = -1
+}
+
+leader_names = {
+	Abbar
+	Abdmelqart
+	Adonibaal
+	Agbal
+	Ahirom
+	Azimilik
+	Baal
+	Baalhanno
+	Bodashtart
+	Bodmelqart
+	Bomilcar
+	Bostar
+	Boulomenus
+	Carthalo
+	Chelbes
+	Eshbaal
+	Eugoras
+	Germelqart
+	Hamilcar
+	Hannibal
+	Hanno
+	Hasdrubal
+	Himilco
+	Hiram
+	Mago
+	Maharbal
+	Mattan
+	Metallo
+	Milkherem
+	Milkiram
+	Paltibaal
+	Philosir
+}
+
+ship_names = {
+	
+}

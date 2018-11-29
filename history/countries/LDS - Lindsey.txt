@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = english
+religion = catholic
+capital = 243 # Island of Lincoln
+
+1429.11.6 = { #Coronation
+	monarch = {
+		name = "Aldfrith II"
+		dynasty = "Lindesege"
+		birth_date = 1428.12.6
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}

@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+primary_culture = bulgarian
+religion = orthodox
+capital = 159
+
+1444.1.1 = {
+	monarch = {
+		name = "Dominic I"
+		dynasty = "Asen"
+		birth_date = 1405.1.1
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}

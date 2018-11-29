@@ -1,0 +1,166 @@
+#Slavic Paganism --MNS
+
+rodu =
+{
+	global_missionary_strength = 0.02
+	culture_conversion_cost = -0.15
+	
+	allow = {
+		OR = {
+			religion = slavic_pagan
+		}
+	}
+	sprite = 7
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+veles =
+{
+	shock_damage_received = -0.05
+	defensiveness = 0.15
+	
+	allow = {
+		OR = {
+			religion = slavic_pagan
+		}
+	}
+	sprite = 8
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}
+	}
+}
+
+perun =
+{
+	leader_land_shock = 1
+	shock_damage = 0.05
+	
+	allow = {
+		OR = {
+			religion = slavic_pagan
+		}
+	}
+	sprite = 9
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { num_of_cities = 5 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_cities = 10 }
+		}
+		modifier = {
+			factor = 0.5
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}
+}
+
+ognebog =
+{
+	fire_damage = 0.10
+	
+	allow = {
+		OR = {
+			religion = slavic_pagan
+		}
+	}
+	sprite = 10
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}		
+	}
+}
+
+zhiva =
+{
+	manpower_recovery_speed = 0.20
+	global_trade_goods_size_modifier = 0.05
+	
+	allow = {
+		OR = {
+			religion = slavic_pagan
+		}
+	}
+	sprite = 11
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}		
+	}
+}
+
+
+svarog =
+{
+	administrative_efficiency = 0.05
+	
+	allow = {
+		OR = {
+			religion = slavic_pagan
+		}
+	}
+	sprite = 12
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}		
+	}
+}

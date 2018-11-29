@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = wu
+capital = 1822
+
+1444.11.11 = {
+	monarch = {
+		name = "Houcong"
+		dynasty = "Wu"		
+		birth_date = 1392.1.1
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}

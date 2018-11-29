@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = jianghuai
+add_accepted_culture = wu
+capital = 685
+
+1444.11.11 = {
+	monarch = {
+		name = "Shaozong"
+		dynasty = "Yang"		
+		birth_date = 1395.1.1
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}

@@ -1,0 +1,21 @@
+# - Arezzo
+#Region - Italy
+#Area - Tuscan
+
+owner = ARE
+controller = ARE
+culture = tuscan 
+religion = catholic 
+hre = yes 
+base_tax = 5
+base_production = 5
+trade_goods = livestock
+base_manpower = 3
+capital = "Arezzo" 
+is_city = yes # Estimated
+add_core = ARE
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

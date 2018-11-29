@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = cantonese
+capital = 667
+
+1444.11.11 = {
+	monarch = {
+		name = "Ruxiu"
+		dynasty = "Yue"		
+		birth_date = 1405.1.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}

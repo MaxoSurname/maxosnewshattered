@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = angevin
+religion = catholic
+capital = 177 	# Anjou
+
+1420.1.1 = {
+	monarch = {
+		name = "Philippe"
+		dynasty = "d'Anjou"
+		birth_date = 1416.1.1
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}

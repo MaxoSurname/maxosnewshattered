@@ -1,0 +1,21 @@
+#3123 - Uppland
+#Region - Scandinavia
+#Area - Svealand
+
+add_core = SVL
+owner = SVL
+controller = SVL
+culture = swedish
+religion = catholic
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = grain
+base_manpower = 1
+capital = "Uppsala"
+is_city = yes
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

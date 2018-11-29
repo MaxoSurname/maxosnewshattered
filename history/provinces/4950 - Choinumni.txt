@@ -1,0 +1,15 @@
+owner = NHI
+controller = NHI
+add_core = NHI
+culture = hakka
+religion = confucianism
+capital = "Cinghoeng"
+trade_goods = chinaware
+hre = no
+base_tax = 1
+base_production = 2
+base_manpower = 1
+is_city = yes
+
+discovered_by = chinese
+discovered_by = nomad_group

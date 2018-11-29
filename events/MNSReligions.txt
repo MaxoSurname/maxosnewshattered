@@ -1,0 +1,147 @@
+namespace = mnsreligion
+
+#By Maxo
+
+###################
+# Change Diety Events#
+###################
+#Canaanite
+country_event = {
+	id = mnsreligion.1
+	title = mnsreligion.1.t
+	desc = mnsreligion.1.d
+	picture = PRAYING_eventPicture
+
+	trigger = {
+		religion = canaanite
+	}
+
+	mean_time_to_happen = {
+		months = 120		
+		modifier = {
+			factor = 0.9
+			owns_core_province = 341
+		}
+		modifier = {
+			factor = 0.9
+			owns_core_province = 5205
+		}
+		modifier = {
+			factor = 0.9
+			owns_core_province = 357
+		}
+		modifier = {
+			factor = 0.9
+			owns_core_province = 5311
+		}
+		modifier = {
+			factor = 0.9
+			owns_core_province = 334
+		}
+	}
+
+	option = {
+		name = mnsreligion.1.a
+		trigger = NOT = { has_personal_deity = elyon }
+		change_personal_deity = elyon
+		add_prestige = -10
+	}
+
+	option = {
+		name = mnsreligion.1.b
+		trigger = NOT = { has_personal_deity = dagon }
+		change_personal_deity = dagon
+		add_prestige = -10
+	}
+
+	option = {
+		name = mnsreligion.1.c
+		trigger = NOT = { has_personal_deity = baal }
+		change_personal_deity = baal
+		add_prestige = -10
+	}
+	
+	option = {
+		name = mnsreligion.1.d
+		trigger = NOT = { has_personal_deity = astarte }
+		change_personal_deity = astarte
+		add_prestige = -10
+	}
+	
+	option = {
+		name = mnsreligion.1.e
+		trigger = NOT = { has_personal_deity = tehom }
+		change_personal_deity = tehom
+		add_prestige = -10
+	}
+	
+	option = {
+		name = mnsreligion.1.f
+		trigger = NOT = { has_personal_deity = taautus }
+		change_personal_deity = taautus
+		add_prestige = -10
+	}
+
+	# Not ready
+	option = {
+		name = mnsreligion.1.g
+	}
+}
+
+
+
+#
+#random conversion
+#
+
+province_event= {
+	id = mnsreligion.20
+	title = mnsreligion.20.t
+	desc = mnsreligion.20.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	trigger = {
+		religion = slavic_pagan
+		owner = { culture_group = west_slavic }
+		NOT = { culture_group = west_slavic }
+		OR = {
+			culture = austrian
+			culture = slovene
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.9
+			stability = 1
+		}		
+		modifier = {
+			factor = 0.9
+			stability = 2
+		}		
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+	}	
+	option = {
+		name = mnsreligion.20.a
+		if = {
+			limit = {
+				OR = {
+					culture = austrian
+				}
+			}
+			change_culture = carantanian
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = slovene
+				}
+			}
+			change_culture = slovene_slavic
+		}
+	}
+}

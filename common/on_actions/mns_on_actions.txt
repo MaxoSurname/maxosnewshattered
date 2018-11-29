@@ -1,0 +1,36 @@
+#So - these on_actions do not add to vanilla on_actions, but instead OVERWRITE THEM! Very silly for paradox to allow separate files in that case
+#As such, all vanilla effects copy/pasted here as well to avoid cluttering by adding the main file (I suppose that's the purpose of separate files, then...)
+on_startup = {
+	
+	events = {
+		muslim_school_events.20 #Pick School
+	}
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	initialize_schools_effect = yes
+	events = {  mnsmisc.13 days = 3 }
+	events = {  mnsmisc.10 }
+}
+# country
+on_new_term_election = {
+	events = {
+		700		# Election event
+		elections.720		# Dutch Republic
+		mnsgovernment.1
+	}
+}
+
+# country
+on_death_election = {
+	events = {
+		701		# Election event
+		elections.721		# Dutch Republic
+		mnsgovernment.3
+	}
+}
+#blue gold purple red green black

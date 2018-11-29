@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = chihan
+add_accepted_culture = chahar
+capital = 4194
+
+1444.11.11 = {
+	monarch = {
+		name = "Changbo"
+		dynasty = "Zeng"		
+		birth_date = 1399.1.1
+		adm = 2
+		dip = 0
+		mil = 5
+	}
+}

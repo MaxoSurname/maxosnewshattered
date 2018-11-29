@@ -1,0 +1,120 @@
+roman_diarchy_reform = {
+	icon = "ambrosian_republic"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_diarchy_reform
+			have_had_reform = roman_diarchy_reform
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	modifiers = {
+		defensiveness = 0.1
+		land_morale = 0.05
+		max_states = 1
+		max_absolutism = -30
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 1
+}
+
+
+roman_empire_reform = {
+	allow_normal_conversion = yes
+	icon = "ambrosian_republic"
+	potential = {
+		OR = {
+			have_had_reform = roman_diarchy_reform
+			has_reform = roman_diarchy_reform
+		}
+	}
+	valid_for_nation_designer = no
+	nation_designer_cost = 50
+	modifiers = {
+		legitimacy = 1
+		infantry_power = 0.10
+		max_states = 5
+	}
+}
+
+dual_monarchy_reform = {
+	allow_normal_conversion = yes
+	icon = "crown"
+	potential = {
+		OR = {
+			have_had_reform = dual_monarchy_reform
+			has_reform = dual_monarchy_reform
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	modifiers = {
+		legitimacy = 1.5
+		num_accepted_cultures = 3
+		max_states = 5
+		general_cost = -0.20
+	}
+}
+
+#ideas
+#signoria
+#occitain monarchy/republic?
+#germanic march? margrivate?
+#beylik government?
+#crusader haute-court
+#
+
+chinese_monarchy = {
+	icon = "celestial_empire"
+	allow_normal_conversion = no
+	# potential = {
+		# is_emperor_of_china = yes
+		# NOT = { has_global_flag = empire_of_china_dismantled }
+	# }
+	maintain_dynasty = yes
+	allow_force_tributary = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	# lock_level_when_selected = yes
+	nation_designer_trigger = {
+		culture_group = east_asian
+		technology_group = chinese
+		capital_scope = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				region = south_china_region
+			}
+		}
+	}
+	factions = {
+		temples
+		enuchs
+		bureaucrats
+	}
+
+	# fixed_rank = 3
+	start_territory_to_estates = 0.9
+
+	modifiers = {
+		prestige = 0.5
+	}
+	
+	ai = {
+		factor = 1000 # should always be picked if available
+	}
+
+	# custom_attributes = {
+		# locked_government_type = yes
+	# }
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+		factions = {}
+	}
+}

@@ -1,0 +1,6 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_ab_leader_shock"
+		texturefile = "gfx/interface/ages/ab_leader_shock.dds"
+	}
+}

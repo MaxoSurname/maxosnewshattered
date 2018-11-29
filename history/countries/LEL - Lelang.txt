@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = korean
+religion = confucianism
+government_rank = 1
+technology_group = chinese
+capital = 1845
+
+1444.1.1 = {
+	monarch = {
+		name = "Bangwon"
+		dynasty = "Hong"
+		birth_date = 1408.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

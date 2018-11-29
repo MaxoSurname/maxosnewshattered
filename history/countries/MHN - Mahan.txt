@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = korean
+religion = confucianism
+government_rank = 1
+technology_group = chinese
+capital = 737
+
+1444.1.1 = {
+	monarch = {
+		name = "Gyeong"
+		dynasty = "Gang"
+		birth_date = 1403.1.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}

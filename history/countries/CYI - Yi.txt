@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = miao
+add_accepted_culture = yi
+religion = animism
+technology_group = chinese
+capital = 675	# Umung
+government_rank = 1
+
+1444.11.11 = {
+	monarch = {
+		name = "Gang"
+		dynasty = "Soung"		
+		birth_date = 1411.1.1
+		adm = 5
+		dip = 2
+		mil = 4
+	}
+}
+

@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = cosmopolitan_french
+religion = catholic
+capital = 185 	# Nemours
+
+1420.1.1 = {
+	monarch = {
+		name = "Gaucelin"
+		dynasty = "de Rohan"
+		birth_date = 1407.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}

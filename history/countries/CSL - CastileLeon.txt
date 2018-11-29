@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+primary_culture = castillian
+add_accepted_culture = andalucian
+add_accepted_culture = leonese
+religion = catholic
+technology_group = western
+capital = 217

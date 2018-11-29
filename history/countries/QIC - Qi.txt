@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2	#main country
+technology_group = chinese
+religion = confucianism
+primary_culture = zhongyuan
+capital = 2176
+
+1444.11.11 = {
+	monarch = {
+		name = "Youjian"
+		dynasty = "Qi"		
+		birth_date = 1398.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

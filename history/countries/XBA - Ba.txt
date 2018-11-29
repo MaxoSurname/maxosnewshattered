@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+primary_culture = yi
+religion = buddhism
+capital = 4213
+
+1444.11.11 = {
+	monarch = {
+		name = "Cizhao"
+		dynasty = "Longzan"
+		birth_date = 1413.1.1
+		adm = 5
+		dip = 2
+		mil = 2
+	}
+}
+

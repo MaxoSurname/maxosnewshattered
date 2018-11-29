@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = ligurian
+religion = catholic
+technology_group = western
+capital = 102
+
+1420.1.1 = {
+	monarch = {
+		name = "Jacopo Grimaldi"
+		birth_date = 1410.1.1
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}

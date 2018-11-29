@@ -1,0 +1,24 @@
+#3231 - Hiiumaa
+#Region - Baltic
+#Area - Estonia
+
+owner = OSL
+controller = OSL
+add_core = OSL
+culture = estonian
+religion = catholic
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Kärrdal"
+is_city = yes
+
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern

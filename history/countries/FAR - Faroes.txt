@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = faroese
+religion = catholic
+technology_group = western
+capital = 1979 #Faroes
+
+1399.1.1 = {
+	monarch = {
+		name = "þingi"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1540.1.1 = { government = administrative_republic }
+
+1750.1.1 = { government = constitutional_republic }

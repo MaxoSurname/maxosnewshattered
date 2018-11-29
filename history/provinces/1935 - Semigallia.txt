@@ -1,0 +1,24 @@
+#Semigallia, center at Mitau
+#Region - Baltic
+#Area - Curonia
+
+owner = KUR
+controller = KUR
+add_core = KUR
+culture = latvian
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Mitau"
+is_city = yes # Estimated
+
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern

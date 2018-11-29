@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "guelph_stronghold"
+		texturefile = "gfx/interface/ideas_EU4/guelph_stronghold.dds"
+	}
+	spriteType = {
+		name = "ghibelline_stronghold"
+		texturefile = "gfx/interface/ideas_EU4/ghibelline_stronghold.dds"
+	}
+}

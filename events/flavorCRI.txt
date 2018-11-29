@@ -1,0 +1,7 @@
+########################################
+# Flavor Events for Crimea
+#
+# Scripted by Henrik Lohmander
+########################################
+
+#nuked - sorry

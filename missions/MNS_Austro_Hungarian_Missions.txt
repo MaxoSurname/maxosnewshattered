@@ -1,0 +1,473 @@
+AHE_missions_1 = {	#base + austria->bohemia->silesia
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = AHE
+	}
+	has_country_shield = yes
+	
+	#basic 2
+	
+	AHE_base_1 = {
+		icon = mission_monarch_in_throne_room
+		required_missions = {  }
+		trigger = {
+			tag = AHE
+		}
+		effect = {
+			#legit nothing lmao
+		}
+	}
+	
+	AHE_base_2 = {
+		icon = mission_empire
+		required_missions = { AHE_base_1 }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 134
+			province_id = 153
+		}
+		trigger = {
+			134 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			153 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_government_reform = dual_monarchy_reform
+		}
+	}
+	
+	#first tree
+	
+	AHE_tree_1_1 = {	#austria proper
+		icon = mission_invade_island
+		required_missions = { AHE_base_2 }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = tirol_area
+				area = austria_proper_area
+				area = inner_austria_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			tirol_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			austria_proper_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			inner_austria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			bohemia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			erzgebirge_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			moravia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	AHE_tree_1_2 = {	#bohemia
+		icon = mission_empire
+		required_missions = { AHE_tree_1_1 }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = bohemia_area		#4
+				area = erzgebirge_area	#4
+				area = moravia_area		#3
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			bohemia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			erzgebirge_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			moravia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			silesia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_silesia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			60 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1763 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+#second tree
+AHE_missions_2 = {	#hungary->transylvania->poland
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = AHE
+	}
+	has_country_shield = yes
+	
+	AHE_tree_2_1 = {	#austria proper
+		icon = mission_invade_island
+		required_missions = { AHE_base_2 }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = transdanubia_area
+				area = budapest_area
+				area = alfold_area
+				area = slovakia_area
+				area = carpathian_ruthenia_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			transdanubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			budapest_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			alfold_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			slovakia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			carpathian_ruthenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			southern_transylvania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			transylvania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	AHE_tree_2_2 = {
+		icon = mission_empire
+		required_missions = { AHE_tree_2_1 }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = southern_transylvania_area
+				area = transylvania_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			southern_transylvania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			transylvania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			red_ruthenia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			malopolska_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sandomierz_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+AHE_missions_3 = {	#slovenia->venezia->padana
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = AHE
+	}
+	has_country_shield = yes
+	
+	AHE_tree_3_1 = {	#slovenia
+		icon = mission_invade_island
+		required_missions = { AHE_base_2 }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = carinthia_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			carinthia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			venetia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			verona_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	AHE_tree_3_2 = {	#venice
+		icon = mission_empire
+		required_missions = { AHE_tree_3_1 }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = venetia_area
+				area = verona_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			venetia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			verona_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			lombardy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			emilia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			emilia_romagna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+AHE_missions_4 = {	#croatia->bosnia->serbia/albania
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = AHE
+	}
+	has_country_shield = yes
+	
+	AHE_tree_4_1 = {	#croatia
+		icon = mission_invade_island
+		required_missions = { AHE_base_2 }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = croatia_area
+				area = east_adriatic_coast_area
+				area = slavonia_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			croatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_adriatic_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			slavonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			bosnia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			herzegovina_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	AHE_tree_4_2 = {	#bosnia
+		icon = mission_empire
+		required_missions = { AHE_tree_4_1 }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = bosnia_area
+				area = herzegovina_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			bosnia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			herzegovina_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			serbia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			rascia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			albania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

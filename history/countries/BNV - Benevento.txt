@@ -1,0 +1,17 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 1
+primary_culture = neapolitan
+religion = catholic
+technology_group = western
+capital = 3038
+
+1442.1.1 = {
+	monarch = {
+		name = "Pagrande"
+		birth_date = 1382.1.1
+		adm = 1
+		dip = 5
+		mil = 2
+	}
+}

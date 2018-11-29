@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = normanlevant
+add_accepted_culture = al_misr_arabic
+religion = catholic
+technology_group = western
+capital = 1854
+
+1444.1.1 = {
+	monarch = {
+		name = "John II"
+		dynasty = "of Ibelin"
+		birth_date = 1395.1.1
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}

@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = korean
+religion = confucianism
+government_rank = 1
+technology_group = chinese
+capital = 2694
+
+1444.1.1 = {
+	monarch = {
+		name = "Hyosun"
+		dynasty = "Yun"
+		birth_date = 1401.1.1
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}

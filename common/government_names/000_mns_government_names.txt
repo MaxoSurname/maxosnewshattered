@@ -1,0 +1,46 @@
+#Theocracies - Specified Religion / Culture
+jomsborg_monastic_order = {
+	rank = {
+		1 = JOMSBORG_MO
+	}
+
+	ruler_male = {
+		1 = JOMSBORG_M
+	}
+
+	ruler_female = {
+		1 = JOMSBORG_F
+	}
+
+	trigger = {
+		OR = {
+			has_reform = monastic_order_reform
+			has_reform = monastic_order_government
+		}
+		OR = {
+			tag = JMB
+			tag = JMV
+		}
+	}
+}
+
+
+roman_diarchy = {
+	rank = {
+		1 = ROMAN_DIARCHY_1
+	}
+
+	ruler_male = {
+		1 = ROMAN_DIARCHY_M
+	}
+
+	ruler_female = {
+		1 = ROMAN_DIARCHY_F
+	}
+
+	trigger = {
+		OR = {
+			has_reform = roman_diarchy_reform
+		}
+	}
+}

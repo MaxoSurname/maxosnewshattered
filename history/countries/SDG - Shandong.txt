@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = shandong_culture
+capital = 5391
+
+1444.11.11 = {
+	monarch = {
+		name = "Yingfang"
+		dynasty = "Shan"		
+		birth_date = 1387.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}

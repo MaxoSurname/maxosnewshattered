@@ -1,0 +1,18 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+mercantilism = 25
+primary_culture = prussian
+religion = catholic
+technology_group = western
+capital = 1841
+
+1440.3.14 = {
+	monarch = {
+		name = "Johannes von Baysen"
+		adm = 2
+		dip = 5
+		mil = 2
+	}
+}
+

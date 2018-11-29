@@ -1,0 +1,15 @@
+owner = DMG
+controller = DMG
+add_core = DMG
+culture = chihan
+religion = confucianism
+capital = "Dongping"	#used to be kanye rip
+trade_goods = cloth
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 1
+is_city = yes
+
+discovered_by = chinese
+discovered_by = nomad_group

@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = xuanzhou
+capital = 5404
+
+1444.11.11 = {
+	monarch = {
+		name = "Cijiong"
+		dynasty = "Chai"		
+		birth_date = 1395.1.1
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}

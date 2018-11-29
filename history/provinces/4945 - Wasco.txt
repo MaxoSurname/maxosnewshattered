@@ -1,0 +1,18 @@
+owner = DTE
+controller = DTE
+add_core = DTE
+culture = togoku
+religion = shinto
+capital = "Rikuzen"
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 2
+is_city = yes
+
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG

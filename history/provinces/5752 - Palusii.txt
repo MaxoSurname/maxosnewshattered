@@ -1,0 +1,18 @@
+owner = HTK
+controller = HTK
+add_core = HTK
+culture = togoku
+religion = shinto
+capital = "Noto"
+trade_goods = fish
+hre = no
+base_tax = 1 
+base_production = 2
+base_manpower = 1
+is_city = yes
+
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+primary_culture = burgundian
+add_accepted_culture = arpitan
+religion = catholic
+technology_group = western
+capital = 201	# Marseille
+
+1444.1.1 = {
+	monarch = {
+		name = "Rudolf III"
+		dynasty = "von Welf"
+		birth_date = 1423.11.10
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}

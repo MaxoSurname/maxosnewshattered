@@ -1,0 +1,16 @@
+#4151 - Most of Kemi Lappmark: Enare/Inari, Sodankylä, Kemikyla, Utsjoki, Kittila, Sombio
+
+owner = KRL
+controller = KRL
+add_core = KRL
+culture = finnish
+religion = catholic
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Kajana"
+is_city = yes
+discovered_by = eastern
+discovered_by = western

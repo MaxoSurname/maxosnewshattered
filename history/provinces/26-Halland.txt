@@ -1,0 +1,23 @@
+#Halland, contains Halmstad, Varberg.
+#Region - Scandinavia
+#Area - Skaneland
+
+owner = VGL
+controller = VGL
+add_core = VGL
+add_core = OSG
+add_core = SCN
+culture = danish
+religion = catholic
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 1
+capital = "Halmstad"
+is_city = yes
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

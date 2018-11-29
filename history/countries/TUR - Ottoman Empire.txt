@@ -1,0 +1,40 @@
+government = monarchy
+add_government_reform = ottoman_government
+government_rank = 1
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+historical_rival = BYZ
+capital = 317 # Bursa
+national_focus = MIL
+add_army_professionalism = 0.1
+religious_school = hanafi_school
+historical_friend = PHL
+
+1439.1.1 = {
+	leader = {
+		name = "Hadim Sehabeddin"
+		type = general
+		fire = 3
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 1453.9.9
+		personality = inspirational_leader_general_personality
+	}
+}
+	
+1444.1.1 = {
+	monarch = {
+		name = "Mehmed II Fatih"
+		dynasty = Osmanoglu
+		birth_date = 1432.3.30
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	#add_ruler_personality = lawgiver_personality
+	add_piety = -0.2
+}

@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = english
+religion = catholic
+capital = 240 # Tamworth
+
+1429.11.6 = { #Coronation
+	monarch = {
+		name = "Edwin"
+		dynasty = "of Mercia"
+		birth_date = 1413.12.6
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}

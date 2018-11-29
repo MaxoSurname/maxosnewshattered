@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2	#main country
+technology_group = chinese
+religion = confucianism
+primary_culture = sichuanese
+add_accepted_culture = tibetan
+capital = 679	#Chengdu
+
+1444.11.11 = {
+	monarch = {
+		name = "Jihuang"
+		dynasty = "Shu"		
+		birth_date = 1404.1.1
+		adm = 4
+		dip = 0
+		mil = 4
+	}
+}

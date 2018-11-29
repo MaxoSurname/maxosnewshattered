@@ -1,0 +1,1534 @@
+#########
+#Vanilla#
+#########
+# Special countries..
+REB = "countries/Rebels.txt"
+PIR = "countries/Pirates.txt"
+NAT = "countries/Natives.txt"
+
+#Scandinavia
+SWE	= "countries/Sweden.txt"
+DAN	= "countries/Denmark.txt"
+FIN	= "countries/Finland.txt"
+GOT	= "countries/Gotland.txt"
+NOR	= "countries/Norway.txt"
+SHL	= "countries/Holstein.txt"
+SCA	= "countries/Scandinavia.txt"
+EST = "countries/Estonia.txt"
+LVA = "countries/Livonia.txt"
+SMI = "countries/Sami.txt"
+KRL = "countries/Karelia.txt"
+ICE = "countries/Iceland.txt"
+
+#Balkans
+ACH	= "countries/PrincipalityOfAchaia.txt"
+ALB	= "countries/Albania.txt"
+ATH	= "countries/Athens.txt"
+BOS	= "countries/Bosnia.txt"
+BUL	= "countries/Bulgaria.txt"
+BYZ	= "countries/ByzantineEmpire.txt"
+CEP	= "countries/Corfu.txt"
+CRO	= "countries/Croatia.txt"
+CRT	= "countries/Crete.txt"
+CYP	= "countries/Cyprus.txt"
+EPI	= "countries/Epirus.txt"
+GRE	= "countries/Greece.txt"
+KNI	= "countries/Knights.txt"
+MOE	= "countries/Morea.txt"
+MOL	= "countries/Moldavia.txt"
+MON	= "countries/Montenegro.txt"
+NAX	= "countries/Naxos.txt"
+RAG	= "countries/Ragusa.txt"
+RMN	= "countries/Romania.txt"
+SER	= "countries/Serbia.txt"
+TRA	= "countries/Transylvania.txt"
+WAL	= "countries/Wallachia.txt"
+HUN	= "countries/Hungary.txt"
+SLO = "countries/Slovakia.txt"
+TUR	= "countries/Ottomans.txt"
+
+#British Isles 
+CNN = "countries/Connacht.txt"
+CRN	= "countries/Cornwall.txt"
+ENG	= "countries/England.txt"
+LEI = "countries/Leinster.txt"
+IRE	= "countries/Ireland.txt"
+MNS = "countries/IRE_Munster.txt"
+SCO	= "countries/Scotland.txt"
+TYR = "countries/Tyrone.txt"
+WLS	= "countries/Wales.txt"
+NOL = "countries/Northumberland.txt"
+GBR	= "countries/GreatBritain.txt"
+MTH = "countries/Meath.txt"
+ULS = "countries/Ulster.txt"
+DMS = "countries/Desmond.txt" #Earldom of Desmond
+SLN = "countries/Sligo.txt"
+KID = "countries/Kildare.txt"
+HSC = "countries/Highlands.txt"
+ORD = "countries/Ormond.txt"
+TRY = "countries/Tyrconnell.txt"
+FLY = "countries/Faly.txt"
+MCM = "countries/MacCarthy.txt" #Kingdom of Desmond
+KOI = "countries/Mann.txt"
+LOI = "countries/TheIsles.txt"
+
+#Colonies
+BRZ	= "countries/Brazil.txt"
+CAN	= "countries/Canada.txt"
+CHL	= "countries/Chile.txt"
+COL	= "countries/Colombia.txt"
+HAT	= "countries/Haiti.txt"
+LAP	= "countries/LaPlata.txt"
+LOU	= "countries/Louisiana.txt"
+MEX	= "countries/Mexico.txt"
+PEU	= "countries/Peru.txt"
+PRG	= "countries/Paraguay.txt"
+QUE	= "countries/Quebec.txt"
+CAM	= "countries/UPCA.txt"
+USA	= "countries/USA.txt"
+VNZ	= "countries/Venezuela.txt"
+AUS = "countries/Australia.txt"
+
+#Eastern Europe
+DNZ	= "countries/Danzig.txt"
+KRA	= "countries/Krakow.txt"
+LIT	= "countries/Lithuania.txt"
+LIV	= "countries/LivonianOrder.txt"
+MAZ	= "countries/Mazovia.txt"
+POL	= "countries/Poland.txt"
+PRU	= "countries/Prussia.txt"
+KUR	= "countries/Kurland.txt"
+RIG	= "countries/Riga.txt"
+TEU	= "countries/Teutonicorder.txt"
+PLC = "countries/TheCommonwealth.txt"
+VOL	= "countries/Volyn.txt"
+KIE	= "countries/Kiev.txt"
+CHR	= "countries/Chernigov.txt"
+OKA = "countries/Oka.txt"
+
+#France 
+ALE = "countries/Alencon.txt"
+ALS	= "countries/Alsace.txt"
+AMG	= "countries/Armagnac.txt"
+AUV	= "countries/Auvergne.txt"
+AVI	= "countries/Avignon.txt"
+BOU	= "countries/Bourbonnais.txt"
+BRI	= "countries/Brittany.txt"
+BUR	= "countries/Burgundy.txt"
+CHP	= "countries/Champagne.txt"
+COR	= "countries/Corsica.txt"
+DAU	= "countries/Dauphine.txt"
+FOI	= "countries/Foix.txt"
+FRA	= "countries/France.txt"
+GUY	= "countries/Gascony.txt"
+NEV	= "countries/Nevers.txt"
+NRM	= "countries/Normandy.txt"
+ORL	= "countries/Orleans.txt"
+PIC	= "countries/Picardy.txt"
+PRO	= "countries/Provence.txt"
+SPI	= "countries/SardiniaPiedmont.txt"
+TOU	= "countries/Toulouse.txt"
+BER	= "countries/Berry.txt"
+	
+#HRE
+AAC = "countries/Aachen.txt" 
+ANH	= "countries/Anhalt.txt"
+ANS	= "countries/Ansbach.txt"
+AUG = "countries/Augsburg.txt"
+BAD	= "countries/Baden.txt"
+BAV	= "countries/Bavaria.txt"
+BOH	= "countries/Bohemia.txt"
+BRA	= "countries/Brandenburg.txt"
+BRE	= "countries/Bremen.txt"
+BRU	= "countries/Brunswick.txt"
+EFR = "countries/EastFrisia.txt"
+FRN	= "countries/Frankfurt.txt"
+GER	= "countries/Germany.txt"
+HAB	= "countries/Austria.txt"
+HAM	= "countries/Hamburg.txt"
+HAN	= "countries/Hannover.txt"
+HES	= "countries/Hessen.txt"
+HLR = "countries/HolyRomanEmpire.txt"
+KLE	= "countries/Kleves.txt"
+KOL	= "countries/Cologne.txt"
+LAU = "countries/Lauenburg.txt"
+LOR	= "countries/Lorraine.txt"
+LUN	= "countries/Luneburg.txt"
+MAG	= "countries/Magdeburg.txt"
+MAI	= "countries/Mainz.txt"
+MEI	= "countries/Meissen.txt"
+MKL	= "countries/Mecklenburg.txt"
+MUN	= "countries/Munster.txt"
+MVA = "countries/Moravia.txt"
+OLD	= "countries/Oldenburg.txt"
+PAL	= "countries/Palatinate.txt"
+POM	= "countries/Pommerania.txt"
+SAX	= "countries/Saxony.txt"
+SIL	= "countries/Silesia.txt"
+SLZ	= "countries/Salzburg.txt"
+STY	= "countries/Styria.txt"
+SWI	= "countries/Schweiz.txt"
+THU	= "countries/Thuringia.txt"
+TIR	= "countries/Tirol.txt"
+TRI	= "countries/Trier.txt"
+ULM = "countries/Ulm.txt"
+WBG	= "countries/Wurzburg.txt"
+WES	= "countries/Westfalia.txt"
+WUR	= "countries/Wurttemberg.txt"
+NUM = "countries/Nuremberg.txt"
+MEM = "countries/Memmingen.txt"
+VER = "countries/Verden.txt"
+NSA = "countries/Nassau.txt"
+RVA = "countries/Ravensburg.txt"
+DTT = "countries/Dithmarschen.txt"
+	
+#Spain
+ARA	= "countries/Aragon.txt"
+CAS	= "countries/Castille.txt"
+CAT	= "countries/Catalunya.txt"
+GRA	= "countries/Granada.txt"
+NAV	= "countries/Navarra.txt"
+POR	= "countries/Portugal.txt"
+SPA	= "countries/Spain.txt"
+GAL	= "countries/Galicia.txt"
+LON = "countries/Leon.txt"
+ADU = "countries/Andalusia.txt"
+
+#Italy
+AQU	= "countries/Aquileia.txt"
+ETR	= "countries/Etruria.txt"
+FER	= "countries/Ferrara.txt"
+GEN	= "countries/Genoa.txt"
+ITA	= "countries/Italy.txt"
+MAN	= "countries/Mantua.txt"
+MLO	= "countries/Milan.txt"
+MOD	= "countries/Modena.txt"
+NAP	= "countries/Naples.txt"
+PAP	= "countries/Papal.txt"
+PAR	= "countries/Parma.txt"
+PIS	= "countries/Pisa.txt"
+SAR	= "countries/Sardinia.txt"
+SAV	= "countries/Savoy.txt"
+SIC	= "countries/Sicily.txt"
+SIE	= "countries/Siena.txt"
+TUS	= "countries/Tuscany.txt"
+URB	= "countries/Urbino.txt"
+VEN	= "countries/Venice.txt"
+MFA = "countries/Montferrat.txt"
+LUC = "countries/Lucca.txt"
+LAN	= "countries/Florence.txt"
+JAI	= "countries/Malta.txt"
+
+#Low Countries
+BRB	= "countries/Brabant.txt"
+FLA	= "countries/Flanders.txt"
+FRI	= "countries/Friesland.txt"
+GEL	= "countries/Gelre.txt"
+HAI	= "countries/Hainaut.txt"
+HOL	= "countries/Holland.txt"
+LIE	= "countries/Liege.txt"
+LUX	= "countries/Luxembourg.txt"
+NED	= "countries/Netherlands.txt"
+UTR	= "countries/Utrecht.txt"
+
+#Russia 
+ARM	= "countries/Armenia.txt"
+AST	= "countries/Astrakhan.txt"
+CRI	= "countries/Crimea.txt"
+GEO	= "countries/Georgia.txt"
+KAZ	= "countries/Kazan.txt"
+MOS	= "countries/Muscowy.txt"
+NOV	= "countries/Novgorod.txt"
+PSK	= "countries/Pskov.txt"
+QAS	= "countries/QasimKhanate.txt"
+RUS	= "countries/Russia.txt"
+RYA	= "countries/Ryazan.txt"
+TVE	= "countries/Tver.txt"
+UKR	= "countries/Ukraine.txt"
+YAR	= "countries/Yaroslavl.txt"
+ZAZ	= "countries/Zaporozhie.txt"
+NOG	= "countries/Nogai.txt"
+SIB	= "countries/Sibir.txt"
+PLT	= "countries/Polotsk.txt"
+PRM = "countries/Perm.txt"
+FEO	= "countries/Theodoro.txt"
+BSH	= "countries/Bashkiria.txt"
+BLO = "countries/Beloozero.txt"
+RSO = "countries/Rostov.txt"
+
+GOL	= "countries/GreatHorde.txt"
+GLH = "countries/GoldenHorde.txt"
+
+#Arabia	
+ADE	= "countries/Aden.txt"
+ALH	= "countries/Haasa.txt"
+ANZ = "countries/Anizah.txt"
+ARB = "countries/Arabia.txt"
+ARD = "countries/Ardalan.txt"
+BHT = "countries/Bohtan.txt"
+DAW = "countries/Dawasir.txt"
+ERE = "countries/Eretna.txt"
+FAD = "countries/Fadl.txt"
+GRM = "countries/Germiyan.txt"
+HDR = "countries/Hadramut.txt"
+HED	= "countries/Hedjaz.txt"
+LEB = "countries/Lebanon.txt"
+MAK = "countries/Makuria.txt"
+MDA = "countries/Medina.txt"
+MFL = "countries/Mikhlaf.txt"
+MHR = "countries/Mahra.txt"
+NAJ	= "countries/Najd.txt"
+NJR = "countries/Najran.txt"
+OMA	= "countries/Oman.txt"
+RAS = "countries/Rassids.txt"
+SHM = "countries/Shammar.txt"
+SHR	= "countries/Sharjah.txt"
+SRV = "countries/Shirvanshah.txt"
+YAS = "countries/Yas.txt"
+YEM = "countries/Yemen.txt"
+HSN = "countries/Ayyubids.txt"
+BTL = "countries/Bitlis.txt"
+
+#Asia Minor		
+AKK	= "countries/AkKoyunlu.txt"
+AYD	= "countries/Aydin.txt"
+CND	= "countries/Candar.txt"
+DUL	= "countries/Dulkadir.txt"
+IRQ	= "countries/Iraq.txt"
+KAR	= "countries/Karaman.txt"
+SYR	= "countries/Syria.txt"
+TRE	= "countries/Trebizond.txt"
+SRU	= "countries/Saruhan.txt"
+MEN	= "countries/Mentese.txt"
+RAM	= "countries/Ramazan.txt"
+AVR = "countries/Avars.txt"
+MLK = "countries/Kashen.txt"
+SME = "countries/Samtskhe.txt"
+ARL = "countries/Ardabil.txt"
+MSY = "countries/Mushashaiyyah.txt"
+RUM = "countries/Rum.txt"
+	
+#Maghreb
+ALG	= "countries/Algiers.txt"
+FEZ	= "countries/Fez.txt"
+MAM	= "countries/Burgi.txt"
+MOR	= "countries/Morocco.txt"
+TRP	= "countries/Tripoli.txt"
+TUN	= "countries/Tunisia.txt"
+EGY = "countries/Egypt.txt"
+KBA = "countries/Kabylia.txt"
+TFL = "countries/Tafilalt.txt"
+SOS = "countries/Sus.txt"
+TLC = "countries/Tlemcen.txt"
+TGT = "countries/Touggourt.txt"
+GHD = "countries/Ghadames.txt"
+FZA = "countries/Fezzan.txt"
+MZB = "countries/Mzab.txt"
+
+#Central Asia
+KZH	= "countries/Kazakh.txt"
+KHI	= "countries/Khiva.txt"
+SHY	= "countries/Shaybanid.txt"
+KOK	= "countries/Kokkand.txt"
+BUK = "countries/Bukhara.txt"
+
+#Persia	
+AFG	= "countries/Afghanistan.txt"
+KHO	= "countries/Khorasan.txt"
+PER	= "countries/Persia.txt"
+QAR	= "countries/QaraKoyunlu.txt"
+TIM	= "countries/Timurid.txt"
+TRS = "countries/Transoxiana.txt"
+KRY = "countries/Gilan.txt"
+CIR = "countries/Circassia.txt"
+GAZ = "countries/Gazikumukh.txt"
+IME = "countries/Imereti.txt"
+TAB = "countries/Tabarestan.txt"
+ORM = "countries/Ormuz.txt"
+LRI = "countries/Luristan.txt"
+SIS = "countries/Sistan.txt"
+BPI = "countries/Biapas.txt"
+FRS = "countries/Fars.txt"
+KRM = "countries/Kerman.txt"
+YZD = "countries/Yazd.txt"
+ISF = "countries/Isfahan.txt"
+TBR = "countries/Tabriz.txt"
+BSR = "countries/Basra.txt"
+MGR = "countries/Maregh.txt"
+QOM = "countries/Qom.txt"
+
+#Americas
+AZT = "countries/Aztec.txt"
+CHE = "countries/Cherokee.txt"
+CHM = "countries/Chimu.txt"
+CRE = "countries/Creek.txt"
+HUR = "countries/Huron.txt"
+INC = "countries/Inca.txt"
+IRO = "countries/Iroquois.txt"
+MAY = "countries/Maya.txt"
+SHA = "countries/Shawnee.txt"
+ZAP = "countries/Zapotec.txt"
+
+#Africa
+ASH = "countries/Ashanti.txt"
+BEN = "countries/Benin.txt"
+ETH = "countries/Ethiopia.txt"
+KON = "countries/Kongo.txt"
+MAL = "countries/Mali.txt"
+NUB = "countries/Funj.txt"
+SON = "countries/Songhai.txt"
+ZAN = "countries/Swahili.txt"
+ZIM = "countries/Mutapa.txt"
+ADA = "countries/Adal.txt"
+HAU = "countries/Hausa.txt"
+KBO = "countries/KanemBornu.txt"
+LOA = "countries/Loango.txt"
+OYO = "countries/Oyo.txt"
+SOF = "countries/Sofala.txt"
+SOK = "countries/Sokoto.txt"
+JOL = "countries/Jolof.txt"
+SFA = "countries/SofalaSwa.txt"
+MBA = "countries/Mombasa.txt"
+MLI = "countries/Malindi.txt"
+AJU = "countries/Ajuuraan.txt"
+MDI = "countries/Mogadishu.txt"
+ENA = "countries/Eneara.txt"
+
+#East African Additions
+
+AFA = "countries/Afar.txt"
+ALO = "countries/Alodia.txt"
+DAR = "countries/Darfur.txt"
+GLE = "countries/Geledi.txt"
+HAR = "countries/Harar.txt"
+HOB = "countries/Hobyo.txt"
+KAF = "countries/Kaffa.txt"
+MED = "countries/Medri Bahri.txt"
+MJE = "countries/Majeerteen.txt"
+MRE = "countries/Marehan.txt"
+PTE = "countries/Pate.txt"
+WAR = "countries/Warsangali.txt"
+BTI = "countries/Semien.txt"
+BEJ = "countries/Beja.txt"
+JIM = "countries/Jima.txt"
+WLY = "countries/Welayta.txt"
+DAM = "countries/Damot.txt"
+HDY = "countries/Hadiya.txt"
+SOA = "countries/Shewa.txt"
+JJI = "countries/Janjero.txt"
+ABB = "countries/Dongola.txt"
+
+#Kongo, Great Lakes & Central Africa
+TYO = "countries/Tyo.txt"
+SYO = "countries/Soyo.txt"
+KSJ = "countries/Kasanje.txt"
+LUB = "countries/Luba.txt"
+LND = "countries/Lunda.txt"
+CKW = "countries/Chokwe.txt"
+KIK = "countries/Kikondja.txt"
+KZB = "countries/Kazembe.txt"
+YAK = "countries/Yaka.txt"
+KLD = "countries/Kalundwe.txt"
+KUB = "countries/Kuba.txt"
+RWA = "countries/Rwanda.txt"
+BUU = "countries/Burundi.txt"
+BUG = "countries/Buganda.txt"
+NKO = "countries/Nkore.txt"
+KRW = "countries/Karagwe.txt"
+BNY = "countries/Bunyoro.txt"
+BSG = "countries/Basoga.txt"
+UBH = "countries/Buha.txt"
+
+MRA = "countries/Maravi.txt"
+LDU = "countries/Lundu.txt"
+TBK = "countries/Tumbuka.txt"
+MKU = "countries/Makua.txt"
+RZW = "countries/Butua.txt"
+
+#Madagascar
+MIR = "countries/Merina.txt" #And Betsileo
+SKA = "countries/Sakalava.txt" #All Sakalava Kingdoms
+BTS = "countries/Betsimisaraka.txt" #And their predecessors
+MFY = "countries/Mahafaly.txt"
+ANT = "countries/Antemoro.txt"
+
+#Far East
+ANN	= "countries/Annam.txt"
+ARK	= "countries/Arakan.txt"
+ATJ	= "countries/Atjeh.txt"
+AYU	= "countries/Ayutthaya.txt"
+BLI	= "countries/Bali.txt"
+BAN	= "countries/Banten.txt"
+BEI	= "countries/Brunei.txt"
+CHA	= "countries/Champa.txt"
+CHG	= "countries/ChagataiKhanate.txt"
+CHK	= "countries/Champassak.txt"
+DAI	= "countries/DaiViet.txt"
+JAP	= "countries/Japan.txt"
+
+#Daimyos
+AMA = "countries/Amago.txt"
+ASA = "countries/Asakura.txt"
+CSK = "countries/Chosokabe.txt"
+DTE = "countries/Date.txt"
+HJO = "countries/Hojo.txt"
+HSK = "countries/Hosokawa.txt"
+HTK = "countries/Hatakeyama.txt"
+IKE = "countries/Ikeda.txt"
+IMG = "countries/Imagawa.txt"
+MAE = "countries/Maeda.txt"
+MRI = "countries/Mori.txt"
+ODA = "countries/Oda.txt"
+OTM = "countries/Otomo.txt"
+OUC = "countries/Ouchi.txt"
+SBA = "countries/Shiba.txt"
+SMZ = "countries/Shimazu.txt"
+TKD = "countries/Takeda.txt"
+TKG = "countries/Tokugawa.txt"
+UES = "countries/Uesugi.txt"
+YMN = "countries/Yamana.txt"
+RFR	= "countries/Nanbu.txt"
+ASK = "countries/Ashikaga.txt"
+KTB = "countries/Kitabatake.txt"
+
+ANU = "countries/Ainu.txt"
+
+#New Daimyos 1.20
+AKM = "countries/Akamatsu.txt"
+AKT = "countries/Ando.txt"
+CBA = "countries/Chiba.txt"
+ISK = "countries/Isshiki.txt"
+ITO = "countries/Ito.txt"
+KKC = "countries/Kikuchi.txt"
+KNO = "countries/Kono.txt"
+OGS = "countries/Ogasawara.txt"
+SHN = "countries/Shoni.txt"
+STK = "countries/Satake.txt"
+TKI = "countries/Toki.txt"
+UTN = "countries/Utsunomiya.txt"
+TTI = "countries/Tsutsui.txt"
+
+KHA	= "countries/MongolKhanate.txt"
+KHM	= "countries/Khmer.txt"
+KOR	= "countries/Korea.txt"
+LNA	= "countries/LanNa.txt"
+LUA	= "countries/LuangPrabang.txt"
+LXA	= "countries/LanXang.txt"
+MAJ	= "countries/Majapahit.txt"
+MCH	= "countries/Manchu.txt"
+MKS	= "countries/Makassar.txt"
+MLC	= "countries/Malacca.txt"
+MNG	= "countries/Ming.txt"
+MTR	= "countries/Mataram.txt"
+OIR	= "countries/OiratHorde.txt"
+PAT	= "countries/Pattani.txt"
+PEG	= "countries/Pegu.txt"
+QNG = "countries/Qing.txt"
+RYU	= "countries/Ryukyu.txt"
+SST	= "countries/Shan.txt"
+SUK	= "countries/Sukhothai.txt"
+SUL	= "countries/Sulu.txt"
+TAU	= "countries/Taungu.txt"
+TIB	= "countries/Tibet.txt"
+TOK	= "countries/Tonkin.txt"
+VIE	= "countries/Vientiane.txt"
+CZH = "countries/Zhou.txt"
+CSH = "countries/Shun.txt"
+CXI = "countries/Xi.txt"
+YUA = "countries/GreatYuan.txt"
+
+#Manchuria tags
+MYR = "countries/Yeren.txt"
+MHX = "countries/Haixi.txt"
+MJZ = "countries/Jianzhou.txt"
+
+#Mongol tags
+KRC = "countries/Khorchin.txt"
+KLK = "countries/Khalkha.txt"
+HMI = "countries/Karadel.txt"
+ZUN = "countries/Zunghar.txt"
+KAS = "countries/Yarkand.txt"
+CHH = "countries/Chahar.txt"
+
+#Great Tibet tags
+KSD = "countries/Khoshuud.txt"
+SYG = "countries/Sarigyogir.txt"
+UTS = "countries/Utsang.txt"
+KAM = "countries/Mdokhams.txt"
+GUG = "countries/Guge.txt"
+PHA = "countries/Phagmodrupa.txt"
+
+#Non-Han China proper tags
+CDL = "countries/Dali.txt"
+CYI = "countries/Yi.txt"
+CMI = "countries/Miao.txt"
+
+#Chinese Revolters
+MIN = "countries/Min.txt"
+YUE = "countries/Yue.txt"
+SHU = "countries/Shu.txt"
+NNG = "countries/Ning.txt"
+CHC = "countries/Chu.txt"
+TNG = "countries/Tang.txt"
+WUU = "countries/Wu.txt"
+QIC = "countries/Qi.txt"
+YAN = "countries/Yan.txt"
+JIN = "countries/Jin.txt"
+LNG = "countries/Liang.txt"
+QIN = "countries/Qin.txt"
+HUA = "countries/Huai.txt"
+CGS = "countries/Changsheng.txt"
+
+#India
+BAL	= "countries/Baluchistan.txt"
+BNG = "countries/Bengal.txt"
+BIJ = "countries/Bijapur.txt"
+BAH	= "countries/Bahmanis.txt"
+DLH = "countries/Delhi.txt"
+GOC = "countries/Golconda.txt"
+DEC = "countries/Deccan.txt"
+MAR = "countries/Marathas.txt"
+MUG = "countries/Mughal.txt"
+MYS = "countries/Mysore.txt"
+VIJ = "countries/Vijaynagara.txt"
+AHM = "countries/Ahmadnagar.txt"
+ASS = "countries/Assam.txt"
+GUJ = "countries/Gujarat.txt"
+JNP = "countries/Jaunpur.txt"
+MAD = "countries/Madurai.txt"
+MLW = "countries/Malwa.txt"
+MAW = "countries/Marwar.txt"
+MER = "countries/Mewar.txt"
+MUL = "countries/Multan.txt"
+NAG = "countries/Nagpur.txt"
+NPL	= "countries/Nepal.txt"
+ORI = "countries/Orissa.txt"
+PUN = "countries/Punjab.txt"
+SND = "countries/Sind.txt"
+BRR = "countries/Berar.txt"
+JAN = "countries/Jangladesh.txt"
+KRK = "countries/Carnatic.txt"
+GDW = "countries/Gondwana.txt"
+GRJ = "countries/Garjat.txt"
+GWA = "countries/Gwalior.txt"
+DHU = "countries/Dhundhar.txt"
+KSH = "countries/Kashmir.txt"
+KLN = "countries/Keladi.txt"
+KHD = "countries/Khandesh.txt"
+ODH = "countries/Oudh.txt"
+VND = "countries/Venad.txt"
+MAB = "countries/Malabar.txt"
+MEW = "countries/Mewat.txt"
+BDA = "countries/Baroda.txt"
+BST = "countries/Bastar.txt"
+BHU = "countries/Bhutan.txt"
+BND = "countries/Bundelkhand.txt"
+CEY = "countries/Ceylon.txt"
+JSL = "countries/Jaisalmer.txt"
+KAC = "countries/Kachar.txt"
+KMT = "countries/Koch.txt"
+KGR = "countries/Kangra.txt"
+KAT = "countries/Kathiawar.txt"
+KOC = "countries/Kochin.txt"
+MLB = "countries/Manipur.txt"
+HAD = "countries/Hadoti.txt"
+NGA = "countries/Nagaur.txt"
+RMP = "countries/Rohilkandh.txt"
+LDK = "countries/Ladakh.txt"
+BGL = "countries/Bagelkhand.txt"
+JFN = "countries/Jaffna.txt"
+PTA = "countries/Patiala.txt"
+GHR = "countries/Garhwal.txt"
+CHD	= "countries/Chanda.txt"
+NGP	= "countries/Jharkhand.txt"
+JAJ	= "countries/Janjira.txt"
+TRT = "countries/Tirhut.txt"
+CMP	= "countries/RewaKantha.txt"
+BGA	= "countries/Baglana.txt"
+TPR = "countries/Tripura.txt"
+SDY = "countries/Sadiya.txt"
+BHA = "countries/Bharat.txt"
+YOR	= "countries/Andhra.txt"
+DGL = "countries/Maldives.txt"
+
+MBL = "countries/Bishnupur.txt"
+SKK = "countries/Sikkim.txt"
+IDR = "countries/Idar.txt"
+JLV = "countries/Jhalavad.txt"
+PTL = "countries/Palitana.txt"
+NVR = "countries/Navanagar.txt"
+RJK = "countries/Rajkot.txt"
+JGD = "countries/Junagarh.txt"
+PRB = "countries/Porbandar.txt"
+PAN = "countries/Panna.txt"
+KLP = "countries/Kalpi.txt"
+SBP = "countries/Sambalpur.txt"
+PTT = "countries/Patna.txt"
+RTT = "countries/Ratanpur.txt"
+KLH = "countries/Kalahandi.txt"
+KJH = "countries/Keonhjar.txt"
+PRD = "countries/Parlakhimidi.txt"
+JPR = "countries/Jeypore.txt"
+SRG = "countries/Surguja.txt"
+KND = "countries/Kandy.txt"
+TLG = "countries/Telingana.txt"
+KLT = "countries/Kolathunad.txt"
+DNG = "countries/Dang.txt"
+DTI = "countries/Doti.txt"
+GRK = "countries/Gorkha.txt"
+JML = "countries/Jumla.txt"
+LWA = "countries/Limbuwan.txt"
+MKP = "countries/Makwanpur.txt"
+SRM = "countries/Sirmur.txt"
+KTU = "countries/Kathmandu.txt"
+KMN = "countries/Kumaon.txt"
+GNG = "countries/Gingee.txt"
+TNJ = "countries/Tanjore.txt"
+SRH = "countries/Sirhind.txt"
+RJP = "countries/Rajputana.txt"
+
+BAR	= "countries/Bar.txt"
+HSA	= "countries/Hansa.txt"
+SMO = "countries/Smolensk.txt"
+NZH = "countries/NizhnyNovgorod.txt"
+KOJ = "countries/Jerusalem.txt"
+MSA = "countries/Malaya.txt"
+HIN = "countries/Hindustan.txt"
+
+ABE = "countries/Abenaki.txt"
+APA = "countries/Apache.txt"
+ASI = "countries/Assiniboine.txt"
+BLA = "countries/Blackfoot.txt"
+CAD = "countries/Caddo.txt"
+CHI = "countries/Chickasaw.txt"
+CHO = "countries/Choctaw.txt"
+CHY = "countries/Cheyenne.txt"
+COM = "countries/Comanche.txt"
+FOX = "countries/Fox.txt"
+ILL = "countries/Illinewek.txt"
+LEN = "countries/Lenape.txt"
+MAH = "countries/Mahican.txt"
+MIK = "countries/Mikmaq.txt"
+MMI = "countries/Miami.txt"
+NAH = "countries/Navajo.txt"
+OJI = "countries/Ojibwa.txt"
+OSA = "countries/Osage.txt"
+OTT = "countries/Ottawa.txt"
+PAW = "countries/Pawnee.txt"
+PEQ = "countries/Pequot.txt"
+PIM = "countries/Pima.txt"
+POT = "countries/Potawatomi.txt"
+POW = "countries/Powhatan.txt"
+PUE = "countries/Pueblo.txt"
+SHO = "countries/Shoshone.txt"
+SIO = "countries/Sioux.txt"
+SUS = "countries/Susquehannock.txt"
+WCR = "countries/Cree.txt"
+
+#African Additions
+AIR = "countries/Air.txt"
+BON = "countries/Bonoman.txt"
+DAH = "countries/Dahomey.txt"
+DGB = "countries/Dagbon.txt"
+FUL = "countries/Fulo.txt"
+JNN = "countries/Jenne.txt"
+KAN = "countries/Kano.txt"
+KBU = "countries/Kaabu.txt"
+KNG = "countries/Kong.txt"
+KTS = "countries/Katsina.txt"
+MSI = "countries/Mossi.txt"
+NUP = "countries/Nupe.txt"
+TMB = "countries/Timbuktu.txt"
+YAO = "countries/Yao.txt"
+YAT = "countries/Yatenga.txt"
+ZAF = "countries/Zafunu.txt"
+ZZZ = "countries/Zazzau.txt"
+NDO = "countries/Ndongo.txt"
+
+#Indochina Additions
+AVA = "countries/Ava.txt"
+HSE = "countries/Hsenwi.txt"
+JOH = "countries/Johor.txt"
+KED = "countries/Kedah.txt"
+LIG = "countries/Ligor.txt"
+MPH = "countries/MuanPhuang.txt"
+MYA = "countries/MongYang.txt"
+PRK = "countries/Perak.txt"
+
+# Burma Additions
+MMA = "countries/MongMao.txt"
+MKA = "countries/MongKawng.txt"
+MPA = "countries/MongPai.txt"
+MNI = "countries/MongNai.txt"
+KAL = "countries/Kale.txt"
+HSI = "countries/Hsipaw.txt"
+BPR = "countries/Prome.txt"
+
+#Siberian Tribes
+CHU = "countries/Chukchi.txt"
+HOD = "countries/Hodyntsy.txt"
+CHV = "countries/Chavchuveny.txt"
+KMC = "countries/Kamchadals.txt"
+BRT = "countries/Buryats.txt"
+
+#North American Additions
+ARP = "countries/Arapaho.txt"
+CLM = "countries/Colima.txt"
+CNK = "countries/Chinook.txt"
+COC = "countries/Cocomes.txt"
+HDA = "countries/Haida.txt"
+ITZ = "countries/Itza.txt"
+KIC = "countries/Kiche.txt"
+KIO = "countries/Kiowa.txt"
+MIX = "countries/Mixtec.txt"
+SAL = "countries/Salish.txt"
+TAR = "countries/Tarascan.txt"
+TLA = "countries/Tlapanec.txt"
+TLX = "countries/Tlaxcala.txt"
+TOT = "countries/Totonac.txt"
+WIC = "countries/Wichita.txt"
+XIU = "countries/Xiu.txt"
+
+#Indonesia Additions
+BLM = "countries/Blambangan.txt"
+BTN = "countries/Buton.txt"
+CRB = "countries/Cirebon.txt"
+DMK = "countries/Demak.txt"
+PGR = "countries/Pagarruyung.txt"
+PLB = "countries/Palembang.txt"
+PSA = "countries/Pasai.txt"
+SAK = "countries/Siak.txt"
+SUN = "countries/Sunda.txt"
+KUT = "countries/Kutai.txt"
+BNJ = "countries/Banjar.txt"
+LFA = "countries/Lanfang.txt"
+LNO = "countries/Lanao.txt"
+LUW = "countries/Luwu.txt"
+MGD = "countries/Maguindanao.txt"
+TER = "countries/Ternate.txt"
+TID = "countries/Tidore.txt"
+MAS = "countries/Madyaas.txt"
+PGS = "countries/Pangasinan.txt"
+TDO = "countries/Tondo.txt"
+MNA = "countries/Maynila.txt"
+CEB = "countries/Cebu.txt"
+BTU = "countries/Butuan.txt"
+
+#South American Additions
+CSU = "countries/Cusco.txt"
+CCQ = "countries/Calchaqui.txt"
+MPC = "countries/Mapuche.txt"
+MCA = "countries/Muisca.txt"
+QTO = "countries/Quito.txt"
+CJA = "countries/Cajamarca.txt"
+HJA = "countries/Huyla.txt"
+PTG = "countries/Potiguara.txt"
+TPQ = "countries/Tupiniquim.txt"
+TPA = "countries/Tupinamba.txt"
+TUA = "countries/Tapuia.txt"
+GUA = "countries/Guarani.txt"
+CUA = "countries/Charrua.txt"
+WKA = "countries/Wanka.txt"
+CYA = "countries/Chachapoya.txt"
+CLA = "countries/Colla.txt"
+CRA = "countries/Charca.txt"
+PCJ = "countries/Pacajes.txt"
+ARW = "countries/Arawak.txt"
+CAB = "countries/Carib.txt"
+ICM = "countries/Ichma.txt"
+
+# ???
+JMN = "countries/Jan Mayen.txt"
+ROM = "countries/RomanEmpire.txt"
+
+#Converter tags:
+#JOM = countries/Jomsvikings.txt
+#HAH = countries/Hashshashin.txt
+#ISR = countries/Israel.txt
+#TEM = countries/KnightsTemplar.txt
+#TRL = countries/Trapalanda.txt
+
+
+#######
+#Typus#
+#######
+
+#New 1.17 - few conflicts, resolved. (All European tags except HSC replacing a BtP tag, and cutting HSC. Also note RFR's usage being moved around from rev France to an African tag
+#Europe
+#ICE SLO ULS DMS SLN KID HSC OKA GUY RFR
+#Africa
+#TYO SYO KSJ LUB LND CKW KIK KZB YAK KLD KUB RWA BUU BUG NKO
+#KRW NBY BSG UBH MRA LDU TBK MKU RZW MIR SKA BTA MFY ANT
+
+#New 1.20 - no conflicts
+#ASK AKM AKT CBA ISK ITO KKC KNO OGS SHN STK TKI UTN TTI
+
+#New 1.21 - few conflicts, resovled
+#RSO BLO
+
+#New 1.23 - Conflicts ANZ (more or less same tag as BT), MHR (same exact tag as BT), FRS, YZD. Conflicts resolved.
+#ANZ DAW FAD HDR MDA MFL MHR NAJ NJR RAS YAS YEM HSN BTL MLK 
+#SME ARL MSY RUM TRS KRY LRI SIS BPI FRS KRM YZD ISF TBR BSR MGR QOM
+
+#New 1.24 - Conflict MAS. Conlicts resolved
+#Bunch of them.
+
+#New 1.25 - Conflicts ORD (Same tag as URM), TRY (Same tag as TYC), MCM (same tag as DSM), KOI (same id as KOI, but same tag as IOM), LOI (same tag as ILE). Note Ui Failghe (FLY) is a good addition on Paradox's part, in my opinion. I wonder why HR didn't add it? Bit minor, I suppose.
+#ORD TRY FLY MCM KOI LOI
+
+#Beyond The Pale Mod
+#Draiocht removed IOM added in vanilla 1.25 as KOI (country file IsleofMan to Mann)
+#Draiocht removed IOM added in vanilla 1.16 as KOI
+CEL = "countries/TirNaCeltigh.txt"
+ANI = "countries/AngloIreland.txt"			#Draiocht changed tag ID from KOI to ANI in 1.25 due to conflict with the new Kingdom of the Isles (Mann) ID.
+#Draiocht removed TYC added in vanilla 1.25 as TRY (same country file, Tyrconnell)
+ANR = "countries/Antrim.txt" #Draiocht changed ANT to ANR fix for 1.16 conflict
+#Draiocht removed ULS added in vanilla 1.16 same tag
+#Draiocht removed KIL added in vanilla 1.16 as KID
+LAI = "countries/Laigin.txt"
+URM = "countries/Ormond.txt"
+#Draiocht removed DES added in vanilla 1.16 as DMS
+#Draiocht removed DSM added in vanilla 1.25 as MCM (country file DeasMhumhain to MacCarthy)
+THO = "countries/Thomond.txt"
+GLW = "countries/Galway.txt"
+#Draiocht removed SLI added in vanilla 1.16 as SLN
+MYO = "countries/Mayo.txt"
+
+#BTP Italy
+BLG = "countries/Bologna.txt"
+SZO = "countries/Saluzzo.txt"
+TRN = "countries/Trent.txt"
+ARE = "countries/Arezzo.txt"
+MSS = "countries/Massa.txt"
+PIO = "countries/Piombino.txt"
+RMG = "countries/Romagna.txt"
+GRZ = "countries/Gorizia.txt"
+PGI = "countries/Perugia.txt"
+ITL = "countries/Italia.txt"
+LMV = "countries/LombardyVenetia.txt"
+EMR = "countries/EmiliaRomagna.txt"
+
+#BTP Version 3
+IBE = "countries/Iberia.txt"
+BEL = "countries/Belgium.txt"
+#Draiocht removed ILE added in vanilla 1.25 as LOI (same country file, TheIsles)
+BSL = "countries/Basel.txt"
+ZND = "countries/Zenden.txt"
+MTZ = "countries/Metz.txt"
+VDN = "countries/Verdun.txt"
+CMB = "countries/Cambrai.txt"
+GRN = "countries/Groningen.txt"
+DUR = "countries/Durham.txt"
+MNT = "countries/Montfort.txt"
+
+#3.1
+#Draiocht removed ICE added in vanilla 1.16 same tag
+CNL = "countries/Carniola.txt"
+#Draiocht removed SVK added in vanilla 1.16 as SLO attention to other refs some go by nyitra
+LUS = "countries/Lusatia.txt"
+LES = "countries/Lesbos.txt"
+MRV = "countries/Moravia.txt"
+GMV = "countries/GreatMoravia.txt"
+ILY = "countries/Illyria.txt"
+#Draiocht removed DIT added in vanilla 1.19 as DTT
+LNC = "countries/Lancaster.txt"
+
+#3.2
+JUL = "countries/Julich.txt"
+SAA = "countries/Saarbrucken.txt"
+ESN = "countries/Essen.txt"
+DRT = "countries/Dortmund.txt"
+MND = "countries/Minden.txt"
+LIP = "countries/Lippe.txt"
+HOH = "countries/Hohenzollern.txt"
+KNS = "countries/Konstanz.txt"
+HEL = "countries/Heilbronn.txt"
+DRM = "countries/Darmstadt.txt"
+FLD = "countries/Fulda.txt"
+RGN = "countries/Regensburg.txt"
+BMB = "countries/Bamberg.txt"
+BYR = "countries/Bayreuth.txt"
+KMM = "countries/Kammin.txt"	#changed! KMN->KMM
+RPN = "countries/Ruppin.txt"
+STR = "countries/Stargard.txt"
+OSL = "countries/OselWiek.txt"
+DRP = "countries/Dorpat.txt"
+YLT = "countries/Yelets.txt"
+#Draiocht removed OKA added in vanilla 1.16 same tag
+#Draiocht removed RST added in vanilla 1.22 as RSO
+FRE = "countries/Frisia.txt"
+LTH = "countries/Lotharingia.txt"
+FNC = "countries/Franconia.txt"
+SWB = "countries/Swabia.txt"
+OSN = "countries/Osnabruck.txt"
+PDB = "countries/Paderborn.txt"
+HOY = "countries/Hoya.txt"
+KCH = "countries/Khachen.txt"
+SHE = "countries/Sheki.txt"
+
+#BeyondthePaleLegacyProject work by Draiocht
+
+#Europe
+WEX = "countries/Wexford.txt"
+CLN = "countries/Clandeboye.txt"
+GRL = "countries/GreyLeagues.txt"
+MLA = "countries/Mallorca.txt"
+VAL = "countries/Valencia.txt"
+TNA = "countries/TirnanGael.txt"
+YYK = "countries/YnysyKedyrn.txt"
+VYA = "countries/Vyatka.txt"
+GTA = "countries/Gotaland.txt"			#Core only stolen from Neprut
+ZBT = "countries/Zubtsov.txt"
+MOZ = "countries/Mozhaysk.txt"
+SPK = "countries/Serpukhov.txt"
+MLG = "countries/Mologa.txt"
+PRS = "countries/Pronsk.txt"
+JER = "countries/JerseyandGuernsey.txt"
+WMC = "countries/WelshMarches.txt"
+GLC = "countries/RussianGalich.txt"			#A tag specifically for Yury Dmitrievich & Dmitry Shemyaka during the Great Feudal War. Actually a principality at one point in its own right, but it is borderline whether or not I'd include it. This is the best compromise CM and I could come up with.
+VLG = "countries/Vologda.txt"			#A tag specifically for the exiled Vasily II during the Great Feudal War. Possibly a stupid idea, but I'm making it work for now.
+MSL = "countries/Mosalsk.txt"
+BLV = "countries/Belyov.txt"
+VTN = "countries/Vorotynsk.txt"
+UNK = "countries/UnitedKingdomBT.txt"
+
+#Africa
+RBR = "countries/RepublicofSale.txt"
+ANF = "countries/Anfa.txt"
+REG = "countries/Regraga.txt"
+RIF = "countries/Riffans.txt"			#Core only stolen from Neprut
+HAW = "countries/Hawwara.txt"
+SLK = "countries/Shilluk.txt"
+TNR = "countries/Tungur.txt"	#changed! TNJ->TNR
+TEG = "countries/Tegali.txt"
+FNJ = "countries/Btfunj.txt"
+#Note repurposing NUB into Sennar formable. Watch localisations... is Funj in EN, Nubia in FR, and Sennar in DE.
+MKR = "countries/Btmakuria.txt"
+NBA = "countries/Nubia.txt"
+KEM = "countries/Keme.txt"
+ABD = "countries/Abdallab.txt"
+DBD = "countries/Debdou.txt"
+LGH = "countries/Laghouat.txt"
+OGL = "countries/Ouargla.txt"
+BSM = "countries/BanuSulaym.txt"
+GDM = "countries/Nafusi.txt"
+ZAB = "countries/Zab.txt"
+AAB = "countries/AitAbbas.txt"
+KUK = "countries/Kuku.txt"
+WNS = "countries/Ouarsenis.txt"			#Could just as easily be any of about 10 different Berber tags in any province around here, but this group fits the best, even if I have to use the Chenouas flag
+AUR = "countries/Aures.txt"
+OTN = "countries/OttomanTunisia.txt"
+
+#Asia
+CAP = "countries/Cappadocia.txt"
+CIL = "countries/Cilicia.txt"
+ROC = "countries/RepublicofCyprus.txt"
+CIK = "countries/Canik.txt"
+ALI = "countries/Alaiye.txt"
+#Draiocht removed AYB added in vanilla 1.23 as HSN
+TKK = "countries/Tekke.txt"
+#Draiocht removed MHR added in vanilla 1.23 same tag
+AZD = "countries/Azd.txt"
+#Draiocht removed KTH added in vanilla 1.23 as HDR
+FDI = "countries/Fadhli.txt"
+SOC = "countries/Socotra.txt"
+#Draiocht removed RSD added in vanilla 1.23 as RAS
+MRU = "countries/Mrudah.txt"
+#Draiocht removed ANZ added in vanilla 1.23 same tag (more or less... interior of Arabia very haphazard and I don't know it very well, but I think it is the same.)
+UNZ = "countries/Unaizah.txt"
+LHJ = "countries/Lahej.txt"
+MSC = "countries/Muscat.txt"
+
+#######################################################################################################################################################
+#BeyondTypusFillingInNorthAmerica - SIDaNT mean Same ID as Neprut's Tag, which means I'm using the same tag, id, and country name for ease of transfer to Neprut's Shattered Europa   -Note there are incomplete, unfinished/unready tags disabled by #
+#######################################################################################################################################################
+#Alaska - Core Countries #2
+YYA = "countries/Denaina.txt"			#Flag Info - unknown, figure it out later
+YPK = "countries/Yupik.txt"			#SIDaNT			#Flag Info - Humanoid mask/face, possibly with hands and/or fish surrounding it in the cardinal directions
+
+#Alaska - Native Start Only #7
+YYB = "countries/Aleut.txt"			#Flag Info - perhaps a stylised otter drawing, if that doesn't dredge up too many memmories
+YYC = "countries/Tanana.txt"			#Flag Info - perhaps a stylised nature scene, with either the Tanana River or a simple trail in the foreground
+YYD = "countries/Gwichin.txt"			#
+YYE = "countries/Koyukon.txt"			#
+YYF = "countries/Inyupik.txt"			#Flag Info - stylised caribou drawing
+YZA = "countries/Tutchone.txt"			#
+EYK = "countries/Eyak.txt"			#SIDaNT
+
+#Cascadia - Core Countries #5
+#Note Haida remains from vanilla - tag HDA
+#Note Salish remains from vanilla - tag SAL
+#Note Chinook remains from vanilla - tag CNK
+YYI = "countries/InlandSalish.txt"			#Note I'm not sure if I'm going with Flathead (capital 4948) or Shuswap (capital 2605) for this tag, so calling it 'InlandSalish' internally, at least for now
+TGI	= "countries/Tlingit.txt"			#SIDaNT			#Flag Info - Totem pole or Pacific Coast stylised Raven, obviously
+STL	= "countries/Stolo.txt"			#
+
+#Cascadia - Native Start Only #11
+YYG = "countries/Nuxalk.txt"			#
+YYH = "countries/Chimakum.txt"			#
+YYJ = "countries/Carrier.txt"			#
+YYL = "countries/Yakama.txt"			#
+YYM = "countries/Umpqua.txt"			#
+TSM = "countries/Tsimshian.txt"			#SIDaNT			#Flag Info - Probably a totem pole if not used for Tlingit, maybe even if it is
+NOO = "countries/Nootka.txt"			#SIDaNT			#Flag Info - Probably a totem pole, possibly some Potlach sybolism, if I can find any			#Note this tag is being slightly hijacked from original SE Nootka to Kwakiutl, a related but different people nearby
+KTX = "countries/Kootenay.txt"			#SIDaNT
+TLL = "countries/Tillamook.txt"			#SIDaNT
+#KAL = "countries/Kalapuya.txt"			#SIDaNT	removed? due to dharma
+NZP = "countries/NezPerce.txt"			#SIDaNT
+#SQU (Squamish) tag not used from Neprut's SE. No need to have two coast Salish tags next to each other and Duwamish/Suquamish alliance has more human interest
+
+#NWT - Core Countries #4
+BVR = "countries/Beaver.txt"			#SIDaNT			#Flag Info - A beaver, obviously. Capital 2600
+CPY = "countries/Chipewyan.txt"			#SIDaNT			#Capital 5070
+DNE = "countries/Dene.txt"			#SIDaNT			#Note 'Dene' can refer to about 300 different nations, this tag is to represent a Deh Cho Dene confederation/alliance, capital 4983 or 4986
+SLV = "countries/Slavey.txt"			#SIDaNT			#Flag Info - A bear, probably. Note that I hijacked Slavey and made it into the more specific Sahtu and Neprut said he intends to do the same, so this tag is 'Sahtu'
+
+#NWT -  Native Start Only #1
+NHA = "countries/Nahani.txt"			#SIDaNT			#Capital 5041 or 5040
+#Coppermine Inuit tag if the north coast is ever opened up
+#ATlicho Dene tag wouldn't be a horrible idea, cap 4985 or 5072
+
+#California - Core Countries #5
+#Note Shoshoni remains from vanilla - tag SHO, capital whatever, probably 5016
+CHS = "countries/Chumash.txt"			#SIDaNT
+YYO = "countries/Tongva.txt"			#
+YKU = "countries/Yokuts.txt"			#SIDaNT			#Capital 5032
+WWJ = "countries/Opata.txt"			#SIDaNT			#Capital 862
+
+#California - Native Start Only #18
+#Note Comanche from vanilla, tag COM, reamains only for native start is repurposed and moved to 2020 (actually techincally Cascadia, but whatever) and renamed to Eastern Shoshoni. Comanche didn't exist until 1700s, before that, they were just Wyoming Shoshoni (moving there after start date), and before that, just regular east Shoshoni 
+#Note Pima from vanilla - tag PIM, remains only for native start. capital 877
+YYN = "countries/Paiute.txt"			#Capital whatever, probably 1808			#Note this is to represent a southern Paiute band. Northern Paiute are a fully different culture. If adding a new tag, I'd probably reccomend 4957, could also add a 3rd Paiute tag for Mono in 5044, but that might be overkill
+YYP = "countries/Wiyot.txt"			#
+YYQ = "countries/Hupa.txt"			#
+YYR = "countries/Shastan.txt"			#
+YYS = "countries/Salinan.txt"			#
+YYT = "countries/Maidu.txt"			#
+YYU = "countries/Cocopah.txt"			#
+YYV = "countries/Seri.txt"			#
+YYW = "countries/Waikuri.txt"			#
+MOJ = "countries/Mojave.txt"			#SIDaNT			#Capital 5042
+MWK = "countries/Miwok.txt"			#SIDaNT
+PMO = "countries/Pomo.txt"			#SIDaNT
+UTE = "countries/Ute.txt"			#SIDaNT			#Capital 4967, 2490, or 4965
+WAS = "countries/Washoe.txt"			#SIDaNT
+WWH = "countries/Yaqui.txt"			#SIDaNT			#Capital 5061
+WWI = "countries/Mayoo.txt"			#SIDaNT			#Capital 5062 and maybe 859 and 5063
+#QQI (Yavapai) tag not used from Neprut's SE. Already have 2 tags for the rather minor Yuman culture, definately don't need 3, and even if I wanted 3, the third would be the Cochimi, and the 4th probably Piipaash/Maricopa, then probably either the Havasupai or Hualapai for the 5th. Yavapai maybe being 6th.
+
+#Hudson Bay - Core Countries #8
+#Note Arapaho remains from vanilla - tag ARP
+#Note Assiniboine remains from vanilla - tag ASI
+#Note Blackfoot remains from vanilla - tag BLA, capital 2602
+#Note Cree from vanilla - tag WCR Capital wherever, probably 5057 or 1000. Note I presume from the tag this was meant as a west Cree, but will be East Cree in BT
+YYX = "countries/PlainsCree.txt"			#
+YZB = "countries/Lakota.txt"			#
+YZC = "countries/Salteaux.txt"			#
+MKG = "countries/Muskegon.txt"			#SIDaNT			#Swampy Cree tag, capital probably 2592 to leave York Factory open
+
+#Hudson Bay - Native Start Only #
+YYY = "countries/WoodsCree.txt"			#See Cree note at the bottom of HB group
+YYZ = "countries/OjiCree.txt"			#See Cree note at the bottom of HB group
+INK = "countries/Inuktitut.txt"			#
+YZE = "countries/Tuniit.txt"			#
+MSE = "countries/Moosonee.txt"			#SIDaNT			#Moose Cree tag, capital probably 1004. Making it native start only to keep the only non-arctic climate HB province open, primarily, though see Cree note at the bottom of HB group
+NVT = "countries/Nunavimmiut.txt"			#SIDaNT			#For now, planning on a repurposing this to a generic 'Inuit' tag at 5007. Will rethink this if more of the north is opened up, as we will likely have other Inuit tags. This is the one I called 'oddly specific' to Neprut, to which he responded that I somehow made that sound scandalous.
+QQM = "countries/Kainai.txt"			#SIDaNT
+QQN = "countries/Piikani.txt"			#SIDaNT			#Note not actually Hudson Bay, but whatever, closer links to HB than anything else
+#NKA (Nakota) tag not used from Neprut's SE. Nakota are just Sioux who fled farther west than the others (into the mountains) in the 1700s when Sioux homeland was overrun by Europeans and Cree. Didn't really exist before this (well, more accurately, should be lumped in with Assiniboine before this)
+#QQP (Siksikawa) tag not used from Neprut's SE. Vanilla already has BLA (Blackfoot) which is exactly the same thing. I assume BLA is used as a formable in SE for the Blackfoot confederacy, but I think I'm going to try to do events to encourage a federation to form instead. That, or just leave it at alliances, the member nations were rather autonomous
+#QQO (Sarcee) tag not used from Neprut's SE. Sarcee were just Beaver people who fled south when the old Beaver homeland was overrun by European-backed Cree in the 1700s, instead of fleeing west like the surviving Beaver people. Didn't exist before this. Could do events at some point, though.
+
+#Cree Note - While no/almost no native 'nation' in North America had a governmental structure anything like what was found in the Old World, the Cree especially were rural, nomadic, discontinuous, and autonomous. Despite their massive range, numbers, and huge impact on the history of North America, they never 
+#really in the entire period had any sort of centralised government of a sort that merits an EU4 tag, even compared to contemporary native groups who were much smaller, weaker, and less 'civilised'. Despite this, they have a tag in vanilla, based on internal files I'm guessing once even two were planned. It is also 
+#one of the dominant cultures of North America, so I'm ----in this one instance---- throwing history out the window and giving the Cree a few tags, at least 2 in core start, and up to 7 more in the native start. This will allow them to have the impact on both Europeans and other natives they historically did.
+
+#Great Plains - Core Countries #5 (Incomplete)
+#Note Navajo remains from vanilla - tag NAH
+#Note Pueblo remains from vanilla - tag PUE. I think I'll follow Neprut's lead here and make it a formable eventually
+HOP = "countries/Hopi.txt"			#SIDaNT
+ZNI = "countries/Zuni.txt"			#SIDaNT
+AOM = "countries/Acoma.txt"			#SIDaNT			#Note I'm repurposing this to a more general Keres tag, instead of specifically Acoma.
+ZIA = "countries/Zia.txt"			#SIDaNT			#Note I'm repurposing this to a more general Tanoan tag, instead of specifically Zia.
+HDS = "countries/Hidatsa.txt"			#
+
+#Great Plains - Native Start Only #4 (Incomplete)
+#Note Apache remains from vanilla - tag APA, remains only for native start
+QQH = "countries/Chiracahua.txt"
+QQG = "countries/Mescalero.txt"
+QQF = "countries/Jicarilla.txt"
+#JMZ (Jemez) tag not used from Neprut's SE, tough call but I'm drawing the line here on major enough for a tag... plus if I include them I'd need to add a province and I'm feeling lazy.
+
+#Canada - Core Countries #11
+#Note Huron remains from vanilla - tag HUR
+#Note Ojibwa remains from vanilla - tag OJI
+#Note Odawa remains from vanilla - tag OTT
+#Note Abenaki remains from vanilla - tag ABE
+#Note Mikmaq remains from vanilla - tag MIK
+YZG = "countries/Laurentian.txt"			#Need to write an event chain to have AI controled Laurentia cease to exist under normal circumstances (rare chance to stay perhaps). Making it a native start only until I get the chance to write it.
+YZH = "countries/Missisauga.txt"			#
+YZI = "countries/NeutralConfederacy.txt"			#
+ALQ = "countries/Algonquin.txt"			#SIDaNT
+MGT	= "countries/Innu.txt"			#SIDaNT
+XXK = "countries/Maliseet.txt"			#SIDaNT, Note I'm sure what I want to do with this, if anything, but I figure another Abenaki tag might come in handy. I will probably go with Neprut's formable Wabanaki at some point, but no time now.
+
+#Canada - Native Start Only #5
+#YZF = "countries/Nipissing.txt"			#
+#NKP = "countries/Naskapi.txt"			#SIDaNT
+#BTK = "countries/Beothuk.txt"			#SIDaNT
+#XXL = "countries/Passamaquoddy.txt"			#SIDaNT
+#XXM = "countries/Penobscott.txt"			#SIDaNT
+#QQD (Atikamekw) tag not used from Neprut's SE, it is a very minor group for a tag, even in native start, and closely related to other Algonquians
+#WWA (Tionontate) tag not used from Neprut's SE, considering it part of the Wendat tag. Note for earlier than 1444 start dates, it would make a nice vassal to Hurons
+#Various Iroquoian minors (XXG, XXF, XXH, XXI, XXJ) from SE not used in BT. I haven't handled the area yet and I'm not sure what I want to do with it
+
+#Caribbean - Core Countries #0
+
+#Caribbean - Native Start Only #14
+#YZJ = "countries/WhatDidIIntendhere.txt"			#Did I want a Lucayan, or Cuban Taino tag here? I don't recall what I had in mind, but leaving it here for now
+#WWG = "countries/Ciboney.txt"			#SIDaNT
+#YZK = "countries/Jaragua.txt"			#
+#YZL = "countries/Marien.txt"			#
+#YZM = "countries/Maguana.txt"			#
+#YZN = "countries/Magua.txt"			#
+#YZO = "countries/Higuey.txt"			#
+#YZP = "countries/Boriken.txt"			#
+#YZQ = "countries/EastTaino.txt"			#
+#YZR = "countries/IslandCaribs.txt"			#
+#YZS = "countries/Karina.txt"			#
+#YZT = "countries/TrinidadYao.txt"			#
+#YZU = "countries/Shebaye.txt"			#
+#YZV = "countries/Waikeri.txt"			#
+#YZY = "countries/Guanahatabey.txt"			#
+#TNO (Taino) tag not used from Neprut's SE, Taino get 6 tags in BT and it is easier to just work from stratch.
+
+#Other - Core Countries #1
+YZW = "countries/HawaiiNation.txt"			#
+
+#Other - Native Start Only #1
+YZZ = "countries/Kalaallisut.txt"			#Similar placement to Neprut's Thule tag, but this a historically based Kalaallisut tag instead of fantasy.
+
+
+###########
+#Shattered#
+###########
+
+#Everything in here is added by Maxo
+
+#France
+POI = "countries/Poitou.txt"
+ANJ = "countries/Anjou.txt"
+NEM = "countries/Nemours.txt"
+VLS = "countries/Valois.txt"
+FCT = "countries/FrancheComte.txt"
+#Scandinavia
+JYL = "countries/Jylland.txt"
+#Britain
+WSX = "countries/Wessex.txt"
+MRC = "countries/Mercia.txt"
+SSX = "countries/Sussex.txt"
+ESX = "countries/Essex.txt"
+EAN = "countries/EastAnglia.txt"
+YRK = "countries/York.txt"
+CBL = "countries/Cumberland.txt"
+LDS = "countries/Lindsey.txt"
+ANG = "countries/MiddleAnglia.txt"
+LOT = "countries/Lothian.txt"
+SCY = "countries/Strathclyde.txt"
+ABY = "countries/Albany.txt"
+CEX = "countries/Ce.txt"
+DRI = "countries/Dal Riata.txt"
+CAI = "countries/Cait.txt"
+ORK = "countries/Orkney.txt"
+#Iberia
+#Catalunya 212 213 2988 2987
+#Valencia 3094 220 1750
+#Mallorca 333 5095 5098
+#Galicia 206 3102 3103 3104 232
+#León 208 3101 216 3100 1747 3099 LASTSUNNI
+SEV = "countries/Sevilla.txt" # 224* 1749 SUNNI
+MGA = "countries/Malaga.txt" # 3097* 226 SUNNI rep.
+CDB = "countries/Cordoba.txt" # 225* SUNNI
+JAE = "countries/Jaen.txt" # 1748* 2754 SUNNI
+MUR = "countries/Murcia.txt" # 221* 3096 SUNNI
+TOL = "countries/Toledo.txt" # 219* 217 2951 3300
+HLV = "countries/Huelva.txt" # 3098* 230 229 SUNNI
+BDZ = "countries/Badajoz.txt" # 218* 4150 3108 3106 CAPITALSUNNI
+CBR = "countries/Coimbra.txt" # 1851* 231 228 3105
+LSB = "countries/Lisboa.txt" # 227* rep.
+ATU = "countries/Asturias.txt" # 207* 1745 (renamed Cantabria)
+
+#Italy Switzerland Danube Adriatic
+VRA = "countries/Verona.txt" # 108 107
+PVA = "countries/Pavia.txt" # 3043
+CMA = "countries/Cremona.txt" # 1862
+NVA = "countries/Novara.txt" # 2979
+#bergamo -> milan 3047
+PIE = "countries/Piedmont.txt" # 103 1875
+NIC = "countries/Nice.txt" #  102
+GVA = "countries/Geneva.txt" #  3056
+VAU = "countries/Vaud.txt" #  1867
+GRS = "countries/Grisons.txt" #  3054 3294
+AOS = "countries/Aosta.txt" #  3045
+TST = "countries/Trieste.txt" #  3049
+MGC = "countries/MagnaGraecia.txt" #  122 1933 2984 123 friend BYZ
+ANC = "countries/Ancona.txt" #  119 FRIEND RAG
+#romagna 114
+CPU = "countries/Capua.txt" #  3039
+BNV = "countries/Benevento.txt" #  3038 2985 friend PAP theo
+SLR = "countries/Salerno.txt" #  2983 1934
+ABZ = "countries/Abruzzi.txt" #  120
+EMS = "countries/EmirateSicily.txt" #  125 3037
+#malta 126
+DMZ = "countries/Dalmazia.txt" #  136 3192 130
+#croatia 131 152 3196 1826
+#montenegro 138 1831 3184
+#venice provs -> albania 3182 4174
+PNN = "countries/Pannonia.txt" #  1772 135 3051 3151
+#####################
+KRI = "countries/Karasi.txt" #5130 5131 2296 5156
+HMT = "countries/Hamit.txt" #1848 323
+AHI = "countries/Ahiler.txt" #326 5155 4314 merchant republic
+THS = "countries/Thessalonica.txt" #148 3172 3171
+TLY = "countries/Thessaly.txt" #147 3174 1853
+MAC = "countries/Macedonia.txt" #3001 3183 3167
+PHL = "countries/Philippopolis.txt" #2750 3168 3169 1764
+SFI = "countries/Sofia.txt" #1765 2746 3166 150
+DBJ = "countries/Dobruja.txt" #159 3164 3163 3165 1756
+############################
+in-game releaseables:
+
+#new nations
+RRT = "countries/RedRuthenia.txt" #2424 3237 261 3146 1952
+SBB = "countries/Siebenburgen.txt" #3152 4127 157 158 1953 155
+BNT = "countries/Banat.txt" #1954 4173 4239 (core SLA)
+SLA "countries/Slavonia.txt" #3190 1767 3194 #Later removed,starting cores remain
+#1826 -> DMZ instead of CRO
+#1828 -> CRO
+LNZ = "countries/Linz.txt" #133 2956 2968
+USL = "countries/UpperSilesia.txt" #263 3141 3142
+SCN = "countries/Scania.txt" #6 26 1982 4165
+ATC = "countries/Antioch.txt" #2313 5170 4217
+HAS = "countries/Assassins.txt" #1849
+#CIL 5154
+#LEB 378 5205 rename tripoli
+#KOJ 379
+JAF = "countries/Jaffa.txt" #1854 5180 364 363
+SIN = "countries/Sinai.txt" #5181 365 2315 4268 2327
+OJR = "countries/OultreJourdain.txt" #380 381 4270 5203
+#FAD 2314
+ALP = "countries/Aleppo.txt" #377
+DMC = "countries/Damascus.txt" #382
+#catholic: 379 380 1854 1855 364 5181 363 4268 378 2313
+#################################################
+#Directly from shattered, shh!
+MCN = "countries/Macaronesia.txt"
+AAL = "countries/Aaland.txt"
+FAR = "countries/Faroes.txt"
+JMT = "countries/Jamtland.txt"
+SHT = "countries/Shetland.txt"
+ZEA = "countries/Zealand.txt"
+SAN = "countries/SanMarino.txt" #7022
+CUM = "countries/Cuman.txt"
+KOS = "countries/Kostroma.txt"
+MPK = "countries/Malopolska.txt" #3220 259 2959
+TVP = "countries/Turov-Pinsk.txt"
+VLD = "countries/Vladimir-Suzdal.txt"
+WPK = "countries/Wielkopolska.txt" #254 3218 2963 3219
+MML = "countries/Memel.txt" #40
+CYR = "countries/Cyrenaica.txt" #356 357 2326 5272
+FAF = "countries/Farafra.txt" #5273 2318 4323 1233
+PAX = "countries/Alexandria.txt" #358 4317
+SAI = "countries/Saidi.txt" # 4319 4320 360 1231
+TPL = "countries/TripoliCountyof.txt"
+ADR = "countries/Andorra.txt" #7020
+MNC = "countries/Monaco.txt" #7021
+#Ok, back to OC
+#################################################
+LSK = "countries/CentralPoland.txt" #1939 255 258
+#łęczycka-sieradzka - tricky spelling, keeping here for copy/paste
+#KRA 262
+#SLO 2960
+#MAZ 3221 260 269 rename to warsaw
+MZY = "countries/Mazury.txt" #767 256 1938 3233 2958
+PMZ = "countries/Pomorze.txt" #5097 2997 1859 2995
+TGS = "countries/Tangiers.txt" # 334 1751 5219
+AFR = "countries/CrusaderAfrica.txt" #341 2473 2454 2453
+KCN = "countries/CrusaderConstantine.txt" #340 1882 5317 2455
+EOA = "countries/Pharaoh.txt" #5264 359 4318
+DMI = "countries/Damietta.txt" #5261 362 2316
+#KEM 4321 2320 2321 5267 2317 2319
+#BEJ 5271 2324 5282 1232
+
+
+XLU = "countries/Lu.txt" #2141 4196 2142 2143 2144 685
+
+HAX = "countries/Han.txt" #726 704 2113 2112
+
+#crusader splendor ->1; fix nrm locaisation
+AKG = "countries/Arkhangelsk.txt" # 313 1955 1958 3282 3284 4122 4129 4256 4257 4258 4259 5673 
+#SGS = "countries/Saragossa.txt" #potential inclusion
+BSC = "countries/BasqueCountry.txt"
+VSG = "countries/Visigothia.txt"
+IBR = "countries/Iberia.txt"
+CCB = "countries/CaliphateCordoba.txt"
+GAU = "countries/Gaul.txt"
+SVP = "countries/SavoyPiemont.txt" x
+KIT = "countries/KingdomItaly.txt"
+LBR = "countries/Langobardenreich.txt"
+GFL = "countries/GuelficLeague.txt"
+KOG = "countries/KingdomofGod.txt"
+SLD = "countries/Saarland.txt"
+WND = "countries/Wendia.txt"
+# = "countries/.txt"
+PBA = "countries/Polabia.txt"
+NMK = "countries/Nordmark.txt"
+HSL = "countries/HanseaticLeague.txt"
+ASG = "countries/Aussig.txt"
+
+BVM = "countries/BayernMunchen.txt"
+BVS = "countries/BayernStraubing.txt"
+
+LAD = "countries/Lade.txt"
+VFL = "countries/Vestfold.txt"
+HDL = "countries/Hordaland.txt"
+SVL = "countries/Svealand.txt"
+VGL = "countries/Vastergotland.txt"
+OSG = "countries/Ostergotland.txt"
+
+PRC = "countries/PrussianConfederation.txt"
+
+SRE = "countries/SerbianEmpire.txt"
+
+#formables
+CSL = "countries/CastileLeon.txt"
+CAG = "countries/AragonCrown.txt"
+OCC = "countries/Occitania.txt"
+FRC = "countries/Francien.txt"
+ARS = "countries/Arles.txt"
+CLT = "countries/Celtica.txt"
+APT = "countries/Arpitania.txt"
+BTA = "countries/Bretonnia.txt"
+#
+USP = "countries/UnitedSevenProvinces.txt"
+#FRE = "countries/Frisia.txt"
+ULT = "countries/UpperLotharingia.txt"
+PDA = "countries/Padania.txt"
+TFR = "countries/Terraferma.txt"
+LMC = "countries/LaMarche.txt"
+LGR = "countries/Liguria.txt"
+ADC = "countries/Adriatica.txt"
+TSI = "countries/TwoSicilies.txt"
+LTE = "countries/LatinEmpire.txt"
+KOH = "countries/KingdomofHeaven.txt"
+KCP = "countries/KingdomofCapsa.txt"
+AEL = "countries/AegeanLeague.txt"
+RML = "countries/Rumelia.txt"
+ATL = "countries/Anatolia.txt"
+BMV = "countries/BohemiaMoravia.txt"
+GHN = "countries/GreaterHungary.txt"
+SPT = "countries/Septimania.txt"
+BYL = "countries/WhiteRus.txt"
+ZUR = "countries/Zurich.txt"
+EGN = "countries/Eidgenossenschaft.txt"
+#need flags below:
+DVV = "countries/Dvaravati.txt"
+LPH = "countries/Lamphun.txt"
+AKR = "countries/Angkor.txt"
+LZH = "countries/Luzhenla.txt"
+SZH = "countries/Shuizhenla.txt"
+NZO = "countries/Nanzhao.txt"
+KPC = "countries/Kampuchea.txt"
+PGN = "countries/Pagan.txt"
+BRN = "countries/Borneo.txt"
+
+IKG = "countries/IronKingdom.txt"
+#Frankish Formables
+ASR = "countries/Austrasia.txt"
+NEU = "countries/Neustria.txt"
+AQT = "countries/Aquitaine.txt"
+FCA = "countries/Francia.txt"
+#Angevin Formables
+ANV = "countries/AngevinEmpire.txt"
+
+
+#SPECIAL FORMABLES
+TBE = "countries/TaboriteEmpire.txt" #Hussite
+DCL = "countries/DraculestiEmpire.txt" #Vampiric
+ABL = "countries/AlbigensianEmpire.txt" #Dualist
+NIB = "countries/Nibelungen.txt" # Dwarves
+
+
+
+#quest formables:
+CTH = "countries/Carthage.txt"
+
+#Europe
+AHE = "countries/AustriaHungary.txt"
+AEI = "countries/AustrianEmpire.txt"
+EDB = "countries/Empire de Bourbon.txt"
+#FRC = "countries/Franken.txt" #FNC
+GPM = "countries/Greater Pommerania.txt"
+HLE = "countries/Hellenic Empire.txt"
+JUG = "countries/Jugoslavija.txt"
+NSE = "countries/NorthSeaEmpire.txt"
+RHI = "countries/Rhineland.txt"
+SGF = "countries/South Germany.txt"
+#SWA = "countries/Schwobm.txt" #SWB
+JMB = "countries/Jomsborg.txt"
+JMV = "countries/Jomsvikings.txt"
+VRG = "countries/VarangianEmpire.txt"
+TKE = "countries/TurkishEmpire.txt"
+OES = "countries/AustriaMNS.txt"
+DYJ = "countries/Dyjon.txt"
+MDT = "countries/MediterraneanEmpire.txt"
+WSS = "countries/WestAssassins.txt"
+ESS = "countries/EastAssassins.txt"
+ASC = "countries/AssassinsCaliphate.txt"
+
+#new chinese tags
+ANQ = "countries/Anqing.txt"
+AYM = "countries/Anyam.txt"
+XBA = "countries/Ba.txt"
+BID = "countries/Beida.txt"
+CNT = "countries/Canton.txt"
+DMG = "countries/Daming.txt"
+DGH = "countries/Donghai.txt"
+DGO = "countries/Dongou.txt"
+DGT = "countries/Dongtin.txt"
+FGH= "countries/Fenghua.txt"
+FYN = "countries/Fuyan.txt"
+FZH = "countries/Fuzhou.txt"
+GDG = "countries/Guangdong.txt"
+GXI = "countries/Guangxi.txt"
+HZG = "countries/Hangzhong.txt"
+HZO = "countries/Hangzhou.txt"
+HBI = "countries/Hebei.txt"
+HDG = "countries/Hedong.txt"
+HSH = "countries/Hengshan.txt"
+HYG = "countries/Huaiyang.txt"
+JCG = "countries/Jiancheng.txt"
+JSU = "countries/Jiangsu.txt"
+JNG = "countries/Jianning.txt"
+JZO = "countries/Jizhou.txt"
+LGY = "countries/Langya.txt"
+LXI = "countries/Longxi.txt"
+NAN = "countries/Nan.txt"
+NHI = "countries/Nanhai.txt"
+NGB = "countries/Ningbo.txt"
+PYG = "countries/Poyang.txt"
+QZO = "countries/Quanzhou.txt"
+SDG = "countries/Shandong.txt"
+SZU = "countries/Suzhou.txt"
+TZO = "countries/Tingzhou.txt"
+WZO = "countries/Wenzhou.txt"
+WUX = "countries/Wuxi.txt"
+XNG = "countries/Xiang.txt"
+XZO = "countries/Xuzhou.txt"
+YZO = "countries/Yangzhou.txt"
+YJG = "countries/Yanjing.txt"
+YLG = "countries/Yelang.txt"
+ZHG = "countries/Zhang.txt"
+ZJG = "countries/Zhongjing.txt"
+ZJI = "countries/Zhuji.txt"
+QZH

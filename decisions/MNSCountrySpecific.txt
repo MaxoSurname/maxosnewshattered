@@ -1,0 +1,1428 @@
+country_decisions = {
+	
+	###########
+	#Dalmàssia#
+	###########
+	
+	DMZ_slavery = {
+		major = yes
+		potential = {
+			has_idea = DMZ_idea_7
+			owns_core_province = 136
+			owns_core_province = 1826
+		}
+		provinces_to_highlight = {
+			province_id = 136
+			province_id = 1826
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			owns_core_province = 136
+			owns_core_province = 1826
+		}
+		effect = {
+			136 = {
+				add_permanent_province_modifier = { name = dalmatian_slavery duration = -1 desc = dalmatian_slavery_tooltip}
+				change_trade_goods = slaves
+			}
+			1826 = {
+				add_permanent_province_modifier = { name = dalmatian_slavery duration = -1 desc = dalmatian_slavery_tooltip}
+				change_trade_goods = slaves
+			}
+			add_years_of_income = 1
+		}
+	}
+	
+	#Guelf/Ghibelline disabled for now
+	# support_guelph_as_guelph = {
+		# major = yes
+		# potential = {
+			# capital_scope = {
+				# OR = {
+					# has_province_modifier = guelph_stronghold
+				# }
+			# }
+			# NOT = { has_country_modifier = support_guelph }
+		# }
+		# allow = {
+			# is_free_or_tributary_trigger = yes
+			# capital_scope = {
+				# OR = {
+					# has_province_modifier = guelph_stronghold
+				# }
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = { 
+				# name = support_guelph
+				# duration = -1  
+				# desc = SUPPORT_GUELPH_TOOLTIP
+			# }
+			# every_country = {
+				# limit = { 
+					# OR = {
+						# AND = {
+							# capital_scope = { has_province_modifier = ghibelline_stronghold }
+							# NOT = { has_country_modifier = support_guelph }
+						# }
+						# has_country_modifier = support_ghibelline
+						# is_emperor = yes
+					# }
+				# }
+				# add_opinion = { who = ROOT modifier = opinion_guelph_bad_support }
+			# }
+			# every_country = {
+				# limit = { 
+					# OR = {
+						# AND = {
+							# capital_scope = { has_province_modifier = guelph_stronghold }
+							# NOT = { has_country_modifier = support_ghibelline }
+						# }
+						# has_country_modifier = support_guelph
+						# tag = PAP
+					# }
+				# }
+				# add_opinion = { who = ROOT modifier = opinion_guelph_good_support }
+			# }
+		# }
+	# }
+	
+	# support_guelph_as_ghibelline = {
+		# major = yes
+		# potential = {
+			# capital_scope = {
+				# OR = {
+					# has_province_modifier = ghibelline_stronghold
+				# }
+			# }
+			# NOT = { has_country_modifier = support_guelph }
+		# }
+		# allow = {
+			# is_free_or_tributary_trigger = yes
+			# calc_true_if = {
+				# all_owned_province = {
+					# is_core = ROOT
+					# has_province_modifier = guelph_stronghold
+				# }
+				# amount = 4
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = { 
+				# name = support_guelph
+				# duration = -1  
+				# desc = SUPPORT_GUELPH_TOOLTIP
+			# }
+			# add_stability = -1
+			# every_country = {
+				# limit = { 
+					# OR = {
+						# AND = {
+							# capital_scope = { has_province_modifier = ghibelline_stronghold }
+							# NOT = { has_country_modifier = support_guelph }
+						# }
+						# has_country_modifier = support_ghibelline
+						# is_emperor = yes
+					# }
+				# }
+				# add_opinion = { who = ROOT modifier = opinion_guelph_bad_support }
+			# }
+			# every_country = {
+				# limit = { 
+					# OR = {
+						# AND = {
+							# capital_scope = { has_province_modifier = guelph_stronghold }
+							# NOT = { has_country_modifier = support_ghibelline }
+						# }
+						# has_country_modifier = support_guelph
+						# tag = PAP
+					# }
+				# }
+				# add_opinion = { who = ROOT modifier = opinion_guelph_good_support }
+			# }
+		# }
+	# }
+	
+	##
+	
+	# support_ghibelline_as_ghibelline = {
+		# major = yes
+		# potential = {
+			# capital_scope = {
+				# OR = {
+					# has_province_modifier = ghibelline_stronghold
+				# }
+			# }
+			# NOT = { has_country_modifier = support_ghibelline }
+		# }
+		# allow = {
+			# is_free_or_tributary_trigger = yes
+			# capital_scope = {
+				# OR = {
+					# has_province_modifier = ghibelline_stronghold
+				# }
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = { 
+				# name = support_ghibelline
+				# duration = -1  
+				# desc = SUPPORT_GHIBELLINE_TOOLTIP
+			# }
+			# every_country = {
+				# limit = { 
+					# OR = {
+						# AND = {
+							# capital_scope = { has_province_modifier = guelph_stronghold }
+							# NOT = { has_country_modifier = support_ghibelline }
+						# }
+						# has_country_modifier = support_guelph
+						# tag = PAP
+					# }
+				# }
+				# add_opinion = { who = ROOT modifier = opinion_ghibelline_bad_support }
+			# }
+			# every_country = {
+				# limit = { 
+					# OR = {
+						# AND = {
+							# capital_scope = { has_province_modifier = ghibelline_stronghold }
+							# NOT = { has_country_modifier = support_guelph }
+						# }
+						# has_country_modifier = support_ghibelline
+						# is_emperor = yes
+					# }
+				# }
+				# add_opinion = { who = ROOT modifier = opinion_ghibelline_good_support }
+			# }
+		# }
+	# }
+	
+	# support_ghibelline_as_guelph = {
+		# major = yes
+		# potential = {
+			# capital_scope = {
+				# OR = {
+					# has_province_modifier = guelph_stronghold
+				# }
+			# }
+			# NOT = { has_country_modifier = support_ghibelline }
+		# }
+		# allow = {
+			# is_free_or_tributary_trigger = yes
+			# calc_true_if = {
+				# all_owned_province = {
+					# is_core = ROOT
+					# has_province_modifier = ghibelline_stronghold
+				# }
+				# amount = 4
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = { 
+				# name = support_ghibelline
+				# duration = -1  
+				# desc = SUPPORT_GHIBELLINE_TOOLTIP
+			# }
+			# add_stability = -1
+			# every_country = {
+				# limit = { 
+					# OR = {
+						# AND = {
+							# capital_scope = { has_province_modifier = guelph_stronghold }
+							# NOT = { has_country_modifier = support_ghibelline }
+						# }
+						# has_country_modifier = support_guelph
+						# tag = PAP
+					# }
+				# }
+				# add_opinion = { who = ROOT modifier = opinion_ghibelline_bad_support }
+			# }
+			# every_country = {
+				# limit = { 
+					# OR = {
+						# AND = {
+							# capital_scope = { has_province_modifier = ghibelline_stronghold }
+							# NOT = { has_country_modifier = support_guelph }
+						# }
+						# has_country_modifier = support_ghibelline
+						# is_emperor = yes
+					# }
+				# }
+				# add_opinion = { who = ROOT modifier = opinion_ghibelline_good_support }
+			# }
+		# }
+	# }
+	
+	################
+	#Enable Hussite#
+	################
+	
+	allow_hussite = {
+		major = yes
+		potential = {
+			owns_core_province = 3296
+			NOT = { is_religion_enabled = hussite }
+			3296 = { is_reformation_center = no }
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			stability = 1
+			total_development = 120
+			reform_desire = 0.50
+		}
+		effect = {
+			enable_religion = hussite
+			capital_scope = {
+				change_religion = hussite
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			3296 = {
+				change_religion = hussite
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}	
+		}
+	}
+	
+	################
+	#Enable Dualism#
+	################
+	
+	allow_dualist = {
+		major = yes
+		potential = {
+			OR = {
+				accepted_culture = occitain
+				accepted_culture = catalan
+				accepted_culture = bosnian
+				accepted_culture = serbian
+				accepted_culture = bulgarian
+				primary_culture = occitain
+				primary_culture = catalan
+				primary_culture = bosnian
+				primary_culture = serbian
+				primary_culture = bulgarian
+			}
+			NOT = { is_religion_enabled = dualist }
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			stability = 1
+			total_development = 120
+			reform_desire = 0.50
+		}
+		effect = {
+			enable_religion = dualist
+			capital_scope = {
+				change_religion = dualist
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = dualist
+					}
+				}
+				change_religion = dualist
+				add_reform_center = dualist
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	################
+	#Enable Valdesi#
+	################
+	
+	allow_valdesi = {
+		major = yes
+		potential = {
+			OR = {
+				accepted_culture = arpitan
+				accepted_culture = piedmontese
+				accepted_culture = swiss
+				accepted_culture = romanch_culture
+				primary_culture = arpitan
+				primary_culture = piedmontese
+				primary_culture = swiss
+				primary_culture = romanch_culture
+			}
+			NOT = { is_religion_enabled = valdesi }
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			stability = 1
+			total_development = 120
+			reform_desire = 0.50
+		}
+		effect = {
+			enable_religion = valdesi
+			capital_scope = {
+				change_religion = valdesi
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = valdesi
+					}
+					OR = {
+						culture = arpitan
+						culture = piedmontese
+						culture = swiss
+						culture = romanch_culture
+					}
+				}
+				change_religion = valdesi
+				add_reform_center = valdesi
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	#################
+	#Enable Germanic#
+	#################
+	
+	allow_germanic = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = germanic
+				culture_group = latin
+			}
+			NOT = { is_religion_enabled = germanic }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 47	#Stralsund
+				province_id = 57	#Braunschweig
+				province_id = 96 	#Zeeland
+				province_id = 189	#Lorrains
+				province_id = 104	#Lombardia
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			stability = 1
+			custom_trigger_tooltip = {
+				tooltip = allow_germanic_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 47	#Stralsund
+							province_id = 57	#Braunschweig
+							province_id = 96 	#Zeeland
+							province_id = 189	#Lorrains
+							province_id = 104	#Lombardia
+						}
+					}
+					amount = 1
+				}
+			}
+			total_development = 300
+			# reform_desire = 0.50
+		}
+		effect = {
+			enable_religion = germanic
+			capital_scope = {
+				change_religion = germanic
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = germanic
+					}
+				}
+				change_religion = germanic
+				add_reform_center = germanic
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	convert_germanic = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = germanic
+				culture_group = latin
+				culture_group = french
+			}
+			is_religion_enabled = germanic
+			NOT = { religion = germanic }
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			ai = no
+		}
+		effect = {
+			change_religion = germanic
+			add_country_modifier = {
+				name = "conversion_zeal_mns"
+				duration = 3650
+			}	
+			capital_scope = {
+				change_religion = germanic
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = germanic
+					}
+				}
+				change_religion = germanic
+				add_reform_center = germanic
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	##############
+	#Enable Norse#
+	##############
+	
+	allow_norse_pagan_reformed = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = scandinavian
+				culture_group = british
+				AND = {
+					primary_culture = prussian
+					OR = {
+						accepted_culture = prussisk
+					}
+				}
+			}
+			NOT = { is_religion_enabled = norse_pagan_reformed }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 47	#Stralsund
+				province_id = 3123	#Uppland
+				province_id = 4367	#York/Jorvik
+				province_id = 1931	#East Frisia
+				province_id = 7023	#Jomsborg
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			stability = 1
+			custom_trigger_tooltip = {
+				tooltip = allow_norse_pagan_reformed_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 47	#Stralsund
+							province_id = 3123	#Uppland
+							province_id = 4367	#York/Jorvik
+							province_id = 1931	#East Frisia
+							province_id = 7023	#Jomsborg
+						}
+					}
+					amount = 1
+				}
+			}
+			OR = {
+				total_development = 300
+				tag = JMV
+			}
+			# reform_desire = 0.50
+		}
+		effect = {
+			enable_religion = norse_pagan_reformed
+			capital_scope = {
+				change_religion = norse_pagan_reformed
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = norse_pagan_reformed
+					}
+				}
+				change_religion = norse_pagan_reformed
+				add_reform_center = norse_pagan_reformed
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	convert_norse_pagan_reformed = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = germanic
+				culture_group = scandinavian
+				culture_group = british
+			}
+			is_religion_enabled = norse_pagan_reformed
+			NOT = { religion = norse_pagan_reformed }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 47	#Stralsund
+				province_id = 3123	#Uppland
+				province_id = 4367	#York/Jorvik
+				province_id = 1931	#East Frisia
+				province_id = 7023	#Jomsborg
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			ai = no
+			custom_trigger_tooltip = {
+				tooltip = allow_norse_pagan_reformed_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 47	#Stralsund
+							province_id = 3123	#Uppland
+							province_id = 4367	#York/Jorvik
+							province_id = 1931	#East Frisia
+							province_id = 7023	#Jomsborg
+						}
+					}
+					amount = 1
+				}
+			}
+		}
+		effect = {
+			change_religion = norse_pagan_reformed
+			add_country_modifier = {
+				name = "conversion_zeal_mns"
+				duration = 3650
+			}	
+			capital_scope = {
+				change_religion = norse_pagan_reformed
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = norse_pagan_reformed
+					}
+				}
+				change_religion = norse_pagan_reformed
+				add_reform_center = norse_pagan_reformed
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	#################
+	#Enable Draconic#
+	#################
+	
+	allow_draconic = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = east_asian
+			}
+			tag = XXX
+			NOT = { is_religion_enabled = draconic }
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			stability = 1
+			total_development = 5000
+		}
+		effect = {
+			enable_religion = draconic
+			capital_scope = {
+				change_religion = draconic
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = draconic
+					}
+					OR = {
+						culture_group = east_asian
+					}
+				}
+				change_religion = draconic
+				add_reform_center = draconic
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+		
+	
+	###############
+	#Enable Romuva#
+	###############
+	
+	allow_baltic_pagan = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					primary_culture = prussian
+					accepted_culture = lithuanian
+				}
+				AND = {
+					primary_culture = estonian
+					accepted_culture = lithuanian
+				}
+				culture_group = baltic
+			}
+			NOT = { is_religion_enabled = baltic_pagan }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 47	#Stralsund
+				province_id = 1859	#Kulm
+				province_id = 272	#Vilnius
+				province_id = 1935	#Mitau
+				province_id = 292	#Mogilev
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			stability = 1
+			custom_trigger_tooltip = {
+				tooltip = allow_baltic_pagan_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 47	#Stralsund
+							province_id = 1859	#Kulm
+							province_id = 272	#Vilnius
+							province_id = 1935	#Mitau
+							province_id = 292	#Mogilev
+						}
+					}
+					amount = 1
+				}
+			}
+			total_development = 300
+			# reform_desire = 0.50
+		}
+		effect = {
+			enable_religion = baltic_pagan
+			capital_scope = {
+				change_religion = baltic_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = baltic_pagan
+					}
+				}
+				change_religion = baltic_pagan
+				add_reform_center = baltic_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	convert_baltic_pagan = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					primary_culture = prussian
+					accepted_culture = lithuanian
+				}
+				AND = {
+					primary_culture = estonian
+					accepted_culture = lithuanian
+				}
+				culture_group = baltic
+			}
+			is_religion_enabled = baltic_pagan
+			NOT = { religion = baltic_pagan }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 47	#Stralsund
+				province_id = 1859	#Kulm
+				province_id = 272	#Vilnius
+				province_id = 1935	#Mitau
+				province_id = 292	#Mogilev
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			ai = no
+			custom_trigger_tooltip = {
+				tooltip = allow_baltic_pagan_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 47	#Stralsund
+							province_id = 1859	#Kulm
+							province_id = 272	#Vilnius
+							province_id = 1935	#Mitau
+							province_id = 292	#Mogilev
+						}
+					}
+					amount = 1
+				}
+			}
+		}
+		effect = {
+			change_religion = baltic_pagan
+			add_country_modifier = {
+				name = "conversion_zeal_mns"
+				duration = 3650
+			}	
+			capital_scope = {
+				change_religion = baltic_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = baltic_pagan
+					}
+				}
+				change_religion = baltic_pagan
+				add_reform_center = baltic_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	###################
+	#Enable Suomenusko#
+	###################
+	
+	allow_finnish_pagan = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = finno_ugric	
+				# AND = {	#undecided on inclusion
+					# primary_culture = russian
+					# accepted_culture = finnish
+				# }
+			}
+			NOT = { is_religion_enabled = finnish_pagan }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 35	#Ösel
+				province_id = 310	#Novgorod
+				province_id = 4124	#Karelia/Karjala
+				province_id = 301	#Ryazan
+				province_id = 305	#Perm
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			stability = 1
+			custom_trigger_tooltip = {
+				tooltip = allow_finnish_pagan_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 35	#Ösel
+							province_id = 310	#Novgorod
+							province_id = 4124	#Karelia/Karjala
+							province_id = 301	#Ryazan
+							province_id = 305	#Perm
+						}
+					}
+					amount = 1
+				}
+			}
+			total_development = 300
+			# reform_desire = 0.50
+		}
+		effect = {
+			enable_religion = finnish_pagan
+			capital_scope = {
+				change_religion = finnish_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = finnish_pagan
+					}
+				}
+				change_religion = finnish_pagan
+				add_reform_center = finnish_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	convert_finnish_pagan = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = finno_ugric	
+				# AND = {	#undecided on inclusion
+					# primary_culture = russian
+					# accepted_culture = finnish
+				# }
+			}
+			is_religion_enabled = finnish_pagan
+			NOT = { religion = finnish_pagan }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 35	#Ösel
+				province_id = 310	#Novgorod
+				province_id = 4124	#Karelia/Karjala
+				province_id = 301	#Ryazan
+				province_id = 305	#Perm
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			ai = no
+			custom_trigger_tooltip = {
+				tooltip = allow_finnish_pagan_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 35	#Ösel
+							province_id = 310	#Novgorod
+							province_id = 4124	#Karelia/Karjala
+							province_id = 301	#Ryazan
+							province_id = 305	#Perm
+						}
+					}
+					amount = 1
+				}
+			}
+		}
+		effect = {
+			change_religion = finnish_pagan
+			add_country_modifier = {
+				name = "conversion_zeal_mns"
+				duration = 3650
+			}	
+			capital_scope = {
+				change_religion = finnish_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = finnish_pagan
+					}
+				}
+				change_religion = finnish_pagan
+				add_reform_center = finnish_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	###############
+	#Enable Slavic#
+	###############
+	
+	allow_slavic_pagan = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = south_slavic
+				culture_group = west_slavic
+				culture_group = east_slavic
+			}
+			NOT = { is_religion_enabled = slavic_pagan }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 280	#Kiev
+				province_id = 3002	#Sarajevo
+				province_id = 47	#Stralsund
+				province_id = 1938	#Wizna
+				province_id = 310	#Novgorod
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			stability = 1
+			custom_trigger_tooltip = {
+				tooltip = allow_slavic_pagan_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 280	#Kiev
+							province_id = 3002	#Sarajevo
+							province_id = 47	#Stralsund
+							province_id = 1938	#Wizna
+							province_id = 310	#Novgorod
+						}
+					}
+					amount = 1
+				}
+			}
+			total_development = 300
+			# reform_desire = 0.50
+		}
+		effect = {
+			enable_religion = slavic_pagan
+			capital_scope = {
+				change_religion = slavic_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = slavic_pagan
+					}
+				}
+				change_religion = slavic_pagan
+				add_reform_center = slavic_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	convert_slavic_pagan = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = south_slavic
+				culture_group = west_slavic
+				culture_group = east_slavic
+			}
+			is_religion_enabled = slavic_pagan
+			NOT = { religion = slavic_pagan }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 280	#Kiev
+				province_id = 3002	#Sarajevo
+				province_id = 47	#Stralsund
+				province_id = 1938	#Wizna
+				province_id = 310	#Novgorod
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			ai = no
+			custom_trigger_tooltip = {
+				tooltip = allow_slavic_pagan_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 280	#Kiev
+							province_id = 3002	#Sarajevo
+							province_id = 47	#Stralsund
+							province_id = 1938	#Wizna
+							province_id = 310	#Novgorod
+						}
+					}
+					amount = 1
+				}
+			}
+		}
+		effect = {
+			change_religion = slavic_pagan
+			add_country_modifier = {
+				name = "conversion_zeal_mns"
+				duration = 3650
+			}	
+			capital_scope = {
+				change_religion = slavic_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = slavic_pagan
+					}
+				}
+				change_religion = slavic_pagan
+				add_reform_center = slavic_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	###############
+	#Enable Celtic#
+	###############
+	
+	allow_celtic_pagan = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = french
+				culture_group = brythonic
+				culture_group = gaelic
+				culture_group = iberian
+				culture_group = aquitanian
+				culture_group = british
+			}
+			NOT = { is_religion_enabled = celtic_pagan }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2755#soria 
+				province_id = 196#tolosa 
+				province_id = 4384#nantes 
+				province_id = 4379#ireland 
+				province_id = 252#inverness
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			stability = 1
+			custom_trigger_tooltip = {
+				tooltip = allow_celtic_pagan_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 2755#soria 
+							province_id = 196#tolosa 
+							province_id = 4384#nantes 
+							province_id = 4379#ireland 
+							province_id = 252#inverness
+						}
+					}
+					amount = 1
+				}
+			}
+			total_development = 300
+			# reform_desire = 0.50
+		}
+		effect = {
+			enable_religion = celtic_pagan
+			capital_scope = {
+				change_religion = celtic_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = celtic_pagan
+					}
+				}
+				change_religion = celtic_pagan
+				add_reform_center = celtic_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	convert_celtic_pagan = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = french
+				culture_group = brythonic
+				culture_group = gaelic
+				culture_group = iberian
+				culture_group = aquitanian
+				culture_group = british
+			}
+			is_religion_enabled = celtic_pagan
+			NOT = { religion = celtic_pagan }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2755#soria 
+				province_id = 196#tolosa 
+				province_id = 4384#nantes 
+				province_id = 4379#ireland 
+				province_id = 252#inverness
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			ai = no
+			custom_trigger_tooltip = {
+				tooltip = allow_celtic_pagan_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 2755#soria 
+							province_id = 196#tolosa 
+							province_id = 4384#nantes 
+							province_id = 4379#ireland 
+							province_id = 252#inverness
+						}
+					}
+					amount = 1
+				}
+			}
+		}
+		effect = {
+			change_religion = celtic_pagan
+			add_country_modifier = {
+				name = "conversion_zeal_mns"
+				duration = 3650
+			}	
+			capital_scope = {
+				change_religion = celtic_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = celtic_pagan
+					}
+				}
+				change_religion = celtic_pagan
+				add_reform_center = celtic_pagan
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}	
+	
+	################
+	#Enable Canaanite#
+	################
+	
+	allow_canaanite = {
+		major = yes
+		potential = {
+			capital_scope = {
+				OR = {
+				region = maghreb_region
+				region = mashriq_region
+				}
+			}
+			NOT = { religion = jewish }
+			NOT = { is_religion_enabled = canaanite }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 341	#tunis/carthage
+				province_id = 5205	#beirut
+				province_id = 357	#darnah/cyrene
+				province_id = 5311	#khoms/lepcis
+				province_id = 334	#tangiers/tingis
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			stability = 1
+			custom_trigger_tooltip = {
+				tooltip = allow_canaanite_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 341	#tunis/carthage
+							province_id = 5205	#beirut
+							province_id = 357	#darnah/cyrene
+							province_id = 5311	#khoms/lepcis
+							province_id = 334	#tangiers/tingis
+						}
+					}
+					amount = 1
+				}
+			}
+			total_development = 300
+			# reform_desire = 0.50
+		}
+		effect = {
+			enable_religion = canaanite
+			capital_scope = {
+				change_religion = canaanite
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = canaanite
+					}
+				}
+				change_religion = canaanite
+				add_reform_center = canaanite
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+	
+	convert_canaanite = {
+		major = yes
+		potential = {
+			capital_scope = {
+				OR = {
+				region = maghreb_region
+				region = mashriq_region
+				}
+			}
+			NOT = { religion = jewish }
+			is_religion_enabled = canaanite
+			NOT = { religion = canaanite }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 341	#tunis/carthage
+				province_id = 5205	#beirut
+				province_id = 357	#darnah/cyrene
+				province_id = 5311	#khoms/lepcis
+				province_id = 334	#tangiers/tingis
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			ai = no
+			custom_trigger_tooltip = {
+				tooltip = allow_canaanite_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 341	#tunis/carthage
+							province_id = 5205	#beirut
+							province_id = 357	#darnah/cyrene
+							province_id = 5311	#khoms/lepcis
+							province_id = 334	#tangiers/tingis
+						}
+					}
+					amount = 1
+				}
+			}
+		}
+		effect = {
+			change_religion = canaanite
+			add_country_modifier = {
+				name = "conversion_zeal_mns"
+				duration = 3650
+			}	
+			capital_scope = {
+				change_religion = canaanite
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			random_owned_province = {
+				limit = {
+					can_have_center_of_reformation_trigger = {
+						RELIGION = canaanite
+					}
+				}
+				change_religion = canaanite
+				add_reform_center = canaanite
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+		}
+	}
+}

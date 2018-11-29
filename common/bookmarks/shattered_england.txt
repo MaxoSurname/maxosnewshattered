@@ -1,0 +1,26 @@
+bookmark =
+{
+	name = "SHATTERED_ENGLAND"
+	desc = "SHATTERED_ENGLAND_DESC"
+	date = 1444.11.11
+	
+	center = 112
+	default = yes
+	
+	country = WSX
+	country = NRM
+	country = TOU
+	country = LOR
+	country = BUR
+	country = BRI
+	country = LDS
+	country = ESX
+	country = LOT
+	country = CAI
+	country = WEX
+	country = ORK
+	
+	easy_country = NRM
+	easy_country = WSX
+	easy_country = TOU
+}

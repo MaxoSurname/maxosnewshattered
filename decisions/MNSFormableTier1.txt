@@ -1,0 +1,7922 @@
+country_decisions = {
+
+	#KEY:
+	
+	#
+	#Nation#	--no localisation or ideas	--functional decision, no gfx or text support
+	#
+	
+	########
+	#Nation#	--localisation, no ideas	--better; ultimately unfinished
+	###
+	
+	########
+	#Nation#	--localisation and ideas 	--complete decision
+	########
+
+	################
+	#Flanders-Wallonia#
+	################
+	BEL_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = BEL }
+			OR = {
+				primary_culture = wallonian
+				primary_culture = flemish
+				primary_culture = brabantian
+				primary_culture = picard
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = brabant_area			#4
+				area = flanders_area		#4
+				area = wallonia_area		#3
+				area = luxemburg_liege_area	#4
+				province_id = 1742	#limburg
+				province_id = 87	#calais
+				province_id = 88	#artois
+				province_id = 3063	#overmaas - strange but bumps provs to 20 - good!
+			}
+		}
+		allow = {
+			NOT = { exists = BEL }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			# owns_core_province = 92 # Brussel
+			custom_trigger_tooltip = {
+				tooltip = BEL_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = brabant_area			#4
+							area = flanders_area		#4
+							area = wallonia_area		#3
+							area = luxemburg_liege_area	#4
+							province_id = 1742	#limburg
+							province_id = 87	#calais
+							province_id = 88	#artois
+							province_id = 3063	#overmaas
+						}
+					}
+					amount = 14	#/20
+				}
+			}
+			total_development = 120
+		}
+		effect = {
+			change_tag = BEL
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = BEL_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = brabant_area			#4
+							area = flanders_area		#4
+							area = wallonia_area		#3
+							area = luxemburg_liege_area	#4
+							province_id = 1742	#limburg
+							province_id = 87	#calais
+							province_id = 88	#artois
+							province_id = 3063	#overmaas
+						}
+					}
+					add_permanent_claim = BEL
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = ARM_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas - uses FLA and WAL for now depending on culture
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	###########
+	#Andalusia#
+	######
+	ADU_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = ADU }
+			primary_culture = andalusi_culture
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = lower_andalucia_area	#4
+				area = upper_andalucia_area	#4
+				area = murcia_area	#3
+				area = alentejo_area	#4
+				province_id = 2754	#la mancha
+				province_id = 218	#badajoz
+				province_id = 3099	#merida
+				province_id = 220	#valencia
+				province_id = 1750	#alicante
+			}
+		}
+		allow = {
+			NOT = { exists = ADU }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 225
+			custom_trigger_tooltip = {
+				tooltip = ADU_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 218
+							province_id = 221
+							province_id = 222
+							province_id = 223
+							province_id = 224
+							province_id = 225
+							province_id = 226
+							province_id = 229
+							province_id = 230
+							province_id = 1748
+							province_id = 1749
+							province_id = 2754
+							province_id = 3096
+							province_id = 3097
+							province_id = 3098
+							province_id = 3099
+						}
+					}
+					amount = 10 #/16
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = ADU
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_capital = 225
+			custom_tooltip = ADU_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = alentejo_area
+							area = extremadura_area
+							area = lower_andalucia_area
+							area = upper_andalucia_area
+							area = toledo_area
+							area = murcia_area
+							area = valencia_area
+						}
+						NOT = { province_id = 227 }
+						NOT = { province_id = 3100 }
+						NOT = { province_id = 217 }
+						NOT = { province_id = 3300 }
+						NOT = { province_id = 3094 }
+					}
+					add_permanent_claim = ADU
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#######
+	#Spain#
+	#######	
+	SPA_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = SPA }
+			OR = {
+				primary_culture = castillian
+				primary_culture = leonese
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1745	#cantabria
+				province_id = 207	#asturias
+				province_id = 208	#leon
+				province_id = 1746	#burgod
+				province_id = 3101	#zamora
+				province_id = 216	#salamanca
+				province_id = 215	#castila
+				province_id = 2755	#soria
+				province_id = 3298	#avila
+				province_id = 3299	#segovia
+				province_id = 217	#madrid
+				province_id = 3300	#guadalajara
+				province_id = 3100	#plasencia
+				province_id = 219	#toledo
+				province_id = 2751	#cuenca
+				province_id = 1747	#extramadura
+				province_id = 3099	#merida
+				province_id = 2754	#la mancha
+				province_id = 218	#badajoz
+				province_id = 2989	#rioja
+			}
+		}
+		allow = {
+			NOT = { exists = SPA }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 217
+			custom_trigger_tooltip = {
+				tooltip = SPA_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 1745	#cantabria
+							province_id = 207	#asturias
+							province_id = 208	#leon
+							province_id = 1746	#burgod
+							province_id = 3101	#zamora
+							province_id = 216	#salamanca
+							province_id = 215	#castila
+							province_id = 2755	#soria
+							province_id = 3298	#avila
+							province_id = 3299	#segovia
+							province_id = 217	#madrid
+							province_id = 3300	#guadalajara
+							province_id = 3100	#plasencia
+							province_id = 219	#toledo
+							province_id = 2751	#cuenca
+							province_id = 1747	#extramadura
+							province_id = 3099	#merida
+							province_id = 2754	#la mancha
+							province_id = 218	#badajoz
+							province_id = 2989	#rioja
+						}
+					}
+					amount = 14 #/20
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = SPA
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_capital = 217
+			add_accepted_culture = castillian
+			add_accepted_culture = leonese
+			custom_tooltip = SPA_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							province_id = 1745	#cantabria
+							province_id = 207	#asturias
+							province_id = 208	#leon
+							province_id = 1746	#burgod
+							province_id = 3101	#zamora
+							province_id = 216	#salamanca
+							province_id = 215	#castila
+							province_id = 2755	#soria
+							province_id = 3298	#avila
+							province_id = 3299	#segovia
+							province_id = 217	#madrid
+							province_id = 3300	#guadalajara
+							province_id = 3100	#plasencia
+							province_id = 219	#toledo
+							province_id = 2751	#cuenca
+							province_id = 1747	#extramadura
+							province_id = 3099	#merida
+							province_id = 2754	#la mancha
+							province_id = 218	#badajoz
+							province_id = 2989	#rioja
+						}
+					}
+					add_permanent_claim = SPA
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = SPA_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##########
+	#Portugal#
+	##########
+	POR_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = POR }
+			OR = {
+				primary_culture = galician
+				primary_culture = portugese
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = spanish_galicia_area
+				area = alentejo_area
+				area = beieras_area
+				area = macaronesia_area
+				area = douro_area
+			}
+		}
+		allow = {
+			NOT = { exists = POR }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 227
+			custom_trigger_tooltip = {
+				tooltip = POR_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = spanish_galicia_area
+							area = alentejo_area
+							area = beieras_area
+							area = macaronesia_area
+							area = douro_area
+						}
+					}
+					amount = 10 #/19; 4 islands so lowered normal requirement
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = POR
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = portugese
+			add_accepted_culture = galician
+			custom_tooltip = POR_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = spanish_galicia_area
+							area = alentejo_area
+							area = beieras_area
+							area = macaronesia_area
+							area = douro_area
+						}
+					}
+					add_permanent_claim = POR
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#################
+	#Crown of Aragon#
+	#################	might redo idea localisation eventually
+	CAG_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = CAG }
+			OR = {
+				primary_culture = catalan
+				primary_culture = aragonese
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = aragon_area
+				area = catalonia_area
+				area = valencia_area
+				area = balearic_islands_area
+			}	#total 15
+		}
+		allow = {
+			NOT = { exists = CAG }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 214
+			custom_trigger_tooltip = {
+				tooltip = CAG_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = aragon_area
+							area = catalonia_area
+							area = valencia_area
+							area = balearic_islands_area
+						}
+					}
+					amount = 9 #/15
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = CAG
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_capital = 214
+			add_accepted_culture = catalan
+			add_accepted_culture = aragonese
+			custom_tooltip = CAG_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = aragon_area
+							area = catalonia_area
+							area = valencia_area
+							area = balearic_islands_area
+							#missions for islands
+						}
+					}
+					add_permanent_claim = CAG
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	###########
+	#Occitania#
+	#####
+	OCC_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = OCC }
+			OR = {
+				primary_culture = occitain
+				primary_culture = gascon
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = provence_area	#4
+				area = languedoc_area	#4
+				area = toulouse_area	#4
+				area = savoy_dauphine_area	#3
+				area = pyrennes_area	#4
+				province_id = 212	#girona
+				province_id = 3081	#agenais
+				province_id = 4112	#quercy
+				province_id = 194	#perigord
+				province_id = 195	#limousin
+				province_id = 3087	#aurillac
+				province_id = 199	#auvergne
+				province_id = 3088	#forez
+				province_id = 4387	#angoumois
+			}
+		}
+		allow = {
+			NOT = { exists = OCC }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 196
+			custom_trigger_tooltip = {
+				tooltip = OCC_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = provence_area	#4
+							area = languedoc_area	#4
+							area = toulouse_area	#4
+							area = savoy_dauphine_area	#3
+							area = pyrennes_area	#4
+							province_id = 212	#girona
+							province_id = 3081	#agenais
+							province_id = 4112	#quercy
+							province_id = 194	#perigord
+							province_id = 195	#limousin
+							province_id = 3087	#aurillac
+							province_id = 199	#auvergne
+							province_id = 3088	#forez
+							province_id = 4387	#angoumois
+						}
+					}
+					amount = 16	#/27
+				}
+			}
+			total_development = 120
+		}
+		effect = {
+			change_tag = OCC
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_capital = 196
+			add_accepted_culture = occitain
+			add_accepted_culture = gascon 
+			custom_tooltip = OCC_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = provence_area	#4
+							area = languedoc_area	#4
+							area = toulouse_area	#4
+							area = savoy_dauphine_area	#3
+							area = pyrennes_area	#4
+							province_id = 212	#girona
+							province_id = 3081	#agenais
+							province_id = 4112	#quercy
+							province_id = 194	#perigord
+							province_id = 195	#limousin
+							province_id = 3087	#aurillac
+							province_id = 199	#auvergne
+							province_id = 3088	#forez
+							province_id = 4387	#angoumois
+						}
+					}
+					add_permanent_claim = OCC
+				}
+			}
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	########### DISABLED
+	#Arpitania#
+	###########	aosta shares ideas for now
+	APT_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = APT }
+			primary_culture = arpitan
+			AND = {
+				tag = PAP
+				tag = HRE
+			}#easy way to disable w/out hashing everything
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 3046
+				province_id = 205
+				province_id = 3045
+				province_id = 1871
+				province_id = 1867
+				province_id = 3056
+				province_id = 193
+				province_id = 203
+				province_id = 204
+			}
+		}
+		allow = {
+			NOT = { exists = APT }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 3046
+			custom_trigger_tooltip = {
+				tooltip = APT_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 3046
+							province_id = 205
+							province_id = 3045
+							province_id = 1871
+							province_id = 1867
+							province_id = 3056
+							province_id = 193
+							province_id = 203
+							province_id = 204
+						}
+					}
+					amount = 7	#/9
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = APT
+			# remove_non_electors_emperors_from_empire_effect = yes
+			# if = {
+				# limit = { NOT = { government_rank = 2 } }
+				# set_government_rank = 2
+			# }
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_capital = 3046
+			custom_tooltip = APT_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = savoy_dauphine_area
+							area = romandie_area
+							province_id = 103
+							province_id = 3045
+							province_id = 2979
+							province_id = 193
+							province_id = 4392
+							province_id = 1877
+							province_id = 3088
+						}
+					}
+					add_permanent_claim = APT
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = APT_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	########## DISABLED
+	#Francien#
+	#	
+	FRC_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = FRC }
+			OR = {
+				primary_culture = poitevin
+				primary_culture = cosmopolitan_french
+			}
+			AND = {
+				tag = PAP
+				tag = HRE
+			}#easy way to disable w/out hashing everything
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = normandy_area
+				area = ile_de_france_area
+				area = seine_area
+				area = loire_area
+				area = poitou_area
+				province_id = 194
+				province_id = 195
+				province_id = 3109
+				province_id = 4387
+				province_id = 89
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = FRC }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 183
+			calc_true_if = {
+				all_owned_province = {
+					is_core = ROOT
+					OR = {
+						area = normandy_area
+						area = ile_de_france_area
+						area = seine_area
+						area = loire_area
+						area = poitou_area
+						area = champagne_area
+						province_id = 194
+						province_id = 195
+						province_id = 3109
+						province_id = 4387
+						province_id = 89
+					}
+				}
+				amount = 20
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = FRC
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_capital = 183
+			add_accepted_culture = poitevin
+			add_accepted_culture = cosmopolitan_french
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						area = normandy_area
+						area = ile_de_france_area
+						area = seine_area
+						area = loire_area
+						area = poitou_area
+						area = picardy_area
+						province_id = 194
+						province_id = 195
+						province_id = 3109
+						province_id = 4387
+					}
+				}
+				add_permanent_claim = FRC
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##################
+	#Kingdom of Arles#
+	##################	burgundian ideas	
+	ARS_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = ARS }
+			OR = {
+				primary_culture = arpitan
+				primary_culture = burgundian
+				AND = {
+					primary_culture = occitain
+					capital_scope = { area = provence_area }
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = provence_area		#4
+				area = savoy_dauphine_area	#3
+				area = haute_savoie_area	#4
+				area = romandie_area		#4
+				province_id = 165	#bern
+				province_id = 3092	#vesoul
+				province_id = 1877	#charolais
+				province_id = 4392	#macon
+				province_id = 192	#dijon
+			}
+		}
+		allow = {
+			NOT = { exists = ARS }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 201
+			custom_trigger_tooltip = {
+				tooltip = ARS_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = provence_area		#4
+							area = savoy_dauphine_area	#3
+							area = haute_savoie_area	#4
+							area = romandie_area		#4
+							province_id = 165	#bern
+							province_id = 3092	#vesoul
+							province_id = 1877	#charolais
+							province_id = 4392	#macon
+							province_id = 192	#dijon
+						}
+					}
+					amount = 14 #/20
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = ARS
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_capital = 201	#marselha
+			add_accepted_culture = arpitan
+			add_accepted_culture = burgundian
+			hidden_effect = {
+				if = {
+					limit = { primary_culture = occitain }
+					change_primary_culture = burgundian
+					add_accepted_culture = occitain
+				}
+				capital_scope = {
+					if = {
+						limit = { NOT = { culture = ROOT } }
+						tooltip = { change_culture = ROOT }
+					}
+				}
+			}
+			custom_tooltip = ARS_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = provence_area		#4
+							area = savoy_dauphine_area	#3
+							area = haute_savoie_area	#4
+							area = romandie_area		#4
+							province_id = 165	#bern
+							province_id = 3092	#vesoul
+							province_id = 1877	#charolais
+							province_id = 4392	#macon
+							province_id = 192	#dijon
+
+						}
+					}
+					add_permanent_claim = ARS
+				}
+			}
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}	
+	
+	#########
+	#Celtica#
+	#########	
+	CLT_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = CLT }
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				primary_culture = breton
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = wales_area
+				area = cornwall_area
+				area = brittany_area
+				province_id = 3034
+			}
+		}
+		allow = {
+			NOT = { exists = CLT }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = CLT_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = wales_area
+							area = cornwall_area
+							area = brittany_area
+							province_id = 3034
+						}
+					}
+					amount = 9	#/14
+				}
+			}
+			total_development = 80
+		}
+		effect = {
+			change_tag = CLT
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = welsh
+			add_accepted_culture = cornish
+			add_accepted_culture = breton
+			custom_tooltip = CLT_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = wales_area
+							area = cornwall_area
+							area = brittany_area
+							province_id = 3034
+						}
+					}
+					add_permanent_claim = CLT
+				}
+			}
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	############
+	#Netherlands#
+	############	shares with holland for now	
+	NET_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = NET }
+			OR = {
+				primary_culture = frisian
+				primary_culture = dutch
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = netherlands_area	#4
+				area = guelders_area	#4
+				province_id = 100
+				province_id = 4382
+				province_id = 95
+				province_id = 3058
+				province_id = 3061
+			}
+		}
+		allow = {
+			NOT = { exists = NET }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = NET_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = netherlands_area	#4
+							area = guelders_area	#4
+							province_id = 100
+							province_id = 4382
+							province_id = 95
+							province_id = 3058
+							province_id = 3061
+						}
+					}
+					amount = 9	#/13
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = NET
+			# remove_non_electors_emperors_from_empire_effect = yes
+			# if = {
+				# limit = { NOT = { government_rank = 2 } }
+				# set_government_rank = 2
+			# }
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = dutch
+			add_accepted_culture = frisian
+			custom_tooltip = NET_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = netherlands_area	#4
+							area = guelders_area	#4
+							province_id = 100
+							province_id = 4382
+							province_id = 95
+							province_id = 3058
+							province_id = 3061
+						}
+					}
+					add_permanent_claim = NET
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	###########
+	#Bretonnia#
+	#	
+	BTA_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = BTA }
+			OR = {
+				primary_culture = breton
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = poitou_area		#4
+				area = brittany_area	#5
+				area = normandy_area	#5
+				area = anjou_area		#4
+				province_id = 3075	#dunois
+				province_id = 4389	#tours
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = BTA }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			calc_true_if = {
+				all_owned_province = {
+					is_core = ROOT
+					OR = {
+						area = poitou_area		#4
+						area = brittany_area	#5
+						area = normandy_area	#5
+						area = anjou_area		#4
+						province_id = 3075	#dunois
+						province_id = 4389	#tours
+					}
+				}
+				amount = 14	#/20
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = BTA
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						area = poitou_area		#4
+						area = brittany_area	#5
+						area = normandy_area	#5
+						area = anjou_area		#4
+						province_id = 3075	#dunois
+						province_id = 4389	#tours
+					}
+				}
+				add_permanent_claim = BTA
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+			hidden_effect = {
+				every_province = { 
+					limit = { culture = breton }
+					change_culture = french_breton
+				}
+				every_country = {
+					limit = { primary_culture = breton }
+					change_primary_culture = french_breton
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	
+	#####
+	#Teraferma#
+	###########	
+	TFR_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = TFR }
+			OR = {
+				primary_culture = venetian
+				AND = {
+					primary_culture = romagnan
+					accepted_culture = venetian
+				}
+				AND = {
+					primary_culture = lombard
+					accepted_culture = venetian
+				}
+				AND = {
+					primary_culture = romansch
+					accepted_culture = venetian
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = carinthia_area		#4
+				area = venetia_area			#4
+				area = verona_area			#4
+				province_id = 109
+				province_id = 1862
+				province_id = 3047
+				province_id = 113
+				province_id = 104
+				province_id = 106
+				province_id = 3041
+				province_id = 114
+			}
+		}
+		allow = {
+			NOT = { exists = TFR }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = TFR_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = carinthia_area		#4
+							area = venetia_area			#4
+							area = verona_area			#4
+							province_id = 109
+							province_id = 1862
+							province_id = 3047
+							province_id = 113
+							province_id = 104
+							province_id = 106
+							province_id = 3041
+							province_id = 114
+						}
+					}
+					amount = 14	#/20
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = TFR
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = venetian
+			add_accepted_culture = lombard
+			add_accepted_culture = romagnan
+			custom_tooltip = TFR_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = carinthia_area		#4
+							area = venetia_area			#4
+							area = verona_area			#4
+							province_id = 109
+							province_id = 1862
+							province_id = 3047
+							province_id = 113
+							province_id = 104
+							province_id = 106
+							province_id = 3041
+							province_id = 114
+						}
+					}
+					add_permanent_claim = TFR
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#####
+	#Adriàtica#
+	###########	
+	ADC_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = ADC }
+			OR = {
+				primary_culture = venetian
+				AND = {
+					OR = {
+						primary_culture = romagnan
+						primary_culture = croatian
+						primary_culture = slovene
+					}
+					accepted_culture = venetian
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 112
+							province_id = 1774
+							province_id = 111
+							province_id = 108
+							province_id = 113
+							province_id = 114
+							province_id = 2977
+							province_id = 119
+							province_id = 1769
+							province_id = 3049
+							province_id = 130
+							province_id = 3191
+							province_id = 3196
+							province_id = 1826
+							province_id = 136
+							province_id = 3192
+							province_id = 137
+							province_id = 3184
+							province_id = 3182
+							province_id = 142
+				#sea
+				province_id = 1308
+				province_id = 1309
+				province_id = 1310
+			}
+		}
+		allow = {
+			NOT = { exists = ADC }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = ADC_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 112
+							province_id = 1774
+							province_id = 111
+							province_id = 108
+							province_id = 113
+							province_id = 114
+							province_id = 2977
+							province_id = 119
+							province_id = 1769
+							province_id = 3049
+							province_id = 130
+							province_id = 3191
+							province_id = 3196
+							province_id = 1826
+							province_id = 136
+							province_id = 3192
+							province_id = 137
+							province_id = 3184
+							province_id = 3182
+							province_id = 142
+						}
+					}
+					amount = 14	#/20
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = ADC
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = venetian
+			add_accepted_culture = croatian
+			custom_tooltip = ADC_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							province_id = 112
+							province_id = 1774
+							province_id = 111
+							province_id = 108
+							province_id = 113
+							province_id = 114
+							province_id = 2977
+							province_id = 119
+							province_id = 1769
+							province_id = 3049
+							province_id = 130
+							province_id = 3191
+							province_id = 3196
+							province_id = 1826
+							province_id = 136
+							province_id = 3192
+							province_id = 137
+							province_id = 3184
+							province_id = 3182
+							province_id = 142
+						}
+					}
+					add_permanent_claim = ADC
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	################
+	#Ligurian Republic#
+	################
+	LGR_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = LGR }
+			AND = {
+				OR = {
+					primary_culture = ligurian
+					primary_culture = tuscan
+					primary_culture = sardinian
+					primary_culture = neapolitan
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = liguria_area			#4
+				area = tuscany_area			#4
+				area = corsica_sardinia_area#4
+				area = central_italy_area	#3
+				area = naples_area			#3
+				province_id = 1247	#ajaccio
+				province_id = 127	#gallura
+			}
+		}
+		allow = {
+			NOT = { exists = LGR }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = LGR_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = liguria_area			#4
+							area = tuscany_area			#4
+							area = corsica_sardinia_area#4
+							area = central_italy_area	#3
+							area = naples_area			#3
+							province_id = 1247	#ajaccio
+							province_id = 127	#gallura
+						}
+					}
+					amount = 14	#/20
+				}
+			}
+			total_development = 150
+			capital_scope = {
+				has_port = yes
+			}
+		}
+		effect = {
+			change_tag = LGR
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { owns_core_province = 115 }
+				set_capital = 115
+			}
+			add_prestige = 25
+			custom_tooltip = LGR_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = liguria_area			#4
+							area = tuscany_area			#4
+							area = corsica_sardinia_area#4
+							area = central_italy_area	#3
+							area = naples_area			#3
+							province_id = 1247	#ajaccio
+							province_id = 127	#gallura
+						}
+					}
+					add_permanent_claim = LGR
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#
+	#La Marche
+	#
+	LMC_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = LMC }
+			OR = {
+				primary_culture = umbrian
+				AND = {
+					primary_culture = tuscan
+					accepted_culture = umbrian
+				}
+				AND = {
+					primary_culture = romagnan
+					accepted_culture = umbrian
+				}
+				AND = {
+					primary_culture = neapolitan
+					accepted_culture = umbrian
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2977	#urbino
+				province_id = 119	#ancona
+				province_id = 120	#abruzzi
+				province_id = 3038	#molise
+				province_id = 2976	#umbria
+				province_id = 2978	#arezzo
+				province_id = 7022	#san marino
+				province_id = 114	#romagna
+				province_id = 3041	#bologna
+				province_id = 113	#frera
+			}
+		}
+		allow = {
+			NOT = { exists = LMC }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = LMC_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 2977	#urbino
+							province_id = 119	#ancona
+							province_id = 120	#abruzzi
+							province_id = 3038	#molise
+							province_id = 2976	#umbria
+							province_id = 2978	#arezzo
+							province_id = 7022	#san marino
+							province_id = 114	#romagna
+							province_id = 3041	#bologna
+							province_id = 113	#frera
+						}
+					}
+					amount = 7	#10
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = LMC
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = romagnan
+			custom_tooltip = LMC_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							province_id = 2977	#urbino
+							province_id = 119	#ancona
+							province_id = 120	#abruzzi
+							province_id = 3038	#molise
+							province_id = 2976	#umbria
+							province_id = 2978	#arezzo
+							province_id = 7022	#san marino
+							province_id = 114	#romagna
+							province_id = 3041	#bologna
+							province_id = 113	#frera
+
+						}
+					}
+					add_permanent_claim = LMC
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	################
+	#Savoy Piedmont#
+	################	
+	SVP_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = SVP }
+			OR = {
+				primary_culture = piedmontese
+				tag = SAV
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = piedmont_area		#4
+				area = haute_savoie_area	#4
+				province_id = 102	#nice
+				province_id = 7021	#monaco
+				province_id = 2992	#albegna
+				province_id = 2979	#novara
+			}
+		}
+		allow = {
+			NOT = { exists = SVP }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = SVP_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = piedmont_area		#4
+							area = haute_savoie_area	#4
+							province_id = 102	#nice
+							province_id = 7021	#monaco
+							province_id = 2992	#albegna
+							province_id = 2979	#novara
+						}
+					}
+					amount = 8 #/12
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = SVP
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = arpitan
+			add_accepted_culture = piedmontese
+			custom_tooltip = SVP_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = piedmont_area		#4
+							area = haute_savoie_area	#4
+							province_id = 102	#nice
+							province_id = 7021	#monaco
+							province_id = 2992	#albegna
+							province_id = 2979	#novara
+						}
+					}
+					add_permanent_claim = SVP
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	###################
+	#Upper Lotharingia#
+	###################	burgundian
+	ULT_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = ULT }
+			OR = {
+				primary_culture = lorrain
+				primary_culture = rhine_alemanisch
+				primary_culture = ripuarianfranconian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = lower_rhineland_area		#4
+				area = luxemburg_liege_area		#4
+				area = lorraine_area			#3
+				area = alsace_lorraine_area		#3
+				area = ruhr_area				#4
+				province_id = 3069	#verdun
+				province_id = 1760	#trier
+			}
+		}
+		allow = {
+			NOT = { exists = ULT }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = ULT_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = lower_rhineland_area		#4
+							area = luxemburg_liege_area		#4
+							area = lorraine_area			#3
+							area = alsace_lorraine_area		#3
+							area = ruhr_area				#4
+							province_id = 3069	#verdun
+							province_id = 1760	#trier
+						}
+					}
+					amount = 14	#/20
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = ULT
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_primary_culture = lorrain
+			add_accepted_culture = rhine_alemanisch
+			add_accepted_culture = ripuarianfranconian
+			custom_tooltip = ULT_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = lower_rhineland_area		#4
+							area = luxemburg_liege_area		#4
+							area = lorraine_area			#3
+							area = alsace_lorraine_area		#3
+							area = ruhr_area				#4
+							province_id = 3069	#verdun
+							province_id = 1760	#trier
+
+						}
+					}
+					add_permanent_claim = ULT
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	###########
+	#Lumbardia#
+	###########
+	PDA_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = PDA }
+			NOT = { tag = VEN }
+			OR = {
+				primary_culture = lombard
+				primary_culture = piedmontese
+				primary_culture = venetian
+				primary_culture = romagnan
+				primary_culture = emilian
+				primary_culture = friuli
+				tag = AOS
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = lombardy_area	#4
+				area = verona_area		#4
+				area = piedmont_area	#4
+				province_id = 3294	#valtellina
+				province_id = 3054	#lugano
+				province_id = 3045	#aosta
+				province_id = 7044	#belluno
+				province_id = 1774	#trevixo
+				province_id = 111	#friuli
+				province_id = 1769	#gorizia
+			}
+		}
+		allow = {
+			NOT = { exists = PDA }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 3043	#pavia
+			custom_trigger_tooltip = {
+				tooltip = PDA_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = lombardy_area	#4
+							area = verona_area		#4
+							area = piedmont_area	#4
+							province_id = 3294	#valtellina
+							province_id = 3054	#lugano
+							province_id = 3045	#aosta
+							province_id = 7044	#belluno
+							province_id = 1774	#trevixo
+							province_id = 111	#friuli
+							province_id = 1769	#gorizia
+							province_id = 109	#mantoa
+							province_id = 1862	#cremuna
+							province_id = 105	#pärma
+						}
+					}
+					amount = 16	#/22
+				}
+			}
+			total_development = 250
+		}
+		effect = {
+			change_tag = PDA
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_capital = 3043
+			custom_tooltip = PDA_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = lombardy_area	#4
+							area = verona_area		#4
+							area = piedmont_area	#4
+							province_id = 3294	#valtellina
+							province_id = 3054	#lugano
+							province_id = 3045	#aosta
+							province_id = 7044	#belluno
+							province_id = 1774	#trevixo
+							province_id = 111	#friuli
+							province_id = 1769	#gorizia
+						}
+					}
+					add_permanent_claim = PDA
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##############
+	#Two Sicilies#
+	##############
+	TSI_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = TSI }
+			OR = {
+				primary_culture = sicilian
+				primary_culture = neapolitan
+				primary_culture = maltese
+				primary_culture = normanitaly
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = sicily_area		#5
+				area = naples_area		#3
+				area = calabria_area	#3
+				area = apulia_area		#3
+				province_id = 3038	#molise
+				province_id = 120	#abruzzi
+			}
+		}
+		allow = {
+			NOT = { exists = TSI }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = TSI_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = sicily_area		#5
+							area = naples_area		#3
+							area = calabria_area	#3
+							area = apulia_area		#3
+							province_id = 3038	#molise
+							province_id = 120	#abruzzi
+						}
+					}
+					amount = 10	#/16
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = TSI
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = TSI_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = sicily_area		#5
+							area = naples_area		#3
+							area = calabria_area	#3
+							area = apulia_area		#3
+							province_id = 3038	#molise
+							province_id = 120	#abruzzi
+						}
+					}
+					add_permanent_claim = TSI
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##############
+	#Latin Empire#
+	##############	
+	LTE_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = LTE }
+			AND = {
+				culture_group = french
+				capital_scope = { region = balkan_region }
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = thrace_area							#4
+				area = northern_greece_area					#4
+				area = morea_area							#4
+				area = eastern_mediterrenean_islands_area	#4
+				area = aegean_archipelago_area				#4
+				province_id = 2296
+				province_id = 5156
+				province_id = 5131
+				province_id = 5130
+				province_id = 317
+				province_id = 5157
+				province_id = 316
+				province_id = 3172
+				province_id = 148
+			}
+		}
+		allow = {
+			NOT = { exists = LTE }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = LTE_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = thrace_area
+							area = northern_greece_area
+							area = morea_area
+							area = eastern_mediterrenean_islands_area
+							area = aegean_archipelago_area
+							area = western_aegean_area
+							area = macedonia_area
+						}
+					}
+					amount = 16 #/29
+				}
+			}
+			total_development = 150
+			owns_core_province = 151
+		}
+		effect = {
+			change_tag = LTE
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = greek
+			custom_tooltip = LTE_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = thrace_area
+							area = northern_greece_area
+							area = morea_area
+							area = eastern_mediterrenean_islands_area
+							area = aegean_archipelago_area
+							area = western_aegean_area
+							area = macedonia_area
+						}
+					}
+					add_permanent_claim = LTE
+				}
+			}
+			set_capital = 151
+			151 = { change_culture = cosmopolitan_french }
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#####	DISABLED
+	#Kingdom of Heaven
+	#####	
+	KOH_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = KOH }
+			OR = {
+				primary_culture = normanlevant
+			}
+			owns_core_province = 379
+			tag = XXX
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = palestine_area		#4
+				area = trans_jordan_area	#3
+				area = tripoli_area			#3
+				area = syrian_desert_area	#4 sinai
+				area = syria_area			#3
+				province_id = 4271	#marre
+				province_id = 2313	#antioch
+				province_id = 381	#hourain
+			}
+		}
+		allow = {
+			NOT = { exists = KOH }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = KOH_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = palestine_area		#4
+							area = trans_jordan_area	#3
+							area = tripoli_area			#3
+							area = syrian_desert_area	#4 sinai
+							area = syria_area			#3
+							province_id = 4271	#marre
+							province_id = 2313	#antioch
+							province_id = 381	#hourain
+						}
+					}
+					amount = 14	#/20
+				}
+			}
+			total_development = 80
+		}
+		effect = {
+			change_tag = KOH
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			#add_accepted_culture = X
+			set_capital = 379
+			custom_tooltip = KOH_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = palestine_area		#4
+							area = trans_jordan_area	#3
+							area = tripoli_area			#3
+							area = syrian_desert_area	#4 sinai
+							area = syria_area			#3
+							province_id = 4271	#marre
+							province_id = 2313	#antioch
+							province_id = 381	#hourain
+						}
+					}
+					add_permanent_claim = KOH
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	################## DISABLED
+	#Kingdom of Capsa#
+	#######	
+	KCP_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = KCP }
+			OR = {
+				primary_culture = normanitaly
+				primary_culture = sardinian
+				primary_culture = sicilian
+				primary_culture = maltese
+			}
+			tag = XXX
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = tunisia_area			#4
+				area = sicily_area			#5
+				area = djerba_area			#4
+				area = constantine_area		#4
+				area = east_aures_area		#3
+				area = west_aures_area		#3
+				area = djerid_area			#3
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = KCP }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = KCP_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = tunisia_area
+							area = sicily_area
+							area = djerba_area
+							area = tripolitania_area
+							area = constantine_area
+							area = east_aures_area
+							area = west_aures_area
+							area = djerid_area
+						}
+					}
+					amount = 16	#/26
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = KCP
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = tunisian
+			custom_tooltip = KCP_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = tunisia_area
+							area = sicily_area
+							area = djerba_area
+							area = tripolitania_area
+							area = constantine_area
+							area = east_aures_area
+							area = west_aures_area
+							area = djerid_area
+						}
+					}
+					
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	###############
+	#Aegean League#
+	#######	
+	AEL_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = AEL }
+			OR = {
+				primary_culture = greek
+				tag = EPI
+				tag = NAX
+				tag = KNI
+				tag = LES
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = northern_greece_area					#4
+				area = morea_area							#4
+				area = eastern_mediterrenean_islands_area	#4
+				area = aegean_archipelago_area				#4
+				area = western_aegean_area					#4
+				area = macedonia_area						#3
+				province_id = 3171	#komotini
+				province_id = 318	#izmir
+				province_id = 5134	#petronium
+			}
+		}
+		allow = {
+			NOT = { exists = AEL }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = AEL_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = northern_greece_area					#4
+							area = morea_area							#4
+							area = eastern_mediterrenean_islands_area	#4
+							area = aegean_archipelago_area				#4
+							area = western_aegean_area					#4
+							area = macedonia_area						#3
+							province_id = 3171	#komotini
+							province_id = 318	#izmir
+							province_id = 5134	#petronium
+						}
+					}
+					amount = 16	#/26
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = AEL
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = AEL_nation_tt2
+			change_primary_culture = greek
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = northern_greece_area					#4
+							area = morea_area							#4
+							area = eastern_mediterrenean_islands_area	#4
+							area = aegean_archipelago_area				#4
+							area = western_aegean_area					#4
+							area = macedonia_area						#3
+							province_id = 3171	#komotini
+							province_id = 318	#izmir
+							province_id = 5134	#petronium
+						}
+					}
+					add_permanent_claim = AEL
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#########
+	#Rumelia#
+	#########	uses turkish; should share with rum tbh
+	RML_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = RML }
+			primary_culture = turkish
+			OR = {
+				accepted_culture = bulgarian
+				accepted_culture = greek
+				accepted_culture = serbian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = bulgaria_area			#4
+				area = northern_macedonia_area	#3
+				area = upper_thrace_area		#4
+				area = thrace_area				#4
+				area = albania_area				#5
+				province_id = 5094	#malësia
+				province_id = 1766	#kosovo
+				province_id = 3185	#rasina
+				province_id = 3000	#nis
+				province_id = 3165	#varna
+				province_id = 3172	#serres
+			}
+		}
+		allow = {
+			NOT = { exists = RML }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = RML_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = bulgaria_area			#4
+							area = northern_macedonia_area	#3
+							area = upper_thrace_area		#4
+							area = thrace_area				#4
+							area = albania_area				#5
+							province_id = 5094	#malësia
+							province_id = 1766	#kosovo
+							province_id = 3185	#rasina
+							province_id = 3000	#nis
+							province_id = 3165	#varna
+							province_id = 3172	#serres
+						}
+					}
+					amount = 16	#/26
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = RML
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = serbian
+			add_accepted_culture = bulgarian
+			add_accepted_culture = albanian
+			custom_tooltip = RML_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = bulgaria_area			#4
+							area = northern_macedonia_area	#3
+							area = upper_thrace_area		#4
+							area = thrace_area				#4
+							area = albania_area				#5
+							province_id = 5094	#malësia
+							province_id = 1766	#kosovo
+							province_id = 3185	#rasina
+							province_id = 3000	#nis
+							province_id = 3165	#varna
+							province_id = 3172	#serres
+						}
+					}
+					add_permanent_claim = RML
+				}
+			}
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##########
+	#Anatolia#
+	##########	currently uses turkish - should really not since repurposed now to greek formable	
+	ATL_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = ATL }
+			OR = {
+				culture_group = byzantine
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = hudavendigar_area	#4
+				area = aydin_area			#4
+				area = samos_area			#4
+				area = karasi_area			#3
+				area = germiyan_area		#4
+				area = kastamonu_area		#3
+				area = rum_area				#4
+				area = pontus_area			#4
+				area = bucellarian_area		#4
+			}
+		}
+		allow = {
+			NOT = { exists = ATL }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 5155
+			custom_trigger_tooltip = {
+				tooltip = ATL_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = hudavendigar_area	#4
+							area = aydin_area			#4
+							area = samos_area			#4
+							area = karasi_area			#3
+							area = germiyan_area		#4
+							area = kastamonu_area		#3
+							area = rum_area				#4
+							area = pontus_area			#4
+							area = bucellarian_area		#4
+						}
+					}
+					amount = 20	#/34
+				}
+			}
+			total_development = 120
+		}
+		effect = {
+			change_tag = ATL
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_primary_culture = greek_anatolian
+			every_province = {
+				limit = {
+					owned_by = ROOT
+					culture = turkish
+				}
+				change_culture = greek_anatolian
+			}
+			add_accepted_culture = greek
+			set_capital = 5155
+			custom_tooltip = ATL_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = hudavendigar_area	#4
+							area = aydin_area			#4
+							area = samos_area			#4
+							area = karasi_area			#3
+							area = germiyan_area		#4
+							area = kastamonu_area		#3
+							area = rum_area				#4
+							area = pontus_area			#4
+							area = bucellarian_area		#4
+						}
+					}
+					add_permanent_claim = ATL
+				}
+			}
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	################
+	#Bohemia-Moravia#
+	################
+	BMV_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = BMV }
+			OR = {
+				primary_culture = czech
+				AND = {
+					culture_group = german
+					accepted_culture = czech
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = bohemia_area		#4
+				area = moravia_area		#3
+				area = erzgebirge_area	#4
+			}
+		}
+		allow = {
+			NOT = { exists = BMV }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = BMV_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = bohemia_area		#4
+							area = moravia_area		#3
+							area = erzgebirge_area	#4
+						}
+					}
+					amount = 8	#/11
+				}
+			}
+			total_development = 80
+		}
+		effect = {
+			change_tag = BMV
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = BMV_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = bohemia_area		#4
+							area = moravia_area		#3
+							area = erzgebirge_area	#4
+						}
+					}
+					add_permanent_claim = BMV
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##########
+	#Vasconia#
+	##########	uses preFCA
+	BSC_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = BSC }
+			OR = {
+				primary_culture = basque
+				primary_culture = gascon
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 210
+				province_id = 209
+				province_id = 2989
+				province_id = 173
+				province_id = 3083
+				province_id = 175
+				province_id = 176
+				province_id = 174
+				province_id = 3081
+			}
+		}
+		allow = {
+			NOT = { exists = BSC }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = BSC_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 210
+							province_id = 209
+							province_id = 2989
+							province_id = 173
+							province_id = 3083
+							province_id = 175
+							province_id = 176
+							province_id = 174
+							province_id = 3081
+						}
+					}
+					amount = 7 #/9
+				}
+			}
+			total_development = 50
+		}
+		effect = {
+			change_tag = BSC
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			hidden_effect = {
+				every_province = { 
+					limit = { culture = gascon }
+					change_culture = vascon
+				}
+				every_country = {
+					limit = { primary_culture = gascon }
+					change_primary_culture = vascon
+				}
+				2989 = { change_culture = basque }
+			}
+			custom_tooltip = BSC_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							province_id = 210
+							province_id = 209
+							province_id = 2989
+							province_id = 173
+							province_id = 3083
+							province_id = 175
+							province_id = 176
+							province_id = 174
+							province_id = 3081
+						}
+					}
+					add_permanent_claim = BSC
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	########## embarrassing amount of work put in to simply disable, but serves little purpose . . .
+	#Saarland#
+	######	
+	SLD_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = SLD }
+			OR = {
+				tag = SAA
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 3198	#saarbrücken
+				province_id = 1761	#worms
+				province_id = 80	#trier
+				province_id = 188	#metz
+				province_id = 75	#elsass
+				province_id = 94	#lëtzebuerg
+				province_id = 3069	#verdun
+				province_id = 3066	#arelerland
+			}
+		}
+		allow = {
+			NOT = { exists = SLD }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = SLD_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 3198	#saarbrücken
+							province_id = 1761	#worms
+							province_id = 80	#trier
+							province_id = 188	#metz
+							province_id = 75	#elsass
+							province_id = 94	#lëtzebuerg
+							province_id = 3069	#verdun
+							province_id = 3066	#arelerland
+						}
+					}
+					amount = 6 #/8
+				}
+			}
+			total_development = 60
+		}
+		effect = {
+			change_tag = SLD
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = lorrain
+			custom_tooltip = SLD_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							province_id = 3198	#saarbrücken
+							province_id = 1761	#worms
+							province_id = 80	#trier
+							province_id = 188	#metz
+							province_id = 75	#elsass
+							province_id = 94	#lëtzebuerg
+							province_id = 3069	#verdun
+							province_id = 3066	#arelerland
+						}
+					}
+					add_permanent_claim = SLD
+				}
+			}
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	########
+	#Polabia#
+	########
+	PBA_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = PBA }
+			OR = {
+				primary_culture = sorbian
+				primary_culture = polabian
+				primary_culture = kashubian
+				AND = {
+					OR = {
+						primary_culture = pommeranian
+						primary_culture = east_elbian
+					}
+					OR = {
+						accepted_culture = sorbian
+						accepted_culture = polabian
+						accepted_culture = kashubian
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = vorpommern_area		#3
+				area = neumark_area			#4
+				area = mittelmark_area		#4
+				area = mecklenburg_area		#3
+				province_id = 1858	#stettin
+				province_id = 48	#kolberg
+				province_id = 3218	#krajna
+				province_id = 254	#poznan
+				province_id = 2966	#glogau
+				province_id = 45	#luebeck
+			}
+		}
+		allow = {
+			NOT = { exists = PBA }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = PBA_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = vorpommern_area		#3
+							area = neumark_area			#5
+							area = mittelmark_area		#4
+							area = mecklenburg_area		#3
+							province_id = 1858	#stettin
+							province_id = 48	#kolberg
+							province_id = 3218	#krajna
+							province_id = 254	#poznan
+							province_id = 2966	#glogau
+							province_id = 45	#luebeck
+						}
+					}
+					amount = 14 #/20
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = PBA
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { primary_culture = east_elbian }
+				change_primary_culture = polabian
+				add_accepted_culture = east_elbian
+			}
+			if = {
+				limit = { primary_culture = pommeranian }
+				change_primary_culture = polabian
+				add_accepted_culture = pommeranian
+			}
+			custom_tooltip = PBA_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = vorpommern_area		#3
+							area = neumark_area			#5
+							area = mittelmark_area		#4
+							area = mecklenburg_area		#3
+							province_id = 1858	#stettin
+							province_id = 48	#kolberg
+							province_id = 3218	#krajna
+							province_id = 254	#poznan
+							province_id = 2966	#glogau
+							province_id = 45	#luebeck
+						}
+					}
+					add_permanent_claim = PBA
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	######
+	#Guelf and Ghibelline - VERY incomplete
+	####	in fact just abandoned for now; ignore
+		
+	KIT_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = KIT }
+			OR = {
+				has_country_flag = ghibelline_support
+			}
+			tag = XXX	#removed decision
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = piedmont_area
+				area = liguria_area
+				area = emilia_romagna_area
+				area = emilia_area
+				area = tuscany_area
+				area = central_italy_area
+				area = venetia_area
+			}
+			NOT = { province_id = 112 }
+			NOT = { province_id = 3045 }
+			NOT = { province_id = 3294 }
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = KIT }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			calc_true_if = {
+				all_owned_province = {
+					is_core = ROOT
+					has_province_modifier = ghibelline_stronghold
+				}
+				amount = 10
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = KIT
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						area = piedmont_area
+						area = liguria_area
+						area = emilia_romagna_area
+						area = emilia_area
+						area = tuscany_area
+						area = central_italy_area
+						area = venetia_area
+					}
+				}
+				add_permanent_claim = KIT
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	GFL_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = GFL }
+			OR = {
+				has_country_flag = guelph_support
+			}
+			tag = XXX	#removed decision
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = piedmont_area
+				area = liguria_area
+				area = emilia_romagna_area
+				area = emilia_area
+				area = tuscany_area
+				area = central_italy_area
+				area = venetia_area
+			}
+			NOT = { province_id = 112 }
+			NOT = { province_id = 3045 }
+			NOT = { province_id = 3294 }
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = GFL }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			calc_true_if = {
+				all_owned_province = {
+					is_core = ROOT
+					has_province_modifier = guelph_stronghold
+				}
+				amount = 10
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = GFL
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						area = piedmont_area
+						area = liguria_area
+						area = emilia_romagna_area
+						area = emilia_area
+						area = tuscany_area
+						area = central_italy_area
+						area = venetia_area
+					}
+				}
+				add_permanent_claim = GFL
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#########
+	#England#
+	#########	
+	ENG_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = ENG }
+			OR = {
+				primary_culture = english
+				primary_culture = normand
+				primary_culture = normand_english
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = east_midlands_area
+				area = wessex_area
+				area = home_counties_area
+				area = east_anglia_area
+				area = yorkshire_area
+				province_id = 4130	#haf
+				province_id = 240	#shrewsberu
+				province_id = 4375	#chester
+				province_id = 244	#lancaster
+			}
+		}
+		allow = {
+			NOT = { exists = ENG }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 236
+			custom_trigger_tooltip = {
+				tooltip = ENG_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = east_midlands_area
+							area = wessex_area
+							area = home_counties_area
+							area = east_anglia_area
+							area = yorkshire_area
+							province_id = 4130	#haf
+							province_id = 240	#shrewsberu
+							province_id = 4375	#chester
+							province_id = 244	#lancaster
+						}
+					}
+					amount = 14 #/21
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = ENG
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { primary_culture = normand }
+				add_accepted_culture = english
+				every_province = {
+					limit = { culture = normand }
+					change_culture = normand_english
+				}
+				every_country = {
+					limit = { primary_culture = normand }
+					change_primary_culture = normand_english
+				}
+			}
+			add_prestige = 25
+			set_capital = 236
+			custom_tooltip = ENG_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = east_midlands_area
+							area = wessex_area
+							area = home_counties_area
+							area = east_anglia_area
+							area = yorkshire_area
+							province_id = 4130	#haf
+							province_id = 240	#shrewsberu
+							province_id = 4375	#chester
+							province_id = 244	#lancaster
+						}
+					}
+					add_permanent_claim = ENG
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	################
+	#Northumberland#
+	################	
+	NOL_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = NOL }
+			OR = {
+				primary_culture = northumbrian
+				tag = KOI #mann
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = yorkshire_area		#4
+				area = northern_england_area #4
+				province_id = 244	#lancasxter
+				province_id = 4375	#chester
+				province_id = 240	#shrewsbery
+				province_id = 4372	#warwick
+				province_id = 4376	#leicester
+				province_id = 4362	#dumfries
+				province_id = 4365	#mann
+			}
+		}
+		allow = {
+			NOT = { exists = NOL }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = NOL_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = yorkshire_area		#4
+							area = northern_england_area #4
+							province_id = 244	#lancasxter
+							province_id = 4375	#chester
+							province_id = 240	#shrewsbery
+							province_id = 4372	#warwick
+							province_id = 4376	#leicester
+							province_id = 4362	#dumfries
+							province_id = 4365	#mann
+						}
+					}
+					amount = 9 #/15
+				}
+			}
+			total_development = 60
+		}
+		effect = {
+			change_tag = NOL
+			#remove_non_electors_emperors_from_empire_effect = yes
+			add_accepted_culture = scottish
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			if = {
+				limit = { tag = KOI }
+				change_primary_culture = northumbrian
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = NOL_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = yorkshire_area		#4
+							area = northern_england_area #4
+							province_id = 244	#lancasxter
+							province_id = 4375	#chester
+							province_id = 240	#shrewsbery
+							province_id = 4372	#warwick
+							province_id = 4376	#leicester
+							province_id = 4362	#dumfries
+							province_id = 4365	#mann
+						}
+					}
+					add_permanent_claim = NOL
+				}
+			}
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#########
+	#Bavaria#
+	#########	need ideas for boarn-minga;boarn-strau	
+	BAV_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = BAV }
+			OR = {
+				primary_culture = bavarian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = lower_bavaria_area #4
+				area = upper_bavaria_area #4
+				province_id = 1868	#augschbuag
+				province_id = 71	#anspach
+				province_id = 67	#niambeag
+				province_id = 66	#bambeag
+			}
+		}
+		allow = {
+			NOT = { exists = BAV }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = BAV_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = lower_bavaria_area #4
+							area = upper_bavaria_area #4
+							province_id = 1868	#augschbuag
+							province_id = 71	#anspach
+							province_id = 67	#niambeag
+							province_id = 66	#bambeag
+						}
+					}
+					amount = 7	#/12
+				}
+			}
+			total_development = 60
+		}
+		effect = {
+			change_tag = BAV
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = BAV_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = lower_bavaria_area #4
+							area = upper_bavaria_area #4
+							province_id = 1868	#augschbuag
+							province_id = 71	#anspach
+							province_id = 67	#niambeag
+							province_id = 66	#bambeag
+						}
+					}
+					add_permanent_claim = BAV
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##########
+	#Gotaland#
+	##########	# need scandi ducal ideas t b h ! ! !
+	GTA_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = GTA }
+			OR = {
+				tag = OSG
+				tag = VGL
+			}
+		}
+		# provinces_to_highlight = {
+			# OR = {
+				# area = 
+			# }
+			# OR = {
+				# NOT = { owned_by = ROOT }
+				# NOT = { is_core = ROOT }
+			# }
+		# }
+		allow = {
+			NOT = { exists = GTA }
+			#is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			# calc_true_if = {
+				# all_owned_province = {
+					# is_core = ROOT
+					# OR = {
+						# area = 
+					# }
+				# }
+				# amount = X
+			# }
+			custom_trigger_tooltip = {
+				tooltip = GTA_nation_tt
+				OR = {
+					AND = {
+						tag = OSG
+						NOT = { exists = VGL }
+					}
+					AND = {
+						tag = VGL
+						NOT = { exists = OSG }
+					}
+				}
+			}
+		}
+		effect = {
+			change_tag = GTA
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			#add_accepted_culture = X
+			# every_province = {
+				# limit = {
+					# NOT = { owned_by = ROOT }
+					# OR = {
+						# area = 
+						# province_id = 
+					# }
+				# }
+				# add_permanent_claim = GTA
+			# }
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##########
+	#Scotland#
+	##########	
+	SCO_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = SCO }
+			OR = {
+				primary_culture = scottish
+				primary_culture = highland_scottish
+				primary_culture = gallgaidheil
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = scottish_marches_area	#4
+				area = lowlands_area			#4
+				area = highlands_area			#4
+				area = kingdom_of_the_isles_area	#4
+				province_id = 4361	#selkirk
+			}
+		}
+		allow = {
+			NOT = { exists = SCO }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = SCO_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = scottish_marches_area	#4
+							area = lowlands_area			#4
+							area = highlands_area			#4
+							area = kingdom_of_the_isles_area	#4
+							province_id = 4361	#selkirk
+						}
+					}
+					amount = 12 #/17
+				}
+			}
+			total_development = 80
+		}
+		effect = {
+			change_tag = SCO
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = scottish
+			add_accepted_culture = highland_scottish
+			add_accepted_culture = gallgaidheil
+			custom_tooltip = SCO_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = scottish_marches_area	#4
+							area = lowlands_area			#4
+							area = highlands_area			#4
+							area = kingdom_of_the_isles_area	#4
+							province_id = 4361	#selkirk
+						}
+					}
+					add_permanent_claim = SCO
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##########################
+	#Ireland for Typus Minors#
+	##########################
+	
+	IRE_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = IRE }
+			OR = {
+				tag = ULS
+				tag = LEI
+				tag = MNS
+				tag = CNN
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = leinster_area
+				area = ulster_area
+				area = munster_area
+				area = connacht_area
+			}
+		}
+		allow = {
+			NOT = { exists = IRE }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = IRE_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = leinster_area
+							area = ulster_area
+							area = munster_area
+							area = connacht_area
+						}
+					}
+					amount = 12 #/17
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = IRE
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			# add_accepted_culture = X
+			custom_tooltip = IRE_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = leinster_area
+							area = ulster_area
+							area = munster_area
+							area = connacht_area
+						}
+					}
+					add_permanent_claim = IRE
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##################
+	#Schwobm / Swabia#
+	##################
+	
+	SWB_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = SWB }
+			OR = {
+				primary_culture = swabian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = lower_swabia_area	#3
+				area = upper_swabia_area	#4
+				area = upper_rhineland_area	#3
+				province_id = 1880	#sundgau
+				province_id = 75	#elsass
+				province_id = 1869	#zurich
+				province_id = 1870	#st gallen
+				province_id = 3053	#voralberg
+				province_id = 166	#schweiz
+			}
+		}
+		allow = {
+			NOT = { exists = SWB }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = SWB_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = lower_swabia_area	#3
+							area = upper_swabia_area	#4
+							area = upper_rhineland_area	#3
+							province_id = 1880	#sundgau
+							province_id = 75	#elsass
+							province_id = 1869	#zurich
+							province_id = 1870	#st gallen
+							province_id = 3053	#voralberg
+							province_id = 166	#schweiz
+						}
+					}
+					amount = 10	#/16
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = SWB
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = SWB_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = lower_swabia_area	#3
+							area = upper_swabia_area	#4
+							area = upper_rhineland_area	#3
+							province_id = 1880	#sundgau
+							province_id = 75	#elsass
+							province_id = 1869	#zurich
+							province_id = 1870	#st gallen
+							province_id = 3053	#voralberg
+							province_id = 166	#schweiz
+						}
+					}
+					add_permanent_claim = SWB
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#########
+	#Ripuaria#
+	#########
+	
+	RHI_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = RHI }
+			OR = {
+				primary_culture = hessian
+				primary_culture = ripuarianfranconian
+				primary_culture = westphalian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = main_area	#4
+				area = ruhr_area	#4
+				area = north_rhine_area	#4
+				province_id = 78	#mainz
+				province_id = 80	#trier
+				province_id = 3063	#overmaas
+				province_id = 3292	#dortmund
+				province_id = 82	#westfalen
+				province_id = 81	#hessen
+				province_id = 3209	#giessen
+				province_id = 3207	#darmstadt
+				
+			}
+		}
+		allow = {
+			NOT = { exists = RHI }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = RHI_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = main_area	#4
+							area = ruhr_area	#4
+							area = north_rhine_area	#4
+							province_id = 78	#mainz
+							province_id = 80	#trier
+							province_id = 3063	#overmaas
+							province_id = 3292	#dortmund
+							province_id = 82	#westfalen
+							province_id = 81	#hessen
+							province_id = 3209	#giessen
+							province_id = 3207	#darmstadt
+						}
+					}
+					amount = 14 #/20
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = RHI
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = RHI_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = main_area	#4
+							area = ruhr_area	#4
+							area = north_rhine_area	#4
+							province_id = 78	#mainz
+							province_id = 80	#trier
+							province_id = 3063	#overmaas
+							province_id = 3292	#dortmund
+							province_id = 82	#westfalen
+							province_id = 81	#hessen
+							province_id = 3209	#giessen
+							province_id = 3207	#darmstadt
+						}
+					}
+					add_permanent_claim = RHI
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	########
+	#Frisia#
+	########	temp using NED ideas
+	
+	FRE_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = FRE }
+			OR = {
+				primary_culture = frisian
+				primary_culture = dutch
+				primary_culture = hannoverian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 100
+				province_id = 4382
+				province_id = 1931
+				province_id = 3058
+				province_id = 97
+				province_id = 4381
+				province_id = 3135
+				province_id = 4141
+				province_id = 55
+				province_id = 98
+				province_id = 4383
+				province_id = 96
+				province_id = 95
+			}
+		}
+		allow = {
+			NOT = { exists = FRE }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = FRE_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 100
+							province_id = 4382
+							province_id = 1931
+							province_id = 3058
+							province_id = 97
+							province_id = 4381
+							province_id = 3135
+							province_id = 4141
+							province_id = 55
+							province_id = 98
+							province_id = 4383
+							province_id = 96
+							province_id = 95
+						}
+					}
+					amount = 9 #/13
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = FRE
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_primary_culture = frisian
+			add_accepted_culture = dutch
+			add_accepted_culture = hannoverian
+			custom_tooltip = FRE_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							province_id = 100
+							province_id = 4382
+							province_id = 1931
+							province_id = 3058
+							province_id = 97
+							province_id = 4381
+							province_id = 3135
+							province_id = 4141
+							province_id = 55
+							province_id = 98
+							province_id = 4383
+							province_id = 96
+							province_id = 95
+						}
+					}
+					add_permanent_claim = FRE
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas - Frieslander for now
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	###########
+	#Franconia#
+	###########
+	
+	FNC_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = FNC }
+			OR = {
+				primary_culture = franconian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 66	#bamberg
+				province_id = 67	#niambag
+				province_id = 3212	#bareith
+				province_id = 71	#anspach
+				province_id = 79	#wiazbuag
+				province_id = 3208	#aschaffenbuag
+				province_id = 3211	#coburg
+				province_id = 3206	#heilbronn
+				province_id = 1757	#oberpfalz
+				province_id = 3210	#fulda
+				province_id = 77	#heidlbeag
+				province_id = 3207	#darmstadt
+			}
+		}
+		allow = {
+			NOT = { exists = FNC }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = FNC_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 66	#bamberg
+							province_id = 67	#niambag
+							province_id = 3212	#bareith
+							province_id = 71	#anspach
+							province_id = 79	#wiazbuag
+							province_id = 3208	#aschaffenbuag
+							province_id = 3211	#coburg
+							province_id = 3206	#heilbronn
+							province_id = 1757	#oberpfalz
+							province_id = 3210	#fulda
+							province_id = 77	#heidlbeag
+							province_id = 3207	#darmstadt
+						}
+					}
+					amount = 8	#/12
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = FNC
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = FNC_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							province_id = 66	#bamberg
+							province_id = 67	#niambag
+							province_id = 3212	#bareith
+							province_id = 71	#anspach
+							province_id = 79	#wiazbuag
+							province_id = 3208	#aschaffenbuag
+							province_id = 3211	#coburg
+							province_id = 3206	#heilbronn
+							province_id = 1757	#oberpfalz
+							province_id = 3210	#fulda
+							province_id = 77	#heidlbeag
+							province_id = 3207	#darmstadt
+						}
+					}
+					add_permanent_claim = FNC
+				}
+			}
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##########
+	#Nordmark#
+	######
+	
+	NMK_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = NMK }
+			OR = {
+				primary_culture = saxon
+				primary_culture = thuringian
+				primary_culture = east_elbian
+				primary_culture = pommeranian
+				primary_culture = eastphalian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = south_saxony_area		#4
+				area = northern_saxony_area		#3
+				area = neumark_area				#4
+				area = mittelmark_area			#4
+				province_id = 63	#thuringia
+				province_id = 3214	#saale
+				province_id = 3213	#weimar
+				province_id = 3217	#stargard
+				province_id = 2993	#uckermark
+			}
+		}
+		allow = {
+			NOT = { exists = NMK }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = NMK_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = south_saxony_area		#4
+							area = northern_saxony_area		#3
+							area = neumark_area				#4
+							area = mittelmark_area			#4
+							province_id = 63	#thuringia
+							province_id = 3214	#saale
+							province_id = 3213	#weimar
+							province_id = 3217	#stargard
+							province_id = 2993	#uckermark
+						}
+					}
+					amount = 12 #/19
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = NMK
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			#add_accepted_culture = X
+			custom_tooltip = NMK_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = south_saxony_area		#4
+							area = northern_saxony_area		#3
+							area = neumark_area				#4
+							area = mittelmark_area			#4
+							province_id = 63	#thuringia
+							province_id = 3214	#saale
+							province_id = 3213	#weimar
+							province_id = 3217	#stargard
+							province_id = 2993	#uckermark
+						}
+					}
+					add_permanent_claim = NMK
+				}
+			}
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##########
+	#Hannover#
+	##########
+	
+	HAN_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = HAN }
+			OR = {
+				primary_culture = hannoverian
+				primary_culture = eastphalian
+				primary_culture = westphalian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = weser_area			#4
+				area = lower_saxony_area	#4
+				area = holstein_area		#4
+				province_id = 1931	#east frisia
+				province_id = 86	#munster
+				province_id = 2973	#meppen
+				province_id = 56	#osnabruck
+				province_id = 3203	#minden
+				province_id = 3203	#lippe
+				province_id = 2972	#paderborn
+				province_id = 4141	#dithmarschen
+			}
+		}
+		allow = {
+			NOT = { exists = HAN }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = HAN_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = weser_area			#4
+							area = lower_saxony_area	#4
+							area = holstein_area		#4
+							province_id = 1931	#east frisia
+							province_id = 86	#munster
+							province_id = 2973	#meppen
+							province_id = 56	#osnabruck
+							province_id = 3203	#minden
+							province_id = 3203	#lippe
+							province_id = 2972	#paderborn
+							province_id = 4141	#dithmarschen
+						}
+					}
+					amount = 14	#/20
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = HAN
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			#add_accepted_culture = X
+			custom_tooltip = HAN_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = weser_area			#4
+							area = lower_saxony_area	#4
+							area = holstein_area		#4
+							province_id = 1931	#east frisia
+							province_id = 86	#munster
+							province_id = 2973	#meppen
+							province_id = 56	#osnabruck
+							province_id = 3203	#minden
+							province_id = 3203	#lippe
+							province_id = 2972	#paderborn
+							province_id = 4141	#dithmarschen
+						}
+					}
+					add_permanent_claim = HAN
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##################
+	#Hanseatic League#
+	#######	using pommeranian for now
+	
+	HSL_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = HSL }
+			NOT = { tag = TEU } #other reasons
+			OR = {
+				primary_culture = pommeranian
+				AND = {
+					OR = {
+						primary_culture = hannoverian
+						primary_culture = frisian
+						primary_culture = prussian
+						primary_culture = pommeranian
+					}
+					capital_scope = {
+						has_port = yes
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1931
+				province_id = 1874
+				province_id = 44
+				province_id = 45
+				province_id = 12
+				province_id = 1858
+				province_id = 43
+				province_id = 40
+				province_id = 38
+				province_id = 25
+				province_id = 23
+				#non centers
+				province_id = 46
+				province_id = 6
+				province_id = 47
+				province_id = 2996
+			}
+		}
+		allow = {
+			NOT = { exists = HSL }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 45
+			custom_trigger_tooltip = {
+				tooltip = HSL_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							#trade ports
+							province_id = 1931
+							province_id = 1874
+							province_id = 44
+							province_id = 45
+							province_id = 12
+							province_id = 1858
+							province_id = 43
+							province_id = 40
+							province_id = 38
+							province_id = 25
+							province_id = 23
+							#non centers
+							province_id = 46
+							province_id = 6
+							province_id = 47
+							province_id = 2996
+						}
+					}
+					amount = 8 #/15
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = HSL
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_capital = 45
+			#add_accepted_culture = X
+			custom_tooltip = HSL_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							#trade ports
+							province_id = 1931
+							province_id = 1874
+							province_id = 44
+							province_id = 45
+							province_id = 12
+							province_id = 1858
+							province_id = 43
+							province_id = 40
+							province_id = 38
+							province_id = 25
+							province_id = 23
+							#non centers
+							province_id = 46
+							province_id = 6
+							province_id = 47
+							province_id = 2996
+						}
+					}
+					add_permanent_claim = HSL
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas - using GPM temporarily
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#########
+	#Denmark#
+	#########
+	
+	DAN_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = DAN }
+			OR = {
+				primary_culture = danish
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = holstein_area	#4
+				area = denmark_area		#4
+				area = jutland_area		#4
+				area = skaneland_area	#4
+				area = schleswig_area	#4
+			}
+		}
+		allow = {
+			NOT = { exists = DAN }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 12
+			custom_trigger_tooltip = {
+				tooltip = DAN_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = holstein_area #4
+							area = denmark_area #4
+							area = jutland_area #4
+							area = skaneland_area #4
+							area = schleswig_area #3
+						}
+					}
+					amount = 14 #/20
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = DAN
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_capital = 12
+			custom_tooltip = DAN_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = holstein_area
+							area = denmark_area
+							area = jutland_area
+							area = skaneland_area
+							area = schleswig_area
+							province_id = 25
+						}
+					}
+					add_permanent_claim = DAN
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	########
+	#Norway#
+	########
+	
+	NOR_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = NOR }
+			OR = {
+				primary_culture = norwegian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = northern_norway	#3
+				area = eastern_norway	#5
+				area = western_norway	#4
+				area = central_norway	#4
+				area = subarctic_islands_area	#4
+			}
+		}
+		allow = {
+			NOT = { exists = NOR }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = NOR_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = northern_norway	#3
+							area = eastern_norway	#5
+							area = western_norway	#4
+							area = central_norway	#4
+							area = subarctic_islands_area	#4
+						}
+					}
+					amount = 12 #/20	less since subartic islands included
+				}
+			}
+			total_development = 80
+		}
+		effect = {
+			change_tag = NOR
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = NOR_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = northern_norway	#3
+							area = eastern_norway	#5
+							area = western_norway	#4
+							area = central_norway	#4
+							area = subarctic_islands_area	#4
+						}
+					}
+					add_permanent_claim = NOR
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	########
+	#Sweden#
+	########
+	
+	SWE_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = SWE }
+			OR = {
+				primary_culture = swedish
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = norrland_area		#4
+				area = svealand_area		#4
+				area = ostra_svealand_area	#4
+				area = vastra_gotaland_area	#5
+				area = gotaland_area		#4
+				province_id = 10	#jämtland
+			}
+		}
+		allow = {
+			NOT = { exists = SWE }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = SWE_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = norrland_area		#4
+							area = svealand_area		#4
+							area = ostra_svealand_area	#4
+							area = vastra_gotaland_area	#5
+							area = gotaland_area		#4
+							province_id = 10	#jämtland
+						}
+					}
+					amount = 15 #/22
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = SWE
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = gotlander
+			custom_tooltip = SWE_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = norrland_area		#4
+							area = svealand_area		#4
+							area = ostra_svealand_area	#4
+							area = vastra_gotaland_area	#5
+							area = gotaland_area		#4
+							province_id = 10	#jämtland
+						}
+					}
+					add_permanent_claim = SWE
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	################
+	#Greater Serbia#
+	#######	uses serbian
+	
+	SRE_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = SRE }
+			OR = {
+				primary_culture = serbian
+				primary_culture = bosnian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = serbia_area				#4
+				area = rascia_area				#4
+				area = albania_area				#5
+				area = northern_macedonia_area	#3
+				area = macedonia_area			#3
+				province_id = 138	#zeta
+				province_id = 1831	#travunija
+				province_id = 2746	#vidin
+				province_id = 1765	#sofia
+				province_id = 147	#thessaly
+				province_id = 3174	#trikala
+				province_id = 144	#spirus
+				province_id = 2750	#filibe
+			}
+		}
+		allow = {
+			NOT = { exists = SRE }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			
+			custom_trigger_tooltip = {
+				tooltip = SRE_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = serbia_area				#4
+							area = rascia_area				#4
+							area = albania_area				#5
+							area = northern_macedonia_area	#3
+							area = macedonia_area			#3
+							province_id = 138	#zeta
+							province_id = 1831	#travunija
+							province_id = 2746	#vidin
+							province_id = 1765	#sofia
+							province_id = 147	#thessaly
+							province_id = 3174	#trikala
+							province_id = 144	#spirus
+							province_id = 2750	#filibe
+						}
+					}
+					amount = 17	#/27
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = SRE
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			#add_accepted_culture = X
+			custom_tooltip = SRE_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = serbia_area				#4
+							area = rascia_area				#4
+							area = albania_area				#5
+							area = northern_macedonia_area	#3
+							area = macedonia_area			#3
+							province_id = 138	#zeta
+							province_id = 1831	#travunija
+							province_id = 2746	#vidin
+							province_id = 1765	#sofia
+							province_id = 147	#thessaly
+							province_id = 3174	#trikala
+							province_id = 144	#spirus
+							province_id = 2750	#filibe
+						}
+					}
+					add_permanent_claim = SRE
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#########
+	#Illyria#
+	####
+	
+	ILY_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = ILY }
+			OR = {
+				primary_culture = albanian
+				primary_culture = croatian
+				primary_culture = bosnian
+				primary_culture = slovene
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = east_adriatic_coast_area #4
+				area = bosnia_area #5
+				area = herzegovina	#4
+				area = albania_area #5
+				province_id = 3190	#pozega
+				province_id = 5094	#malësia
+				province_id = 144	#epirus
+				province_id = 142	#corfu
+				province_id = 3196	#modrus
+				province_id = 131	#zagreb
+				province_id = 3191	#rijeka
+				province_id = 3175	#aetolia
+				province_id = 3176	#cephalonia
+			}
+		}
+		allow = {
+			NOT = { exists = ILY }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = ILY_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = east_adriatic_coast_area #4
+							area = bosnia_area #5
+							area = herzegovina	#4
+							area = albania_area #5
+							province_id = 3190	#pozega
+							province_id = 5094	#malësia
+							province_id = 144	#epirus
+							province_id = 142	#corfu
+							province_id = 3196	#modrus
+							province_id = 131	#zagreb
+							province_id = 3191	#rijeka
+							province_id = 3175	#aetolia
+							province_id = 3176	#cephalonia
+						}
+					}
+					amount = 20 #/31
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = ILY
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = slovene
+			add_accepted_culture = bosnian
+			add_accepted_culture = albanian
+			add_accepted_culture = croatian
+			custom_tooltip = ILY_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = east_adriatic_coast_area #4
+							area = bosnia_area #5
+							area = herzegovina	#4
+							area = albania_area #5
+							province_id = 3190	#pozega
+							province_id = 5094	#malësia
+							province_id = 144	#epirus
+							province_id = 142	#corfu
+							province_id = 3196	#modrus
+							province_id = 131	#zagreb
+							province_id = 3191	#rijeka
+							province_id = 3175	#aetolia
+							province_id = 3176	#cephalonia
+						}
+					}
+					add_permanent_claim = ILY
+				}
+			}
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas - keep original?
+			# }
+			# swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##########
+	#Bulgaria#
+	##########	need bulg. minor	
+	BUL_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = BUL }
+			OR = {
+				primary_culture = bulgarian
+				tag = MAC
+				tag = PHL
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = upper_thrace_area #4
+				area = bulgaria_area #3
+				area = northern_macedonia_area #3
+				province_id = 3000	#nis
+				province_id = 3165	#barna
+				province_id = 159	#silistria
+				province_id = 3171	#komotini
+				#province_id = 3172	#serres
+				province_id = 3164	#constanta
+				province_id = 3163	#tulcea
+				province_id = 1853	#kastoria
+				province_id = 144	#epirus
+				province_id = 143	#berat
+				province_id = 3181	#valona
+				province_id = 4175	#lezha
+				province_id = 4174	#durazzo
+				province_id = 5094	#malësia
+				province_id = 1766	#kosovo
+				province_id = 3185	#rasina
+				province_id = 141	#belgrad
+				province_id = 4176	#timocka
+			}
+		}
+		allow = {
+			NOT = { exists = BUL }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = BUL_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = upper_thrace_area #4
+							area = bulgaria_area #3
+							area = northern_macedonia_area #3
+							province_id = 3000	#nis
+							province_id = 3165	#barna
+							province_id = 159	#silistria
+							province_id = 3171	#komotini
+							#province_id = 3172	#serres
+							province_id = 3164	#constanta
+							province_id = 3163	#tulcea
+							province_id = 1853	#kastoria
+							province_id = 144	#epirus
+							province_id = 143	#berat
+							province_id = 3181	#valona
+							province_id = 4175	#lezha
+							province_id = 4174	#durazzo
+							province_id = 5094	#malësia
+							province_id = 1766	#kosovo
+							province_id = 3185	#rasina
+							province_id = 141	#belgrad
+							province_id = 4176	#timocka
+						}
+					}
+					amount = 17 #/27
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = BUL
+			change_primary_culture = bulgarian
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = BUL_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = upper_thrace_area #4
+							area = bulgaria_area #3
+							area = northern_macedonia_area #3
+							province_id = 3000	#nis
+							province_id = 3165	#barna
+							province_id = 159	#silistria
+							province_id = 3171	#komotini
+							#province_id = 3172	#serres
+							province_id = 3164	#constanta
+							province_id = 3163	#tulcea
+							province_id = 1853	#kastoria
+							province_id = 144	#epirus
+							province_id = 143	#berat
+							province_id = 3181	#valona
+							province_id = 4175	#lezha
+							province_id = 4174	#durazzo
+							province_id = 5094	#malësia
+							province_id = 1766	#kosovo
+							province_id = 3185	#rasina
+							province_id = 141	#belgrad
+							province_id = 4176	#timocka
+						}
+					}
+					add_permanent_claim = BUL
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#########
+	#Tuscany#
+	#########	
+	TUS_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = TUS }
+			OR = {
+				primary_culture = tuscan
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = tuscany_area
+				province_id = 115	#pisa
+				province_id = 117	#siena
+				province_id = 3040	#piombino
+				province_id = 3295	#viterbo - part of lombard tuscia
+			}
+		}
+		allow = {
+			NOT = { exists = TUS }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			# owns_core_province = 116
+			custom_trigger_tooltip = {
+				tooltip = TUS_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = tuscany_area
+							province_id = 115	#pisa
+							province_id = 117	#siena
+							province_id = 3040	#piombino
+							province_id = 3295	#viterbo
+						}
+					}
+					amount = 6	#/8
+				}
+			}
+			total_development = 120
+		}
+		effect = {
+			change_tag = TUS
+			#remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 15
+			# set_capital = 116
+			custom_tooltip = TUS_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = tuscany_area
+							province_id = 115	#pisa
+							province_id = 117	#siena
+							province_id = 3040	#piombino
+							province_id = 3295	#viterbo
+						}
+					}
+					add_permanent_claim = TUS
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#################
+	#Greater Hungary#
+	######	uses hungarian
+	GHN_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = GHN }
+			OR = {
+				primary_culture = hungarian
+				primary_culture = transylvanian
+				primary_culture = slovak
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = carpathian_ruthenia_area		#4
+				area = southern_transylvania_area	#4
+				area = transylvania_area			#4
+				area = slovakia_area				#4
+				area = alfold_area					#4
+				area = transdanubia_area			#3
+				area = budapest_area				#4
+				area = slavonia_area				#4
+				province_id = 152	#
+			}
+		}
+		allow = {
+			NOT = { exists = GHN }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = GHN_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = carpathian_ruthenia_area		#4
+							area = southern_transylvania_area	#4
+							area = transylvania_area			#4
+							area = slovakia_area				#4
+							area = alfold_area					#4
+							area = transdanubia_area			#3
+							area = budapest_area				#4
+							area = slavonia_area				#4
+							province_id = 152	#
+						}
+					}
+					amount = 20	#/32
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = GHN
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = transylvanian
+			add_accepted_culture = croatian
+			add_accepted_culture = slovak
+			custom_tooltip = GHN_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = carpathian_ruthenia_area		#4
+							area = southern_transylvania_area	#4
+							area = transylvania_area			#4
+							area = slovakia_area				#4
+							area = alfold_area					#4
+							area = transdanubia_area			#3
+							area = budapest_area				#4
+							area = slavonia_area				#4
+							province_id = 152	#
+						}
+					}
+					add_permanent_claim = GHN
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#########
+	#Romania#
+	#########	
+	RMN_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = RMN }
+			OR = {
+				culture_group = dacian
+				tag = DBJ
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = moldavia_area				#5
+				area = wallachia_area				#4
+				area = transylvania_area			#4
+				area = muntenia_area				#4
+				province_id = 3152	#szatmar
+				province_id = 157	#bihar
+				province_id = 1951	#hunyad
+				province_id = 156	#temes
+				province_id = 1756	#bessarabia
+				province_id = 3163	#tulcea
+				province_id = 3164	#silistria
+				province_id = 159	#dobruja
+			}	#25
+		}
+		allow = {
+			NOT = { exists = RMN }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = RMN_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = moldavia_area				#5
+							area = wallachia_area				#4
+							area = transylvania_area			#4
+							area = muntenia_area				#4
+							province_id = 3152	#szatmar
+							province_id = 157	#bihar
+							province_id = 1951	#hunyad
+							province_id = 156	#temes
+							province_id = 1756	#bessarabia
+							province_id = 3163	#tulcea
+							province_id = 3164	#silistria
+							province_id = 159	#dobruja
+						}
+					}
+					amount = 18	#/25
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = RMN
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = hungarian
+			custom_tooltip = RMN_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = moldavia_area				#5
+							area = wallachia_area				#4
+							area = transylvania_area			#4
+							area = muntenia_area				#4
+							province_id = 3152	#szatmar
+							province_id = 157	#bihar
+							province_id = 1951	#hunyad
+							province_id = 156	#temes
+							province_id = 1756	#bessarabia
+							province_id = 3163	#tulcea
+							province_id = 3164	#silistria
+							province_id = 159	#dobruja
+						}
+					}
+					add_permanent_claim = RMN
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	####################################
+	#Baltic Kingdom (reskinned Prussia)#
+	####################################	
+	PRU_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = PRU }
+			OR = {
+				primary_culture = prussian
+				primary_culture = prussisk
+				AND = {
+					OR = {
+						culture_group = west_slavic
+						culture_group = baltic
+						culture_group = germanic
+					}
+					accepted_culture = prussian
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = west_prussia_area	#4
+				area = east_prussia_area	#5
+				area = pomerelia_area		#3
+				province_id = 3226	#polangen
+				province_id = 271	#zemaitija
+				province_id = 2995	#stolp
+				province_id = 48	#kolberg
+				province_id = 39	#goldingen
+				province_id = 3227	#pilten
+				province_id = 1935	#mitau
+				province_id = 38	#riga
+			}
+		}
+		allow = {
+			NOT = { exists = PRU }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = PRU_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = west_prussia_area	#4
+							area = east_prussia_area	#5
+							area = pomerelia_area		#3
+							province_id = 3226	#polangen
+							province_id = 271	#zemaitija
+							province_id = 2995	#stolp
+							province_id = 48	#kolberg
+							province_id = 39	#goldingen
+							province_id = 3227	#pilten
+							province_id = 1935	#mitau
+							province_id = 38	#riga
+						}
+					}
+					amount = 14 #/20
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = PRU
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_primary_culture = prussian
+			add_accepted_culture = latvian
+			add_accepted_culture = lithuanian
+			custom_tooltip = PRU_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = west_prussia_area	#4
+							area = east_prussia_area	#5
+							area = pomerelia_area		#3
+							province_id = 3226	#polangen
+							province_id = 271	#zemaitija
+							province_id = 2995	#stolp
+							province_id = 48	#kolberg
+							province_id = 39	#goldingen
+							province_id = 3227	#pilten
+							province_id = 1935	#mitau
+							province_id = 38	#riga
+						}
+					}
+					add_permanent_claim = PRU
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##########
+	#Ruthenia#
+	##	uses ruthenian	
+	UKR_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = UKR }
+			OR = {
+				primary_culture = ruthenian
+				AND = {
+					primary_culture = byelorussian
+					accepted_culture = ruthenian
+					owns_core_province = 280
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = ruthenia_region
+			}
+			NOT = { area = smolensk_area }
+			NOT = { area = west_oka_area }
+			NOT = { province_id = 275 }
+			NOT = { province_id = 4242 }
+			NOT = { province_id = 276 }
+			NOT = { province_id = 771 }
+			NOT = { province_id = 292 }
+			NOT = { province_id = 4246 }
+			NOT = { province_id = 297 }
+			NOT = { province_id = 4244 }
+		}	#35 total
+		allow = {
+			NOT = { exists = UKR }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = UKR_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							region = ruthenia_region
+						}
+						NOT = { area = smolensk_area }
+						NOT = { area = west_oka_area }
+						NOT = { province_id = 275 }
+						NOT = { province_id = 4242 }
+						NOT = { province_id = 276 }
+						NOT = { province_id = 771 }
+						NOT = { province_id = 292 }
+						NOT = { province_id = 4246 }
+						NOT = { province_id = 297 }
+						NOT = { province_id = 4244 }
+					}
+					amount = 22	#/35
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = UKR
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = UKR_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							region = ruthenia_region
+						}
+						NOT = { area = smolensk_area }
+						NOT = { area = west_oka_area }
+						NOT = { province_id = 275 }
+						NOT = { province_id = 4242 }
+						NOT = { province_id = 276 }
+						NOT = { province_id = 771 }
+						NOT = { province_id = 292 }
+						NOT = { province_id = 4246 }
+						NOT = { province_id = 297 }
+						NOT = { province_id = 4244 }
+					}
+					add_permanent_claim = UKR
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#################
+	#Vladimir-Suzdal#
+	#################	all RUS share
+	
+	VLD_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = VLD }
+			OR = {
+				primary_culture = russian
+				primary_culture = uralic
+			}
+			capital_scope = {
+				OR = {
+					area = murom_area			#3
+					area = suzdal_area			#6
+					area = ryazan_area			#4
+					area = galich_area			#2
+					area = nizhny_novgorod_area	#3
+					area = yaroslavl_area		#4
+					area = upper_don_area		#3
+					area = oka_area				#4
+					province_id = 4248
+					province_id = 5672
+					province_id = 2423
+					province_id = 4264
+					province_id = 1083
+					province_id = 4252
+					province_id = 5655
+					province_id = 314
+					province_id = 4262
+					province_id = 1755
+				}
+			}
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = murom_area			#3
+				area = suzdal_area			#6
+				area = ryazan_area			#4
+				area = galich_area			#2
+				area = nizhny_novgorod_area	#3
+				area = yaroslavl_area		#4
+				area = upper_don_area		#3
+				area = oka_area				#4
+				province_id = 4248
+				province_id = 5672
+				province_id = 2423
+				province_id = 4264
+				province_id = 1083
+				province_id = 4252
+				province_id = 5655
+				province_id = 314
+				province_id = 4262
+				province_id = 1755
+			}	#39
+		}
+		allow = {
+			NOT = { exists = VLD }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = VLD_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = murom_area			#3
+							area = suzdal_area			#6
+							area = ryazan_area			#4
+							area = galich_area			#2
+							area = nizhny_novgorod_area	#3
+							area = yaroslavl_area		#4
+							area = upper_don_area		#3
+							area = oka_area				#4
+							province_id = 4248
+							province_id = 5672
+							province_id = 2423
+							province_id = 4264
+							province_id = 1083
+							province_id = 4252
+							province_id = 5655
+							province_id = 314
+							province_id = 4262
+							province_id = 1755
+						}	#32
+					}
+					amount = 26 #/39
+				}
+			}
+			total_development = 180
+		}
+		effect = {
+			change_tag = VLD
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = VLD_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = murom_area			#3
+							area = suzdal_area			#6
+							area = ryazan_area			#4
+							area = galich_area			#2
+							area = nizhny_novgorod_area	#3
+							area = yaroslavl_area		#4
+							area = upper_don_area		#3
+							area = oka_area				#4
+							province_id = 4248
+							province_id = 5672
+							province_id = 2423
+							province_id = 4264
+							province_id = 1083
+							province_id = 4252
+							province_id = 5655
+							province_id = 314
+							province_id = 4262
+							province_id = 1755
+						}	#32
+					}
+					add_permanent_claim = VLD
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##############
+	#Rus (Russia)#
+	##############
+	
+	RUS_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = RUS }
+			OR = {
+				primary_culture = russian
+			}
+		}
+		provinces_to_highlight = {
+			region = russia_region
+			NOT = {
+				OR = {
+					area = murom_area			#3
+					area = suzdal_area			#6
+					area = ryazan_area			#4
+					area = galich_area			#2
+					area = nizhny_novgorod_area	#3
+					area = yaroslavl_area		#4
+					area = upper_don_area		#3
+					area = oka_area				#4
+					area = toropets_area				#other
+					province_id = 4248
+					province_id = 5672
+					province_id = 2423
+					province_id = 4264
+					province_id = 1083
+					province_id = 4252
+					province_id = 5655
+					province_id = 314
+					province_id = 4262
+					province_id = 1755
+				}	#32
+			}
+		}
+		allow = {
+			NOT = { exists = RUS }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = RUS_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						region = russia_region
+						NOT = {
+							OR = {
+								area = murom_area			#3
+								area = suzdal_area			#6
+								area = ryazan_area			#4
+								area = galich_area			#2
+								area = nizhny_novgorod_area	#3
+								area = yaroslavl_area		#4
+								area = upper_don_area		#3
+								area = oka_area				#4
+								area = toropets_area				#other
+								province_id = 4248
+								province_id = 5672
+								province_id = 2423
+								province_id = 4264
+								province_id = 1083
+								province_id = 4252
+								province_id = 5655
+								province_id = 314
+								province_id = 4262
+								province_id = 1755
+							}	#32
+						}
+					}
+					amount = 36	#/56(-3toropets)
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = RUS
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			#add_accepted_culture = XXXX
+			custom_tooltip = RUS_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						region = russia_region
+						NOT = {
+							OR = {
+								area = murom_area			#3
+								area = suzdal_area			#6
+								area = ryazan_area			#4
+								area = galich_area			#2
+								area = nizhny_novgorod_area	#3
+								area = yaroslavl_area		#4
+								area = upper_don_area		#3
+								area = oka_area				#4
+								area = toropets_area				#other
+								province_id = 4248
+								province_id = 5672
+								province_id = 2423
+								province_id = 4264
+								province_id = 1083
+								province_id = 4252
+								province_id = 5655
+								province_id = 314
+								province_id = 4262
+								province_id = 1755
+							}	#32
+						}
+					}
+					add_permanent_claim = RUS
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	###########
+	#White Rus#
+	###########
+	
+	BYL_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = BYL }
+			OR = {
+				primary_culture = byelorussian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = toropets_area
+				area = white_ruthenia_area
+				area = smolensk_area
+				area = bryansk_area
+				area = pripyat_area
+				area = west_oka_area
+				province_id = 770
+			}
+			NOT = { province_id = 277 }
+			NOT = { province_id = 5670 }
+		}#26
+		allow = {
+			NOT = { exists = BYL }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = BYL_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = toropets_area
+							area = white_ruthenia_area
+							area = smolensk_area
+							area = bryansk_area
+							area = pripyat_area
+							area = west_oka_area
+							province_id = 770
+						}
+						NOT = { province_id = 277 }
+						NOT = { province_id = 5670 }
+					}
+					amount = 18	#/26
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = BYL
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = BYL_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = toropets_area
+							area = white_ruthenia_area
+							area = smolensk_area
+							area = bryansk_area
+							area = pripyat_area
+							area = west_oka_area
+							province_id = 770
+						}
+						NOT = { province_id = 277 }
+						NOT = { province_id = 5670 }
+					}
+					add_permanent_claim = BYL
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	########
+	#Poland#
+	########
+	
+	POL_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = POL }
+			OR = {
+				primary_culture = polish
+				primary_culture = schlesian
+				AND = {
+					culture_group = west_slavic
+					accepted_culture = polish
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = poland_region
+			}
+		}
+		allow = {
+			NOT = { exists = POL }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = POL_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							region = poland_region
+						}
+					}
+					amount = 16	#/25
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = POL
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_primary_culture = polish
+			add_accepted_culture = schlesian
+			custom_tooltip = POL_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							region = poland_region
+						}
+					}
+					add_permanent_claim = POL
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	###########################
+	#Septimania / Gothic March#
+	###########################	
+	SPT_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = SPT }
+			OR = {
+				primary_culture = occitain
+				primary_culture = gascon
+				primary_culture = catalan
+				primary_culture = aragonese
+				primary_culture = basque
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = languedoc_area	#4
+				area = toulouse_area	#4
+				area = catalonia_area	#4
+				province_id = 176	#bearn
+				province_id = 175	#armagnac
+				province_id = 4112	#quercy
+				province_id = 211	#pinero
+				province_id = 2988	#tarragona
+				province_id = 214	#saragossa
+				province_id = 173	#labourd
+				province_id = 210	#navarre
+			}
+		}
+		allow = {
+			NOT = { exists = SPT }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = SPT_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = languedoc_area	#4
+							area = toulouse_area	#4
+							area = catalonia_area	#4
+							province_id = 176	#bearn
+							province_id = 175	#armagnac
+							province_id = 4112	#quercy
+							province_id = 211	#pinero
+							province_id = 2988	#tarragona
+							province_id = 214	#saragossa
+							province_id = 173	#labourd
+							province_id = 210	#navarre
+						}
+					}
+					amount = 14 #/20
+				}
+			}
+			total_development = 120
+		}
+		effect = {
+			change_tag = SPT
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_primary_culture = occitain
+			add_accepted_culture = catalan
+			add_accepted_culture = aragonese
+			custom_tooltip = SPT_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = languedoc_area	#4
+							area = toulouse_area	#4
+							area = catalonia_area	#4
+							province_id = 176	#bearn
+							province_id = 175	#armagnac
+							province_id = 4112	#quercy
+							province_id = 211	#pinero
+							province_id = 2988	#tarragona
+							province_id = 214	#saragossa
+							province_id = 173	#labourd
+							province_id = 210	#navarre
+						}
+					}
+					add_permanent_claim = SPT
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#################################
+	#Eidgenossenschaft / Switzerland#
+	#################################
+	
+	EGN_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = EGN }
+			OR = {
+				tag = ZUR
+				tag = SWI
+				tag = VAU
+				tag = GVA
+				tag = BSL
+				tag = ZND
+				tag = GRL
+				tag = MNT
+				tag = GRS
+				tag = KNS	
+				primary_culture = swiss
+				primary_culture = romansch
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = switzerland_area	#4
+				area = bern_area		#3
+				province_id = 1867	#vaud
+				province_id = 3056	#geneva
+				province_id = 3055	#basel
+				province_id = 1871	#wallis
+				province_id = 3205	#konstanz
+				province_id = 3053	#montfort
+				province_id = 3056	#genevois
+				province_id = 3045	#aosta
+			}
+		}
+		allow = {
+			NOT = { exists = EGN }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = EGN_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = switzerland_area	#4
+							area = bern_area		#3
+							province_id = 1867	#vaud
+							province_id = 3056	#geneva
+							province_id = 3055	#basel
+							province_id = 1871	#wallis
+							province_id = 3205	#konstanz
+							province_id = 3053	#montfort
+							province_id = 3056	#genevois
+							province_id = 3045	#aosta
+						}
+					}
+					amount = 8	#/14
+				}
+			}
+			total_development = 80
+		}
+		effect = {
+			change_tag = EGN
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_primary_culture = swiss
+			add_accepted_culture = arpitan
+			add_accepted_culture = romanch_culture
+			add_accepted_culture = lombard
+			custom_tooltip = EGN_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = switzerland_area	#4
+							area = bern_area		#3
+							province_id = 1867	#vaud
+							province_id = 3056	#geneva
+							province_id = 3055	#basel
+							province_id = 1871	#wallis
+							province_id = 3205	#konstanz
+							province_id = 3053	#montfort
+							province_id = 3056	#genevois
+							province_id = 3045	#aosta
+						}
+					}
+					add_permanent_claim = EGN
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#######
+	#Pagan#
+	####
+	
+	PGN_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = PGN }
+			OR = {
+				primary_culture = burmese
+				primary_culture = chin
+				primary_culture = karen
+				primary_culture = arakanese
+				primary_culture = mon
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = central_burma_area	#4
+				area = upper_burma_area		#3
+				area = chindwin_area		#4
+				area = lower_burma_area		#5
+				province_id = 2401	#mong pai
+				province_id = 4405	#katha
+				province_id = 4397	#yawnghwe
+				province_id = 2400	#hsipaw
+			}
+		}
+		allow = {
+			NOT = { exists = PGN }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = PGN_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = central_burma_area	#4
+							area = upper_burma_area		#3
+							area = chindwin_area		#4
+							area = lower_burma_area		#5
+							province_id = 2401	#mong pai
+							province_id = 4405	#katha
+							province_id = 4397	#yawnghwe
+							province_id = 2400	#hsipaw
+						}
+					}
+					amount = 14	#/20
+				}
+			}
+			total_development = 120
+		}
+		effect = {
+			change_tag = PGN
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { primary_culture = chin }
+				change_primary_culture = burmese
+				add_accepted_culture = chin
+			}
+			if = {
+				limit = { primary_culture = karen }
+				change_primary_culture = burmese
+				add_accepted_culture = karen
+			}
+			if = {
+				limit = { primary_culture = arakenese }
+				change_primary_culture = burmese
+				add_accepted_culture = arakenese
+			}
+			if = {
+				limit = { primary_culture = mon }
+				change_primary_culture = burmese
+				add_accepted_culture = mon
+			}
+			custom_tooltip = PGN_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = central_burma_area	#4
+							area = upper_burma_area		#3
+							area = chindwin_area		#4
+							area = lower_burma_area		#5
+							province_id = 2401	#mong pai
+							province_id = 4405	#katha
+							province_id = 4397	#yawnghwe
+							province_id = 2400	#hsipaw
+						}
+					}
+					add_permanent_claim = PGN
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	######
+	#Nanzhao
+	######
+	
+	NZO_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = NZO }
+			OR = {
+				primary_culture = bai	#primary?
+				primary_culture = yi
+				primary_culture = kachin
+				primary_culture = shan
+				primary_culture = zhuang	#temp
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = kachin_area
+				area = yun_gui_area
+				area = chuannan_area
+				area = yun_gui_borderland_area
+				province_id = 664
+				province_id = 583		
+			}
+		}
+		allow = {
+			NOT = { exists = NZO }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = NZO_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = kachin_area
+							area = yun_gui_area
+							area = chuannan_area
+							area = yun_gui_borderland_area
+							province_id = 664
+							province_id = 583	
+						}
+					}
+					amount = 14	#/20
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = NZO
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { primary_culture = yi }
+				change_primary_culture = bai
+				add_accepted_culture = yi
+			}
+			if = {
+				limit = { primary_culture = kachin }
+				change_primary_culture = bai
+				add_accepted_culture = kachin
+			}
+			if = {
+				limit = { primary_culture = shan }
+				change_primary_culture = bai
+				add_accepted_culture = shan
+			}
+			if = {
+				limit = { primary_culture = zhuang }
+				change_primary_culture = bai
+				add_accepted_culture = zhuang
+			}
+			custom_tooltip = NZO_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = kachin_area
+							area = yun_gui_area
+							area = chuannan_area
+							area = yun_gui_borderland_area
+							province_id = 664
+							province_id = 583	
+						}
+					}
+					add_permanent_claim = NZO
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	######
+	#Lan Xa
+	######
+	
+	LXA_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = LXA }
+			OR = {
+				primary_culture = lao
+				primary_culture = cham
+				primary_culture = vietnamese
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = vietnam_area
+				area = south_laos_area
+				area = north_laos_area
+				area = khorat_area
+				area = red_river_delta_area
+				province_id = 1817		
+			}
+		}
+		allow = {
+			NOT = { exists = LXA }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = LXA_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = vietnam_area
+							area = south_laos_area
+							area = north_laos_area
+							area = khorat_area
+							area = red_river_delta_area
+							province_id = 1817	
+						}
+					}
+					amount = 14	#/20
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = LXA
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { primary_culture = cham }
+				change_primary_culture = lao
+				add_accepted_culture = cham
+			}
+			if = {
+				limit = { primary_culture = vietnamese }
+				change_primary_culture = lao
+				add_accepted_culture = vietnamese
+			}
+			custom_tooltip = LXA_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = vietnam_area
+							area = south_laos_area
+							area = north_laos_area
+							area = khorat_area
+							area = red_river_delta_area
+							province_id = 1817	
+						}
+					}
+					add_permanent_claim = LXA
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##############
+	#Khmer Empire#
+	#######
+	
+	KHM_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = KHM }
+			OR = {
+				primary_culture = khmer
+				primary_culture = mon
+				primary_culture = cham
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = cambodia_area
+				area = mekong_area
+				province_id = 2375
+				area = khorat_area
+				area = south_laos_area
+				province_id = 603
+			}
+		}
+		allow = {
+			NOT = { exists = KHM }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 609
+			custom_trigger_tooltip = {
+				tooltip = KHM_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = cambodia_area
+							area = mekong_area
+							province_id = 2375
+							area = khorat_area
+							area = south_laos_area
+							province_id = 603
+						}
+					}
+					amount = 14	#/20
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = KHM
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { primary_culture = mon }
+				change_primary_culture = khmer
+				add_accepted_culture = mon
+			}
+			if = {
+				limit = { primary_culture = cham }
+				change_primary_culture = khmer
+				add_accepted_culture = cham
+			}
+			custom_tooltip = KHM_nation_tt2
+			set_capital = 609
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = cambodia_area
+							area = mekong_area
+							province_id = 2375
+							area = khorat_area
+							area = south_laos_area
+							province_id = 603
+						}
+					}
+					add_permanent_claim = KHM
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	######
+	#Sukothai
+	######
+	
+	SUK_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = SUK }
+			OR = {
+				primary_culture = central_thai
+				primary_culture = northern_thai
+				tag = VIE
+				tag = MPA
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = north_tenasserim_area
+				province_id = 2390 #5
+				area = central_thai_area
+				area = northern_thai_area
+				area = karenni_area
+				province_id = 2403
+				province_id = 590
+				province_id = 2391
+				province_id = 593
+				province_id = 614
+			}
+		}
+		allow = {
+			NOT = { exists = SUK }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 601
+			custom_trigger_tooltip = {
+				tooltip = SUK_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = north_tenasserim_area
+							province_id = 2390 #5
+							area = central_thai_area
+							area = northern_thai_area
+							area = karenni_area
+							province_id = 2403
+							province_id = 590
+							province_id = 2391
+							province_id = 593
+							province_id = 614
+						}
+					}
+					amount = 14	#/20
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = SUK
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = SUK_nation_tt2
+			change_primary_culture = central_thai
+			set_capital = 601
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = north_tenasserim_area
+							province_id = 2390 #5
+							area = central_thai_area
+							area = northern_thai_area
+							area = karenni_area
+							province_id = 2403
+							province_id = 590
+							province_id = 2391
+							province_id = 593
+							province_id = 614
+						}
+					}
+					add_permanent_claim = SUK
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#######
+	#Malay#
+	#######
+	
+	MSA_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = MSA }
+			OR = {
+				primary_culture = malayan
+				primary_culture = sumatran
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = malaya_area	#4
+				area = malacca_area	#4
+				area = north_sumatra_area	#3
+				area = central_sumatra_area	#4
+				area = south_sumatra_area	#4
+				area = minangkabau_area	#4
+				area = deli_area	#4
+				area = batak_area	#3
+				area = pariaman_area	#3
+				area = kedah_area	#3
+				area = pattani_area	#3
+				province_id = 2485	#setol
+				province_id = 5811	#nakhon si thamarat
+				province_id = 2686	#bintan/singapur
+			}
+		}
+		allow = {
+			NOT = { exists = MSA }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = MSA_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = malaya_area	#4
+							area = malacca_area	#4
+							area = north_sumatra_area	#3
+							area = central_sumatra_area	#4
+							area = south_sumatra_area	#4
+							area = minangkabau_area	#4
+							area = deli_area	#4
+							area = batak_area	#3
+							area = pariaman_area	#3
+							area = kedah_area	#3
+							area = pattani_area	#3
+							province_id = 2485	#setol
+							province_id = 5811	#nakhon si thamarat
+							province_id = 2686	#bintan/singapur
+						}
+					}
+					amount = 24	#/42
+				}
+			}
+			total_development = 250
+		}
+		effect = {
+			change_tag = MSA
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { primary_culture = sumatran }
+				change_primary_culture = malayan
+				add_accepted_culture = sumatran
+			}
+			if = {
+				limit = { primary_culture = malayan }
+				add_accepted_culture = sumatran
+			}
+			custom_tooltip = MSA_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = malaya_area	#4
+							area = malacca_area	#4
+							area = north_sumatra_area	#3
+							area = central_sumatra_area	#4
+							area = south_sumatra_area	#4
+							area = minangkabau_area	#4
+							area = deli_area	#4
+							area = batak_area	#3
+							area = pariaman_area	#3
+							area = kedah_area	#3
+							area = pattani_area	#3
+							province_id = 2485	#setol
+							province_id = 5811	#nakhon si thamarat
+							province_id = 2686	#bintan/singapur
+
+						}
+					}
+					add_permanent_claim = MSA
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	######
+	#Borneo
+	######
+	
+	BRN_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = BRN }
+			OR = {
+				primary_culture = bornean
+				tag = SUL
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = kutai_area	#4
+				area = brunei_area	#3
+				area = kalimantan_area	#4
+				area = palawan_area	#3
+				area = pontianak_area	#4
+			}
+		}
+		allow = {
+			NOT = { exists = BRN }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = BRN_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = kutai_area	#4
+							area = brunei_area	#3
+							area = kalimantan_area	#4
+							area = palawan_area	#3
+							area = pontianak_area	#4
+						}
+					}
+					amount = 12	#/18
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = BRN
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_primary_culture = bornean
+			add_accepted_culture = filipino
+			custom_tooltip = BRN_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = kutai_area	#4
+							area = brunei_area	#3
+							area = kalimantan_area	#4
+							area = palawan_area	#3
+							area = pontianak_area	#4
+						}
+					}
+					add_permanent_claim = BRN
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	###########
+	#Majapahit#
+	###########
+	
+	MAJ_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = MAJ }
+			OR = {
+				primary_culture = javanese
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = east_java_area	#4
+				area = central_java_area	#3
+				area = west_java_area	#4
+				area = banten_area	#3
+				area = demak_area	#4
+				province_id = 631
+			}
+		}
+		allow = {
+			NOT = { exists = MAJ }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = MAJ_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {							
+							area = east_java_area	#4
+							area = central_java_area	#3
+							area = west_java_area	#4
+							area = banten_area	#3
+							area = demak_area	#4
+							province_id = 631
+						}
+					}
+					amount = 13	#/19
+				}
+			}
+			total_development = 120
+		}
+		effect = {
+			change_tag = MAJ
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			custom_tooltip = MAJ_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {							
+							area = east_java_area	#4
+							area = central_java_area	#3
+							area = west_java_area	#4
+							area = banten_area	#3
+							area = demak_area	#4
+							province_id = 631
+						}
+					}
+					add_permanent_claim = MAJ
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	######
+	#Austria (MNS)
+	######
+	
+	OES_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = OES }
+			OR = {
+				primary_culture = austrian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = tirol_area			#4
+				area = austria_proper_area	#4
+				province_id = 110	#trient
+				province_id = 76	#salzburg
+				province_id = 132	#steiermark
+				province_id = 128	#kärnten
+				province_id = 1863	#graz
+				province_id = 3051	#burgenland
+			}
+		}
+		allow = {
+			NOT = { exists = OES }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = OES_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = tirol_area			#4
+							area = austria_proper_area	#4
+							province_id = 110	#trient
+							province_id = 76	#salzburg
+							province_id = 132	#steiermark
+							province_id = 128	#kärnten
+							province_id = 1863	#graz
+							province_id = 3051	#burgenland
+						}
+					}
+					amount = 10	#/14
+				}
+			}
+			total_development = 100
+		}
+		effect = {
+			change_tag = OES
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_accepted_culture = slovene	#to or not to...
+			custom_tooltip = OES_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = tirol_area			#4
+							area = austria_proper_area	#4
+							province_id = 110	#trient
+							province_id = 76	#salzburg
+							province_id = 132	#steiermark
+							province_id = 128	#kärnten
+							province_id = 1863	#graz
+							province_id = 3051	#burgenland
+						}
+					}
+					add_permanent_claim = OES
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	##########
+	#Burgundy#
+	##########
+	
+	# BUR_nation = {
+		# major = yes
+		# potential = {
+			# bt_generic_can_form_potential_check = yes
+			# NOT = { has_country_flag = formed_tier_1 }
+			# NOT = { tag = BUR }
+			# OR = {
+				# primary_culture = burgundian
+				# tag = BOU
+				# tag = NEM
+			# }
+		# }
+		# provinces_to_highlight = {
+			# OR = {
+				# area = bourgogne_area	#4
+				# area = lorraine_area		#3
+				# area = romandie_area	#4
+				# province_id = 203	#liyon
+				# province_id = 3088	#forez
+				# province_id = 190	#bourbon
+				# province_id = 185	#nemours
+				# province_id = 4390	#champagne
+				# province_id = 1880	#sundgau
+				# province_id = 3046	#genevois
+			# }
+		# }
+		# allow = {
+			# NOT = { exists = BUR }
+			# is_at_war = no
+			# is_free_or_tributary_trigger = yes
+			# mns_tier1_potential = yes
+			# custom_trigger_tooltip = {
+				# tooltip = BUR_nation_tt
+				# calc_true_if = {
+					# all_owned_province = {
+						# is_core = ROOT
+						# OR = {
+							# area = bourgogne_area	#4
+							# area = lorraine_area		#3
+							# area = romandie_area	#4
+							# province_id = 203	#liyon
+							# province_id = 3088	#forez
+							# province_id = 190	#bourbon
+							# province_id = 185	#nemours
+							# province_id = 4390	#champagne
+							# province_id = 1880	#sundgau
+							# province_id = 3046	#genevois
+						# }
+					# }
+					# amount = 12	#/18
+				# }
+			# }
+			# total_development = 100
+		# }
+		# effect = {
+			# change_tag = BUR
+			# if = {
+				# limit = { NOT = { government_rank = 2 } }
+				# set_government_rank = 2
+			# }
+			# add_country_modifier = {
+				# name = "centralization_modifier"
+				# duration = 7300
+			# }
+			# add_prestige = 25
+			# if = {
+				# limit = { NOT = { primary_culture = burgundian } }
+				# change_primary_culture = burgundian
+			# }
+			# add_accetped_culture = lorrain
+			# custom_tooltip = BUR_nation_tt2
+			# hidden_effect = {
+				# every_province = {
+					# limit = {
+						# NOT = { owned_by = ROOT }
+						# OR = {
+							# area = bourgogne_area	#4
+							# area = lorraine_area		#3
+							# area = romandie_area	#4
+							# province_id = 203	#liyon
+							# province_id = 3088	#forez
+							# province_id = 190	#bourbon
+							# province_id = 185	#nemours
+							# province_id = 4390	#champagne
+							# province_id = 1880	#sundgau
+							# province_id = 3046	#genevois
+						# }
+					# }
+					# add_permanent_claim = BUR
+				# }
+			# }
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# swap_non_generic_missions = yes
+			# set_country_flag = formed_tier_1
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+		# ai_importance = 400 #
+	# }
+	
+	#
+	#Assassins
+	#
+	
+	HAS_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = HAS }
+			religion = shiite
+			OR = {
+				owns_core_province = 1849
+				owns_core_province = 2215
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1849	#homs	--masyaf
+				province_id = 2215	#qazvin	--alamut
+			}
+		}
+		allow = {
+			NOT = { exists = HAS }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = HAS_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							province_id = 1849	#homs	--masyaf
+							province_id = 2215	#qazvin	--alamut
+						}
+					}
+					amount = 2
+				}
+			}
+			total_development = 150
+		}
+		effect = {
+			change_tag = HAS
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_primary_culture = syriac_culture
+			# custom_tooltip = HAS_nation_tt2
+			hidden_effect = {	#no reason to be included but its standard thus far
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							province_id = 1849	#homs	--masyaf
+							province_id = 2215	#qazvin	--alamut
+						}
+					}
+					add_permanent_claim = HAS
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	
+	
+	######
+	#
+	######
+	
+	# TAG_nation = {
+		# major = yes
+		# potential = {
+			# bt_generic_can_form_potential_check = yes
+			# NOT = { has_country_flag = formed_tier_1 }
+			# NOT = { tag = TAG }
+			# OR = {
+				# primary_culture = 
+			# }
+		# }
+		# provinces_to_highlight = {
+			# OR = {
+				# area = 
+				# province_id = 
+			# }
+		# }
+		# allow = {
+			# NOT = { exists = TAG }
+			# is_at_war = no
+			# is_free_or_tributary_trigger = yes
+			# mns_tier1_potential = yes
+			# custom_trigger_tooltip = {
+				# tooltip = TAG_nation_tt
+				# calc_true_if = {
+					# all_owned_province = {
+						# is_core = ROOT
+						# OR = {
+							# XXXX
+						# }
+					# }
+					# amount = X
+				# }
+			# }
+			# total_development = 100
+		# }
+		# effect = {
+			# change_tag = TAG
+			# if = {
+				# limit = { NOT = { government_rank = 2 } }
+				# set_government_rank = 2
+			# }
+			# add_country_modifier = {
+				# name = "centralization_modifier"
+				# duration = 7300
+			# }
+			# add_prestige = 25
+			# if = {
+				# limit = { primary_culture = YYY }
+				# change_primary_culture = ZZZ
+				# add_accepted_culture = YYY
+			# }
+			# custom_tooltip = TAG_nation_tt2
+			# hidden_effect = {
+				# every_province = {
+					# limit = {
+						# NOT = { owned_by = ROOT }
+						# OR = {
+							# XXXX
+						# }
+					# }
+					# add_permanent_claim = TAG
+				# }
+			# }
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# swap_non_generic_missions = yes
+			# set_country_flag = formed_tier_1
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+		# ai_importance = 400 #
+	# }
+}

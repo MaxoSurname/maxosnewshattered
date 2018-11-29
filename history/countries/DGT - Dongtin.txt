@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = animism
+primary_culture = miao
+capital = 1176
+
+1444.11.11 = {
+	monarch = {
+		name = "Qizhen"
+		dynasty = "Kong"		
+		birth_date = 1412.1.1
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = cosmopolitan_french
+add_accepted_culture = greek
+religion = catholic
+technology_group = western
+capital = 148
+
+1444.1.1 = {
+	monarch = {
+		name = "Robert III"
+		dynasty = "of Flanders"
+		birth_date = 1423.1.1
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}

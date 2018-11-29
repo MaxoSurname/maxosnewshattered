@@ -1,0 +1,21 @@
+# - Capitanata
+#Region - Italy
+#Area - Apulia
+
+owner = BNV
+controller = BNV
+culture = neapolitan 
+religion = catholic 
+hre = no 
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Foggia"
+is_city = yes # Estimated 
+add_core = BNV
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

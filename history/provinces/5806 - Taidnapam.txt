@@ -1,0 +1,18 @@
+owner = STK
+controller = STK
+add_core = STK
+culture = togoku
+religion = shinto
+capital = "Shimausa"
+trade_goods = fish
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 2
+is_city = yes
+
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG

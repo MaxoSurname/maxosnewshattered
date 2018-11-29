@@ -1,0 +1,18 @@
+#New Beyond Typus Province
+
+owner = SMO
+controller = SMO
+add_core = SMO
+culture = byelorussian
+religion = orthodox
+capital = "Velizh"		#initially was going to be Ustvyaty, but changed last minute
+trade_goods = wool
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group

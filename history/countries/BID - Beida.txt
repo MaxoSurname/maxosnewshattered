@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = xibei
+add_accepted_culture = mongol
+capital = 4955
+
+1444.11.11 = {
+	monarch = {
+		name = "Danian"
+		dynasty = "Bai"		
+		birth_date = 1419.1.1
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}

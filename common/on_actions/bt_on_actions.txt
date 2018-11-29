@@ -1,0 +1,94 @@
+
+on_startup = {
+	#Apparently, the below vanilla code must be included in the on_startup of any mod added on_action file, else problems arise with CoC content.... absolutely bizarre, but what can one do? Better safe than sorry.
+	events = {
+		muslim_school_events.20 #Pick School
+	}
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+	#Apparently, the above vanilla code must be included in the on_startup of any mod added on_action file, else problems arise with CoC content.... absolutely bizarre, but what can one do? Better safe than sorry.
+	#New for better addon support
+	if = {
+		limit = { NOT = { has_global_flag = beyond_typus_mod_enabled } }
+		set_global_flag = beyond_typus_mod_enabled
+	}
+	#Fixing 9.0.0 errors, can delete for 10.0.
+	118 = {
+		remove_province_modifier = religious_center
+		add_province_triggered_modifier = religious_center
+		add_province_triggered_modifier = non_catholic_rome
+	}
+	280 = { remove_province_modifier = religious_center }
+	358 = { add_province_triggered_modifier = coptic_alexandria }
+	379 = { add_province_triggered_modifier = jerusalem_held }
+	385 = {
+		remove_province_modifier = religious_center
+		add_province_triggered_modifier = religious_center
+		add_province_triggered_modifier = christian_mecca
+	}
+	1234 = { remove_province_modifier = religious_center }
+}
+
+# country 
+on_new_monarch = {
+	if = {
+		limit = {
+			government = high_kingship
+			NOT = { has_country_flag = bt_abolition_of_tanistry_succession }
+		}
+		set_country_flag = bt_tanistry_king_just_died
+		clr_country_flag = bt_tanistry_high_queen_reigning
+		remove_country_modifier = bt_uncertainty_about_a_high_queen
+		country_event = { id = BeyondTypusCelticFlavour.1 days = 1 }				#New Tanist election
+		country_event = { id = BeyondTypusCelticFlavour.6 days = 1 }			#High Queen comes to power, will only fire for female rulers
+	}
+}
+
+# country
+on_monarch_death = {
+	if = {
+		limit = {
+			government = high_kingship
+			NOT = { has_country_flag = bt_abolition_of_tanistry_succession }
+		}
+		set_country_flag = bt_tanistry_king_just_died
+		clr_country_flag = bt_tanistry_high_queen_reigning
+		remove_country_modifier = bt_uncertainty_about_a_high_queen
+		remove_country_modifier = bt_tanistry_underaged_heir
+		remove_country_modifier = bt_tanistry_female_heir
+		remove_country_modifier = bt_tanistry_waiting_on_heir
+	}
+}
+
+# country
+on_heir_death = {
+	if = {
+		limit = {
+			government = high_kingship
+			NOT = { has_country_flag = bt_abolition_of_tanistry_succession }
+		}
+		remove_country_modifier = bt_tanistry_underaged_heir
+		remove_country_modifier = bt_tanistry_female_heir
+		country_event = { id = BeyondTypusCelticFlavour.8 days = 1 }			#Tanist dies, new tanist event
+	}
+}
+
+# country
+on_new_heir = {
+	if = {
+		limit = {
+			government = high_kingship
+			has_country_modifier = bt_tanistry_waiting_on_heir
+			NOT = { has_country_flag = bt_abolition_of_tanistry_succession }
+		}
+		country_event = { id = BeyondTypusCelticFlavour.2 days = 1 }			#Male heir born/introduced			- doesn't seem to work, I'll look into this later, added a 1 day MTTH in the meantime
+		country_event = { id = BeyondTypusCelticFlavour.3 days = 1 }			#Female heir born/introduced			- doesn't seem to work, I'll look into this later, added a 1 day MTTH in the meantime
+	}
+}
+

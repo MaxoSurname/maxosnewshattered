@@ -1,0 +1,506 @@
+#Everything in here is added by Maxo
+
+#France
+POI = "countries/Poitou.txt"
+ANJ = "countries/Anjou.txt"
+NEM = "countries/Nemours.txt"
+VLS = "countries/Valois.txt"
+FCT = "countries/FrancheComte.txt"
+#Scandinavia
+JYL = "countries/Jylland.txt"
+#Britain
+WSX = "countries/Wessex.txt"
+MRC = "countries/Mercia.txt"
+SSX = "countries/Sussex.txt"
+ESX = "countries/Essex.txt"
+EAN = "countries/EastAnglia.txt"
+YRK = "countries/York.txt"
+CBL = "countries/Cumberland.txt"
+LDS = "countries/Lindsey.txt"
+ANG = "countries/MiddleAnglia.txt"
+LOT = "countries/Lothian.txt"
+SCY = "countries/Strathclyde.txt"
+ABY = "countries/Albany.txt"
+CEX = "countries/Ce.txt"
+DRI = "countries/Dal Riata.txt"
+CAI = "countries/Cait.txt"
+ORK = "countries/Orkney.txt"
+#Iberia
+#Catalunya 212 213 2988 2987
+#Valencia 3094 220 1750
+#Mallorca 333 5095 5098
+#Galicia 206 3102 3103 3104 232
+#León 208 3101 216 3100 1747 3099 LASTSUNNI
+SEV = "countries/Sevilla.txt" # 224* 1749 SUNNI
+MGA = "countries/Malaga.txt" # 3097* 226 SUNNI rep.
+CDB = "countries/Cordoba.txt" # 225* SUNNI
+JAE = "countries/Jaen.txt" # 1748* 2754 SUNNI
+MUR = "countries/Murcia.txt" # 221* 3096 SUNNI
+TOL = "countries/Toledo.txt" # 219* 217 2951 3300
+HLV = "countries/Huelva.txt" # 3098* 230 229 SUNNI
+BDZ = "countries/Badajoz.txt" # 218* 4150 3108 3106 CAPITALSUNNI
+CBR = "countries/Coimbra.txt" # 1851* 231 228 3105
+LSB = "countries/Lisboa.txt" # 227* rep.
+ATU = "countries/Asturias.txt" # 207* 1745 (renamed Cantabria)
+
+#Italy Switzerland Danube Adriatic
+VRA = "countries/Verona.txt" # 108 107
+PVA = "countries/Pavia.txt" # 3043
+CMA = "countries/Cremona.txt" # 1862
+NVA = "countries/Novara.txt" # 2979
+#bergamo -> milan 3047
+PIE = "countries/Piedmont.txt" # 103 1875
+NIC = "countries/Nice.txt" #  102
+GVA = "countries/Geneva.txt" #  3056
+VAU = "countries/Vaud.txt" #  1867
+GRS = "countries/Grisons.txt" #  3054 3294
+AOS = "countries/Aosta.txt" #  3045
+TST = "countries/Trieste.txt" #  3049
+#aquileia 111
+#modna 106
+#arezzo 2978
+#carinthia 129 3050 3191
+#tirol 73 3048
+#styria 132 128 1863
+#corsica 1247 5092
+MGC = "countries/MagnaGraecia.txt" #  122 1933 2984 123 friend BYZ
+ANC = "countries/Ancona.txt" #  119 FRIEND RAG
+#romagna 114
+CPU = "countries/Capua.txt" #  3039
+BNV = "countries/Benevento.txt" #  3038 2985 friend PAP theo
+SLR = "countries/Salerno.txt" #  2983 1934
+ABZ = "countries/Abruzzi.txt" #  120
+EMS = "countries/EmirateSicily.txt" #  125 3037
+#malta 126
+DMZ = "countries/Dalmazia.txt" #  136 3192 130
+#croatia 131 152 3196 1826
+#montenegro 138 1831 3184
+#venice provs -> albania 3182 4174
+PNN = "countries/Pannonia.txt" #  1772 135 3051 3151
+#lusatia 1763 60
+#moravia 4237 265 3297
+#nitra 4236 1318 162 154
+#####################
+#aydin 4309 318 4308
+#STR gains 2993
+#MAG gains 2964
+#SRU 2297
+#CIK 5152
+#TRE 2300
+#CAP 2301 5146 5150
+KRI = "countries/Karasi.txt" #5130 5131 2296 5156
+HMT = "countries/Hamit.txt" #1848 323
+#ERE 329 5158 5137 5167 5165
+#CND 2299 4312
+AHI = "countries/Ahiler.txt" #326 5155 4314 merchant republic
+#MEN 319
+#TKK 2298 5162
+#GRM 4311 5163 322
+#BYZ 3170 149
+#CEP 142 3181
+#EPI 144 143
+#MOE 145 3179 (remove fort)
+#ACH 3178 1773
+#NAX 3003 2348 (duchy of archipelago)
+#CRT 163 3180
+#CYP 5145
+THS = "countries/Thessalonica.txt" #148 3172 3171
+TLY = "countries/Thessaly.txt" #147 3174 1853
+MAC = "countries/Macedonia.txt" #3001 3183 3167
+PHL = "countries/Philippopolis.txt" #2750 3168 3169 1764
+SFI = "countries/Sofia.txt" #1765 2746 3166 150
+DBJ = "countries/Dobruja.txt" #159 3164 3163 3165 1756
+############################
+in-game releaseables:
+#ZAZ 282 2406 3243 283
+#CHR 289 1945 2407 3246 290 291 3267 298
+#KIE 280 4247 1942 3241 1944 3242 1943
+#VOL 279 3238 2962 3239 3222 1940 2961 281
+#PLT 275 771 4242 276 5660
+#SMO 293 292 4246 3270 4244 3301 4245 3271 5661 4243
+#DNZ 43 5097 2995 2997
+#RPN 3216
+#BRA 49
+#TRA 1951 4128 156 (core BNT) 3154
+####
+#new nations
+RRT = "countries/RedRuthenia.txt" #2424 3237 261 3146 1952
+SBB = "countries/Siebenburgen.txt" #3152 4127 157 158 1953 155
+BNT = "countries/Banat.txt" #1954 4173 4239 (core SLA)
+SLA "countries/Slavonia.txt" #3190 1767 3194 #Later removed,starting cores remain
+#1826 -> DMZ instead of CRO
+#1828 -> CRO
+LNZ = "countries/Linz.txt" #133 2956 2968
+#SIL 4238
+USL = "countries/UpperSilesia.txt" #263 3141 3142
+#MEI 61 2965 1771 (core BOH) 2967
+#THU 3211 63 3213
+SCN = "countries/Scania.txt" #6 26 1982 4165
+#GOT 25
+#GTA 3120 4166 3 2
+#SMI 315 3119 18 4114 1777 5650 5649
+#KRL 4124 4152 5648 1776 32 309 5647 31
+#KUR 39 1935
+#EST 36 1842 3229 (remove core on 35 3231)
+#NZH 306 4254 1956 3278 1083 4264 3279
+#AST 464 2417 3264 2416 3263 2208 466 2418
+#IME 422 2196 462 1856
+#ARL 424 4300 2212 4340
+#MGR 2207
+#BSR 408 4288 2311 2312
+#BHT 411 4293
+#ARD 4294 415
+ATC = "countries/Antioch.txt" #2313 5170 4217
+HAS = "countries/Assassins.txt" #1849
+#CIL 5154
+#LEB 378 5205 rename tripoli
+#KOJ 379
+JAF = "countries/Jaffa.txt" #1854 5180 364 363
+SIN = "countries/Sinai.txt" #5181 365 2315 4268 2327
+OJR = "countries/OultreJourdain.txt" #380 381 4270 5203
+#FAD 2314
+ALP = "countries/Aleppo.txt" #377
+DMC = "countries/Damascus.txt" #382
+#catholic: 379 380 1854 1855 364 5181 363 4268 378 2313
+#################################################
+#Directly from shattered, shh!
+MCN = "countries/Macaronesia.txt"
+AAL = "countries/Aaland.txt"
+FAR = "countries/Faroes.txt"
+JMT = "countries/Jamtland.txt"
+SHT = "countries/Shetland.txt"
+ZEA = "countries/Zealand.txt"
+SAN = "countries/SanMarino.txt" #7022
+CUM = "countries/Cuman.txt"
+KOS = "countries/Kostroma.txt"
+MPK = "countries/Malopolska.txt" #3220 259 2959
+TVP = "countries/Turov-Pinsk.txt"
+VLD = "countries/Vladimir-Suzdal.txt"
+WPK = "countries/Wielkopolska.txt" #254 3218 2963 3219
+MML = "countries/Memel.txt" #40
+CYR = "countries/Cyrenaica.txt" #356 357 2326 5272
+FAF = "countries/Farafra.txt" #5273 2318 4323 1233
+PAX = "countries/Alexandria.txt" #358 4317
+SAI = "countries/Saidi.txt" # 4319 4320 360 1231
+TPL = "countries/TripoliCountyof.txt"
+ADR = "countries/Andorra.txt" #7020
+MNC = "countries/Monaco.txt" #7021
+#Ok, back to OC
+#################################################
+LSK = "countries/CentralPoland.txt" #1939 255 258
+#łęczycka-sieradzka - tricky spelling, keeping here for copy/paste
+#KRA 262
+#SLO 2960
+#MAZ 3221 260 269 rename to warsaw
+MZY = "countries/Mazury.txt" #767 256 1938 3233 2958
+PMZ = "countries/Pomorze.txt" #5097 2997 1859 2995
+TGS = "countries/Tangiers.txt" # 334 1751 5219
+AFR = "countries/CrusaderAfrica.txt" #341 2473 2454 2453
+KCN = "countries/CrusaderConstantine.txt" #340 1882 5317 2455
+EOA = "countries/Pharaoh.txt" #5264 359 4318
+DMI = "countries/Damietta.txt" #5261 362 2316
+#KEM 4321 2320 2321 5267 2317 2319
+#BEJ 5271 2324 5282 1232
+
+
+XLU = "countries/Lu.txt" #2141 4196 2142 2143 2144 685
+#MIN 669 1829 2152core 2156 
+#NNG 670 1833 2151 2152
+#CGS 1840 2163 2164
+#CDL 660 661 662 663 2165 2166 2167 
+#CYI 4212
+#MNG 2147 (core WU); core 684
+#KHA 702 701 4223
+HAX = "countries/Han.txt" #726 704 2113 2112
+#PTA 2075
+#JAN 2065
+#TRT 2055
+#GWA 524
+#RMP 2094
+#ODH 2063
+#BGL 556
+#YUE 666 2160 2161 2162
+#OMA 5333
+#KRL 33
+#BLO 5652
+#KRM 432 2234 4345 436
+#YZD 433 2222 4334
+#BSH 475 2444 2420 1966
+#SIB 1074 2427 1075 1076 2441 1071 2428 2429 2433
+#SHY 2356 457 1973
+#KOK 458 1967 460
+#TRS 4343 1968 2228
+#AFG 452 2227
+#SIS 2220
+#ORM 431
+#BAL 4327
+#KZH 2353 2351 2369 2357 479 2354 478 2355 2360 477(corekeep) 476 2359 2358 2352 (core keep)
+#KHI 441 438 437 2349 2350 443 439 2370 440(coreshy)
+#KHO 4326 2221 4336
+#LRI 2209 2210 414
+#ISF 429 4335 4171
+#crusader splendor ->1; fix nrm locaisation
+AKG = "countries/Arkhangelsk.txt" # 313 1955 1958 3282 3284 4122 4129 4256 4257 4258 4259 5673 
+#SGS = "countries/Saragossa.txt" #potential inclusion
+BSC = "countries/BasqueCountry.txt"
+VSG = "countries/Visigothia.txt"
+IBR = "countries/Iberia.txt"
+CCB = "countries/CaliphateCordoba.txt"
+GAU = "countries/Gaul.txt"
+SVP = "countries/SavoyPiemont.txt" x
+KIT = "countries/KingdomItaly.txt"
+LBR = "countries/Langobardenreich.txt"
+GFL = "countries/GuelficLeague.txt"
+KOG = "countries/KingdomofGod.txt"
+SLD = "countries/Saarland.txt"
+WND = "countries/Wendia.txt"
+# = "countries/.txt"
+PBA = "countries/Polabia.txt"
+NMK = "countries/Nordmark.txt"
+HSL = "countries/HanseaticLeague.txt"
+ASG = "countries/Aussig.txt"
+
+BVM = "countries/BayernMunchen.txt"
+BVS = "countries/BayernStraubing.txt"
+
+LAD = "countries/Lade.txt"
+VFL = "countries/Vestfold.txt"
+HDL = "countries/Hordaland.txt"
+SVL = "countries/Svealand.txt"
+VGL = "countries/Vastergotland.txt"
+OSG = "countries/Ostergotland.txt"
+
+PRC = "countries/PrussianConfederation.txt"
+
+SRE = "countries/SerbianEmpire.txt"
+
+#formables
+CSL = "countries/CastileLeon.txt"
+CAG = "countries/AragonCrown.txt"
+OCC = "countries/Occitania.txt"
+FRC = "countries/Francien.txt"
+ARS = "countries/Arles.txt"
+CLT = "countries/Celtica.txt"
+APT = "countries/Arpitania.txt"
+BTA = "countries/Bretonnia.txt"
+#
+USP = "countries/UnitedSevenProvinces.txt"
+#FRE = "countries/Frisia.txt"
+ULT = "countries/UpperLotharingia.txt"
+PDA = "countries/Padania.txt"
+TFR = "countries/Terraferma.txt"
+LMC = "countries/LaMarche.txt"
+LGR = "countries/Liguria.txt"
+ADC = "countries/Adriatica.txt"
+TSI = "countries/TwoSicilies.txt"
+LTE = "countries/LatinEmpire.txt"
+KOH = "countries/KingdomofHeaven.txt"
+KCP = "countries/KingdomofCapsa.txt"
+AEL = "countries/AegeanLeague.txt"
+RML = "countries/Rumelia.txt"
+ATL = "countries/Anatolia.txt"
+BMV = "countries/BohemiaMoravia.txt"
+GHN = "countries/GreaterHungary.txt"
+SPT = "countries/Septimania.txt"
+BYL = "countries/WhiteRus.txt"
+ZUR = "countries/Zurich.txt"
+EGN = "countries/Eidgenossenschaft.txt"
+#need flags below:
+DVV = "countries/Dvaravati.txt"
+LPH = "countries/Lamphun.txt"
+AKR = "countries/Angkor.txt"
+LZH = "countries/Luzhenla.txt"
+SZH = "countries/Shuizhenla.txt"
+NZO = "countries/Nanzhao.txt"
+KPC = "countries/Kampuchea.txt"
+PGN = "countries/Pagan.txt"
+BRN = "countries/Borneo.txt"
+
+IKG = "countries/IronKingdom.txt"
+#Frankish Formables
+ASR = "countries/Austrasia.txt"
+NEU = "countries/Neustria.txt"
+AQT = "countries/Aquitaine.txt"
+FCA = "countries/Francia.txt"
+#Angevin Formables
+ANV = "countries/AngevinEmpire.txt"
+#ENG
+#AGV = "countries/Angevia.txt"
+####################
+#tuscany
+#piedmont
+#
+#Fantasy Formables?
+#Vampires
+#Nibelungen
+#Empire of Steel (?)
+#
+
+#SPECIAL FORMABLES
+TBE = "countries/TaboriteEmpire.txt" #Hussite
+DCL = "countries/DraculestiEmpire.txt" #Vampiric
+ABL = "countries/AlbigensianEmpire.txt" #Dualist
+NIB = "countries/Nibelungen.txt" # Dwarves
+
+#Romania
+#Tuscany
+#Emilia-Romagna
+#Swabia
+#Austro-Bayern
+#Belgica
+#Anglia
+#Northumberland
+#Alba
+
+
+
+#quest formables:
+CTH = "countries/Carthage.txt"
+
+########
+#celtica
+#francien
+#occitania
+#burgundy
+#upper lotharingia
+#lowlands
+#castile-leon
+#aragon
+#portugal
+#andalusia
+#corsica sardinia
+#naples
+#sicily
+#tuscany
+#la marche
+#emilia romagna
+#piedmont
+#lombardia
+#tera ferma
+#rheinland
+#hannover
+#anglia
+#northumberland
+#alba
+#picts
+#4 irish formables
+###########
+#all formables already present:
+#algeria		REMOVE
+#andalusia
+#arabia
+#armenia
+#great britain
+#england
+#france
+#greece
+#hannover
+#iceland		REMOVE
+#ireland
+#italy
+#morocco
+#nehterlands
+#poland
+#prussia
+#russia
+#romania
+#sardinia piedmont
+#spain
+#scotland
+#tripolitania	REMOVE
+#tunisia		REMOVE
+#toscano
+#westfalen
+###########
+#belgium
+#coratia
+#emiliaromagna
+#iberia
+#illyria
+#kabylia		REMOVE
+#lombardyveneto
+#moravia		REMOVE
+#najd			REMOVE
+#sennar			??????
+############
+###########
+#Formables#
+###########
+## FORMABLES ##
+
+#Europe
+AHE = "countries/AustriaHungary.txt"
+AEI = "countries/AustrianEmpire.txt"
+EDB = "countries/Empire de Bourbon.txt"
+#FRC = "countries/Franken.txt" #FNC
+GPM = "countries/Greater Pommerania.txt"
+HLE = "countries/Hellenic Empire.txt"
+JUG = "countries/Jugoslavija.txt"
+NSE = "countries/NorthSeaEmpire.txt"
+RHI = "countries/Rhineland.txt"
+SGF = "countries/South Germany.txt"
+#SWA = "countries/Schwobm.txt" #SWB
+JMB = "countries/Jomsborg.txt"
+JMV = "countries/Jomsvikings.txt"
+VRG = "countries/VarangianEmpire.txt"
+TKE = "countries/TurkishEmpire.txt"
+OES = "countries/AustriaMNS.txt"
+DYJ = "countries/Dyjon.txt"
+MDT = "countries/MediterraneanEmpire.txt"
+WSS = "countries/WestAssassins.txt"
+ESS = "countries/EastAssassins.txt"
+ASC = "countries/AssassinsCaliphate.txt"
+
+#new chinese tags
+ANQ = "countries/Anqing.txt"
+AYM = "countries/Anyam.txt"
+XBA = "countries/Ba.txt"
+BID = "countries/Beida.txt"
+CNT = "countries/Canton.txt"
+DMG = "countries/Daming.txt"
+DGH = "countries/Donghai.txt"
+DGO = "countries/Dongou.txt"
+DGT = "countries/Dongtin.txt"
+FGH= "countries/Fenghua.txt"
+FYN = "countries/Fuyan.txt"
+FZH = "countries/Fuzhou.txt"
+GDG = "countries/Guangdong.txt"
+GXI = "countries/Guangxi.txt"
+HZG = "countries/Hangzhong.txt"
+HZO = "countries/Hangzhou.txt"
+HBI = "countries/Hebei.txt"
+HDG = "countries/Hedong.txt"
+HSH = "countries/Hengshan.txt"
+HYG = "countries/Huaiyang.txt"
+JCG = "countries/Jiancheng.txt"
+JSU = "countries/Jiangsu.txt"
+JNG = "countries/Jianning.txt"
+JZO = "countries/Jizhou.txt"
+LGY = "countries/Langya.txt"
+LXI = "countries/Longxi.txt"
+NAN = "countries/Nan.txt"
+NHI = "countries/Nanhai.txt"
+NGB = "countries/Ningbo.txt"
+PYG = "countries/Poyang.txt"
+QZH = "countries/Quzhou.txt"
+QZO = "countries/Quanzhou.txt"
+SDG = "countries/Shandong.txt"
+SZU = "countries/Suzhou.txt"
+TZO = "countries/Tingzhou.txt"
+WZO = "countries/Wenzhou.txt"
+WUX = "countries/Wuxi.txt"
+XNG = "countries/Xiang.txt"
+XZO = "countries/Xuzhou.txt"
+YZO = "countries/Yangzhou.txt"
+YJG = "countries/Yanjing.txt"
+YLG = "countries/Yelang.txt"
+ZHG = "countries/Zhang.txt"
+ZJG = "countries/Zhongjing.txt"
+ZJI = "countries/Zhuji.txt"
+#korea
+LEL = "countries/Lelang.txt"
+DKJ = "countries/Dongokjeo.txt"
+BKJ = "countries/Baekje.txt"
+MHN = "countries/Mahan.txt"
+SLL = "countries/Silla.txt"
+KYE = "countries/Ye.txt"

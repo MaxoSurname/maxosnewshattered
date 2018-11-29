@@ -1,0 +1,24 @@
+#Finland, incl. Åbo.
+#Region - Scandinavia
+#Area - Finland
+
+owner = FIN
+controller = FIN
+add_core = FIN
+culture = swedish
+religion = catholic
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = paper
+base_manpower = 1
+#fort_15th = yes			#removing, Sweden was going broke
+capital = "Åbo"
+is_city = yes
+extra_cost = 8
+center_of_trade = 1
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

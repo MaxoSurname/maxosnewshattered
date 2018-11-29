@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+technology_group = muslim
+religion = sunni
+primary_culture = tunisian			#Changed from Algerian to Maghrebi
+capital = 338 # Al-Djazair
+religious_school = maliki_school
+
+1444.11.11 = {
+	monarch = {
+		name = "(Interregnum)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

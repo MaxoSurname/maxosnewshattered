@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = occitain
+religion = catholic
+technology_group = western
+capital = 196	# Toulouse
+fixed_capital = 196 # Cannot move capital away from this province & no power cost to move to it
+
+1440.1.1 = { 
+	monarch = {
+		name = "Reynald VI"
+		dynasty = "of Toulouse"
+		birth_date = 1421.1.1
+		adm = 5
+		dip = 3
+		mil = 5
+	}
+}

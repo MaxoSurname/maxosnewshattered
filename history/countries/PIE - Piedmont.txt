@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = piedmontese
+religion = catholic
+technology_group = western
+capital = 103
+
+1420.1.1 = {
+	monarch = {
+		name = "Manuele"
+		dynasty = "Torino"
+		birth_date = 1397.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}

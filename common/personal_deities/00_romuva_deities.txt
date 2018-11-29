@@ -1,0 +1,168 @@
+#Romuva --MNS
+
+dievas =
+{
+	global_autonomy = -0.10
+	legitimacy = 1
+	
+	allow = {
+		OR = {
+			religion = baltic_pagan
+		}
+	}
+	sprite = 7
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+zemyna =
+{
+	development_cost = -0.075
+	build_time = -0.25
+	
+	allow = {
+		OR = {
+			religion = baltic_pagan
+		}
+	}
+	sprite = 8
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}
+	}
+}
+
+perkunas =
+{
+	leader_land_shock = 1
+	shock_damage = 0.075
+	
+	allow = {
+		OR = {
+			religion = baltic_pagan
+		}
+	}
+	sprite = 9
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { num_of_cities = 5 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_cities = 10 }
+		}
+		modifier = {
+			factor = 0.5
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}
+}
+
+gabija =
+{
+	fire_damage = 0.05
+	global_missionary_strength = 0.02
+	
+	allow = {
+		OR = {
+			religion = baltic_pagan
+		}
+	}
+	sprite = 10
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}		
+	}
+}
+
+laima =
+{
+	manpower_recovery_speed = 0.20
+	stability_cost_modifier = -0.15
+	
+	allow = {
+		OR = {
+			religion = baltic_pagan
+		}
+	}
+	sprite = 11
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}		
+	}
+}
+
+
+bangputys =
+{
+	galley_power = 0.15
+	leader_naval_manuever = 1
+	
+	allow = {
+		OR = {
+			religion = baltic_pagan
+		}
+	}
+	sprite = 12
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}		
+	}
+}

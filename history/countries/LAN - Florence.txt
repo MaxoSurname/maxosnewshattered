@@ -1,0 +1,21 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 1
+mercantilism = 25
+primary_culture = tuscan
+religion = catholic
+technology_group = western
+capital = 116 # Firenze
+add_army_professionalism = 0.05
+
+#cosimo killed for balance /shrug
+1444.1.1 = {
+	monarch = {
+		name = "Piero il Gottoso"
+		dynasty = "de' Medici"
+		birth_date = 1380.1.1	#incorrect age, but starting with cosimo or a young ruler were both too strong
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}

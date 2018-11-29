@@ -1,0 +1,35 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = serbian
+religion = orthodox
+technology_group = eastern
+capital = 141 #Beograd
+
+1389.1.1 = {
+	government_rank = 1
+}
+
+1444.1.1 = {
+	monarch = {
+		name = "Aleksandar I"
+		dynasty = "Bakovic"
+		birth_date = 1424.1.1		
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+	# clear_scripted_personalities = yes
+	# add_ruler_personality = well_connected_personality
+	# add_ruler_personality = careful_personality
+	# queen = {
+		# country_of_origin = BYZ
+		# name = "Jelena"
+		# dynasty = "Palaiologos"
+		# birth_date = 1431.1.1
+		# death_date = 1458.1.20 # actual death date is 1473.11.7
+		# female = yes
+		# adm = 1
+		# dip = 1
+		# mil = 1
+	# } vanilla stuff
+}

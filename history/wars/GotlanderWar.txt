@@ -1,0 +1,17 @@
+name = "Brorskrig"
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 3120
+}
+
+1444.1.1 = {
+	add_attacker = VGL
+	add_defender = OSG
+}
+
+# Peace
+1450.1.1 = {
+	rem_attacker = VGL
+	rem_defender = OSG
+}

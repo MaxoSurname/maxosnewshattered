@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank= 1
+primary_culture = central_thai
+religion = buddhism
+technology_group = chinese
+capital = 2389 
+
+1444.11.11 = {
+	monarch = {
+		name = "(Interregnum)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

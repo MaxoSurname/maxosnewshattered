@@ -1,0 +1,107 @@
+#Generic shortcut for form nation potential, based on copy-pasted default from vanilla
+mns_tier1_potential = {
+	custom_trigger_tooltip = {
+		tooltip = mns_tier1_tt
+		normal_or_historical_nations = yes
+		OR ={
+			ai = no
+			is_playing_custom_nation = no
+		}
+		OR = {
+			ai = no
+			AND = {
+				ai = yes
+				num_of_cities = 6
+			}
+		}
+		is_colonial_nation = no
+		OR = {
+			is_former_colonial_nation = no
+			AND = {
+				is_former_colonial_nation = yes
+				ai = no
+			}
+		}
+		OR = {
+			AND = {
+				has_dlc = "Dharma"
+				OR = {
+					#monarchy --3
+					has_reform = centralize_reform
+					has_reform = decentralize_reform
+					has_reform = sidhi_recruitment
+					has_reform = mansabdari_reform
+					#republic --3
+					has_reform = frequent_elections_reform
+					has_reform = consolidation_of_power_reform
+					has_reform = roman_diarchy_republican_reform	#san marino
+					#tribal --2
+					has_reform = martial_society_reform
+					has_reform = civil_society_reform
+					#theocracy --2
+					has_reform = safeguard_holy_sites_reform
+					has_reform = combat_heresy_reform
+					has_reform = expel_heathens_reform
+				}
+			}
+			AND = {
+				NOT = { has_dlc = "Dharma" }
+				adm_tech = 8
+			}
+		}
+	}
+}
+
+mns_tier2_potential = {
+	custom_trigger_tooltip = {
+		tooltip = mns_tier2_tt
+		normal_or_historical_nations = yes
+		OR ={
+			ai = no
+			is_playing_custom_nation = no
+		}
+		OR = {
+			ai = no
+			AND = {
+				ai = yes
+				num_of_cities = 6
+			}
+		}
+		is_colonial_nation = no
+		OR = {
+			is_former_colonial_nation = no
+			AND = {
+				is_former_colonial_nation = yes
+				ai = no
+			}
+		}
+		OR = {
+			AND = {
+				has_dlc = "Dharma"
+				OR = {
+					#monarchy --6
+					has_reform = letat_cest_moi_reform
+					has_reform = regional_representation_reform
+					#republic --7
+					has_reform = political_principle_reform
+					has_reform = moral_principle_reform
+					#tribal --5 --unsure how works?
+					has_reform = tribe_becomes_monarchy_reform
+					has_reform = tribe_becomes_republic_reform
+					has_reform = tribe_becomes_theocracy_reform
+					has_reform = tribe_becomes_horde_reform
+					#theocracy --5
+					has_reform = maintain_religious_head_reform
+					has_reform = hereditary_religious_leadership_reform
+					has_reform = crown_leader_reform
+					has_reform = proclaim_republic_reform
+					has_reform = battle_pope_reform
+				}
+			}
+			AND = {
+				NOT = { has_dlc = "Dharma" }
+				adm_tech = 16
+			}
+		}
+	}
+}

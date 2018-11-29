@@ -1,0 +1,1600 @@
+country_decisions = {
+
+	######
+	#Yue#
+	######
+	
+	YUE_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = YUE }
+			OR = {
+				primary_culture = cantonese
+				tag = AYM	#anyam
+				AND = {
+					accepted_culture = cantonese
+					OR = {
+						culture_group = east_asian
+						primary_culture = zhuang
+						primary_culture = miao
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = lower_guangdong_area	#4
+				area = guangdong_area	#4
+				area = zuojiang_area	#4
+				area = west_guangdong_area	#4
+				area = lingdong_area	#4
+			}
+		}
+		allow = {
+			NOT = { exists = YUE }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = YUE_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {							
+							area = lower_guangdong_area	#4
+							area = guangdong_area	#4
+							area = zuojiang_area	#4
+							area = west_guangdong_area	#4
+							area = lingdong_area	#4
+						}
+					}
+					amount = 16	#/20
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = YUE
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { NOT = { primary_culture = cantonese } }
+				change_primary_culture = cantonese
+			}
+			if = {
+				limit = { owns_core_province = 667 }
+				set_capital = 667
+			}
+			custom_tooltip = YUE_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = lower_guangdong_area	#4
+							area = guangdong_area	#4
+							area = zuojiang_area	#4
+							area = west_guangdong_area	#4
+							area = lingdong_area	#4
+						}
+					}
+					add_permanent_claim = YUE
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}	
+	
+	#####
+	#Min#
+	#####
+	
+	MIN_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = MIN }
+			OR = {
+				primary_culture = chimin
+				primary_culture = hakka
+				AND = {
+					culture_group = east_asian
+					accepted_culture = chimin
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = minnan_area	#3
+				area = fujian_area	#3
+				area = north_fujian_area	#4
+				area = wenchu_area	#4
+				province_id = 2156	#chaochow
+				province_id = 4950	#cinghoeng
+				province_id = 670	#ganzhou
+				province_id = 2158	#shiukwan
+				province_id = 5771	#lungcyun
+				province_id = 5364	#jiancheng
+			}
+		}
+		allow = {
+			NOT = { exists = MIN }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = MIN_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = minnan_area	#3
+							area = fujian_area	#3
+							area = north_fujian_area	#4
+							area = wenchu_area	#4
+							province_id = 2156	#chaochow
+							province_id = 4950	#cinghoeng
+							province_id = 670	#ganzhou
+							province_id = 2158	#shiukwan
+							province_id = 5771	#lungcyun
+							province_id = 5364	#jiancheng
+						}
+					}
+					amount = 16	#/20
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = MIN
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { NOT = { primary_culture = chimin } }
+				change_primary_culture = chimin
+			}
+			custom_tooltip = MIN_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = minnan_area	#3
+							area = fujian_area	#3
+							area = north_fujian_area	#4
+							area = wenchu_area	#4
+							province_id = 2156	#chaochow
+							province_id = 4950	#cinghoeng
+							province_id = 670	#ganzhou
+							province_id = 2158	#shiukwan
+							province_id = 5771	#lungcyun
+							province_id = 5364	#jiancheng
+						}
+					}
+					add_permanent_claim = MIN
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#####
+	#Wu#
+	#####
+	
+	WUU_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = WUU }
+			OR = {
+				primary_culture = wu
+				primary_culture = ou
+				primary_culture = xuanzhou
+				AND = {
+					culture_group = east_asian
+					accepted_culture = wu
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = west_zhejiang_area	#3
+				area = zhejiang_area	#3
+				area = shannan_area	#3
+				area = songjiang_area	#4
+				area = south_anhui_area	#3
+				province_id = 5415	#guangxin
+				province_id = 2151	#poyang
+				province_id = 1181	#guangde
+				province_id = 5392	#tongzheu
+			}
+		}
+		allow = {
+			NOT = { exists = WUU }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = WUU_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = west_zhejiang_area	#3
+							area = zhejiang_area	#3
+							area = shannan_area	#3
+							area = songjiang_area	#4
+							area = south_anhui_area	#3
+							province_id = 5415	#guangxin
+							province_id = 2151	#poyang
+							province_id = 1181	#guangde
+							province_id = 5392	#tongzheu
+						}
+					}
+					amount = 16	#/20
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = WUU
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { NOT = { primary_culture = wu } }
+				change_primary_culture = wu
+			}
+			if = {
+				limit = { owns_core_province = 684 }
+				set_capital = 684	#hangzhou
+			}
+			custom_tooltip = WUU_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = west_zhejiang_area	#3
+							area = zhejiang_area	#3
+							area = shannan_area	#3
+							area = songjiang_area	#4
+							area = south_anhui_area	#3
+							province_id = 5415	#guangxin
+							province_id = 2151	#poyang
+							province_id = 1181	#guangde
+							province_id = 5392	#tongzheu
+
+						}
+					}
+					add_permanent_claim = WUU
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			# swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	######
+	#Chu#
+	######
+	
+	CHC_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = CHC }
+			OR = {
+				primary_culture = xiang
+				primary_culture = hubei
+				primary_culture = gan
+				AND = {
+					culture_group = east_asian
+					accepted_culture = hubei
+					owns_core_province = 672	#ancient capital of chu
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = south_huinan	#4
+				area = north_jiangxi_area	#4
+				area = south_jiangxi_area	#4
+				province_id = 5364	#jianchang
+				province_id = 1833	#ji'an
+				province_id = 1840	#guilin
+				province_id = 672	#wuling (capital)
+				province_id = 2172	#jianzhou
+				province_id = 2173	#yuanling
+				province_id = 5428	#guizhou
+				province_id = 5793	#de'an
+			}
+		}
+		allow = {
+			NOT = { exists = CHC }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 672
+			custom_trigger_tooltip = {
+				tooltip = CHC_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = south_huinan	#4
+							area = north_jiangxi_area	#4
+							area = south_jiangxi_area	#4
+							province_id = 5364	#jianchang
+							province_id = 1833	#ji'an
+							province_id = 1840	#guilin
+							province_id = 672	#wuling (capital)
+							province_id = 2172	#jianzhou
+							province_id = 2173	#yuanling
+							province_id = 5428	#guizhou
+							province_id = 5793	#de'an
+						}
+					}
+					amount = 16	#/20
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = CHC
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { NOT = { primary_culture = hubei } }
+				change_primary_culture = hubei
+			}
+			set_capital = 672	#duyang
+			custom_tooltip = CHC_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = south_huinan	#4
+							area = north_jiangxi_area	#4
+							area = south_jiangxi_area	#4
+							province_id = 5364	#jianchang
+							province_id = 1833	#ji'an
+							province_id = 1840	#guilin
+							province_id = 672	#wuling (capital)
+							province_id = 2172	#jianzhou
+							province_id = 2173	#yuanling
+							province_id = 5428	#guizhou
+							province_id = 5793	#de'an
+						}
+					}
+					add_permanent_claim = CHC
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			# swap_non_generic_missions = yes
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	######
+	#
+	######
+	
+	LNG_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = LNG }
+			OR = {
+				primary_culture = jianghuai
+				primary_culture = zhongyuan
+				AND = {
+					culture_group = east_asian
+					accepted_culture = zhongyuan
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = haozhou_area	#4
+				area = henan_area	#3
+				area = jiangsu_area	#4
+				province_id = 688	#kaifeng
+				province_id = 5389	#lu'an
+				province_id = 1838	#hefei
+				province_id = 5395	#chuzheu
+				province_id = 5400	#yizhou
+				province_id = 2176	#shangqiu
+				province_id = 685	#yangzhou
+				province_id = 2141	#xuzhou
+				province_id = 2140	#yanzhou
+			}
+		}
+		allow = {
+			NOT = { exists = LNG }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = LNG_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {						
+							area = haozhou_area	#4
+							area = henan_area	#3
+							area = jiangsu_area	#4
+							province_id = 688	#kaifeng
+							province_id = 5389	#lu'an
+							province_id = 1838	#hefei
+							province_id = 5395	#chuzheu
+							province_id = 5400	#yizhou
+							province_id = 2176	#shangqiu
+							province_id = 685	#yangzhou
+							province_id = 2141	#xuzhou
+							province_id = 2140	#yanzhou
+						}
+					}
+					amount = 16	#/20
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = LNG
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { NOT = { primary_culture = zhongyuan } }
+				change_primary_culture = zhongyuan
+			}
+			custom_tooltip = LNG_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {					
+							area = haozhou_area	#4
+							area = henan_area	#3
+							area = jiangsu_area	#4
+							province_id = 688	#kaifeng
+							province_id = 5389	#lu'an
+							province_id = 1838	#hefei
+							province_id = 5395	#chuzheu
+							province_id = 5400	#yizhou
+							province_id = 2176	#shangqiu
+							province_id = 685	#yangzhou
+							province_id = 2141	#xuzhou
+							province_id = 2140	#yanzhou
+
+						}
+					}
+					add_permanent_claim = LNG
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#####
+	#Yan#
+	#####
+	
+	YAN_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = YAN }
+			OR = {
+				primary_culture = chihan
+				primary_culture = shandong_culture	#temp
+				AND = {
+					culture_group = east_asian
+					accepted_culture = chihan
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = south_hebei_area	#3
+				area = jinan_area	#3
+				area = hebei_area	#4
+				area = kaicheng_area	#4
+				province_id = 5419	#dongchang
+				province_id = 2139	#laizhou
+				province_id = 5397	#tai'an
+				province_id = 2137	#daming
+				province_id = 5421	#zhangd
+				province_id = 726	#shenyang
+			}
+		}
+		allow = {
+			NOT = { exists = YAN }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = YAN_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = south_hebei_area	#3
+							area = jinan_area	#3
+							area = hebei_area	#4
+							area = kaicheng_area	#4
+							province_id = 5419	#dongchang
+							province_id = 2139	#laizhou
+							province_id = 5397	#tai'an
+							province_id = 2137	#daming
+							province_id = 5421	#zhangd
+							province_id = 726	#shenyang
+						}
+					}
+					amount = 16	#/20
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = YAN
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { NOT = { primary_culture = chihan } }
+				change_primary_culture = chihan
+			}
+			custom_tooltip = YAN_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = south_hebei_area	#3
+							area = jinan_area	#3
+							area = hebei_area	#4
+							area = kaicheng_area	#4
+							province_id = 5419	#dongchang
+							province_id = 2139	#laizhou
+							province_id = 5397	#tai'an
+							province_id = 2137	#daming
+							province_id = 5421	#zhangd
+							province_id = 726	#shenyang
+
+						}
+					}
+					add_permanent_claim = YAN
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#####
+	#Jin#
+	#####
+	
+	JIN_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = JIN }
+			OR = {
+				primary_culture = jin
+				AND = {
+					culture_group = east_asian
+					accepted_culture = jin
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = shanxi_area	#4
+				area = fenshui_area	#4
+				province_id = 1836	#luoyang
+				province_id = 692	#huaiqing
+				province_id = 5421	#zhangd
+				province_id = 4195	#zhending
+				province_id = 696	#baoding
+				province_id = 2136	#xuanhua
+				province_id = 703	#chengde
+				province_id = 1816	#beijing
+			}
+		}
+		allow = {
+			NOT = { exists = JIN }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = JIN_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = shanxi_area	#4
+							area = fenshui_area	#4
+							province_id = 1836	#luoyang
+							province_id = 692	#huaiqing
+							province_id = 5421	#zhangd
+							province_id = 4195	#zhending
+							province_id = 696	#baoding
+							province_id = 2136	#xuanhua
+							province_id = 703	#chengde
+							province_id = 1816	#beijing
+						}
+					}
+					amount = 12	#/16
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = JIN
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { NOT = { primary_culture = jin } }
+				change_primary_culture = jin
+			}
+			custom_tooltip = JIN_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = shanxi_area	#4
+							area = fenshui_area	#4
+							province_id = 1836	#luoyang
+							province_id = 692	#huaiqing
+							province_id = 5421	#zhangd
+							province_id = 4195	#zhending
+							province_id = 696	#baoding
+							province_id = 2136	#xuanhua
+							province_id = 703	#chengde
+							province_id = 1816	#beijing
+
+						}
+					}
+					add_permanent_claim = JIN
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	######
+	#
+	######
+	
+	QIN_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = QIN }
+			OR = {
+				primary_culture = xibei
+				AND = {
+					culture_group = east_asian
+					accepted_culture = xibei
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = shaanxi_area	#3
+				area = gansu_area	#3
+				area = hanzhong_area	#3
+				province_id = 2177	#ningwu
+				province_id = 2179	#yan'an
+				province_id = 2183	#taozhou
+				province_id = 699	#lanzhou
+				province_id = 2184	#xining
+				province_id = 2182	#liangzhou
+				province_id = 708	#zhangye
+			}
+		}
+		allow = {
+			NOT = { exists = QIN }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = QIN_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = shaanxi_area	#3
+							area = gansu_area	#3
+							area = hanzhong_area	#3
+							province_id = 2177	#ningwu
+							province_id = 2179	#yan'an
+							province_id = 2183	#taozhou
+							province_id = 699	#lanzhou
+							province_id = 2184	#xining
+							province_id = 2182	#liangzhou
+							province_id = 708	#zhangye
+						}
+					}
+					amount = 12	#/16
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = QIN
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { NOT = { primary_culture = xibei } }
+				change_primary_culture = xibei
+			}
+			custom_tooltip = QIN_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = shaanxi_area	#3
+							area = gansu_area	#3
+							area = hanzhong_area	#3
+							province_id = 2177	#ningwu
+							province_id = 2179	#yan'an
+							province_id = 2183	#taozhou
+							province_id = 699	#lanzhou
+							province_id = 2184	#xining
+							province_id = 2182	#liangzhou
+							province_id = 708	#zhangye
+
+						}
+					}
+					add_permanent_claim = QIN
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	######
+	#
+	######
+	
+	CXI_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = CXI }
+			OR = {
+				primary_culture = sichuanese
+				AND = {
+					OR = {
+						culture_group = east_asian
+						primary_culture = yi
+						primary_culture = tibetan
+					}
+					accepted_culture = sichuanese
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = chuanbei_area	#4
+				area = chuannan_area	#4
+				area = ba_area	#4
+				province_id = 681	#yichang
+				province_id = 2173	#yuanling
+				province_id = 2135	#garze
+				province_id = 2170	#songqu
+			}
+		}
+		allow = {
+			NOT = { exists = CXI }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = CXI_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = chuanbei_area	#4
+							area = chuannan_area	#4
+							area = ba_area	#4
+							province_id = 681	#yichang
+							province_id = 2173	#yuanling
+							province_id = 2135	#garze
+							province_id = 2170	#songqu
+						}
+					}
+					amount = 12	#/16
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = CXI
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25			
+			if = {
+				limit = { NOT = { primary_culture = sichuanese } }
+				change_primary_culture = sichuanese
+			}
+			custom_tooltip = CXI_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = chuanbei_area	#4
+							area = chuannan_area	#4
+							area = ba_area	#4
+							province_id = 681	#yichang
+							province_id = 2173	#yuanling
+							province_id = 2135	#garze
+							province_id = 2170	#songqu
+
+						}
+					}
+					add_permanent_claim = CXI
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	######
+	#
+	######
+	
+	MNG_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = MNG }
+			OR = {
+				primary_culture = jianghuai
+				AND = {
+					culture_group = east_asian
+					accepted_culture = jianghuai
+					owns_core_province = 1821
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = south_jiangsu_area	#4
+				area = anhui_area	#4
+				province_id = 685	#yangzhou
+				province_id = 5420	#taezheu
+				province_id = 5425	#angji
+				province_id = 2146	#ningguo
+				province_id = 2479	#chizheu
+				province_id = 2143	#fengyang
+				province_id = 2864	#sizheu
+				province_id = 5388	#wuxi
+			}
+		}
+		allow = {
+			NOT = { exists = MNG }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 1821
+			custom_trigger_tooltip = {
+				tooltip = MNG_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = south_jiangsu_area	#4
+							area = anhui_area	#4
+							province_id = 685	#yangzhou
+							province_id = 5420	#taezheu
+							province_id = 5425	#angji
+							province_id = 2146	#ningguo
+							province_id = 2479	#chizheu
+							province_id = 2143	#fengyang
+							province_id = 2864	#sizheu
+							province_id = 5388	#wuxi
+						}
+					}
+					amount = 12	#/16
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = MNG
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25			
+			if = {
+				limit = { NOT = { primary_culture = jianghuai } }
+				change_primary_culture = jianghuai
+			}
+			set_capital = 1821
+			custom_tooltip = MNG_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = south_jiangsu_area	#4
+							area = anhui_area	#4
+							province_id = 685	#yangzhou
+							province_id = 5420	#taezheu
+							province_id = 5425	#angji
+							province_id = 2146	#ningguo
+							province_id = 2479	#chizheu
+							province_id = 2143	#fengyang
+							province_id = 2864	#sizheu
+							province_id = 5388	#wuxi
+						}
+					}
+					add_permanent_claim = MNG
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	######
+	#Tang#
+	######
+	
+	TNG_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = TNG }
+			OR = {
+				primary_culture = zhongyuan
+				AND = {
+					culture_group = east_asian
+					accepted_culture = zhongyuan
+					owns_core_province = 687
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = henan_area	#3
+				area = huguang_area	#4
+				province_id = 688	#kaifeng
+				province_id = 5774	#shangzhou
+				province_id = 5409	#jiezhou
+				province_id = 689	#hanzhong
+				province_id = 700	#xi'an
+				province_id = 2177	#ningwu
+				province_id = 692	#huaiqing
+				province_id = 5408	#zezhou
+				province_id = 694	#pingyang
+				province_id = 5389	#lu'an
+				province_id = 2144	#fuyang
+				province_id = 2176	#shangqiu
+				province_id = 2137	#daming
+			}
+		}
+		allow = {
+			NOT = { exists = TNG }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 687
+			custom_trigger_tooltip = {
+				tooltip = TNG_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = henan_area	#3
+							area = huguang_area	#4
+							province_id = 688	#kaifeng
+							province_id = 5774	#shangzhou
+							province_id = 5409	#jiezhou
+							province_id = 689	#hanzhong
+							province_id = 700	#xi'an
+							province_id = 2177	#ningwu
+							province_id = 692	#huaiqing
+							province_id = 5408	#zezhou
+							province_id = 694	#pingyang
+							province_id = 5389	#lu'an
+							province_id = 2144	#fuyang
+							province_id = 2176	#shangqiu
+							province_id = 2137	#daming
+						}
+					}
+					amount = 16	#/20
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = TNG
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25			
+			if = {
+				limit = { NOT = { primary_culture = zhongyuan } }
+				change_primary_culture = zhongyuan
+			}
+			set_capital = 687
+			custom_tooltip = TNG_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = henan_area	#3
+							area = huguang_area	#4
+							province_id = 688	#kaifeng
+							province_id = 5774	#shangzhou
+							province_id = 5409	#jiezhou
+							province_id = 689	#hanzhong
+							province_id = 700	#xi'an
+							province_id = 2177	#ningwu
+							province_id = 692	#huaiqing
+							province_id = 5408	#zezhou
+							province_id = 694	#pingyang
+							province_id = 5389	#lu'an
+							province_id = 2144	#fuyang
+							province_id = 2176	#shangqiu
+							province_id = 2137	#daming
+						}
+					}
+					add_permanent_claim = TNG
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	####
+	#Qi#
+	####
+	
+	QIC_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = QIC }
+			OR = {
+				primary_culture = zhongyuan
+				AND = {
+					culture_group = east_asian
+					accepted_culture = zhongyuan
+					owns_core_province = 2176
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = haozhou_area	#4
+				area = jiangsu_area	#4
+				area = ju_area	#4
+				area = shandong_area	#4
+				province_id = 5398	#jiaozhou
+				province_id = 2137	#daming
+				province_id = 688	#kaifeng
+				province_id = 5402	#xinghua
+			}
+		}
+		allow = {
+			NOT = { exists = QIC }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			owns_core_province = 2176
+			custom_trigger_tooltip = {
+				tooltip = QIC_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = haozhou_area	#4
+							area = jiangsu_area	#4
+							area = ju_area	#4
+							area = shandong_area	#4
+							province_id = 5398	#jiaozhou
+							province_id = 2137	#daming
+							province_id = 688	#kaifeng
+							province_id = 5402	#xinghua
+						}
+					}
+					amount = 16	#/20
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = QIC
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25			
+			if = {
+				limit = { NOT = { primary_culture = zhongyuan } }
+				change_primary_culture = zhongyuan
+			}
+			set_capital = 2176
+			custom_tooltip = QIC_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							area = haozhou_area	#4
+							area = jiangsu_area	#4
+							area = ju_area	#4
+							area = shandong_area	#4
+							province_id = 5398	#jiaozhou
+							province_id = 2137	#daming
+							province_id = 688	#kaifeng
+							province_id = 5402	#xinghua
+						}
+					}
+					add_permanent_claim = QIC
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	#######
+	#Korea#
+	#######
+	
+	KOR_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_tier_1 }
+			NOT = { tag = KOR }
+			OR = {
+				primary_culture = korean
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = korea_region	#23
+			}
+		}
+		allow = {
+			NOT = { exists = KOR }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			mns_tier1_potential = yes
+			custom_trigger_tooltip = {
+				tooltip = KOR_nation_tt
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							region = korea_region	#23
+						}
+					}
+					amount = 18	#/23
+				}
+			}
+			total_development = 200
+		}
+		effect = {
+			change_tag = KOR
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = { owns_core_province = 735 }
+				set_capital = 735
+			}
+			custom_tooltip = KOR_nation_tt2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							region = korea_region	#23
+						}
+					}
+					add_permanent_claim = KOR
+				}
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_tier_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+	
+	######
+	#
+	######
+	
+	# TAG_nation = {
+		# major = yes
+		# potential = {
+			# bt_generic_can_form_potential_check = yes
+			# NOT = { has_country_flag = formed_tier_1 }
+			# NOT = { tag = TAG }
+			# OR = {
+				# primary_culture = 
+			# }
+		# }
+		# provinces_to_highlight = {
+			# OR = {
+				# area = 
+				# province_id = 
+			# }
+		# }
+		# allow = {
+			# NOT = { exists = TAG }
+			# is_at_war = no
+			# is_free_or_tributary_trigger = yes
+			# mns_tier1_potential = yes
+			# custom_trigger_tooltip = {
+				# tooltip = TAG_nation_tt
+				# calc_true_if = {
+					# all_owned_province = {
+						# is_core = ROOT
+						# OR = {
+							# XXXX
+						# }
+					# }
+					# amount = X
+				# }
+			# }
+			# total_development = 100
+		# }
+		# effect = {
+			# change_tag = TAG
+			# if = {
+				# limit = { NOT = { government_rank = 2 } }
+				# set_government_rank = 2
+			# }
+			# add_country_modifier = {
+				# name = "centralization_modifier"
+				# duration = 7300
+			# }
+			# add_prestige = 25			
+			# if = {
+				# limit = { NOT = { primary_culture = YYY } }
+				# change_primary_culture = ZZZ
+			# }
+			# custom_tooltip = TAG_nation_tt2
+			# hidden_effect = {
+				# every_province = {
+					# limit = {
+						# NOT = { owned_by = ROOT }
+						# OR = {
+							# XXXX
+						# }
+					# }
+					# add_permanent_claim = TAG
+				# }
+			# }
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# set_country_flag = formed_tier_1
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+		# ai_importance = 400 #
+	# }
+	
+	###########
+	#Tier 2 Tags#
+	###########
+	
+	#####
+	#Xia#
+	#####
+	
+	# TAG_nation = {
+		# major = yes
+		# potential = {
+			# bt_generic_can_form_potential_check = yes
+			# has_country_flag = formed_tier_1
+			# NOT = { has_country_flag = formed_tier_2 }
+			# NOT = { tag = TAG }
+			# OR = {
+				# primary_culture = 
+			# }
+		# }
+		# provinces_to_highlight = {
+			# OR = {
+				# area = 
+				# province_id = 
+			# }
+		# }
+		# allow = {
+			# NOT = { exists = TAG }
+			# is_at_war = no
+			# is_free_or_tributary_trigger = yes
+			# mns_tier2_potential = yes
+			# custom_trigger_tooltip = {
+				# tooltip = TAG_nation_tt
+				# calc_true_if = {
+					# all_owned_province = {
+						# is_core = ROOT
+						# OR = {
+							# XXXX
+						# }
+					# }
+					# amount = X
+				# }
+			# }
+			# total_development = 100
+		# }
+		# effect = {
+			# change_tag = TAG
+			# remove_non_electors_emperors_from_empire_effect = yes
+			# if = {
+				# limit = { NOT = { government_rank = 3 } }
+				# set_government_rank = 3
+			# }
+			# add_country_modifier = {
+				# name = "centralization_modifier"
+				# duration = 7300
+			# }
+			# add_prestige = 25
+			# add_accepted_culture = XXXX
+			# custom_tooltip = TAG_nation_tt2
+			# hidden_effect = {
+				# every_province = {
+					# limit = {
+						# NOT = { owned_by = ROOT }
+						# OR = {
+							# XXXX
+						# }
+					# }
+					# add_permanent_claim = TAG
+				# }
+			# }
+			# if = {
+				# limit = {
+					# has_custom_ideas = no
+				# }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+			# set_country_flag = formed_tier_2
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+		# ai_importance = 400 #
+	# }
+}

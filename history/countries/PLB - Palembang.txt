@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+primary_culture = sumatran
+religion = sunni
+technology_group = chinese
+capital = 622	# Palembang
+religious_school = shafii_school
+
+1440.1.1 = {
+	monarch = {
+		name = "Tsalenggathu" # Fictional
+		dynasty = "Palembang"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}

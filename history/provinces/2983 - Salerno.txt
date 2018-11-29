@@ -1,0 +1,23 @@
+# - Salerno
+#Region - Italy
+#Area - Naples
+
+latent_trade_goods = { leather }
+
+owner = SLR
+controller = SLR
+culture = normanitaly 
+religion = catholic 
+hre = no 
+base_tax = 3
+base_production = 3
+trade_goods = fish 
+base_manpower = 2
+capital = "Salerno" 
+is_city = yes	# Estimated
+add_core = SLR
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

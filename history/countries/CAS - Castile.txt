@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = castillian
+religion = catholic
+technology_group = western
+capital = 219 # Toledo
+
+add_army_professionalism = 0.05
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Blanche I"
+		dynasty = "de Trastámara"
+		birth_date = 1427.4.20
+		adm = 4
+		dip = 3
+		mil = 4
+		female = yes
+	}
+}

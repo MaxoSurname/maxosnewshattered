@@ -1,0 +1,23 @@
+government = theocracy
+add_government_reform = monastic_order_reform
+government_rank = 1
+primary_culture = prussisk
+add_accepted_culture = prussian
+religion = catholic
+technology_group = western
+capital = 7023
+fixed_capital = 7023
+add_army_professionalism = 0.1
+
+1444.11.11 = {
+	monarch = {
+		name = "Halfdan Pridbjorn"
+		adm = 3
+		dip = 0
+		mil = 6
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = strict_personality
+}
+

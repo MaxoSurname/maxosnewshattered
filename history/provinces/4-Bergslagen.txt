@@ -1,0 +1,24 @@
+#Bergslagen, contains Falun, Västerås etc.
+#Region - Scandinavia
+#Area - Svealand
+
+latent_trade_goods = { steel }
+
+add_core = SVL
+owner = SVL
+controller = SVL
+culture = swedish
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = iron
+base_manpower = 1
+capital = "Västerås"
+is_city = yes
+fort_15th = yes			#BT Strategically placed, not actually historical -well, I'm sure there was a fort there, but not a major one
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

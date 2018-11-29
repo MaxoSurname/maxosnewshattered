@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = hubei
+capital = 682
+
+1444.11.11 = {
+	monarch = {
+		name = "Xizheng"
+		dynasty = "Shan"		
+		birth_date = 1399.1.1
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}

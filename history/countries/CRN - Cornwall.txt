@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = cornish
+religion = catholic
+capital = 233	# Exeter
+
+1444.1.1 = {
+	monarch = {
+		name = "Uther"
+		name = "Pen Draig"
+		adm = 5
+		dip = 5
+		mil = 5
+		regent = yes
+	}
+}

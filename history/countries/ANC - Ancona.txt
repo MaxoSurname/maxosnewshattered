@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+primary_culture = umbrian
+religion = catholic
+technology_group = western
+capital = 119
+historical_friend = RAG
+
+1444.1.1 = {
+	monarch = {
+		name = "Augusto"
+		dynasty = "Scannabecchi"
+		birth_date = 1372.1.1
+		adm = 3
+		dip = 6
+		mil = 3
+	}
+}

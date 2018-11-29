@@ -1,0 +1,12 @@
+opinion_guelph_bad_support = {
+	opinion = -20
+}
+opinion_guelph_good_support = {
+	opinion = 20
+}
+opinion_ghibelline_bad_support = {
+	opinion = -20
+}
+opinion_ghibelline_good_support = {
+	opinion = 20
+}

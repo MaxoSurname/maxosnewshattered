@@ -1,0 +1,168 @@
+#Celtic --MNS
+
+lugh =
+{
+	production_efficiency = 0.10
+	administrative_efficiency = 0.025
+	
+	allow = {
+		OR = {
+			religion = celtic_pagan
+		}
+	}
+	sprite = 7
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+cernunnos =
+{
+	development_cost = -0.075
+	build_cost = -0.05
+	
+	allow = {
+		OR = {
+			religion = celtic_pagan
+		}
+	}
+	sprite = 8
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}
+	}
+}
+
+taranis =
+{
+	free_mil_policy = 1
+	leader_land_shock = 1
+		
+	allow = {
+		OR = {
+			religion = celtic_pagan
+		}
+	}
+	sprite = 9
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { num_of_cities = 5 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_cities = 10 }
+		}
+		modifier = {
+			factor = 0.5
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}
+}
+
+epona =
+{
+	movement_speed = 0.15
+	cavalry_power = 0.25
+	
+	allow = {
+		OR = {
+			religion = celtic_pagan
+		}
+	}
+	sprite = 10
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}		
+	}
+}
+
+manannan =
+{
+	navy_tradition = 1
+	capture_ship_chance = 0.25
+	
+	allow = {
+		OR = {
+			religion = celtic_pagan
+		}
+	}
+	sprite = 11
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}		
+	}
+}
+
+
+ogmios =
+{
+	diplomatic_reputation = 2
+	ae_impact = -0.10
+	
+	allow = {
+		OR = {
+			religion = celtic_pagan
+		}
+	}
+	sprite = 12
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}		
+	}
+}

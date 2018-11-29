@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 2
+primary_culture = andalusi_culture
+add_accepted_culture = andalucian
+religion = sunni
+technology_group = muslim
+capital = 225	# Cordoba

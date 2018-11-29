@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+add_accepted_culture = bulgarian
+primary_culture = turkish
+religion = orthodox
+capital = 2750
+historical_friend = TUR
+
+1444.1.1 = {
+	monarch = {
+		name = "Suileman I"
+		dynasty = "Filiboglu"
+		birth_date = 1409.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

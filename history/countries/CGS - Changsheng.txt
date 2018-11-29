@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = zhuang
+religion = confucianism
+technology_group = chinese
+capital = 664 # Lingyun
+government_rank = 1
+
+1444.11.11 = {
+	monarch = {
+		name = "Sao Mong Saik"
+		dynasty = "Chaochetton"
+		birth_date = 1401.1.1
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+

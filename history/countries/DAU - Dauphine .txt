@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = arpitan
+capital = 204	# Grenoble
+
+1440.1.1 = { 
+	monarch = {
+		name = "Foulques"
+		dynasty = "d'Aumont"
+		birth_date = 1421.1.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}

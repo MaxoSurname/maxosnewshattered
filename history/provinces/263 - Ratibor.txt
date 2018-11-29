@@ -1,0 +1,23 @@
+#263 - Ratibor
+
+latent_trade_goods = {
+	coal
+}
+
+owner = USL
+controller = USL
+culture = schlesian
+religion = catholic
+hre = yes
+base_tax = 3 
+base_production = 3
+capital = "Ratibor"
+is_city = yes
+trade_goods = wine
+base_manpower = 2
+add_core = USL
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

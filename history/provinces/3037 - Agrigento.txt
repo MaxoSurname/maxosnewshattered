@@ -1,0 +1,46 @@
+#3037 - Agrigento
+#Region - Italy
+#Area - Sicily
+
+owner = EMS
+controller = EMS
+culture = sicilian 
+religion = sunni 
+hre = no 
+base_tax = 5
+base_production = 5
+trade_goods = sugar
+base_manpower = 3
+capital = "Girgenti"
+is_city = yes
+add_core = EMS
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+1516.1.23 = {	owner = SPA
+	controller = SPA
+	add_core = SPA
+	remove_core = ARA
+} # Unification of Spain
+1706.7.1 = { controller = SAV }
+1713.4.11 = {	owner = NAP
+	controller = NAP
+	remove_core = SPA
+}
+1718.8.2 = {	owner = HAB
+	controller = HAB
+	add_core = HAB
+}
+1734.6.2 = {	owner = NAP
+	controller = NAP
+	remove_core = HAB
+}
+1806.3.11 = {	owner = SIC
+	controller = SIC
+} # Ferdinand flees to Sicily
+1815.5.3 = {	owner = NAP
+	controller = NAP
+} # The Kingdom is restored to Ferdinand

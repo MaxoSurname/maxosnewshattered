@@ -1,0 +1,131 @@
+#Jomsborg
+
+graphical_culture = westerngfx
+
+color = { 63  7  66 }
+
+preferred_religion = norse_pagan_reformed
+
+historical_idea_groups = {
+	maritime_ideas
+	administrative_ideas
+	aristocracy_ideas
+	expansion_ideas
+	naval_ideas 
+	trade_ideas 
+	quality_ideas
+	economic_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	swedish_gallop
+	swedish_gustavian
+	swedish_caroline
+	swedish_arme_blanche
+	prussian_frederickian
+	prussian_uhlan
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Anund" = 20
+	"Asger" = 20
+	"Benedikt" = 20
+	"Bjørn" = 20
+	"Bo" = 20
+	"Edvard" = 20
+	"Einar" = 20
+	"Fredrik" = 20
+	"Gorm" = 20
+	"Grim" = 20
+	"Hårik" = 20
+	"Halfdan" = 20
+	"Halvor" = 20
+	"Harold" = 20
+	"Helge" = 20
+	"Hemming" = 20
+	"Hjalmar" = 20
+	"Ingolf" = 20
+	"Jørn" = 20
+	"Joakim" = 20
+	"Knut" = 20
+	"Kristian" = 20
+	"Lennart" = 20
+	"Malthe" = 20
+	"Mads" = 20
+	"Mikkel" = 20
+	"Mogens" = 20
+	"Odd" = 20
+	"Olav" = 20
+	"Peder" = 20
+	"Pridbjørn" = 20
+	"Ragnar" = 20
+	"Ragnvald" = 20
+	"Rolf" = 20
+	"Rune" = 20
+	"Rørik" = 20
+	"Rurik" = 20
+	"Severin" = 20
+	"Sigfred" = 20
+	"Sigtryg" = 20
+	"Sigurd" = 20
+	"Sivard" = 20
+	"Steen" = 20
+	"Sven" = 20
+	"Sämund" = 20
+	"Thorolf" = 20
+	"Thorvald" = 20
+	"Torben" = 20
+	"Torbjørn" = 20
+	"Glitterhov" = 20
+	"Torbjörn" = 20
+	"Tord" = 20
+	"Torfinn" = 20
+	"Torgils" = 20
+	"Torkel" = 20
+	"Ture" = 20
+	"Ubbe" = 20
+	"Uffe" = 20
+	"Ulf" = 20
+	"Valentin" = 20
+	"Yngvar" = 20
+	"Ingvar"= 20
+}
+
+leader_names = {
+	Anders Anund Asger Benedikt Bjørn Bo Christopher Daniel Edvard 
+			Einar Fredrik Gorm Grim Hårik 
+			Halfdan Halvor Harold Helge Hemming Hjalmar Ingolf Jørn Jacob Jens Joakim Johann
+			John Knut Kristian Lennart Ludvig Louis Malthe Mads Mikkel Michael 
+			Mogens Nicholas Odd Olav Peder Pridbjørn Ragnar Ragnvald Rolf Rune Rørik Rurik Severin 
+			Sigfred Sigtryg Sigurd Sivard Steen Sven Sämund Thorolf Thorvald Torben Torbjørn Glitterhov
+			Torbjörn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
+			Christian Frederik Erik Christoffer Adolf Niels Karl Magnus Maximilian Ulrik Abel Vilhelm 
+			Knud Valdemar Harald Oluf Alfred Anton Bent Emanuel Esben Fritjof Frode Gunnar Hans Henrik 
+			Holger Jørgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst
+			Frans Gnupa
+}
+
+ship_names = {
+	Achilles "Arche Noa" Arken Beskjermer "Byens Løffue" Caritas "Charlotte Amalie" 
+	Christiania Christiansand Christiansø "Christianus IV" "Christianus V" Churprindsen 
+	Concordia Cæsar Dannebroge David Delmenhorst Ditmarsken Draken "Dronning Louisa" 
+	Ebenetzer Elefanten Enighed "Engelske Fortuna" Enhiørningen Fides Flores 
+	"Flygende Hjorten" Fortuna "Fredericus III" "Fredericus IV" Fyen Gravenstein Griffe 
+	Gyldenløve Hannibal Havfru Havhest Havmand Hector Hercules "Hertug Olufs Pincke" 
+	Hiælperen Hjort Høyenhald Hummer "Hvide Ørn" Højenhald Island Jernvågen Jægermester 
+	Justitia "Kongens Jagt Krone" "Kronet Fisk" Lamprenen Leopard Lindorm Loss Lovisa 
+	"Løvendals Gallej" Makaløs Mars Merkurius Morian Najaden Nelleblad Neptunus 
+	"Norske Løve" Oldenborg Papegoye Patienta Pelican Phønix "Prinds Carl" 
+	"Prinds Christian" "Prinds Wilhelm" Raae Samson Solen 
+	"Sophia Amalia" "Sophia Hedvig" "St. Erik" "St. Georg" "St. Oluf" Stormar Stralsund 
+	Svaerdfisk Svan "Svenske Jomfru" Søridder Tomler "To Løver" "Tre Løver" Trefoldighed 
+	Victoria Vindhunden Wenden Ørnen
+}

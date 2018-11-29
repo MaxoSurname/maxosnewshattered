@@ -1,0 +1,18 @@
+owner = YMN
+controller = YMN
+add_core = YMN
+culture = CULTURE
+religion = shinto
+capital = "Mimasaka"
+trade_goods = livestock
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 2
+is_city = yes
+
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG
